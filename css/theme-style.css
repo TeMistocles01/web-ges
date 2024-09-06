@@ -1700,7 +1700,11 @@ form {
 	border: 2px solid #FFFFFF; 
 }
 
-
+.botones{
+	margin-top: 3em;	
+	text-align: center;
+	}
+	
 
 /*----- start-download-----*/
 .download{
