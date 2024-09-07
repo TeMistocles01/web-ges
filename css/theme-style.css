@@ -122,7 +122,6 @@ nav a#pull {
 }
 
 
-
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width : 768px) {
 	nav {
@@ -247,6 +246,10 @@ nav a#pull {
   height: auto;
   border: 0;
 }
+
+
+/* Modifica el tamaño de la letra del Slider principal  */
+
 .callbacks .caption {
 	display: block;
 	position: absolute;
@@ -262,6 +265,7 @@ nav a#pull {
 	top: 10%;
 	text-align: center;
 }
+
 .callbacks_nav {
   	position: absolute;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -400,7 +404,6 @@ nav a#pull {
 .origen-container{
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 	padding: 1em 0em;
-
 }
 
 
@@ -410,6 +413,7 @@ nav a#pull {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+
 
 }
 
@@ -1142,6 +1146,7 @@ transition: 7s;
  }
 
 .text-map2 {
+	margin-top: 2.5em;
 	text-align: center;
 }
 
@@ -1173,9 +1178,32 @@ iframe{
 
 /* tablas comparativas margen arriba*/
 .container-tablas{
-	margin-top: 2em;
-	width: 100%;	
+	
+	
 }
+
+.tabla-container{
+	margin-top: 1em;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+
+}
+
+table{
+	width: 57em;
+	height: 250px;
+	margin: 15px 0 0 0;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    
+}
+
+
 
 /* tablas comparativas margen abajo*/
 .text-map2 {
@@ -1183,15 +1211,13 @@ iframe{
 	margin-bottom: 1.5em;
 }
 
+/*
 .seccion-tabla-izquierda {
 	position: relative;
 	float: left;
 	display:block;
-    width: 50%;
-    /*border: 2px solid #FFFFFF;*/
-	/*border-radius: 5px;*/
+    width: 50%;   
 }
-
 
 .seccion-tabla-derecha {
 	position: relative;
@@ -1199,6 +1225,7 @@ iframe{
 	display:block;
 	width: 50%;
 }
+*/
 
 .center-text {
 	width: 100%;
@@ -1282,18 +1309,17 @@ td,th{
 /*-----start-Share-instantly----*/
 .Share-instantly{
 	background: linear-gradient( #5fd9fe 95% ,#FFFFFF);
-	padding-top:3em;
+	padding-bottom: 2em;
 }
 .Share-instantly-left span{
 	width:350px;
-	height:516px;
+	height:520px;
 	display:block;
 	background:url(../images/share-divice.png) no-repeat 0px 0px;
 }
 
 /* definir color de letra y tamaño y tipografia a todos los titulos*/
 .Share-instantly-right h3{
-	
 	font-family: 'nexa_boldregular';
 	font-size: 2em;
 }
@@ -1328,7 +1354,6 @@ p.img_slider{
 /*------ start-feature----*/
 .feature{
 	background: linear-gradient( #5fd9fe 95% ,#FFFFFF);
-	padding-top:3em;
 }
 .feature h3 {
 	
@@ -1490,7 +1515,7 @@ p.img_slider1{
 
 /* sub-titulo card posterior*/
 .card-tarjeta .back p {
-    font-size: small;	
+    font-size: medium;	
 }
 
 /* Textos parrafos tarjeta 1,2,3*/
@@ -1507,7 +1532,7 @@ p.img_slider1{
 
 font-size: small;
 padding-bottom: 1.2em;
-line-height: 3em; 
+line-height:2.5em; 
 }
 
 .container-tarjeta .card-tarjeta .tarjeta-3{
@@ -1986,8 +2011,8 @@ a.cl-icon8-l span{
 */
 
 .pie-pagina{
-    width: 100%;
-	background: url(/images/bg.jpg);
+width: 100%;
+	background: url(../images/bg.jpg);
     
 }
 
@@ -2112,7 +2137,7 @@ a.cl-icon8-l span{
 	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/to-top1.png") no-repeat 0px 0px;
+	background: url("../images/to-top.png") no-repeat 0px 0px;
 	border-radius: 30em;
 }
 #toTopHover {
