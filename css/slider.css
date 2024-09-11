@@ -685,9 +685,18 @@
 	70%{ left: 30%;  opacity: 0; }
 	100%{ left: -50%; opacity: 0; }
 }
+
 @media all and (max-width:800px){
 	.da-slider {
  		height:200px;
+		
+    }
+}
+
+
+@media all and (max-width:800px){
+	.da-slider {
+ 		height:150px;
     }
 }
  @media all and (max-width:480px){

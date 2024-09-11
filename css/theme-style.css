@@ -1164,14 +1164,14 @@ transition: 7s;
 
 .secc-mapa {
 	text-align: center;
-    width:100%;
     height: min-content;
+	
 		
 }
 
 
 iframe{
-	width: 60em;
+	width: 70em;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
@@ -1343,7 +1343,7 @@ p.img_slider{
 .slider .da-slider .da-slide #youtube-icon-slider{
 	width: 6em;
 	height: 4em;
-
+ 
 }
 
 
@@ -1377,6 +1377,7 @@ p.img_slider1{
 }
 .feature-left{
 	margin-top:.5em;
+	background: #128C7E;
 }
 /*-----start-gallery----*/
 .gallery{
@@ -2175,20 +2176,8 @@ width: 100%;
 	left: 40%;
  }
 
- .container-img-multiple figure{
-	position:relative;
-	width: 20em;
-    height: 250px;
-	cursor: pointer;
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 0em .5em;
-	
- }
-
+ 
 /*origen */
-
 
 .origen-container{
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
@@ -2203,7 +2192,7 @@ width: 100%;
 }
 
 .card-origen-center{
-	width:  47em;
+	width:  55em;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -2242,7 +2231,7 @@ width: 100%;
 
 
 .card-origen-par{
-	width:  47em;
+	width:  55em;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -2278,11 +2267,71 @@ width: 100%;
 	cursor: default;
 }
 
+
+/* funciones destacadas*/
+
+
+
+
 /* GES en accion */
 
 
 
+.secc-mapa {
+	text-align: center;
+    height: min-content;
+	
+		
+}
 
+iframe{
+	width: 57em;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+
+/* multiples lugares*/
+
+.container-img-multiple figure{
+	position:relative;
+	width: 20em;
+    height: 250px;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: 0em .5em;
+	
+ }
+
+ /* beneficios*/
+ .container-tarjeta .card-tarjeta{
+    position: relative;
+    width: 19em;
+    height: 28em;
+    margin: 15px;
+}
+
+
+/* Textos parrafos tarjeta 1,2,3*/
+.container-tarjeta .card-tarjeta .tarjeta-1{
+	font-size: small;
+	line-height: 4.2em;  
+	padding-bottom: 2em;
+	
+	}
+	
+
+.container-tarjeta .card-tarjeta .tarjeta-2{
+font-size: small;
+padding-bottom: 1.2em;
+line-height:2em; 
+}
+
+.container-tarjeta .card-tarjeta .tarjeta-3{
+	font-size: small;
+	padding-bottom: 1.2em;
+	line-height: 2.5em;  
+	}
 
 
 
@@ -2341,6 +2390,20 @@ width: 100%;
  .slide-text-info {
 	margin-top: 7%;
  }
+
+ .features-grid span {
+	width: 120px;
+	height: 120px;
+	background-size: 430%;
+ }
+ .features-grid span.t-icon1 {
+    background-position: -200px 0px;
+ }
+ .features-grid span.t-icon2 {
+    background-position: -395px 0px;
+ }
+
+ /*
  .features-grid span {
 	width: 100px;
 	height: 100px;
@@ -2352,19 +2415,20 @@ width: 100%;
  .features-grid span.t-icon2 {
     background-position: -346px 0px;
  }
+*/
 
-
-
+/* coadyubar con el ministerio publico*/
 
  
 .Share-instantly-left span, .feature-right span{
-	background-size:65%;
+	background-size:60%;
 	width: 320px;
-	height: 490px;
+	height: 450px;
 	background-color: red;
-	margin-top: 2em;
+	margin-top: 1em;
  }
 
+ /* configure llamadas de emergencia */
  .feature-right span{
 	margin-top: 2em;
 	background-size:75%;
@@ -2374,7 +2438,13 @@ width: 100%;
  }
 
 
+/* adquirir*/
 
+.download-right .grande{
+	color:#fff;
+	font-size:2.5em;
+	font-family: 'nexa_boldregular';
+}
 
  .Share-instantly-right {
 	margin-top:0em;
@@ -2395,11 +2465,34 @@ width: 100%;
 p.cousel_demo{
 	display:none;
 }
+
+
+.pie-pagina{
+	width: 100%;
+		background: url(../images/bg.jpg);
+		
+	}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:180px;
+    padding: 35px 30px;
+	color: #efebeb;
+}
+
+
+
+
+
 }
 
 
 /*--responsive design--*/
-@media (max-width:1024px){
+@media (min-width:801px) and (max-width:1024px){
 
 	.logo a{
 		
@@ -2534,7 +2627,139 @@ p.cousel_demo{
 }
 
 
+/*Definicion*/
 
+
+
+.card{
+	width: 14em;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#FFFFFF;
+	transition: all 400ms ease-out;
+	cursor: default;
+	margin: 0em .4em;
+}
+.card img{
+	width: 100%;
+	height: 10em;
+}
+
+.input-card[type="checkbox"]{
+	height: .5em;
+	display: block;
+	appearance: none;
+	
+}
+
+ .label-card{
+	position: relative;
+	padding: .4em;
+	background: #5fd9fe;
+	border-radius: 5px;
+	color: #FFFFFF;
+	
+}
+
+/* funciones destacadas */
+
+.features-grids{
+	border-radius: 25px;
+	margin: 0em 8em;
+}
+
+.features-grid h3 {
+	
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.features-grid:hover {
+	transform: scale(1.0);
+	background-color: #FFFFFF;
+	border-radius: 25px;
+}
+
+/* multiples lugares*/
+
+.features{
+	padding-bottom: 1em;
+	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
+	
+}
+.container-multiples-sitios{
+	margin-top: .7em;
+	   
+   }
+   .bloke-superior{
+	text-align: center;
+	padding: 0em 0em .5em 0em;
+}
+   
+.container-img-multiple figure{
+	position:relative;
+	width: 15em;
+    height: 230px;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: 0em .3em;
+	
+ }
+
+/* Text-grande titulo */
+.container-img-multiple figure:hover > .capa .title-foto{
+	font-size: large;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	
+}
+
+/* Text-grande titulo */
+.container-img-multiple figure .capa .title-foto {
+	font-size: large;
+	color: #FFFFFF;	
+	margin-bottom: 120px;
+	transition: all 400ms ease-out;
+	margin-top: 30px;
+	
+}
+
+/* texto pequeño imagen */
+.container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: smaller;
+	line-height: 1;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+	
+}
+/* GES en accion*/
+
+.container-accion{
+	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
+	padding-bottom: 1em;
+}
+
+iframe{
+	width: 47em;
+	height: 13em;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+
+.tabla-container{
+	width: 47em;
+	margin-bottom: 2em;
+}
+
+table{
+	width: 100%;
+	height: 180px;
+	margin: 10px 0 0 0;
+	
+}
 
 
  .features h2 {
@@ -2582,15 +2807,20 @@ p.cousel_demo{
  .download {
 	padding: 40px 0 20px;
  }
+ /*
  .feature-left {
 	margin: 0 0 2em 0;
  }
+	*/
  .download-left {
 	margin-top: 2.2em;
  }
  .slide-text-info {
 	margin-top: 7%;
  }
+
+
+ /* Funcioones desstacadas */
  .features-grid span {
 	width: 100px;
 	height: 100px;
@@ -2604,10 +2834,27 @@ p.cousel_demo{
  }
 
 
- 
+ /* coadyubar con el ministerio publico*/
 
-
  
+.Share-instantly-left span, .feature-right span{
+	background-size:60%;
+	width: 320px;
+	height: 450px;
+	background-color: red;
+	margin-top: 1em;
+ }
+
+ /* configure llamadas de emergencia */
+ .feature-right span{
+	margin-top: 2em;
+	background-size:75%;
+	width: 320px;
+	height: 460px;
+	background-color: rgb(52, 47, 47);
+ }
+
+ /*
 .Share-instantly-left span, .feature-right span{
 	background-size:85%;
 	width: 320px;
@@ -2616,6 +2863,8 @@ p.cousel_demo{
  .Share-instantly-right {
 	margin-top:0em;
  }
+ 
+ */
  .download-left a span {
 	background-size:90%;
 	width: 240px;
@@ -2754,46 +3003,6 @@ p.cousel_demo{
 
   /*Definicion */
 
-  .container-card{
-	padding-top: 1.5em;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;	
-}
-
-.card{
-	width: 14.5em;
-	border-radius: 6px;
-	overflow: hidden;
-	background:#FFFFFF;
-	transition: all 400ms ease-out;
-	cursor: default;
-}
-
-.card img{
-	width: 100%;
-	height: 10em;
-}
-
-.input-card[type="checkbox"]{
-	height: .5em;
-	display: block;
-	appearance: none;
-	
-}
-
- .label-card{
-	position: relative;
-	padding: .4em;
-	background: #5fd9fe;
-	border-radius: 5px;
-	color: #FFFFFF;
-	
-}
-
-
 /* funciones destacadas  */
 
 .features-grids{
@@ -2904,11 +3113,28 @@ table{
  div.col-md-5.Share-instantly-left, div.col-md-5.feature-right{
     text-align: center;
  }
- .Share-instantly-left span, .feature-right span {
+
+ .Share-instantly-left{
+	 background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+
+
+ }
+
+ .Share-instantly-left span {
+	background-size: 85%;
+	width: 250px;
+	height: 280px;
+	display: inline-table;
+	
+ }
+ 
+
+ .feature-right span {
 	background-size: 85%;
 	width: 250px;
 	height: 330px;
 	display: inline-table;
+	
  }
  div.col-md-7.download-right {
     text-align: center;
