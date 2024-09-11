@@ -441,10 +441,6 @@ nav a#pull {
 }
 
 
-
-
-
-
 .container-2-card-origen{
 	width: 100%;
 	display: flex;
@@ -803,22 +799,21 @@ transition: 7s;
 }
 
 .container-card{
-	padding-top: 1.5em;
-	width: 100%;
+	padding-top: 2em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	
+	justify-content: center;
 }
 
 .card{
-	width: 22em;
+	width: 20em;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#FFFFFF;
 	transition: all 400ms ease-out;
 	cursor: default;
+	margin: 0em .7em;  /* espacio de margen*/
 }
 
 .card:hover{
@@ -1145,13 +1140,10 @@ transition: 7s;
 	position: relative;
 	display: inline-block;
 	width: 100%;
-	
 }
 
 .text-map1{
-	padding-bottom: 1em;
-	
-		
+	padding-bottom: 1em;		
 }
 
 
@@ -1171,18 +1163,18 @@ transition: 7s;
 }
 
 .secc-mapa {
-    width:90%;
+	text-align: center;
+    width:100%;
     height: min-content;
-	margin-left: auto;
-	margin-right: auto;	
-	
+		
 }
-
 
 
 iframe{
+	width: 60em;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
+
 .barras{
 	text-align: center;
 }
@@ -1219,6 +1211,8 @@ table{
 
 
 /* tablas comparativas margen abajo*/
+
+
 .text-map2 {
 	text-align: center;
 	margin-bottom: 1.5em;
@@ -1420,7 +1414,7 @@ p.img_slider1{
 }
 
 .container-beneficios .container-titulo-beneficios p{
-	
+
 	font-size: large;
 	
 }
@@ -1533,7 +1527,6 @@ p.img_slider1{
 	
 
 .container-tarjeta .card-tarjeta .tarjeta-2{
-
 font-size: small;
 padding-bottom: 1.2em;
 line-height:2.5em; 
@@ -1600,8 +1593,6 @@ line-height:2.5em;
 .titulo-modal{	
 	
 	font-size: x-large;
-	
-	
 }
 
 .options{
@@ -2152,13 +2143,12 @@ width: 100%;
 	filter: alpha(opacity=0);
 }
 
-@media (max-width:1200px){
+@media (min-width:1025px) and (max-width:1200px){
 
 	.logo a{
-		
 		position: absolute;
 		background-color: #00A2C1;
-		right: 18em;	
+		right: 17.8em;	
 	}
 	
 	.header {
@@ -2166,7 +2156,6 @@ width: 100%;
 		top: 0;
 		z-index: 999;
 		right: 0;
-		
 	 }
 
 	 .top-nav{
@@ -2184,7 +2173,6 @@ width: 100%;
  }
  .callbacks_tabs {
 	left: 40%;
-	
  }
 
  .container-img-multiple figure{
@@ -2215,7 +2203,7 @@ width: 100%;
 }
 
 .card-origen-center{
-	width:  45em;
+	width:  47em;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -2254,7 +2242,7 @@ width: 100%;
 
 
 .card-origen-par{
-	width:  45em;
+	width:  47em;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -2277,6 +2265,23 @@ width: 100%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+
+/*Definicion*/
+
+.card{
+	width: 18em;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#FFFFFF;
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+/* GES en accion */
+
+
+
 
 
 
@@ -2353,10 +2358,24 @@ width: 100%;
 
  
 .Share-instantly-left span, .feature-right span{
-	background-size:85%;
+	background-size:65%;
 	width: 320px;
-	height: 430px;
+	height: 490px;
+	background-color: red;
+	margin-top: 2em;
  }
+
+ .feature-right span{
+	margin-top: 2em;
+	background-size:75%;
+	width: 320px;
+	height: 460px;
+	background-color: rgb(52, 47, 47);
+ }
+
+
+
+
  .Share-instantly-right {
 	margin-top:0em;
  }
@@ -2585,6 +2604,7 @@ p.cousel_demo{
  }
 
 
+ 
 
 
  
@@ -2776,9 +2796,7 @@ p.cousel_demo{
 
 /* funciones destacadas  */
 
-
 .features-grids{
-	
 	border-radius: 25px;
 	margin: 0em 8em;
 }
