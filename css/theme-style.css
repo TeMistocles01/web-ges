@@ -799,21 +799,22 @@ transition: 7s;
 }
 
 .container-card{
+	width: 100%;
 	padding-top: 2em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .card{
-	width: 20em;
+	width: 22.5em;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#FFFFFF;
 	transition: all 400ms ease-out;
 	cursor: default;
-	margin: 0em .7em;  /* espacio de margen*/
+	
 }
 
 .card:hover{
@@ -998,7 +999,6 @@ transition: 7s;
    }
    
 .container-multiples-sitios p{
-	
 	font-size: large;
 	
 }
@@ -1010,7 +1010,6 @@ transition: 7s;
 
 
 .bloke1, .bloke2{
-	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1478,67 +1477,59 @@ p.img_slider1{
 /*Margen en todos los costados*/
 .card-tarjeta .back {
     transform: perspective(600px) rotateY(180deg);
-    padding: 0em 1em;
+	padding: 0em 1em;
     display: flex;
     flex-direction: column;
-   /*justify-content: space-between;*/
+   justify-content: space-between;
     box-shadow: 0 5px 10px #000;
 }
 
-.card-tarjeta .back .link {
-    border-top: solid 1px #f3f3f3;
-    height: 50px;
-    line-height: 50px;
+
+
+
+
+/* height: 50px;  */
+
+   /*texto ges card*/
+.card-tarjeta .back .title-back {
+	margin-top: 1.1em;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.3em;		
+}
+
+.card-tarjeta .back .sub-title-back{
+	margin-top: 4.7em;
+	font-size: .9em;		
+	position: absolute;
+}
+
+
+.back .tarjeta-1 p{
+	
+	font-size: .9em;
+	line-height: 4em;  
+}
+
+.back .tarjeta-2 p{
+	
+	font-size: .9em;
+	line-height:2.5em;
+}
+
+.back .tarjeta-3 p{
+	font-size: .9em;
+	line-height: 2.2em; 
 }
 
 /* texto bajo card*/
 .card-tarjeta .back .link  {
+	border-top: solid 1px #f3f3f3;
 	font-size: small;
 	text-align: center;
-    color: #000000; /* tetxo bajo*/
+	line-height: 70px; /*altura de la linea */
 }
 
-.card-tarjeta .back .title-back {
-    font-size: medium;
-	color: #FFFFFF;
-	text-align: center;
-		
-}
-
-/* titulo card posterior: GES Aplicacion*/
-.card-tarjeta .back  {
-    padding-top: 1.5em;
-	
-		
-}
-
-/* sub-titulo card posterior*/
-.card-tarjeta .back p {
-    font-size: medium;	
-}
-
-/* Textos parrafos tarjeta 1,2,3*/
-.container-tarjeta .card-tarjeta .tarjeta-1{
-	
-	font-size: small;
-	line-height: 5em;  
-	padding-bottom: 2em;
-	
-	}
-	
-
-.container-tarjeta .card-tarjeta .tarjeta-2{
-font-size: small;
-padding-bottom: 1.2em;
-line-height:2.5em; 
-}
-
-.container-tarjeta .card-tarjeta .tarjeta-3{
-	
-	font-size: small;
-	padding-bottom: 1.2em;
-	line-height: 2.7em;  
-	}
 
 .card-tarjeta:hover .front {
     transform: perspective(600px) rotateY(180deg);
@@ -1726,7 +1717,6 @@ form {
 
 /*----- start-download-----*/
 .download{
-	
 	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
 	padding: 7em 0;
 }
@@ -1737,7 +1727,7 @@ form {
 
 .download-left span{
 	width:304px;
-	height:290px;
+	height:291px;
 	border-radius: 53px;
 	display:inline-block;
 	background:url(../images/storeplay-web-logo.png) no-repeat 0px 0px;
@@ -2260,7 +2250,7 @@ width: 100%;
 /*Definicion*/
 
 .card{
-	width: 18em;
+	width: 19em;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#FFFFFF;
@@ -2453,8 +2443,9 @@ line-height:2em;
 
  .download-left  span {
 	background-size:100%;
-	width: 240px;
-	height: 220px;
+	width: 260px;
+	height: 249px;
+	
  }
  .download-right ul li a span {
 	width: 150px;
@@ -2501,12 +2492,9 @@ p.cousel_demo{
 @media (min-width:801px) and (max-width:1024px){
 
 	.logo a{
-		
 		position: absolute;
-		background-color: #00A2C1;
 		left: 5px;	
 	}
-	
 	
 	.logo_ges{
 		width: 2em;
@@ -2635,16 +2623,14 @@ p.cousel_demo{
 
 /*Definicion*/
 
-
-
 .card{
-	width: 14em;
+	width: 14.3em;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#FFFFFF;
 	transition: all 400ms ease-out;
 	cursor: default;
-	margin: 0em .4em;
+	
 }
 .card img{
 	width: 100%;
@@ -2769,6 +2755,18 @@ table{
 	
 }
 
+ /* Funcioones destacadas */
+ .features-grid span {
+	width: 120px;
+	height: 120px;
+	background-size: 446%;
+ }
+ .features-grid span.t-icon1 {
+    background-position: -200px 0px;
+ }
+ .features-grid span.t-icon2 {
+    background-position: -406px 0px;
+ }
 
  .features h2 {
 	font-size: 2em;
@@ -2826,11 +2824,10 @@ table{
 
  .download-left  span {
 	background-size:100%;
-	width: 300px;
-	height: 280px;
+	width: 260px;
+	height: 249px;
 	float: left;
 	margin: 1em 2em;
-	
  }
 	
 
@@ -2855,35 +2852,15 @@ table{
  }
 
 
- /* Funcioones desstacadas */
- .features-grid span {
-	width: 100px;
-	height: 100px;
-	background-size: 446%;
- }
- .features-grid span.t-icon1 {
-    background-position: -173px 0px;
- }
- .features-grid span.t-icon2 {
-    background-position: -346px 0px;
- }
 
 
  /* coadyubar con el ministerio publico*/
  
- .Share-instantly-left{
-	background: linear-gradient( #5fd9fe 30% ,#FFFFFF);
-
- }
-
-
-
 .Share-instantly-left span{
-	background-size:90%;
+	background-size:60%;
 	width: 320px;
-	height: 400px;	
+	height: 449px;	
 	margin-top: 1em;
-	
  } 
 
  .feature{
@@ -2897,14 +2874,9 @@ table{
  }
 
  .feature-right span{
-	
-	background-size:75%;
+	background-size:65%;
 	width: 310px;
-	height: 470px;
-	
-
-	
-	
+	height: 390px;
  }
 
  /*
@@ -2921,7 +2893,6 @@ table{
 
 /* */
 
-
 /* beneficios*/
 .container-tarjeta .card-tarjeta{
     position: relative;
@@ -2931,11 +2902,13 @@ table{
 }
 
 
+
 /* Textos parrafos tarjeta 1,2,3*/
 .container-tarjeta .card-tarjeta .tarjeta-1{
-	font-size: small;
+	font-size: x-small;
 	line-height: 2.5em;  
 	padding-bottom: 2em;
+	
 	
 	}
 	
@@ -2961,11 +2934,16 @@ p.cousel_demo{
 }
 
 
-@media (max-width:800px){
+@media (min-width:769px) and (max-width:800px){
 	
 .logo a{
 		position: absolute;
-		left: 5px;	
+		left:7px;
+	}
+	.logo_ges{
+		
+		width: 2em;
+		height: 1em;
 	}
 
 	.header {
@@ -2973,6 +2951,8 @@ p.cousel_demo{
 		top: 0;
 		z-index: 999;
 		right: 0;
+		left: 0;
+		background-color: #00acee;
 		
 	 }
 
@@ -3227,6 +3207,10 @@ table{
 	font-size: 1.5em;
  }
 }
+
+
+
+
 @media (max-width:768px){
 
 .logo a{
