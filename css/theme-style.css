@@ -492,7 +492,7 @@ nav a#pull {
 	transition: 2s;
 }
 
-.card-origen-center:hover{
+.card-origen-par:hover{
 	transform: scale(1.0);
 	box-shadow: 0 10px 20px #FFFFFF;
 	transition: 2s;
@@ -508,7 +508,6 @@ nav a#pull {
   color: #FFFFFF;
 	font-size: x-large;
 }
-
 
 .container-2-card-origen .card-origen-par .titulo-origen-card {
 	text-align: center;
@@ -1414,12 +1413,8 @@ p.img_slider1{
 }
 
 .container-beneficios .container-titulo-beneficios p{
-
 	font-size: large;
-	
 }
-
-
 
 .container-tarjeta{
 	display: flex;
@@ -1485,9 +1480,6 @@ p.img_slider1{
 }
 
 
-
-
-
 /* height: 50px;  */
 
    /*texto ges card*/
@@ -1504,7 +1496,9 @@ p.img_slider1{
 	position: absolute;
 }
 
-
+.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
+	margin-top: 1em;
+}
 .back .tarjeta-1 p{
 	
 	font-size: .9em;
@@ -2246,7 +2240,6 @@ width: 100%;
 	-webkit-text-fill-color: transparent;
 }
 
-
 /*Definicion*/
 
 .card{
@@ -2258,15 +2251,7 @@ width: 100%;
 	cursor: default;
 }
 
-
-/* funciones destacadas*/
-
-
-
-
 /* GES en accion */
-
-
 
 .secc-mapa {
 	text-align: center;
@@ -2297,32 +2282,52 @@ iframe{
  /* beneficios*/
  .container-tarjeta .card-tarjeta{
     position: relative;
-    width: 19em;
-    height: 28em;
-    margin: 15px;
+    width: 16em;
+    height: 26em;
+    margin: 5px;
 }
 
-
-/* Textos parrafos tarjeta 1,2,3*/
-.container-tarjeta .card-tarjeta .tarjeta-1{
-	font-size: small;
-	line-height: 4.2em;  
-	padding-bottom: 2em;
-	
-	}
-	
-
-.container-tarjeta .card-tarjeta .tarjeta-2{
-font-size: small;
-padding-bottom: 1.2em;
-line-height:2em; 
+/*texto ges card*/
+.card-tarjeta .back .title-back {
+	margin-top: 1.1em;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.3em;		
 }
 
-.container-tarjeta .card-tarjeta .tarjeta-3{
+.card-tarjeta .back .sub-title-back{
+	margin-top: 4.7em;
+	font-size: .9em;		
+	position: absolute;
+}
+
+.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
+	margin-top: 1em;
+}
+.back .tarjeta-1 p{
+	
+	font-size: .8em;
+	line-height: 3em;  
+}
+
+.back .tarjeta-2 p{
+	
+	font-size: .8em;
+	line-height:1.5em;
+}
+
+.back .tarjeta-3 p{
+	font-size: .8em;
+	line-height: 2em; 
+}
+
+/* texto bajo card*/
+.card-tarjeta .back .link  {
+	border-top: solid 1px #f3f3f3;
 	font-size: small;
-	padding-bottom: 1.2em;
-	line-height: 2.5em;  
-	}
+	text-align: center;
+	line-height: 70px; /*altura de la linea */
+}
 
 
 
@@ -2750,7 +2755,7 @@ iframe{
 
 table{
 	width: 100%;
-	height: 180px;
+	height: 200px;
 	margin: 10px 0 0 0;
 	
 }
@@ -2897,39 +2902,71 @@ table{
 .container-tarjeta .card-tarjeta{
     position: relative;
     width: 16em;
-    height: 30em;
+    height: 26em;
     margin: 5px;
 }
 
-
-
-/* Textos parrafos tarjeta 1,2,3*/
-.container-tarjeta .card-tarjeta .tarjeta-1{
-	font-size: x-small;
-	line-height: 2.5em;  
-	padding-bottom: 2em;
-	
-	
-	}
-	
-
-.container-tarjeta .card-tarjeta .tarjeta-2{
-font-size: small;
-padding-bottom: 1.2em;
-line-height:2em; 
+/*texto ges card*/
+.card-tarjeta .back .title-back {
+	margin-top: 1.1em;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.3em;		
 }
 
-.container-tarjeta .card-tarjeta .tarjeta-3{
+.card-tarjeta .back .sub-title-back{
+	margin-top: 4.7em;
+	font-size: .9em;		
+	position: absolute;
+}
+
+.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
+	margin-top: 1em;
+}
+.back .tarjeta-1 p{
+	
+	font-size: .9em;
+	line-height: 4em;  
+}
+
+.back .tarjeta-2 p{
+	
+	font-size: .9em;
+	line-height:2.5em;
+}
+
+.back .tarjeta-3 p{
+	font-size: .9em;
+	line-height: 2.2em; 
+}
+
+/* texto bajo card*/
+.card-tarjeta .back .link  {
+	border-top: solid 1px #f3f3f3;
 	font-size: small;
-	padding-bottom: 1.2em;
-	line-height: 1.5em;  
-	}
+	text-align: center;
+	line-height: 70px; /*altura de la linea */
+}
+
+
 	
  
 p.cousel_demo{
 	display:none;
 }
 
+ /* pie de pagina */
+
+ .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:100px;
+    padding: 35px 20px;
+	color: #efebeb;
+}
 
 }
 
