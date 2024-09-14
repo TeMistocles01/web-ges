@@ -486,14 +486,14 @@ nav a#pull {
 
 
 /* card origen start*/
-.card-origen:hover{
-	transform: scale(1.0);
+.card-origen-center:hover{
+	
 	box-shadow: 0 10px 20px #FFFFFF;
 	transition: 2s;
 }
 
 .card-origen-par:hover{
-	transform: scale(1.0);
+	
 	box-shadow: 0 10px 20px #FFFFFF;
 	transition: 2s;
 	
@@ -798,16 +798,19 @@ transition: 7s;
 }
 
 .container-card{
-	width: 100%;
 	padding-top: 2em;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
+	
 }
 
 .card{
-	width: 22.5em;
+	position: relative;
+	margin: 0em .5em;
+	width: 22em;
+	height: max-content;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#FFFFFF;
@@ -868,6 +871,7 @@ transition: 7s;
 
  .input-card[type="checkbox"]:checked ~ label:before{
 	content: "Leer Menos";
+	
 }
 
  .dots:has(~ .input-card[type="checkbox"]:checked){
@@ -878,6 +882,7 @@ transition: 7s;
 	display: inline;
 
 }
+
 /*cerra efceto Ler Más*/
 
 .card .contenido-card h4{
@@ -1798,7 +1803,7 @@ form {
     color:#5fd9fe;
     background: #FFFFFF;
     border:none;
-    border-radius: 16px;
+    border-radius: 12px;
     transition: 1s all;
     cursor:pointer;
 	margin-bottom: 20px;
@@ -2133,10 +2138,14 @@ width: 100%;
 
 	.logo a{
 		position: absolute;
-	
-		right: 17.8em;	
+		right: 17.5em;	
 	}
 	
+	.logo_ges{
+		width: 2.4em;
+		height: 1.5em;
+	}
+
 	.header {
 		position: absolute;
 		top: 0;
@@ -2243,14 +2252,20 @@ width: 100%;
 /*Definicion*/
 
 .card{
-	width: 19em;
+	position: relative;
+	margin: 0em .5em;
+	width: 18.5em;
+	height: max-content;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#FFFFFF;
 	transition: all 400ms ease-out;
 	cursor: default;
 }
-
+.card img{
+	width: 100%;
+	height: 12em;
+}
 /* GES en accion */
 
 .secc-mapa {
@@ -2282,7 +2297,7 @@ iframe{
  /* beneficios*/
  .container-tarjeta .card-tarjeta{
     position: relative;
-    width: 16em;
+    width: 19em;
     height: 26em;
     margin: 5px;
 }
@@ -2629,18 +2644,21 @@ p.cousel_demo{
 /*Definicion*/
 
 .card{
-	width: 14.3em;
+	position: relative;
+	margin: 0em .3em;
+	width: 14em;
+	height: max-content;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#FFFFFF;
 	transition: all 400ms ease-out;
 	cursor: default;
-	
 }
 .card img{
 	width: 100%;
 	height: 10em;
 }
+
 
 .input-card[type="checkbox"]{
 	height: .5em;
@@ -2915,28 +2933,28 @@ table{
 }
 
 .card-tarjeta .back .sub-title-back{
-	margin-top: 4.7em;
+	margin-top: 4.5em;
 	font-size: .9em;		
 	position: absolute;
 }
 
 .back .tarjeta-1, .tarjeta-2,.tarjeta-3{
-	margin-top: 1em;
+	margin-top: .8em;
 }
+
 .back .tarjeta-1 p{
-	
-	font-size: .9em;
-	line-height: 4em;  
+	font-size: .8em;
+	line-height: 3.5em;  
 }
 
 .back .tarjeta-2 p{
 	
-	font-size: .9em;
-	line-height:2.5em;
+	font-size: .8em;
+	line-height:2em;
 }
 
 .back .tarjeta-3 p{
-	font-size: .9em;
+	font-size: .8em;
 	line-height: 2.2em; 
 }
 
