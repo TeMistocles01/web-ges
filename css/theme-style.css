@@ -416,7 +416,7 @@ nav a#pull {
 
 .origen-container{
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
-	padding: 1em 0em;
+	padding: .5em 0em;
 }
 
 
@@ -426,12 +426,14 @@ nav a#pull {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 0em auto 2.5em auto;
 
 
 }
 
 .card-origen-center{
 	width:  57em;
+	height: max-content;
 	padding: 1.5em 1.5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -442,12 +444,13 @@ nav a#pull {
 
 
 .container-2-card-origen{
-	width: 100%;
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	position: relative;
+	margin: 0em auto 2.5em auto;
 
 }
 
@@ -459,7 +462,7 @@ nav a#pull {
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	margin: 1.5em auto;
+	margin: 0em auto;
 }
 
 
@@ -867,6 +870,7 @@ transition: 7s;
 
 .label-card::before{
 	content:"Leer Màs";
+	
 }
 
  .input-card[type="checkbox"]:checked ~ label:before{
@@ -1188,20 +1192,22 @@ iframe{
 
 /* tablas comparativas margen arriba*/
 .container-tablas{
-	margin-top: 1em;
-	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	position: relative;
+	padding: 0em 1.5em;
 }
 
 /* margen de base tabla*/
 
+
 .tabla-container{
-	width: 57em;
-	margin-bottom: 2em;
+	width:  55em;
+	position: relative;
+	margin: 1.5em auto;
+
 }
 
 table{
@@ -1210,6 +1216,7 @@ table{
 	margin: 15px 0 0 0;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
+
 
 
 
@@ -2659,9 +2666,9 @@ p.cousel_demo{
 	height: 10em;
 }
 
-
+/*  altura de la posicion del boton*/
 .input-card[type="checkbox"]{
-	height: .5em;
+	height: .4em;
 	display: block;
 	appearance: none;
 	
@@ -2673,6 +2680,12 @@ p.cousel_demo{
 	background: #5fd9fe;
 	border-radius: 5px;
 	color: #FFFFFF;
+	
+}
+
+.label-card::before{
+	content:"Leer Màs";
+	font-size: small;
 	
 }
 
@@ -2793,12 +2806,15 @@ table{
 
  .features h2 {
 	font-size: 2em;
+	
  }
  .features-grid h3 a {
 	font-size: 0.85em;
  }
+
  .features-grid p {
 	font-size: 0.8125em;
+	
  }
  .Share-instantly-right h3 {
 	font-size: 2em;
@@ -2833,24 +2849,25 @@ table{
 	background: url(../images/download-btns.png) no-repeat -198px 0px;
 	background-size: 190%;
  }
- .download {
-	padding: 40px 0 20px;
- }
+ 
  
  .feature-left {
 	margin: 0 0 2em 0;
  }
 	
+ .download {
+	padding: 40px 0 20px;
+ }
  .download-left {
 	margin-top: 2.2em;
  }
 
  .download-left  span {
 	background-size:100%;
-	width: 260px;
-	height: 249px;
+	width: 230px;
+	height: 219px;
 	float: left;
-	margin: 1em 2em;
+	margin: 1em 1.5em;
  }
 	
 
@@ -2950,7 +2967,7 @@ table{
 .back .tarjeta-2 p{
 	
 	font-size: .8em;
-	line-height:2em;
+	line-height:1.8em;
 }
 
 .back .tarjeta-3 p{
@@ -2963,7 +2980,7 @@ table{
 	border-top: solid 1px #f3f3f3;
 	font-size: small;
 	text-align: center;
-	line-height: 70px; /*altura de la linea */
+	line-height: 50px; /*altura de la linea */
 }
 
 
@@ -3007,7 +3024,7 @@ p.cousel_demo{
 		z-index: 999;
 		right: 0;
 		left: 0;
-		background-color: #00acee;
+		
 		
 	 }
 
@@ -3115,9 +3132,71 @@ p.cousel_demo{
 
   /*Definicion */
 
-/* funciones destacadas  */
+.card{
+	position: relative;
+	margin: 0em .3em;
+	width: 14em;
+	height: max-content;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#FFFFFF;
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card img{
+	width: 100%;
+	height: 10em;
+}
 
-.features-grids{
+/*  altura de la posicion del boton*/
+.input-card[type="checkbox"]{
+	height: .4em;
+	display: block;
+	appearance: none;
+	
+}
+
+ .label-card{
+	position: relative;
+	padding: .4em;
+	background: #5fd9fe;
+	border-radius: 5px;
+	color: #FFFFFF;
+	
+}
+
+.label-card::before{
+	content:"Leer Màs";
+	font-size: small;
+	
+}
+
+
+
+
+
+.features-grid:hover {
+	transform: scale(1.0);
+	background-color: #FFFFFF;
+	border-radius: 25px;
+}
+
+
+
+
+ /* Funcioones destacadas */
+ .features-grid span {
+	width: 120px;
+	height: 120px;
+	background-size: 446%;
+ }
+ .features-grid span.t-icon1 {
+    background-position: -200px 0px;
+ }
+ .features-grid span.t-icon2 {
+    background-position: -406px 0px;
+ }
+ .features-grids{
 	border-radius: 25px;
 	margin: 0em 8em;
 }
@@ -3127,13 +3206,34 @@ p.cousel_demo{
 	font-weight: 400;
 	font-size: 1.1em;
 }
+.features-grid p {
+	font-size: 0.8125em;
+	
+ }
+/* GES en accion*/
 
-.features-grid:hover {
-	transform: scale(1.0);
-	background-color: #FFFFFF;
-	border-radius: 25px;
+.container-accion{
+	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
+	padding-bottom: 1em;
 }
 
+iframe{
+	width: 46em;
+	height: 13em;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+
+.tabla-container{
+	width: 47em;
+	margin-bottom: 2em;
+}
+
+table{
+	width: 100%;
+	height: 200px;
+	margin: 10px 0 0 0;
+	
+}
 
 /*Multiples lugares */
 
@@ -3216,6 +3316,7 @@ table{
 	
 }
 
+
  .head-para {
 	width: 100%;
  }
@@ -3261,30 +3362,290 @@ table{
  .Share-instantly-right h3, .feature h3{
 	font-size: 1.5em;
  }
+
+/* */
+/* coadyubar con el ministerio publico*/
+ 
+.Share-instantly-left span{
+	background-size:60%;
+	width: 320px;
+	height: 449px;	
+	margin-top: 1em;
+ } 
+
+ .feature{
+	background: linear-gradient( #5fd9fe 75% ,#FFFFFF);
+}
+
+ /* configure llamadas de emergencia */
+
+ .feature-right{
+  float:right;
+ }
+
+ .feature-right span{
+	background-size:65%;
+	width: 310px;
+	height: 390px;
+ }
+
+ /* beneficios*/
+.container-tarjeta .card-tarjeta{
+    position: relative;
+    width: 15em;
+    height: 26em;
+    margin: 5px;
+}
+
+/*texto ges card*/
+.card-tarjeta .back .title-back {
+	margin-top: 1.1em;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.3em;		
+}
+
+.card-tarjeta .back .sub-title-back{
+	margin-top: 4.5em;
+	font-size: .9em;		
+	position: absolute;
+}
+
+.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
+	margin-top: .8em;
+}
+
+.back .tarjeta-1 p{
+	font-size: .8em;
+	line-height: 3.5em;  
+}
+
+.back .tarjeta-2 p{
+	
+	font-size: .8em;
+	line-height:1.8em;
+}
+
+.back .tarjeta-3 p{
+	font-size: .8em;
+	line-height: 2.2em; 
+}
+
+/* texto bajo card*/
+.card-tarjeta .back .link  {
+	border-top: solid 1px #f3f3f3;
+	font-size: small;
+	text-align: center;
+	line-height: 50px; /*altura de la linea */
+}
+
+.download-left  span {
+	background-size:100%;
+	width: 230px;
+	height: 219px;
+ }
+ .download-right .grande{
+	color:#fff;
+	font-size:2.2em;
+	font-family: 'nexa_boldregular';
 }
 
 
 
 
-@media (max-width:768px){
+/* pie de pagina */
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:90px;
+    padding: 35px 20px;
+	color: #efebeb;
+}
+
+
+}
+
+
+
+@media (min-width:640px) and (max-width:768px){
+	
+	nav ul {
+		margin-top: 4em;
+	}
 
 .logo a{
 		position: absolute;
-		left: 10px;	
+		right: 530px;
+		top: .1em;
+			
 	}
-
-
 	.logo_ges{
 		width: 2em;
 		height: 1em;
+		
 	}
 	.header {
 		position: absolute;
-		top: 0;
+		top: 20;
 		z-index: 999;
 		right: 0;
+		left: 0;
 	 }
 
+	 .slide-text-info h1 {
+		font-size: 1.5em;
+	 }
+
+	 .callbacks_tabs {
+		left: 36%;
+	 }
+
+	 .callbacks_tabs {
+		top:83%;
+	 }
+	 
+	 
+	 /* Origen */
+
+	.card-origen-center{
+		width:  32em;
+		padding: 1em 1em;
+		border:  3px #FFFFFF solid;
+		border-radius: 5px;
+		transition: 3s;
+		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+		position: relative;
+	}
+	
+	.origen-container .container-center .titulo-origen-card p{
+		color: #FFFFFF;
+		  font-size: large;
+	  }
+
+
+	  .icon-card-police{
+		width: 12em;
+		height:5em;
+		border-radius: 5px;
+	}
+
+	.img-robo{
+		width: 12em;
+		height:7em;
+		border-radius: 5px;
+		
+	}
+	.flex-police-list .container-text-robo P{
+		position: relative;
+		top: 10px;
+		font-size: small;
+		line-height: 1.2;
+	}
+	
+	.container-list{
+		position: relative;
+		top: 10px;
+		margin-bottom: 20px;
+		line-height: 1.4;
+		font-size: small;	
+	}
+	.title-section h2{
+		font-size: 1.5em;
+	}
+
+
+	.container-center{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0em auto 1em auto;
+	
+	
+	}
+	.container-2-card-origen{
+	
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+		margin: 0em auto 1em auto;
+	
+	}
+	
+	.card-origen-par{
+		width:  32em;
+		padding: 1em 1em;
+		border:  3px #FFFFFF solid;
+		border-radius: 5px;
+		transition: 3s;
+		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+		position: relative;
+		margin: 1em auto;
+	}
+
+
+	.container-2-card-origen .card-origen-par p{
+		text-align: center;
+		font-size: small;
+	}
+
+	.list{
+		line-height: 1.3;
+		font-size: small;
+	}
+
+
+	.container-2-card-origen .card-origen-par .titulo-origen-card p{
+
+		color: #FFFFFF;
+		font-size: large;
+	}
+
+	.icono-soborno{
+		width: 11em;
+		height:6em;
+		border-radius: 5px;
+	}
+
+
+	.loader5 {
+		position: relative;
+		overflow: hidden;
+		border-right: 3px solid;
+		height: 2em;
+		animation: typewriter 5s steps(10)  infinite alternate , blink 0.5s steps(10) infinite;
+	  }
+	  
+	
+	  .loader-text {
+		font-size: 20px;
+		font-weight: 600;
+		background: #FFFFFF;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	  }
+
+
+	  .container-4-img-flex{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 1em 0em;
+	}
+	.logo2{
+		width: 100px;
+		height: 80px;
+		border-radius: 5px;
+	}
 
  .top-nav ul li.active a, .top-nav ul li a:hover {
 	color: #2C3E50;
@@ -3303,36 +3664,82 @@ table{
  nav a#pull img {
    margin-right:0;
  }
-}
-@media (max-width:640px){
-	
 
- .header {
-	position: absolute;
-	top: 0;
-	z-index: 999;
-	right: 0;
- }
- .slide-text-info h1 {
-	font-size: 1.5em;
- }
- .callbacks_tabs {
-	left: 36%;
- }
- .footer {
-	padding: 10px 0;
- }
- .gallery p {
-	line-height: 1.5em;
-	width: 100%;
- }
- .callbacks_tabs {
-    top:83%;
- }
- .feature-right span {
-	height: 320px;
- }
+/*Definicion */
+
+.card{
+	position: relative;
+	margin: .8em 0em;
+	width: 22em;
+	height: max-content;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#FFFFFF;
+	transition: all 400ms ease-out;
+	cursor: default;
 }
+.card img{
+	width: 100%;
+	height: 10em;
+}
+
+/*  altura de la posicion del boton*/
+.input-card[type="checkbox"]{
+	height: .4em;
+	display: block;
+	appearance: none;
+	
+}
+
+ .label-card{
+	position: relative;
+	padding: .4em;
+	background: #5fd9fe;
+	border-radius: 5px;
+	color: #FFFFFF;
+	
+}
+
+.label-card::before{
+	content:"Leer Màs";
+	font-size: small;
+	
+}
+
+ /* Funcioones destacadas */
+ .features-grid span {
+	width: 120px;
+	height: 120px;
+	background-size: 446%;
+ }
+ .features-grid span.t-icon1 {
+    background-position: -200px 0px;
+ }
+ .features-grid span.t-icon2 {
+    background-position: -406px 0px;
+ }
+ .features-grids{
+	border-radius: 25px;
+	margin: 0em 5em;
+}
+.features-grid h3 {
+	
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.features-grid p {
+	font-size: 0.8125em;
+	
+ }
+
+}
+
+
+
+
+
+
 @media (max-width:480px){ 
 	
  .slide-text-info h1 {
