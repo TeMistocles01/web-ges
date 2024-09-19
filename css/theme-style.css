@@ -532,26 +532,25 @@ nav a#pull {
 
 
 .flex-police-list{
-	width: 100%;
+	margin-top: .7em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	position: relative;
+	padding: 0em 1em;
 }
 
 .container-list{
-	position: relative;
-	top: 10px;
-	margin-bottom: 20px;
-	line-height: 1.6;
 	
+	width: 50%;
+	line-height: 1.6;
 }
 
 .container-logo-police{
-	position: relative;
+	text-align: center;
+	width: 50%;
 	top: 10px;
-	margin-bottom: 20px;
 	
 
 }
@@ -562,27 +561,21 @@ nav a#pull {
 	border-radius: 5px;
 }
 
-
-.container-logo-robo{
-	position: relative;
-	top: 10px;
-	margin-bottom: 20px;
+ .container-logo-robo{
+	text-align: center;
+	width: 55%;
 	
+	display: block;
 }
 
-.img-robo{
-	width: 18em;
-	height:9em;
-	border-radius: 5px;
-	
-}
 
-.flex-police-list .container-text-robo{
-	width: 40%;
-	position: relative;
-	top: 10px;
+.container-text-robo{
+	width: 45%;
+	text-align: center;
+	margin-top: 1em;
+	line-height: 1.6;	
 	font-size: large;
-	
+	display: block;
 }
 
 .flex-police-list .container-text-robo P{
@@ -590,11 +583,23 @@ nav a#pull {
 	top: 10px;
 	font-size: large;
 	line-height: 1.4;
+	
 }
 
-.list{
-	line-height: 1.6;
+.img-robo{
+	
+	width: 18em;
+	height:9em;
+	border-radius: 5px;
+
+	
 }
+.list{
+	line-height: 1.5;
+
+}
+
+
 
 
 /*
@@ -3821,30 +3826,34 @@ table{
 
 /* pie de pagina */
 
-.pie-pagina .grupo-1{
+.grupo-1{
+	width: 100%;
 	text-align: center;
+}
+
+.pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1200px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap:20px;
-    padding: 35px 0px;
+    grid-gap:0px;
+    padding: 45px 0px;
 	color: #efebeb;
 }
 
 .social-container{
-	
 	width: fit-content;
 	height: fit-content;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 1em;
+	padding: 25px 25px;
 	gap: 20px;
- 
   }
-  
+  .box .social-container {
+	width: 100%;
+	text-align: center;
+} 
 
 
 }
@@ -3854,26 +3863,45 @@ table{
 
 
 
-@media (max-width:480px){ 
+@media (min-width:321px) and (max-width:480px){ 
+
+
+	nav ul {
+		margin-top: 4em;
+	}
+
+.logo a{
+		position: relative;
+		
+		top: .1em;
+			
+	}
+	.logo_ges{
+		width: 1.5em;
+		height: .8em;
+		
+	}
+	.header {
+		position: absolute;
+		top: 20;
+		z-index: 999;
+		right: 0;
+		left: 0;
+	 }
 	
  .slide-text-info h1 {
-	font-size: 1.5em;
-	margin-top:50px;
+	font-size: 1em;
+	margin-top:5px;
  }
  .slide-text-info-btns {
 	display: none;
  }
  .callbacks_tabs {
-	left: 33%;
-	top:80%;
+	left: 25%;
+	top:70%;
  }
  
- .logo a {
-	font-size: 2.5em;
- }
- nav a#pull img {
-	margin-top: -20px;
- }
+ 
   .Share-instantly-left span, .feature-right span {
 	background-size: 59%;
 	width: 180px;
@@ -3898,7 +3926,177 @@ table{
  div.col-md-5.Share-instantly-left, div.col-md-5.feature-right {
 	margin-bottom: -4px;
  }
+
+
+ /* Origen */
+
+ .container-center{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0em auto 1em auto;
 }
+
+
+ .card-origen-center{
+	width:  18em;
+	height: max-content;
+	padding: 1em 1em;
+	border:  3px #FFFFFF solid;
+	border-radius: 5px;
+	transition: 3s;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	position: relative;
+	
+}
+
+
+.origen-container .container-center .titulo-origen-card p{
+	color: #FFFFFF;
+	  font-size: medium;
+  }
+
+
+  .container-logo-robo{
+	width: 100%;
+}
+
+
+.container-text-robo{
+	width: 100%;
+	line-height: 1.2;	
+	font-size: large;
+	
+}
+
+  .icon-card-police{
+	width: 8em;
+	height:4em;
+	border-radius: 5px;
+}
+
+.img-robo{
+	width: 10em;
+	height:5em;
+	border-radius: 5px;
+	
+}
+.flex-police-list .container-text-robo P{
+	width: 5em;
+	position: relative;
+	top: 0px;
+	font-size: small;
+}
+
+
+.title-section h2{
+	font-size: 1.5em;
+}
+
+.container-list{
+	width: 100%;
+	line-height: 1.4;
+	font-size: small;
+	margin-bottom: .5em;
+}
+
+.container-logo-police{
+	text-align: center;
+	width: 100%;
+	top: 10px;
+
+}
+
+.container-2-card-origen{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+	margin: 0em auto 1em auto;
+
+}
+
+.card-origen-par{
+	width:  18em;
+	height: max-content;
+	padding: 1em 1em;
+	border:  3px #FFFFFF solid;
+	border-radius: 5px;
+	transition: 3s;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	position: relative;
+	margin: 1em auto;
+}
+
+
+.container-2-card-origen .card-origen-par p{
+	text-align: center;
+	font-size: small;
+}
+
+.list{
+	
+	line-height: 1.3;
+	font-size: small;
+	
+}
+
+
+.container-2-card-origen .card-origen-par .titulo-origen-card p{
+
+	color: #FFFFFF;
+	font-size: large;
+}
+
+.icono-soborno{
+	width: 11em;
+	height:6em;
+	border-radius: 5px;
+}
+
+
+.loader5 {
+	position: relative;
+	overflow: hidden;
+	border-right: 3px solid;
+	height: 2em;
+	animation: typewriter 5s steps(10)  infinite alternate , blink 0.5s steps(10) infinite;
+  }
+  
+
+  .loader-text {
+	font-size: 20px;
+	font-weight: 600;
+	background: #FFFFFF;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+
+  .container-4-img-flex{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 1em 0em;
+}
+.logo2{
+	width: 100px;
+	height: 80px;
+	border-radius: 5px;
+}
+
+
+}
+
+
+
+
 @media (max-width:320px){
 
 	
