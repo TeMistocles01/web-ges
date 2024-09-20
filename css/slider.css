@@ -752,8 +752,35 @@
 
 
 
- @media all and (max-width:480px){
- 	.da-slider{
+ @media all and (min-width:321px) and (max-width:480px){
+	.da-slider {
+		width: 280px;
+ 		height:170px;
+		 left: 45px;
+		
+    }
+
+	/* slider bajo*/
+	.da-slider1{
+		
+		width: 280px;
+ 		height:170px;
+		left: -20px;
+		float: inline-start;
+		
+
+	}
+
+	.da-slide {
+		top: -83px;
+	}
+
+	.da-dots {
+		right:75%;
+		bottom:5px;
+	}
+	/*
+	.da-slider{
  		height:240px;
  	}
  	.da-slide p{
@@ -775,7 +802,12 @@
 	.da-slide {
 		top: -78px;
 	}
+
+	*/
 }
+
+
+
  @media all and (max-width:320px){
  	.da-slide p{
  		top:4em;
