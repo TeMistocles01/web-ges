@@ -48,7 +48,9 @@ p,th,td{
 	text-decoration:none;
 }
 .top-header{
+	width: 100%;
 	position:relative;
+	
 }
 
 .header{
@@ -258,6 +260,7 @@ nav a#pull {
   position: relative;
   float: left;
   width: 100%;
+ 
 }
 .callbacks {
   position: relative;
@@ -426,7 +429,7 @@ nav a#pull {
 
 /* bajar letras slider principal*/
 .slide-text-info{
-	margin-top:7%;
+	margin-top:2%;
 }
 .slide-text-info-btns{
 	margin-top:2.5em;
@@ -435,10 +438,16 @@ nav a#pull {
 
 /* origen */
 
+
 .origen-container{
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 	padding: .5em 0em;
 }
+
+
+
+
+
 
 .container-center{
 	width: 100%;
@@ -447,16 +456,20 @@ nav a#pull {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0em auto 2.5em auto;
+	
+	
 }
 
 .card-origen-center{
-	width:  57em;
+	width:  50%;
 	height: max-content;
 	padding: 1.5em 1.5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	
+	
 	
 }
 
@@ -471,7 +484,7 @@ nav a#pull {
 }
 
 .card-origen-par{
-	width:  57em;
+	width:  48%;
 	padding: 1.5em 1.5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -1199,45 +1212,80 @@ transition: 7s;
 	height: 57em;
 	background: url(../images/slide1.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
+	position: relative;
+	
+}
+.container-colum{
+	padding: 2em 0em;
+}
+
+.features .img-derecha-columna{
+	
+	float: right;
+	
+}
+
+.features .img-izquierda-columna{
+	
+	float: left;
+	
 }
 
 
-.container-catalogo{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	
-	margin-top: 28em;
-	margin-left: auto;
-	margin-right: auto;
-	
-} 
+
 
 
 /*  cambia tamaño de card*/
 .container-img-multiple figure{
+	width: 24em;
+	height: 15em;
 	position:relative;
-	width: 19em;
-    height: 17em;
+	display: flex;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 0em .3em;
+	margin: 2em 1em;
 	
  }
+
+
+
+/*  
+
+.container-derecha-izquierda .container-img-multiple .img-card{
+	width: 100%;
+	height: 17em;
+}
+
+.container-catalogo .container-img-multiple .img-card{
+	width: 100%;
+	height: 17em;
+}
+
+*/
+
+
+
+
+
+
+
   
-
-
-
 .container-title{
 	text-align: center;
 	padding: 0em 0em .5em 0em;
    }
    
 .bloke-superior{
-	text-align: center;
+	width: max-content;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
 	padding: 0em 0em 1.5em 0em;
 }
 
@@ -1250,12 +1298,14 @@ transition: 7s;
 }
 
 
-
+/*  
 .escudo{
 	width: 30em;
 	height: 15em;
 	border-radius: 10px;
 }
+
+*/
 
 .list-lugares {
 	font-size: large;
@@ -1531,14 +1581,14 @@ iframe{
 /* margen de base tabla*/
 
 .tabla-container{
-	width:  55em;
+	width:  48%;
 	height: max-content;
 	margin: 0em auto;
 
 }
 
 table{
-	width: 55em;
+	width: 100%;
 	height: 250px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
@@ -1777,8 +1827,8 @@ p.img_slider1{
 /*--Beneficios---*/
 
 .container-beneficios{
-    padding: 2em 0em;
-	background: linear-gradient( #5fd9fe 96% ,#FFFFFF);
+    padding: 3em 0em;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
 }
 
 .container-titulo-beneficios{
@@ -1805,14 +1855,15 @@ p.img_slider1{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 60vh;
+	padding-bottom: 1em;
 	
 }
 
 .container-tarjeta .card-tarjeta{
     position: relative;
     width: 22em;
-    height: 28em;
+    height: 35em;
     margin: 15px;
 }
 
@@ -2117,9 +2168,26 @@ form {
 
 /*----- start-download-----*/
 .download{
+
+	width: 100%;
+	height: 60em;
+	background: url(../images/card-nuevo.png)no-repeat center center fixed;;
+	background-size: 100% 100%;
+	position: relative;
+
+	/*
+	
 	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
 	padding: 7em 0;
+	
+	*/
 }
+
+.download .container-completo {
+	margin-top: 12em;
+	
+}
+
 .download-left{
 	text-align: center;
 	margin-top: 4.2em;
@@ -2137,7 +2205,8 @@ form {
 	border-radius:50%;
 	-webkit-border-radius:20%;
 	/*box-shadow: 0px 0px 15px 15px #777777;*/
-	-webkit-box-shadow: 0px 0px 15px 15px #5F7D8B;
+	/* -webkit-box-shadow: 0px 0px 15px 15px #5F7D8B;       */
+	
 	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	transition: 400ms;
@@ -2177,6 +2246,7 @@ form {
 
 */
 .download-right ul li a span{
+
 	width: 238px;
 	height: 72px;
 	display: inline-block;
@@ -2197,6 +2267,7 @@ form {
  font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
+  color: #FFFFFF;
  
 }
 
@@ -2205,6 +2276,7 @@ form {
 	font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #FFFFFF;
 	
    }
    
@@ -2247,8 +2319,9 @@ form {
 /*------start-compatibility----*/
 .compatibility{
 	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
-	
-	padding: 4em 0;
+	width: 100%;
+	height: 32em;
+
 }
 .compatibility h3{
 	
@@ -2257,9 +2330,10 @@ form {
 	font-style: normal;
 	font-size: 1.2em;
 	border-bottom: 2px solid #FFFFFF;
-	padding-bottom: 0.5em;
-	margin-bottom: 0.5em;
-	margin-top: 0;
+	padding: 1.5em 0em;
+	
+	
+	
 }
 .compatibility .compatibility-grids .compatibility-left h4{
 	
@@ -2267,6 +2341,8 @@ form {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 1.1em;
+	padding: 1em 0em;
+	
 }
 
 
@@ -2275,22 +2351,29 @@ form {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 1.1em;
+	padding: 1em 0em;
 }
 
 
 .compatibility p{
 	
-	line-height: 1.6em;
+	line-height: 1.9em;
 	font-size:1em;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
+.compatibility .list-inline{
+	margin-top: 2em;
+}
 
 .compatibility  a span:hover{
-	opacity:0.8;
+	opacity:0.5;
+	
+	 
 }
+
 a.cl-icon1 span{
 	height: 39px;
 	width: 19px;
@@ -2438,6 +2521,7 @@ a.cl-icon8-l span{
 
 .pie-pagina{
 width: 100%;
+
 	background: url(../images/bg.jpg);
     
 }
@@ -2449,7 +2533,7 @@ width: 100%;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:250px;
-    padding: 45px 0px;
+    padding: 60px 0px;
 	color: #efebeb;
 }
 
@@ -2640,15 +2724,21 @@ width: 100%;
 	font-size: 1.7em;
 }
 
+.container-center{
+	
+	margin: 0em auto 1.5em auto;
+	
+	
+}
 .card-origen-center{
-	width:  55em;
-	padding: 1em 1em;
+	width:  80%;
+	padding: 1.5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	margin: .8em auto;
+	
 	
 }
 
@@ -2678,16 +2768,26 @@ width: 100%;
 	line-height: 1;
 }
 
+.container-2-card-origen{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+	margin: 0em auto 1.5em auto;
+
+}
+
 
 .card-origen-par{
-	width:  55em;
-	padding: 1em 1em;
+	width:  80%;
+	padding: 1.5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	margin: .8em auto;
+	margin: 1.5em 0em;
+	
 	
 }
 
@@ -2733,6 +2833,30 @@ width: 100%;
 
 /* GES en accion */
 
+
+.container-tablas{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 2em .5em;
+}
+
+/* margen de base tabla*/
+
+.tabla-container{
+	width:  48%;
+	height: max-content;
+	margin: 0em auto;
+
+}
+
+table{
+	width: 100%;
+	height: 240px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+
 .secc-mapa {
 	text-align: center;
     height: min-content;	
@@ -2744,34 +2868,35 @@ iframe{
 }
 
 
-.tabla-container{
-	margin: 0em  auto 3em auto;
 
+
+
+/* catalogo*/
+
+.features{
+	width: 100%;
+	height: 50em;
+	background: url(../images/slide1.jpg)no-repeat center center fixed;;
+	background-size: 100% 100%;
+	position: relative;
 }
 
 
-/* multiples lugares*/
+.container-colum{
+	padding: 1em 0em;
+}
 
-.container-catalogo{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 15em;
-	margin-left: auto;
-	margin-right: auto;
-	
-} 
-
+/*  cambia tamaño de card*/
 .container-img-multiple figure{
+	width: 18em;
+	height: 14em;
 	position:relative;
-	width: 20em;
-    height: 250px;
+	display: flex;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 0em .3em;
+	margin: 1.5em .3em;
 	
  }
 
@@ -3045,17 +3170,7 @@ p.cousel_demo{
 	
  }
 
- .container-img-multiple figure{
-	position:relative;
-	width: 20em;
-    height: 250px;
-	cursor: pointer;
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 0em .5em;
-	
- }
+ 
 
 /*origen */
 
@@ -3072,15 +3187,22 @@ p.cousel_demo{
 	font-size: 1.5em;
 }
 
+.container-center{
+	
+	margin: 0em auto 1em auto;
+	
+	
+}
+
 .card-origen-center{
-	width:  45em;
-	padding: 1em 1em;
+	width:  90%;
+	padding: 1.5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	margin: .8em auto;
+	
 	
 }
 
@@ -3112,17 +3234,17 @@ p.cousel_demo{
 
 
 .card-origen-par{
-	width:  45em;
-	padding: 1em 1em;
+	width:  90%;
+	padding: 1.5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	margin: .8em auto;
+	margin: 1em 0em;
+	
 	
 }
-
 
 .container-2-card-origen .card-origen-par .titulo-origen-card p{
 	font-size: larger;
@@ -3199,37 +3321,39 @@ p.cousel_demo{
 	border-radius: 25px;
 }
 
-/* multiples lugares*/
+/* catalogo*/
 
 
-.container-multiples-sitios{
-	margin-top: .7em;
-	   
-   }
+.features{
+	width: 100%;
+	height: 45em;
+	background: url(../images/slide1.jpg)no-repeat center center fixed;;
+	background-size: 100% 100%;
+	position: relative;
+}
 
-   .container-catalogo{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	
-	margin-top: 18em;
-	margin-left: auto;
-	margin-right: auto;
-	
-} 
-   
+
+.container-colum{
+	padding: 1em 0em;
+}
+
+/*  cambia tamaño de card*/
 .container-img-multiple figure{
+	width: 14em;
+	height: 13em;
 	position:relative;
-	width: 15em;
-    height: 230px;
+	display: flex;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 0em .3em;
+	margin: 1em .3em;
 	
  }
+
+
+   
+
 
 /* Text-grande titulo */
 .container-img-multiple figure:hover > .capa .title-foto{
@@ -3289,6 +3413,7 @@ table{
 }
 
  /* Funcioones destacadas */
+
  .features-grid span {
 	width: 120px;
 	height: 120px;
@@ -3349,7 +3474,7 @@ table{
  
  
  .feature-left {
-	margin: 0 0 2em 0;
+	margin: 0em 0em 2em 0em;
  }
 	
  .download {
