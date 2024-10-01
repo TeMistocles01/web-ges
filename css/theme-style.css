@@ -1092,12 +1092,12 @@ transition: 7s;
 */
 
 
-
+/* compacta textos de cada funcion  */
 .features-grids{
 
 	/*background-color: #FFFFFF;*/
 	border-radius: 25px;
-	padding: 0em 1em;
+	padding: 0em .5em;
 }
 
 .features-grid:hover {
@@ -1106,8 +1106,6 @@ transition: 7s;
 	border-style: double;
 	border-radius: 25px;
 	color: #FFFFFF;
-	
-	
 	/*
 	
 	background-color: #5fd9fe;
@@ -1131,29 +1129,29 @@ transition: 7s;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	
 }
 
 
 
-.features-grid p{
+.features-grids .features-grid p{
 	font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
 	font-size: 1.2em;
+	line-height: .5;
 	
-	margin: 0 auto;
 }
+
+
 .features-grid span.t-icon1{
 	background-position: -400px 0px;
 }
 .features-grid span.t-icon2{
 	background-position: -799px 0px;
 }
-.features-grids{
-	margin-top: 2em;
-}
+
 
 
 /* animacion*/
@@ -1626,7 +1624,7 @@ table{
 .container-lis2 p{
 	
 font-family: "Ubuntu", sans-serif;
-font-weight: 300;
+font-weight: 400;
 font-style: normal;
 font-size: 1.2em;
 color: #FFFFFF;
@@ -1637,7 +1635,7 @@ color: #FFFFFF;
 	font-size: medium;
 	margin-top: .5em;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal; 
   color: #FFFFFF;	
 }
@@ -1933,12 +1931,13 @@ p.img_slider1{
 }
 
 .card-tarjeta .back .sub-title-back{
-	margin-top: 4.7em;
-	font-size: 1em;		
-	position: absolute;
-	font-family: "Ubuntu", sans-serif;
+  margin-top: 4em; 
+  font-size: 1em;		
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
+  line-height: 1.2em;
 }
 
 .back .tarjeta-1, .tarjeta-2,.tarjeta-3{
@@ -1956,7 +1955,7 @@ p.img_slider1{
 .back .tarjeta-2 p{
 	
 	font-size: 1em;
-	line-height:1.8em;
+	line-height:2.4em;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -1964,7 +1963,7 @@ p.img_slider1{
 
 .back .tarjeta-3 p{
 	font-size: 1em;
-	line-height: 1.8em;
+	line-height: 2.4em;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal; 
@@ -2190,7 +2189,7 @@ form {
 
 .download-left{
 	text-align: center;
-	margin-top: 4.2em;
+	margin-top: 6em;
 }
 
 .download-left span{
@@ -2833,7 +2832,6 @@ width: 100%;
 
 /* GES en accion */
 
-
 .container-tablas{
 	display: flex;
 	flex-direction: row;
@@ -2900,18 +2898,24 @@ iframe{
 	
  }
 
+/* Funciones destacadas*/
 
+/* compacta textos de cada funcion  */
+.features-grids{
 
-
- .features-grid:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 	border-radius: 25px;
-	
+	padding: 0em .4em;
+}
+ 
+.features-grids .features-grid p{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	font-size: 1em;
+	line-height: .5;
 	
 }
-
  /* beneficios*/
  .container-tarjeta .card-tarjeta{
     position: relative;
@@ -3077,16 +3081,23 @@ iframe{
  .download {
 	padding: 40px 0 20px;
  }
+
+ /* la imagen */
  .download-left {
-	margin-top: 2.2em;
+	
+	
+	margin-top: 3em;
+	
+	
  }
 
  .download-left  span {
 	background-size:100%;
 	width: 260px;
 	height: 249px;
-	
+	float: right;
  }
+
  .download-right ul li a span {
 	width: 150px;
 	height: 50px;
@@ -3112,12 +3123,12 @@ p.cousel_demo{
 
 .pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+  
+    margin:auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:180px;
-    padding: 35px 30px;
+    grid-gap:200px;
+    padding: 2.5em 3em 2.5em 3em;
 	color: #efebeb;
 }
 
