@@ -467,10 +467,7 @@ nav a#pull {
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	
-	
-	
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);	
 }
 
 
@@ -1132,10 +1129,7 @@ transition: 7s;
     font-weight: 400;
     font-style: normal;
 	font-size: 1.2em;
-	
 }
-
-
 
 .features-grids .features-grid p{
 	font-family: "Ubuntu", sans-serif;
@@ -1232,9 +1226,6 @@ transition: 7s;
 }
 
 
-
-
-
 /*  cambia tamaño de card*/
 .container-img-multiple figure{
 	width: 24em;
@@ -1266,12 +1257,6 @@ transition: 7s;
 */
 
 
-
-
-
-
-
-  
 .container-title{
 	text-align: center;
 	padding: 0em 0em .5em 0em;
@@ -2834,7 +2819,6 @@ width: 100%;
 }
 
 /*Definicion*/
-
 .card{
 	position: relative;
 	margin: 0em .5em;
@@ -2887,12 +2871,7 @@ iframe{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
-
-
-
-
 /* catalogo*/
-
 .features{
 	width: 100%;
 	height: 50em;
@@ -2987,9 +2966,6 @@ iframe{
 	text-align: center;
 	line-height: 70px; /*altura de la linea */
 }
-
-
-
 
  .features h2 {
 	font-size: 2em;
@@ -3355,6 +3331,14 @@ p.cousel_demo{
   line-height: .5;
 	
 }
+.features-grid:hover {
+	cursor: pointer;
+	border-style: double;
+	border-radius: 25px;
+	color: #FFFFFF;
+	
+}
+
 
 
 
@@ -3363,8 +3347,6 @@ p.cousel_demo{
 
 
 /* catalogo*/
-
-
 .features{
 	width: 100%;
 	height: 45em;
@@ -3391,9 +3373,6 @@ p.cousel_demo{
 	margin: 1em .3em;
 	
  }
-
-
-   
 
 
 /* Text-grande titulo */
@@ -3705,6 +3684,8 @@ table{
 }
 
 
+
+
 /*ficha tecnica*/
 
 .compatibility{
@@ -3780,10 +3761,11 @@ p.cousel_demo{
 .logo a{
 		position: absolute;
 		left:7px;
+		top: 10px;
 	}
 	.logo_ges{
 		
-		width: 2em;
+		width: 1.5em;
 		height: 1em;
 	}
 
@@ -3826,6 +3808,8 @@ p.cousel_demo{
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
 	
 }
+
+
 .titles-principal{
 	padding: .3em 0em;
 }
@@ -3833,19 +3817,37 @@ p.cousel_demo{
 .titles-principal h2{
 	font-size: 1.5em;
 }
-
+.container-center{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0em auto .7em auto;
+	
+	
+}
 .card-origen-center{
-	width:  45em;
+	width:  90%;
 	padding: 1.5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	
-	
 }
 
+.icon-card-police{
+	width: 12em;
+	height:5em;
+	border-radius: 5px;
+}
+.img-robo{
+	width: 14em;
+	height:7em;
+	border-radius: 5px;
+	
+}
 
 .origen-container .container-center .titulo-origen-card p{
 	font-size: larger;
@@ -3875,7 +3877,7 @@ p.cousel_demo{
 
 
 .card-origen-par{
-	width:  45em;
+	width:  90%;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -3886,8 +3888,22 @@ p.cousel_demo{
 }
 
 .icono-soborno{
-	width: 12em;
+	width: 14em;
 	height:6em;
+	border-radius: 5px;
+}
+
+.container-4-img-flex{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: .5em 0em;
+}
+.logo2{
+	width: 120px;
+	height: 90px;
 	border-radius: 5px;
 }
 
@@ -3944,11 +3960,7 @@ p.cousel_demo{
 	font-size: small;	
 }
 
-.features-grid:hover {
-	transform: scale(1.0);
-	background-color: #FFFFFF;
-	border-radius: 25px;
-}
+
 
 
 
@@ -3958,9 +3970,11 @@ p.cousel_demo{
 	width: 120px;
 	height: 120px;
 	background-size: 446%;
+	
  }
  .features-grid span.t-icon1 {
     background-position: -200px 0px;
+	
  }
  .features-grid span.t-icon2 {
     background-position: -406px 0px;
@@ -3970,13 +3984,14 @@ p.cousel_demo{
 	margin: 0em 8em;
 }
 
-.features-grid h3 {
+.features-grids .features-grid h3 {
 	
-	font-weight: 400;
+
 	font-size: 1.1em;
 }
-.features-grid p {
-	font-size: 0.8125em;
+.features-grids .features-grid p {
+	font-size: 1em;
+	
 	
  }
 
@@ -3988,11 +4003,28 @@ p.cousel_demo{
 	padding-bottom: 1em;
 }
 
+.text-tabla {
+	
+	text-align: center;
+	padding: .8em 0em;
+	
+}
+
+.container-tablas{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: .5em .5em;
+	
+}
+
 iframe{
 	width: 45em;
 	height: 13em;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
+
 
 .tabla-container{
 	width: 47em;
@@ -4007,31 +4039,32 @@ table{
 	
 }
 
-/*Multiples lugares */
+
+
+
+/* Catalogo*/
 
 .features{
-	padding-bottom: 1em;
-	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
-	
+	width: 100%;
+	height: 45em;
+	background: url(../images/slide1.jpg)no-repeat center center fixed;;
+	background-size: 100% 100%;
+	position: relative;
 }
-.container-multiples-sitios{
-	margin-top: .7em;
-	   
-   }
-   .bloke-superior{
-	text-align: center;
-	padding: 0em 0em .5em 0em;
-}
+
    
+   
+/*  cambia tamaño de card*/
 .container-img-multiple figure{
+	width: 14em;
+	height: 13em;
 	position:relative;
-	width: 15em;
-    height: 230px;
+	display: flex;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 0em .3em;
+	margin: 1em .3em;
 	
  }
 
@@ -4064,30 +4097,57 @@ table{
 	
 }
 
-/* GES en accion */
 
-.container-accion{
-	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
-	padding-bottom: 1em;
-}
 
-iframe{
-	height: 13em;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-}
 
-.tabla-container{
-	width: 45em;
-	height: max-content;
-	margin: 0em  auto 2em auto;
-}
+/*ficha tecnica*/
 
-table{
+.compatibility{
+	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
 	width: 100%;
-	height: 180px;
-	margin: 10px 0 0 0;
+	height: 32em;
+
+}
+
+.compatibility h3{	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.1em;
+	border-bottom: 2px solid #FFFFFF;
+	padding: .5em 0em;	
+}
+
+.compatibility-grids .compatibility-right h4{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	padding: .5em 0em;
+}
+.compatibility .compatibility-grids .compatibility-left h4{
+	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	padding: .5em 0em;
 	
 }
+.compatibility p{
+	
+	line-height: 1.2em;
+	
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  
+}
+
+.compatibility .list-inline{
+	margin-top: .5em;
+}
+
 
 
  .head-para {
@@ -4096,9 +4156,15 @@ table{
  div.owl-carousel1 {
 	width: 100%;
  }
+
+
+ /* centrado de telefono celular*/
+/*  
  div.col-md-5.Share-instantly-left, div.col-md-5.feature-right{
     text-align: center;
  }
+
+ */
 
  .Share-instantly-left{
 	 background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
@@ -4163,12 +4229,25 @@ table{
 	height: 390px;
  }
 
+
+
  /* beneficios*/
 .container-tarjeta .card-tarjeta{
     position: relative;
     width: 15em;
     height: 26em;
-    margin: 5px;
+    margin: 5px;	
+}
+
+
+/*Margen en todos los costados*/
+.card-tarjeta .back {
+    transform: perspective(600px) rotateY(180deg);
+	padding: 0em .7em;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+    box-shadow: 0 5px 10px #000;
 }
 
 /*texto ges card*/
@@ -4185,32 +4264,70 @@ table{
 	position: absolute;
 }
 
-.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
-	margin-top: .8em;
-}
-
-.back .tarjeta-1 p{
-	font-size: .8em;
-	line-height: 3.5em;  
-}
-
-.back .tarjeta-2 p{
+/* Beneficios card frontal*/
+.card-tarjeta .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 45px;
+    color: #FFFFFF;
+    background: rgba(0,0,0,.4); /*rgba(0,0,0,.4); */
+    text-align: center;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1em;
 	
-	font-size: .8em;
-	line-height:1.8em;
+	/*rgba(95,217,254,.9);*/
 }
 
-.back .tarjeta-3 p{
-	font-size: .8em;
-	line-height: 2.2em; 
+/*texto ges aplication card*/
+.card-tarjeta .back .title-back {
+	margin-top: 1.1em;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1em;
+			
 }
 
 /* texto bajo card*/
 .card-tarjeta .back .link  {
 	border-top: solid 1px #f3f3f3;
-	font-size: small;
+	font-size: .7em;
 	text-align: center;
-	line-height: 50px; /*altura de la linea */
+	line-height: 70px; /*altura de la linea */
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.back .tarjeta-1 p{
+	line-height: 2.2em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;  
+  font-size: .8em;
+}
+
+
+.back .tarjeta-2 p{
+	font-size: .8em;
+	line-height:1.5em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.back .tarjeta-3 p{
+	font-size: .8em;
+	line-height: 2em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal; 
 }
 
 .download-left  span {
@@ -4246,10 +4363,15 @@ table{
 }
 
 @media (min-width:640px) and (max-width:768px){
+
+	/* bajar letras slider principal*/
+.slide-text-info{
+	margin-top:4%;
+}
 	
 	/*da margen hacia bajo al desplegar el menu de amburgesa */
 	nav ul {
-		margin-top: 12em;
+		margin-top: 10em;
 		
 	}
 
@@ -4273,7 +4395,7 @@ table{
 	 }
 
 	 .slide-text-info p {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	 }
 
 	 .callbacks_tabs {
@@ -4287,8 +4409,26 @@ table{
 	 
 	 /* Origen */
 
+
+	 .titles-principal{
+	
+		text-align: center;
+		padding: 1em 0em;
+	}
+	
+	
+	
+	/* titulos principales*/
+	.titles-principal {
+		font-family: "Ubuntu", sans-serif;
+	  font-weight: 400;
+	  font-style: normal;
+		color: #FFFFFF;
+		font-size: .9em;
+	}
+
 	.card-origen-center{
-		width:  32em;
+		width:  90%;
 		padding: 1em 1em;
 		border:  3px #FFFFFF solid;
 		border-radius: 5px;
@@ -4356,7 +4496,7 @@ table{
 	}
 	
 	.card-origen-par{
-		width:  32em;
+		width:  90%;
 		padding: 1em 1em;
 		border:  3px #FFFFFF solid;
 		border-radius: 5px;
@@ -4417,6 +4557,8 @@ table{
 		justify-content: space-around;
 		margin: 1em 0em;
 	}
+
+
 	.logo2{
 		width: 100px;
 		height: 80px;
@@ -4483,7 +4625,24 @@ table{
 	
 }
 
- /* Funcioones destacadas */
+ /* Funciones destacadas */
+
+ .features-grid:hover {
+	cursor: pointer;
+	border-style: double;
+	border-radius: 25px;
+	color: #FFFFFF;
+	
+}
+
+.features-grids .features-grid p{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	font-size: .9em;
+	line-height: .5;
+	
+}
  .features-grid span {
 	width: 120px;
 	height: 120px;
@@ -4510,20 +4669,87 @@ table{
 	
  }
 
- /* multiples sitios*/
+ /* Catalogo*/
 
- .container-img-multiple figure{
+.features{
+	width: 100%;
+	height: 45em;
+	background: url(../images/slide1.jpg)no-repeat center center fixed;;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+   
+   
+/*  cambia tamaño de card*/
+.container-img-multiple figure{
+	width: 12em;
+	height: 13em;
 	position:relative;
-	width: 23em;
-    height: 230px;
+	display: flex;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 1em 0em;
+	margin: 1em .3em;
 	
  }
 
+/* Text-grande titulo */
+.container-img-multiple figure:hover > .capa .title-foto{
+	font-size: large;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+
+/* Text-grande titulo */
+.container-img-multiple figure .capa .title-foto {
+	font-size: large;
+	color: #FFFFFF;	
+	margin-bottom: 120px;
+	transition: all 400ms ease-out;
+	margin-top: 30px;
+	
+}
+
+/* texto pequeño imagen */
+.container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: smaller;
+	line-height: 1;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+	
+}
+
+/*Ges en accion */
+
+.text-tabla {
+	
+	text-align: center;
+	padding: .5em 0em;
+	
+}
+
+.text-tabla p{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 1.4em;
+	color: #FFFFFF;
+	display: block;
+}
+
+.container-tablas{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: .2em .5em;
+	
+}
  .text-map2 {
 	text-align: center;
 	padding: 0em 5em;
@@ -4582,7 +4808,7 @@ table{
 }
 
 
-/* Beneficios*/
+
 
 
 
@@ -4595,6 +4821,12 @@ table{
 	height: 315px;	
 	margin-top: 1em;
  } 
+ .Share-instantly-left{
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+
+
+}
+
 
  .feature{
 	background: linear-gradient( #5fd9fe 75% ,#FFFFFF);
@@ -4641,6 +4873,56 @@ table{
 }
 
 
+/*ficha tecnica*/
+
+.compatibility{
+	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
+	width: 100%;
+	height: 32em;
+
+}
+
+.compatibility h3{	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.1em;
+	border-bottom: 2px solid #FFFFFF;
+	padding: .5em 0em;	
+}
+
+.compatibility-grids .compatibility-right h4{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	padding: .5em 0em;
+}
+.compatibility .compatibility-grids .compatibility-left h4{
+	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	padding: .5em 0em;
+	
+}
+.compatibility p{
+	
+	line-height: 1.2em;
+	
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  
+}
+
+.compatibility .list-inline{
+	margin-top: .5em;
+}
+
+
+
 
 /* pie de pagina */
 
@@ -4679,6 +4961,11 @@ table{
 
 @media (min-width:321px) and (max-width:480px){ 
 
+	/* bajar letras slider principal*/
+.slide-text-info{
+	margin-top:6%;
+}
+
 
 	.top-nav ul li.active a, .top-nav ul li a:hover {
 		color: #2C3E50;
@@ -4716,7 +5003,7 @@ table{
 
 	
  .slide-text-info p {
-	font-size: 1em;
+	font-size: 1.2em;
 	margin-top:5px;
  }
  .slide-text-info-btns {
@@ -4772,7 +5059,7 @@ table{
 
 
  .card-origen-center{
-	width:  18em;
+	width:  80%;
 	height: max-content;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
@@ -4849,7 +5136,7 @@ table{
 }
 
 .card-origen-par{
-	width:  18em;
+	width:  80%;
 	height: max-content;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
@@ -4996,10 +5283,14 @@ table{
 	font-size: 1.1em;
 }
 
-.features-grid p {
-	font-size: 0.8125em;
+.features-grids .features-grid p{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	font-size: .9em;
+	line-height: .5;
 	
- }
+}
 
  .features-grid:hover {
 	cursor: pointer;
@@ -5043,7 +5334,27 @@ font-family: "Ubuntu", sans-serif;
 	font-size: 1em;
 
 }
- /* multiples sitios*/
+ /* catalogo*/
+
+ .features{
+	width: 100%;
+	height: 127em;
+	background: url(../images/slide1.jpg)no-repeat center center fixed;;
+	background-size: 100% 100%;
+	position: relative;
+	
+}
+.container-colum{
+	padding: 34em 2em;
+}
+
+.features .img-derecha-columna{
+	width: 100%;	
+}
+
+.features .img-izquierda-columna{
+	width: 100%;	
+}
 
  #margin{
 	padding: 1em 0em;
@@ -5051,13 +5362,13 @@ font-family: "Ubuntu", sans-serif;
 
  .container-img-multiple figure{
 	position:relative;
-	width: 18em;
+	width: 100%;
     height: 230px;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: .5em 0em;
+	margin: .8em 0em;
  }
 
 
@@ -5332,9 +5643,6 @@ height: 3.5em;
 
 @media (max-width:320px){
 
-	
-	
-	
 
  .footer-right input[type="text"] {
     width:100%;
