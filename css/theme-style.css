@@ -6,6 +6,7 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
+	
    
 }
 body a{
@@ -1204,13 +1205,15 @@ transition: 7s;
 .features{
 	width: 100%;
 	height: 57em;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;;
+	background: url(../images/slide1.jpg)no-repeat center fixed;
 	background-size: 100% 100%;
 	position: relative;
+	
 	
 }
 .container-colum{
 	padding: 2em 0em;
+	
 }
 
 .features .img-derecha-columna{
@@ -2101,13 +2104,13 @@ form {
 
   /*Focus color input */
   .inputGroup :is(input:focus, input:valid) {
-	color: #5fd9fe;
+	color: rgb(100, 100, 100);
   }
 
   
   /*Focus color input */
   .inputGroup :is(textarea:focus, textarea:valid) {
-	color: #5fd9fe;
+	color: rgb(100, 100, 100);
   }
 
   /*Botones formulario*/
@@ -3353,6 +3356,7 @@ p.cousel_demo{
 	background: url(../images/slide1.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
 	position: relative;
+	
 }
 
 
@@ -3686,7 +3690,11 @@ table{
 
 
 
-/*ficha tecnica*/
+/*.download-left{
+	text-align: center;
+	margin-top: 6em;
+}
+ tecnica*/
 
 .compatibility{
 	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
@@ -4049,6 +4057,7 @@ table{
 	background: url(../images/slide1.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
 	position: relative;
+	
 }
 
    
@@ -4328,6 +4337,9 @@ table{
   font-weight: 200;
   font-style: normal; 
 }
+
+/*adquirir*/
+
 
 .download-left  span {
 	background-size:100%;
@@ -4676,6 +4688,7 @@ table{
 	background: url(../images/slide1.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
 	position: relative;
+	
 }
 
    
@@ -4848,7 +4861,6 @@ table{
  /*adquirir */
 /* texto bajo card*/
 .download-right{
-
 	text-align: center;
 }
 .card-tarjeta .back .link  {
@@ -5141,14 +5153,12 @@ table{
 	margin: 1em auto;
 }
 
-
 .container-2-card-origen .card-origen-par p{
 	text-align: center;
 	font-size: small;
 }
 
 .list{
-	
 	line-height: 1.3;
 	font-size: small;
 	
@@ -5156,7 +5166,6 @@ table{
 
 
 .container-2-card-origen .card-origen-par .titulo-origen-card p{
-
 	color: #FFFFFF;
 	font-size: medium;
 }
@@ -5331,28 +5340,53 @@ font-family: "Ubuntu", sans-serif;
 
  .features{
 	width: 100%;
-	height: 127em;
+	height: 122.5em;
 	background-repeat: no-repeat;
 	background: url(../images/slide1.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
 	position: relative;
 	
+	
+	
+	
+	
 }
+
+
 .container-colum{
-	padding: 34em 2em;
+	
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	
+
+	
+	
+	
 }
 
 .features .img-derecha-columna{
-	width: 100%;	
+	width: 80%;
+	margin-top: 28em;
+	
+	
+	
+	
+	
+		
 }
 
 .features .img-izquierda-columna{
-	width: 100%;	
+	width: 80%;
+	
+	
+		
+	
 }
 
- #margin{
-	padding: 1em 0em;
-}
 
  .container-img-multiple figure{
 	position:relative;
@@ -5363,6 +5397,7 @@ font-family: "Ubuntu", sans-serif;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	margin: .8em 0em;
+	display: flex;
  }
 
 
@@ -5397,6 +5432,11 @@ font-family: "Ubuntu", sans-serif;
 }
 
  /*GES en accion*/
+
+
+ #margin{
+	padding: 1em 0em;
+}
 
  .container-accion-mapa .text-map1{
 	text-align: center;		
@@ -5573,21 +5613,78 @@ height: 3.5em;
 	line-height: 2.2em; 
 }
 
+/* Modal*/
+.modal_container{
+    margin: auto;
+    width: 100%;
+    max-width: 450px;
+    height: max-content;
+	/*background: #5fd9fe;*/
+    border-radius: 20px;
+    padding: 1em 1em;
+    transform: var(--transform);
+    transition: var(--transition);
+}
 
+form {
+	width: 100%;
+	padding: 0em .5em;
+	border: 5px solid #FFFFFF;
+	border-radius: 15px;
+}
+.botones{
+	text-align: center;
+	margin-top: 1.5em;
+	}
+
+ /*Boton modal*/
+/*boton*/
+.btn_ir_modal_mostrar{
+	width: 60%;
+    padding: .5em 0;
+    font-size: 1.1em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    color:#5fd9fe;
+    background: #FFFFFF;
+    border:none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+	margin-bottom: 20px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    
+} 
 
 /*adquirir */
 /* texto bajo card*/
 
+
+/*
 .download{
 	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
 	padding: 1em 0;
 }
-
+*/
 
 .download-right{
 
 	text-align: center;
 }
+.download{
+	height: 50em;
+}
+.download .container-completo {
+	margin-top: 1em;
+	
+}
+
+.download-left{
+	text-align: center;
+	margin-top: 4em;
+}
+
 
 .download-left  span {
 	background-size: 100%;
@@ -5612,7 +5709,58 @@ height: 3.5em;
 	font-style: normal;
 }
 
-   
+ 
+
+
+/* ficha tecnica*/
+/*ficha tecnica*/
+
+.compatibility{
+	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
+	width: 100%;
+	height: 35em;
+
+}
+
+.compatibility h3{	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.1em;
+	border-bottom: 2px solid #FFFFFF;
+	padding: .5em 0em;	
+}
+
+.compatibility-grids .compatibility-right h4{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	padding: .5em 0em;
+}
+.compatibility .compatibility-grids .compatibility-left h4{
+	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	padding: .5em 0em;
+	
+}
+.compatibility p{
+	
+	line-height: 1.2em;
+	
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  
+}
+
+.compatibility .list-inline{
+	margin-top: .5em;
+}
+
 
 /* pie de pagina */
 
