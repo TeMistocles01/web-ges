@@ -7,6 +7,7 @@ html, body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
 	
+	
    
 }
 body a{
@@ -1191,7 +1192,7 @@ transition: 7s;
 
 
 
-/* multiples sitios*/
+/* catalogo*/
 
 /*
 .features{
@@ -1201,33 +1202,43 @@ transition: 7s;
 }
 */
 
-  
 .features{
-	width: 100%;
-	height: 57em;
-	background: url(../images/slide1.jpg)no-repeat center fixed;
-	background-size: 100% 100%;
-	position: relative;
-	
-	
-}
-.container-colum{
-	padding: 2em 0em;
-	
+	/*background-color: #cccccc;  Used if the image is unavailable */
+	height: 100vh;
+	background-image:url(../images/slide1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative; 
 }
 
-.features .img-derecha-columna{
-	
+/*
+.features{
+	width: 100%;
+    height: 100vh;
+	background: url(../images/slide1.jpg)no-repeat center center fixed;
+	background-size: 100% 100%;
+	position: relative;
+	background-size: cover;
+}
+*/
+.container-colum{
+	width: 100%;
+}
+
+.features .img-derecha-columna{	
+   margin-top: 1em;
+	display: flex;
+	flex-direction: column;
 	float: right;
-	
 }
 
 .features .img-izquierda-columna{
-	
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
 	float: left;
-	
 }
-
 
 /*  cambia tamaño de card*/
 .container-img-multiple figure{
@@ -1239,8 +1250,7 @@ transition: 7s;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 2em 1em;
-	
+	margin: 1.5em;
  }
 
 
@@ -1689,6 +1699,7 @@ td,th{
 	height:520px;
 	display:block;
 	background:url(../images/features-divice.png) no-repeat 0px 0px;
+	
 }
 
 
@@ -2875,6 +2886,8 @@ iframe{
 }
 
 /* catalogo*/
+
+/*
 .features{
 	width: 100%;
 	height: 50em;
@@ -2883,12 +2896,26 @@ iframe{
 	position: relative;
 }
 
+*/
 
-.container-colum{
-	padding: 1em 0em;
-}
+
+
+.features .img-derecha-columna{	
+	margin-top: .3em;
+	 display: flex;
+	 flex-direction: column;
+	 float: right;
+ }
+ 
+ .features .img-izquierda-columna{
+	 margin-top: .3em;
+	 display: flex;
+	 flex-direction: column;
+	 float: left;
+ }
 
 /*  cambia tamaño de card*/
+
 .container-img-multiple figure{
 	width: 18em;
 	height: 14em;
@@ -2898,9 +2925,10 @@ iframe{
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 1.5em .3em;
+	margin: .5em;
 	
  }
+	
 
 /* Funciones destacadas*/
 
@@ -3350,6 +3378,8 @@ p.cousel_demo{
 
 
 /* catalogo*/
+
+/*
 .features{
 	width: 100%;
 	height: 45em;
@@ -3358,23 +3388,33 @@ p.cousel_demo{
 	position: relative;
 	
 }
+*/
+.features .img-derecha-columna{	
+	margin-top: .3em;
+	 display: flex;
+	 flex-direction: column;
+	 float: right;
+ }
+ 
+ .features .img-izquierda-columna{
+	 margin-top: .3em;
+	 display: flex;
+	 flex-direction: column;
+	 float: left;
+ }
 
-
-.container-colum{
-	padding: 1em 0em;
-}
 
 /*  cambia tamaño de card*/
 .container-img-multiple figure{
 	width: 14em;
-	height: 13em;
+	height: 14em;
 	position:relative;
 	display: flex;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 1em .3em;
+	margin: .5em;
 	
  }
 
@@ -4051,6 +4091,7 @@ table{
 
 /* Catalogo*/
 
+/*
 .features{
 	width: 100%;
 	height: 45em;
@@ -4060,19 +4101,35 @@ table{
 	
 }
 
-   
+  */ 
+
+  
+  .features .img-derecha-columna{	
+	margin-top: .3em;
+	 display: flex;
+	 flex-direction: column;
+	 float: right;
+ }
+ 
+ .features .img-izquierda-columna{
+	 margin-top: .3em;
+	 display: flex;
+	 flex-direction: column;
+	 float: left;
+ }
+
    
 /*  cambia tamaño de card*/
 .container-img-multiple figure{
 	width: 14em;
-	height: 13em;
+	height: 14em;
 	position:relative;
 	display: flex;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 1em .3em;
+	margin: .5em;
 	
  }
 
@@ -4682,6 +4739,7 @@ table{
 
  /* Catalogo*/
 
+ /*
 .features{
 	width: 100%;
 	height: 45em;
@@ -4690,8 +4748,30 @@ table{
 	position: relative;
 	
 }
+*/
 
-   
+.features{
+	width: 100%;
+    height: 95vh;
+	background: url(../images/slide1.jpg)no-repeat center center fixed;
+	background-size: 100% 100%;
+	position: relative;
+	background-size: cover;
+}
+
+.features .img-derecha-columna{	
+	margin-top: .5em;
+	 display: flex;
+	 flex-direction: column;
+	 float: right;
+ }
+ 
+ .features .img-izquierda-columna{
+	 margin-top: .5em;
+	 display: flex;
+	 flex-direction: column;
+	 float: left;
+ }
    
 /*  cambia tamaño de card*/
 .container-img-multiple figure{
@@ -4703,7 +4783,7 @@ table{
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 1em .3em;
+	margin: .5em;
 	
  }
 
@@ -5300,7 +5380,6 @@ table{
 	border-radius: 25px;
 	color: #FFFFFF;
 	
-	
 	/*
 	
 	background-color: #5fd9fe;
@@ -5338,66 +5417,69 @@ font-family: "Ubuntu", sans-serif;
 
  /* catalogo*/
 
- .features{
-	width: 100%;
-	height: 122.5em;
-	background-repeat: no-repeat;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;;
-	background-size: 100% 100%;
-	position: relative;
-	
-	
-	
-	
-	
-}
-
+ /*
 
 .container-colum{
-	
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	
-	
+		
+}
+	*/
 
-	
-	
-	
+
+	.features{
+		
+		height: 250vh;
+		background: url(../images/slide1.jpg)no-repeat center center fixed;
+		
+		position: relative;
+		background-size: cover;
+		
+	}
+
+
+.container-colum{
+	width: 100%;
+	padding-top: 33em;
 }
 
+
 .features .img-derecha-columna{
-	width: 80%;
-	margin-top: 28em;
+	width: 100%;
+	padding-left: 2em;
+	padding-right: 2em;
+
 	
 	
-	
-	
-	
-		
 }
 
 .features .img-izquierda-columna{
-	width: 80%;
+	width: 100%;
+	margin-top: 0em;
+	padding-left: 2em;
+	padding-right: 2em;
 	
 	
-		
-	
+
 }
 
 
  .container-img-multiple figure{
 	position:relative;
 	width: 100%;
-    height: 230px;
+    height: 14em;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: .8em 0em;
 	display: flex;
+	margin: 0em;
+	margin-bottom: .8em;
+	
+	
  }
 
 
@@ -5667,6 +5749,13 @@ form {
 	padding: 1em 0;
 }
 */
+
+
+
+
+
+
+
 
 .download-right{
 
