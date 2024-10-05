@@ -8,6 +8,7 @@ html, body{
     font-size: 100%;
 	
 	
+	
    
 }
 body a{
@@ -445,9 +446,6 @@ nav a#pull {
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 	padding: .5em 0em;
 }
-
-
-
 
 
 
@@ -2887,16 +2885,16 @@ iframe{
 
 /* catalogo*/
 
-/*
+
 .features{
 	width: 100%;
-	height: 50em;
+	height: 46em;
 	background: url(../images/slide1.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
 	position: relative;
 }
 
-*/
+
 
 
 
@@ -3379,7 +3377,8 @@ p.cousel_demo{
 
 /* catalogo*/
 
-/*
+
+
 .features{
 	width: 100%;
 	height: 45em;
@@ -3388,16 +3387,16 @@ p.cousel_demo{
 	position: relative;
 	
 }
-*/
+
 .features .img-derecha-columna{	
-	margin-top: .3em;
+	margin-top: .2em;
 	 display: flex;
 	 flex-direction: column;
 	 float: right;
  }
  
  .features .img-izquierda-columna{
-	 margin-top: .3em;
+	 margin-top: .2em;
 	 display: flex;
 	 flex-direction: column;
 	 float: left;
@@ -3414,8 +3413,7 @@ p.cousel_demo{
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: .5em;
-	
+	margin: .4em;
  }
 
 
@@ -3808,11 +3806,11 @@ p.cousel_demo{
 .logo a{
 		position: absolute;
 		left:7px;
-		top: 10px;
+		top: 8px;
 	}
 	.logo_ges{
 		
-		width: 1.5em;
+		width: 1.6em;
 		height: 1em;
 	}
 
@@ -3837,8 +3835,9 @@ p.cousel_demo{
 	
  }
  .slide-text-info p {
-	font-size: 2em;
+	font-size: 1.7em;
  }
+ 
  .slide-text-info-btns {
 	margin-top: 1.5em;
  }
@@ -3848,6 +3847,10 @@ p.cousel_demo{
  .callbacks_tabs {
 	left: 40%;
  }
+ .slide-text-info{
+	margin-top:6%;
+}
+
 
 
 /*origen  */
@@ -4091,7 +4094,6 @@ table{
 
 /* Catalogo*/
 
-/*
 .features{
 	width: 100%;
 	height: 45em;
@@ -4101,10 +4103,10 @@ table{
 	
 }
 
-  */ 
+  
 
   
-  .features .img-derecha-columna{	
+.features .img-derecha-columna{	
 	margin-top: .3em;
 	 display: flex;
 	 flex-direction: column;
@@ -4129,7 +4131,7 @@ table{
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: .5em;
+	margin: .4em;
 	
  }
 
@@ -4739,24 +4741,12 @@ table{
 
  /* Catalogo*/
 
- /*
 .features{
 	width: 100%;
-	height: 45em;
+	height: 43em;
 	background: url(../images/slide1.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
 	position: relative;
-	
-}
-*/
-
-.features{
-	width: 100%;
-    height: 95vh;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;
-	background-size: 100% 100%;
-	position: relative;
-	background-size: cover;
 }
 
 .features .img-derecha-columna{	
@@ -5134,6 +5124,7 @@ table{
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
 }
 
+
  .container-center{
 	width: 100%;
 	display: flex;
@@ -5244,7 +5235,9 @@ table{
 	
 }
 
-
+.list .uno, .dos {
+	margin-bottom: 1em;
+}
 .container-2-card-origen .card-origen-par .titulo-origen-card p{
 	color: #FFFFFF;
 	font-size: medium;
@@ -5294,11 +5287,14 @@ table{
 .containr-border-definicion{
 	width: 80%;
 	margin: auto;
-
 	text-align: center;
 	background: linear-gradient( #5fd9fe 80%,#FFFFFF );	
 }
 
+.titles-principal{
+	text-align: center;
+	padding: .1em 0em;
+}
 
 
 .card{
@@ -5417,26 +5413,14 @@ font-family: "Ubuntu", sans-serif;
 
  /* catalogo*/
 
- /*
-
-.container-colum{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-		
-}
-	*/
-
-
 	.features{
-		
+		width: 100%;
 		height: 250vh;
-		background: url(../images/slide1.jpg)no-repeat center center fixed;
-		
-		position: relative;
+		background: url(../images/slide1.jpg)no-repeat center center fixed;;
 		background-size: cover;
+		position: relative;
+		
+		
 		
 	}
 
@@ -5444,13 +5428,16 @@ font-family: "Ubuntu", sans-serif;
 .container-colum{
 	width: 100%;
 	padding-top: 33em;
+	position: relative;
 }
 
 
 .features .img-derecha-columna{
+	
 	width: 100%;
 	padding-left: 2em;
 	padding-right: 2em;
+	position: relative;
 
 	
 	
@@ -5461,6 +5448,7 @@ font-family: "Ubuntu", sans-serif;
 	margin-top: 0em;
 	padding-left: 2em;
 	padding-right: 2em;
+	position: relative;
 	
 	
 
@@ -5751,7 +5739,14 @@ form {
 */
 
 
-
+/*
+width: 100%;
+		height: 250vh;
+		background: url(../images/slide1.jpg)no-repeat center center fixed;;
+		background-size: cover;
+		position: relative;
+		
+*/
 
 
 
