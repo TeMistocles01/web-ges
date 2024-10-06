@@ -1,6 +1,6 @@
 .da-slider{
 	width: 70%;
-	min-width:280px;
+	min-width:220px;
 	height:190px;
 	position: relative;
 	background:#fff;
@@ -16,7 +16,7 @@
 }
 .da-slider1{
 	width:70%;
-	min-width:200px;
+	min-width:220px;
 	height:190px;
 	position: relative;
 	margin:0 auto;
@@ -688,6 +688,7 @@
 
 
 @media all and (min-width:801px) and (max-width:1024px){
+
 	.da-slide .da-img{
 		text-align: center;
 		width: 30%;
@@ -742,12 +743,13 @@
 }
 
 
-@media all and (min-width:640px) and (max-width:768px){
+@media all and (min-width:641px) and (max-width:768px){
 
 	.da-slider {
 		width: 305px;
  		height:190px;
 		 left: 50px;
+		
 		
     }
 
@@ -764,17 +766,13 @@
 
 }
 
-
-
-
-
-
- @media all and (min-width:321px) and (max-width:480px){
+@media all and (min-width:481px) and (max-width:640px){
 
 	.da-slider {
 		width: 280px;
  		height:170px;
 		 left: 45px;
+		
     }
 
 	/* slider bajo*/
@@ -791,6 +789,69 @@
 
 	.da-dots {
 		right:75%;
+		bottom:5px;
+	}
+	
+}
+
+
+
+
+
+ @media all and (min-width:321px) and (max-width:480px){
+
+	/* da-sider = carrucel puede contribuir con el mp */
+
+	.da-slider {
+		
+		height:170px;
+		left: 35px;
+   }
+
+	/* da-sider = carrucel configurar llamada */
+	.da-slider1{
+		
+		width: 220px;
+		height:170px;
+	   left: -30px;
+	   float: inline-start;
+	  
+	   
+   }
+	.da-slide {
+		
+		top: -90px;
+		margin-left: -5px;
+	}
+
+
+	/*Imagen  youtube*/
+
+	.da-slider .da-img{
+		text-align: center;
+		width: 30%;
+		top:9em;
+		right: 110%; /*60%*/
+	}
+
+
+
+	
+
+	
+
+	/*Imagen  llamada*/
+
+	.da-slider1 .da-img{
+		text-align: center;
+		width: 30%;
+		top:9em;
+		right: 110%; /*60%*/
+	}
+	
+  /* circulos */
+	.da-dots {
+		right:50%;
 		bottom:5px;
 	}
 	/*
