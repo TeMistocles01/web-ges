@@ -1210,37 +1210,31 @@ transition: 7s;
 
 .features{
 	/*background-color: #cccccc;  Used if the image is unavailable */
-	height: 100vh;
+	height: 92vh;
 	background-image:url(../images/slide1.jpg);
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	position: relative; 
+	
 }
 
-/*
-.features{
-	width: 100%;
-    height: 100vh;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;
-	background-size: 100% 100%;
-	position: relative;
-	background-size: cover;
-}
-*/
+
 .container-colum{
 	width: 100%;
+	height: 100%;
 }
 
 .features .img-derecha-columna{	
-   margin-top: 1em;
+   margin-top: 1.5em;
 	display: flex;
 	flex-direction: column;
 	float: right;
 }
 
 .features .img-izquierda-columna{
-	margin-top: 1em;
+	margin-top: 1.5em;
 	display: flex;
 	flex-direction: column;
 	float: left;
@@ -1256,7 +1250,7 @@ transition: 7s;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 1.5em;
+	margin: 1em;
  }
 
 
@@ -2188,7 +2182,7 @@ form {
 
 	width: 100%;
 	height: 60em;
-	background: url(../images/card-nuevo.png)no-repeat center center fixed;;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
 	background-size: 100% 100%;
 	position: relative;
 
@@ -2222,7 +2216,7 @@ form {
 	border-radius:50%;
 	-webkit-border-radius:20%;
 	/*box-shadow: 0px 0px 15px 15px #777777;*/
-	/* -webkit-box-shadow: 0px 0px 15px 15px #5F7D8B;       */
+	 -webkit-box-shadow: 0px 0px 15px 15px #5F7D8B;       
 	
 	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
@@ -2279,7 +2273,7 @@ form {
  font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
  
 }
 
@@ -2288,7 +2282,7 @@ form {
 	font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #FFFFFF;
+ /* color: #FFFFFF;*/
 	
    }
    
@@ -2893,15 +2887,18 @@ iframe{
 
 /* catalogo*/
 
-
+/*
 .features{
 	width: 100%;
 	height: 46em;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;;
-	background-size: 100% 100%;
-	position: relative;
+	background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
 }
-
+*/
 
 
 
@@ -3391,15 +3388,19 @@ p.cousel_demo{
 /* catalogo*/
 
 
-
+/*
 .features{
 	width: 100%;
 	height: 45em;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;;
-	background-size: 100% 100%;
-	position: relative;
+	background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
 	
 }
+	*/
 
 .features .img-derecha-columna{	
 	margin-top: .2em;
@@ -4120,15 +4121,20 @@ table{
 
 /* Catalogo*/
 
+/*
+
 .features{
 	width: 100%;
 	height: 45em;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;;
-	background-size: 100% 100%;
-	position: relative;
+	background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
 	
 }
-
+*/
   
 
   
@@ -4772,13 +4778,18 @@ table{
 
  /* Catalogo*/
 
+ /*
 .features{
 	width: 100%;
 	height: 43em;
-	background: url(../images/slide1.jpg)no-repeat center center fixed;;
-	background-size: 100% 100%;
-	position: relative;
+	background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
 }
+	*/
 
 .features .img-derecha-columna{	
 	margin-top: .5em;
@@ -5475,14 +5486,19 @@ font-family: "Ubuntu", sans-serif;
 
  /* catalogo*/
 
+ /*
+
 	.features{
 		width: 100%;
 		height: 210vh;
-		background: url(../images/slide1.jpg)no-repeat center center fixed;;
-		background-size: cover;
-		position: relative;	
+		background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
 	}
-
+*/
 	/* margen al texto e imagen*/
 	.features-grids{
 
@@ -6378,25 +6394,36 @@ font-family: "Ubuntu", sans-serif;
 
  /* catalogo*/
 
+ .features{
+	/*background-color: #cccccc;  Used if the image is unavailable */
+	height: 76vh;
+	width: 100%;
+	background-image:url(../images/slide1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	
+}
+
+ /*
+
 	.features{
 		width: 100%;
 		height: 250vh;
-		background: url(../images/slide1.jpg)no-repeat center center fixed;;
-		background-size: cover;
-		position: relative;
+		background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
 	
 	}
-
-
-.container-colum{
-	width: 100%;
-	padding-top: 33em;
-	position: relative;
-}
+*/
 
 
 .features .img-derecha-columna{
-	
+	margin-top: 37.5em;
 	width: 100%;
 	padding-left: 2em;
 	padding-right: 2em;
@@ -6737,16 +6764,17 @@ width: 100%;
 */
 
 
-
+.download{
+	
+	height: 50em;
+}
 
 
 .download-right{
 
 	text-align: center;
 }
-.download{
-	height: 50em;
-}
+
 .download .container-completo {
 	margin-top: 1em;
 	
@@ -7298,17 +7326,24 @@ font-family: "Ubuntu", sans-serif;
 
  /* catalogo*/
 
+ /*
+
 	.features{
-		width: 100%;
-		height: 250vh;
-		background: url(../images/slide1.jpg)no-repeat center center fixed;;
-		background-size: cover;
-		position: relative;
+		
+		max-height: 250vh;
+		
+		background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
+	
 		
 		
 		
 	}
-
+*/
 
 .container-colum{
 	width: 100%;
