@@ -1213,26 +1213,34 @@ transition: 7s;
 .features{
 	/*background-color: #cccccc;  Used if the image is unavailable */
 	width: 100%;
-	height: 92vh;
+	height: 60em;
+	
+	
+}
+
+
+
+.fondo-img-catalogo{
+	width: 100%;
+	height: 60em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-attachment: fixed;*/
 	position: relative; 
-	
+
 }
 
-
 .features .img-derecha-columna{	
-   margin-top: 1.5em;
+   margin-top: 2.5em;
 	display: flex;
 	flex-direction: column;
 	float: right;
 }
 
 .features .img-izquierda-columna{
-	margin-top: 1.5em;
+	margin-top: 2.5em;
 	display: flex;
 	flex-direction: column;
 	float: left;
@@ -1248,7 +1256,7 @@ transition: 7s;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: 1em;
+	margin: 1.3em;
  }
 
 
@@ -2192,14 +2200,14 @@ form {
 	*/
 }
 
-.download .container-completo {
-	margin-top: 12em;
-	
+
+.download-right{
+	margin-top: 15em;
 }
 
 .download-left{
 	text-align: center;
-	margin-top: 6em;
+	margin-top: 20em;
 }
 
 .download-left span{
@@ -2266,6 +2274,7 @@ form {
 	opacity:0.7;
 } 
 
+
 .download-right .texto-normal p{
  font-size: 1.2em;
  font-family: "Ubuntu", sans-serif;
@@ -2324,7 +2333,7 @@ form {
 .compatibility{
 	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
 	width: 100%;
-	height: 32em;
+	padding: 1.5em 0em;
 
 }
 .compatibility h3{
@@ -2896,15 +2905,20 @@ iframe{
 .features{
 	width: 100%;
 	height: 46em;
+	background:url(../images/fondo_cards_321.png)repeat;
+	 
+}
+
+.fondo-img-catalogo{
+	width: 100%;
+	height: 46em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-attachment: fixed;*/
-	position: relative; 
+	position: relative;
 }
-
-
 
 
 
@@ -3109,6 +3123,26 @@ iframe{
 
 /* adquirir*/
 
+.download{
+
+	width: 100%;
+	height: 40em;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
+	background-size: 100% 100%;
+	position: relative;
+
+}
+
+.download-right{
+	margin-top: 8em;
+}
+
+.download-left{
+	
+	margin-top: 11em;
+}
+
+
 .download-right .grande{
 	color:#fff;
 	font-family: "Ubuntu", sans-serif;
@@ -3119,24 +3153,15 @@ iframe{
 .download-right p {
 	font-size: 1.8em;
  }
- .download {
-	padding: 40px 0 20px;
- }
+ 
 
- /* la imagen */
- .download-left {
-	
-	
-	margin-top: 3em;
-	
-	
- }
+ 
 
  .download-left  span {
 	background-size:100%;
-	width: 260px;
-	height: 249px;
-	float: right;
+	width: 240px;
+	height: 230px;
+	
  }
 
  .download-right ul li a span {
@@ -3266,8 +3291,8 @@ p.cousel_demo{
 }
 
 .card-origen-center{
-	width:  90%;
-	padding: 1.5em 1em;
+	width:  75%;
+	padding: .9em .5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -3276,7 +3301,18 @@ p.cousel_demo{
 	
 	
 }
+.icon-card-police{
+	width: 12em;
+	height:5em;
+	border-radius: 5px;
+}
 
+.img-robo{
+	
+	width: 15em;
+	height:8em;
+	border-radius: 5px;
+}
 
 .origen-container .container-center .titulo-origen-card p{
 	font-size: larger;
@@ -3305,8 +3341,8 @@ p.cousel_demo{
 
 
 .card-origen-par{
-	width:  90%;
-	padding: 1em 1em;
+	width:  75%;
+	padding: .7em .5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -3316,7 +3352,26 @@ p.cousel_demo{
 	
 	
 }
+.container-4-img-flex{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: .5em 0em;
+}
 
+.icono-soborno{
+	width: 13em;
+	height:5em;
+	border-radius: 5px;
+}
+
+.logo2{
+	width: 8em;
+	height: 6em;
+	border-radius: 5px;
+}
 .container-2-card-origen .card-origen-par .titulo-origen-card p{
 	font-size: larger;
 }
@@ -3328,6 +3383,10 @@ p.cousel_demo{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+
+
+
 
 
 /*Definicion*/
@@ -3377,7 +3436,7 @@ p.cousel_demo{
 
 .features-grids{
 	border-radius: 25px;
-	margin: 0em 10em;
+	margin: 0em 4em;
 }
 
 .features-grid h3 {
@@ -3417,14 +3476,21 @@ p.cousel_demo{
 	width: 100%;
 	height: 45em;
 	background-image:url(../images/slide1.jpg);
+	
+}
+
+
+.fondo-img-catalogo{
+
+	width: 100%;
+	height: 45em;
+	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-attachment: fixed;*/
 	position: relative; 
-	
 }
-	
 
 .features .img-derecha-columna{	
 	margin-top: .2em;
@@ -3563,36 +3629,55 @@ table{
  .download-right p {
 	font-size: 1.8em;
  }
- .apple {
-	background-size: 190%;
-	margin-right: 1em;
- }
- .play-btn {
-	background: url(../images/download-btns.png) no-repeat -198px 0px;
-	background-size: 190%;
- }
  
- 
- .feature-left {
-	margin: 0em 0em 2em 0em;
- }
+ .download{
+
+	width: 100%;
+	height: 35em;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
+	background-size: 100% 100%;
+	position: relative;
+
+}
+
+/*Texto position*/
+.download-right{
+	margin-top: 5em;
 	
- .download {
-	padding: 40px 0 20px;
+}
+
+/* imagen position*/
+.download-left{
+	
+	margin-top: 10em;
+	float: left;
+}
+
+
+.download-left  span {
+	background-size:100%;
+	width: 240px;
+	height: 230px;
+	
  }
+/*
+ .download-right{
+	margin-top: 2em;
+}
+ 
  .download-left {
-	margin-top: 2.2em;
+	margin-top: 2em;
  }
 
  .download-left  span {
 	background-size:100%;
 	width: 230px;
 	height: 219px;
-	float: left;
-	margin: 1em 1.5em;
+	
+	
  }
 	
-
+*/
 	.download-right .grande{
 		color:#fff;
 		font-size:2em;
@@ -3600,11 +3685,14 @@ table{
 	font-weight: 400;
 	font-style: normal;
 	}
+
+	/*
 	.download-right ul li a span {
 	width: 150px;
 	height: 50px;
 	background-size: 198%;
 }
+	*/
 .download-right ul li a.l-google span {
 	background-position: -147px 0px;
 }
@@ -3646,6 +3734,7 @@ table{
 
  .feature{
 	background: linear-gradient( #5fd9fe 75% ,#FFFFFF);
+	margin-bottom: 2em;
 }
 
  /* configure llamadas de emergencia */
@@ -3784,9 +3873,11 @@ table{
  .compatibility{
 	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
 	width: 100%;
-	height: 32em;
+	
 
 }
+
+
 
 .compatibility h3{	
 	font-family: "Ubuntu", sans-serif;
@@ -4167,16 +4258,21 @@ table{
 .features{
 	width: 100%;
 	height: 45em;
+	background:url(../images/fondo_cards_321.png)repeat;
+	
+}
+
+.fondo-img-catalogo{
+
+	width: 100%;
+	height: 45em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-attachment: fixed;*/
 	position: relative; 
-	
-}
-
-  
+} 
 
   
 .features .img-derecha-columna{	
@@ -4333,9 +4429,33 @@ table{
 	
  }
     
- .download {
-	padding: 10px 0 10px;
- }
+ .download{
+
+	width: 100%;
+	height: 35em;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
+	background-size: 100% 100%;
+	position: relative;
+
+}
+
+/*Texto position*/
+.download-right{
+	margin-top: 5em;
+	
+}
+
+/* imagen position*/
+.download-left{
+	
+	margin-top: 10em;
+	float: left;
+}
+
+
+
+
+
  .footer {
 	padding:10px 0;
  }
@@ -4753,6 +4873,14 @@ table{
 
 /*Definicion */
 
+.container-card{
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
 .card{
 	position: relative;
 	margin: .8em 0em;
@@ -4763,6 +4891,7 @@ table{
 	background:#FFFFFF;
 	transition: all 400ms ease-out;
 	cursor: default;
+	
 }
 .card img{
 	width: 100%;
@@ -4842,14 +4971,23 @@ table{
 .features{
 	width: 100%;
 	height: 43em;
+	background:url(../images/fondo_cards_321.png)repeat;
+}
+	
+
+.fondo-img-catalogo{
+
+	width: 100%;
+	height: 43em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	 /* background-attachment: fixed; */
-	position: relative; 
+	position: relative;
 }
-	
+
+
 
 .features .img-derecha-columna{	
 	margin-top: .5em;
@@ -5032,20 +5170,45 @@ table{
 	background-position:70px 0;
 }
 
+/* beneficios*/
+
+
+.container-tarjeta{
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+	padding-bottom: 1em;
+	
+}
 
  /*adquirir */
-/* texto bajo card*/
-.download-right{
-	text-align: center;
-}
-.card-tarjeta .back .link  {
-	border-top: solid 1px #f3f3f3;
-	font-size: small;
-	text-align: center;
-	line-height: 50px; /*altura de la linea */
+ .download{
+
+	width: 100%;
+	height: 30em;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
+	background-size: 100% 100%;
+	position: relative;
+
 }
 
-.download-left  span {
+/*Texto position*/
+.download-right{
+	margin-top: 1em;
+	
+}
+
+/* imagen position*/
+.download-left{
+	
+	margin-top: 7em;
+	float: left;
+}
+
+ .download-left  span {
 	background-size:100%;
 	width: 230px;
 	height: 219px;
@@ -5057,6 +5220,17 @@ table{
 	font-weight: 400;
 	font-style: normal;
 }
+
+/* texto bajo card*/
+
+.card-tarjeta .back .link  {
+	border-top: solid 1px #f3f3f3;
+	font-size: small;
+	text-align: center;
+	line-height: 50px; /*altura de la linea */
+}
+
+
 
 
 /*ficha tecnica*/
@@ -5431,6 +5605,14 @@ table{
 	background: linear-gradient( #5fd9fe 80%,#FFFFFF );	
 }
 
+.container-card{
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
 .titles-principal{
 	text-align: center;
 	padding: .1em 0em;
@@ -5477,9 +5659,105 @@ table{
 	
 }
 
+ /* catalogo*/
+
+ .features{
+	/*background-color: #cccccc;  Used if the image is unavailable */
+	height: 130em;
+	width: 100%;
+	background:url(../images/fondo_cards_321.png)repeat;
+	
+	
+}
+
+.fondo-img-catalogo{
+
+	height: 130em;
+	width: 100%;
+	background-image:url(../images/slide1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+
+
+.features .img-derecha-columna{
+	margin-top: 40.5em;
+	width: 100vw;
+	height: min-content;
+	padding-left: 6em;
+	padding-right: 6em;
+/*background:url(../images/fondo_cards_321.png)repeat;*/
+
+}
+
+
+.features .img-izquierda-columna{
+	width: 100vw;
+	height: min-content;
+	margin-top: 0em;
+	padding-left: 6em;
+	padding-right: 6em;
+	
+	/*background:url(../images/fondo_cards_321.png)repeat;*/
+	padding-bottom: 1em;
+}
+
+
+ .container-img-multiple figure{
+	position:relative;
+	width: 100%;
+    height: 14em;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	display: flex;
+	margin: 0em;
+	margin-bottom: .8em;
+	
+	
+ }
+
+
+ /* Text-grande titulo */
+.container-img-multiple figure:hover > .capa .title-foto{
+	font-size: large;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	
+}
+
+/* Text-grande titulo */
+.container-img-multiple figure .capa .title-foto {
+	font-size: large;
+	color: #FFFFFF;	
+	margin-bottom: 120px;
+	transition: all 400ms ease-out;
+	margin-top: 30px;
+	
+}
+
+/* texto pequeño imagen */
+.container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: smaller;
+	line-height: 1;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+	
+	
+}
+
 
 /* funciones destacadas*/
 .features-Funciones-Destacadas{
+	width: 100%;
+	height: max-content;
 	padding:0em 0em 2em 0em;
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 
@@ -5561,95 +5839,6 @@ font-family: "Ubuntu", sans-serif;
 	font-size: 1em;
 }
 
-
- /* catalogo*/
-
- .features{
-	/*background-color: #cccccc;  Used if the image is unavailable */
-	height: 76vh;
-	width: 100%;
-	background-image:url(../images/slide1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*background-attachment: fixed;*/
-	position: relative;
-}
-
-
-
-
-.features .img-derecha-columna{
-	margin-top: 37.5em;
-	width: 100%;
-	height: max-content;
-	padding-left: 2em;
-	padding-right: 2em;
-	position: relative;
-	background-color: #5fd9fe;
-
-}
-
-.features .img-izquierda-columna{
-	width: 100%;
-	height: max-content;
-	margin-top: 0em;
-	padding-left: 2em;
-	padding-right: 2em;
-	position: relative;
-	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
-	padding-bottom: 1em;
-}
-
-
-
-
-
-
- .container-img-multiple figure{
-	position:relative;
-	width: 100%;
-    height: 14em;
-	cursor: pointer;
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	display: flex;
-	margin: 0em;
-	margin-bottom: .8em;
-	
-	
- }
-
-
- /* Text-grande titulo */
-.container-img-multiple figure:hover > .capa .title-foto{
-	font-size: large;
-	margin-top: 30px;
-	margin-bottom: 15px;
-	
-}
-
-/* Text-grande titulo */
-.container-img-multiple figure .capa .title-foto {
-	font-size: large;
-	color: #FFFFFF;	
-	margin-bottom: 120px;
-	transition: all 400ms ease-out;
-	margin-top: 30px;
-	
-}
-
-/* texto pequeño imagen */
-.container-img-multiple figure .capa p{
-	color: #FFFFFF;
-	font-size: smaller;
-	line-height: 1;
-	width: 100%;
-	max-width: 220px;
-	margin: auto;
-	
-	
-}
 
  /*GES en accion*/
 
@@ -5824,6 +6013,16 @@ height: 3.5em;
     margin: 5px;
 	margin: .8em 0em;
 }
+.container-tarjeta{
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+	padding-bottom: 1em;
+	
+}
 
 /*texto ges card*/
 .card-tarjeta .back .title-back {
@@ -5907,55 +6106,26 @@ form {
 /* texto bajo card*/
 
 
-/*
+
 .download{
 	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
 	padding: 1em 0;
-}
-*/
-
-
-/*
-width: 100%;
-		height: 250vh;
-		background: url(../images/slide1.jpg)no-repeat center center fixed;;
-		background-size: cover;
-		position: relative;
-		
-*/
-
-.download{
-
 	width: 100%;
 	height: 40em;
-	background: url(../images/card-nuevo.png)no-repeat center center fixed;;
-	background-size: 100% 100%;
-	position: relative;
-
-	/*
 	
-	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
-	padding: 7em 0;
-	
-	*/
 }
 
-
-
 .download-right{
-
+	margin-top: 1em;
 	text-align: center;
 }
 
 
-.download .container-completo {
-	margin-top:0em;
-	
-}
+
 
 .download-left{
 	text-align: center;
-	margin-top: 4em;
+	margin-top: 2em;
 }
 
 
@@ -6152,10 +6322,7 @@ width: 100%;
 
  /* Origen */
 
- .titles-principal{
-	text-align: center;
-	padding: 15em 0em;
-}
+ 
  .origen-container{
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
 }
@@ -6218,7 +6385,10 @@ width: 100%;
 	font-size: small;
 }
 
-
+.titles-principal{
+	text-align: center;
+	padding: .1em 0em;
+}
 .titles-principal h2{
 	font-size: 1.2em;
 }
@@ -6312,6 +6482,12 @@ width: 100%;
 	justify-content: space-around;
 	margin: 1em 0em;
 }
+
+
+.container-img-text{
+	margin: 0em .3em;
+}
+
 .logo2{
 	width: 100px;
 	height: 80px;
@@ -6333,6 +6509,13 @@ width: 100%;
 	background: linear-gradient( #5fd9fe 80%,#FFFFFF );	
 }
 
+.container-card{
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
 
 
 
@@ -6379,51 +6562,41 @@ width: 100%;
  /* catalogo*/
 
 .features{
-	/*background-color: #cccccc;  Used if the image is unavailable */
-	height: 76vh;
+	height: 129em;
 	width: 100%;
-	background-image:url(../images/slide1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*background-attachment: fixed;*/
-	position: relative;
+	
+	background:url(../images/fondo_cards_321.png)repeat;
 }
 
- /*
+.fondo-img-catalogo{
 
-	.features{
-		width: 100%;
-		height: 250vh;
-		background-image:url(../images/slide1.jpg);
+	height: 129em;
+	width: 100%;
+	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	position: relative; 
-	
-	}
-*/
-
-
+	position: relative;
+}
 .features .img-derecha-columna{
-	margin-top: 37.5em;
-	width: 100%;
+	margin-top: 40em;
+	width: 100vw;
 	height: max-content;
 	padding-left: 2em;
 	padding-right: 2em;
-	position: relative;
-	background-color: #5fd9fe;
-
+	
+	/*background:url(../images/fondo_cards_321.png)repeat;*/
 }
 
 .features .img-izquierda-columna{
-	width: 100%;
+	width: 100vw;
 	height: max-content;
 	margin-top: 0em;
 	padding-left: 2em;
 	padding-right: 2em;
-	position: relative;
-	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
+	
+	/*background:url(../images/fondo_cards_321.png)repeat;*/
 	padding-bottom: 1em;
 }
 
@@ -6652,7 +6825,6 @@ table{
 }
 
 
-
 td,th{
 	text-align: center;
     border: 1px solid #FFFFFF;
@@ -6721,6 +6893,18 @@ td,th{
 
 
  /* beneficios*/
+
+ .container-tarjeta{
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+	padding-bottom: 1em;
+	
+}
+
  .container-tarjeta .card-tarjeta{
     position: relative;
     width: 17em;
@@ -6829,22 +7013,24 @@ width: 100%;
 
 
 .download{
-	height: 50em;
-}
-
-
-.download-right{
-	text-align: center;
-}
-
-.download .container-completo {
-	margin-top: 1em;
+	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
+	padding: 1em 0;
+	width: 100%;
+	height: 38em;
 	
 }
 
+.download-right{
+	margin-top: 1em;
+	text-align: center;
+}
+
+
+
+
 .download-left{
 	text-align: center;
-	margin-top: 4em;
+	margin-top: 2em;
 }
 
 
@@ -6865,22 +7051,39 @@ width: 100%;
  }
  .download-right .grande{
 	color:#fff;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
- 
+.download-right .texto-normal p{
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+	 font-weight: 200;
+	 font-style: normal;
+	 /*color: #FFFFFF;*/
+	
+   }
+   
+   .download-right .texto-estrellas p{
+	   font-size: 1.1em;
+	   font-family: "Ubuntu", sans-serif;
+	 font-weight: 400;
+	 font-style: normal;
+	/* color: #FFFFFF;*/
+	   
+	  }
+   
 
 
 /* ficha tecnica*/
 /*ficha tecnica*/
 
 .compatibility{
-	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
+	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
 	width: 100%;
-	height: 35em;
+	height: 33em;
 
 }
 
@@ -7173,7 +7376,13 @@ width: 100%;
 	padding-bottom: 1em;
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
 }
-
+.container-card{
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
 .containr-border-definicion{
 	width: 80%;
 	margin: auto;
@@ -7227,65 +7436,13 @@ width: 100%;
 }
 
 
-/* definicion*/
-
-.container-definicion{
-	width: 100%;
-	padding-bottom: 1em;
-	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
-}
-
-.containr-border-definicion{
-	width: 80%;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 80%,#FFFFFF );	
-}
-
-.titles-principal{
-	text-align: center;
-	padding: .1em 0em;
-}
 
 
-.card{
-	position: relative;
-	margin: .8em 0em;
-	width: 18em;
-	height: max-content;
-	border-radius: 6px;
-	overflow: hidden;
-	background:#FFFFFF;
-	transition: all 400ms ease-out;
-	cursor: default;
-}
-.card img{
-	width: 100%;
-	height: 10em;
-}
 
-/*  altura de la posicion del boton*/
-.input-card[type="checkbox"]{
-	height: .4em;
-	display: block;
-	appearance: none;
-	
-}
 
- .label-card{
-	position: relative;
-	padding: .4em;
-	background: #5fd9fe;
-	border-radius: 5px;
-	color: #FFFFFF;
-	
-}
 
-.label-card::before{
-	content:"Leer Màs";
-	font-size: small;
-	
-}
+
+
 
 /* funciones destacadas*/
 .features-Funciones-Destacadas{
@@ -7374,52 +7531,44 @@ font-family: "Ubuntu", sans-serif;
 
  /* catalogo*/
 
- /*
+ .features{
+	height: 122em;
+	width: 100%;
+	background:url(../images/fondo_cards_321.png)repeat;
+}
 
-	.features{
-		
-		max-height: 250vh;
-		
-		background-image:url(../images/slide1.jpg);
+.fondo-img-catalogo{
+
+	height: 122em;
+	width: 100%;
+	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	position: relative; 
-	
-		
-		
-		
-	}
-*/
-
-.container-colum{
-	width: 100%;
-	padding-top: 33em;
 	position: relative;
 }
 
-
 .features .img-derecha-columna{
-	
+	margin-top: 33em;
 	width: 100%;
+	height: max-content;
 	padding-left: 2em;
 	padding-right: 2em;
 	position: relative;
+	
+	
 
-	
-	
 }
 
 .features .img-izquierda-columna{
 	width: 100%;
+	height: max-content;
 	margin-top: 0em;
 	padding-left: 2em;
 	padding-right: 2em;
 	position: relative;
-	
-	
-
+	padding-bottom: 1em;
 }
 
 
@@ -7745,7 +7894,10 @@ width: 100%;
 .download{
 
 	
-	height: 47em;
+	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
+	padding: 1em 0;
+	width: 100%;
+	height: 40em;
 	
 
 	/*
@@ -7756,24 +7908,16 @@ width: 100%;
 	*/
 }
 
-
-
 .download-right{
-
+	margin-top: 1em;
 	text-align: center;
 }
 
-
-.download .container-completo {
-	margin-top: .5em;
-	
-}
 
 .download-left{
 	text-align: center;
 	margin-top: 2em;
 }
-
 
 .download-left  span {
 	background-size: 100%;
@@ -7783,23 +7927,42 @@ width: 100%;
 	background-position: 0px 0;
  }
 
- /* boton play store*/
- .download-right ul li a span {
-	width: 250px;
-	height:35px;
-	background-size: 95%;
-	background-position:1px 0;
- }
+ 
  .download-right .grande{
 	color:#fff;
-	font-size: 1.6em;
+	font-size: 1.3em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
- 
 
+   
+   .download-right .texto-estrellas p{
+	   font-size: 1.1em;
+	   font-family: "Ubuntu", sans-serif;
+	 font-weight: 400;
+	 font-style: normal;
+	/* color: #FFFFFF;*/
+	   
+	  }
+	
+	  .download-right .texto-normal p{
+		font-size: 1em;
+		font-family: "Ubuntu", sans-serif;
+		 font-weight: 200;
+		 font-style: normal;
+		 /*color: #FFFFFF;*/
+		
+	   }
+   
+/* boton play store*/
+.download-right ul li a span {
+	width: 250px;
+	height:35px;
+	background-size: 95%;
+	background-position:1px 0;
+ }
 
 /* ficha tecnica*/
 /*ficha tecnica*/
