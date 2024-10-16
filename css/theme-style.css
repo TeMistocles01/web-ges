@@ -739,7 +739,8 @@ font-family: "Ubuntu", sans-serif;
 	width: 100%;
 	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
 	justify-content: center;
-	margin-bottom: 1em;
+	/*margin-bottom: 1em;*/
+	
  }
 
 .logo2:hover{
@@ -851,6 +852,49 @@ transition: 7s;
   font-style: normal;
 }
 
+.container-loader{
+	width: 100%;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	
+ }
+/*loader 3*/
+
+.container-loader3 {
+    display: flex;
+	width: 95%;
+  }
+.loader3 {
+	width: 90%;
+	height: 2px;
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+  }
+  
+  .loader3::before {
+	content: "";
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	width: 0%;
+	height: 100%;
+	border-radius: 2px;
+	animation: load 3.5s ease-in-out infinite;
+	box-shadow: rgb(255, 255, 255) 0px 2px 29px 0px;
+  }
+  
+  
+  
+  @keyframes load {
+	50% {
+	  width: 100%;
+	}
+  
+	100% {
+	  right: 0;
+	  left: unset;
+	}
+  }
 
 .text-card-margin-button{
   text-align: center;
@@ -888,12 +932,6 @@ transition: 7s;
 }
 
 
-.container-loader{
-	width: 100%;
-	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
-	justify-content: center;
-	
- }
 
 
 .containr-border-definicion{
@@ -2203,9 +2241,11 @@ form {
 
 .download-right{
 	
-	margin-top: 1em;
+	margin-top: .5em;
+	
 	
 }
+
 
 .download-left{
 	text-align: center;
@@ -2237,12 +2277,30 @@ form {
 
 
 .download-right .grande{
+	
 	color:#fff;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 2.5em;
+	font-size: 1.9em;
 }
+.download-right .texto-normal p{
+	font-size: 1.2em;
+	font-family: "Ubuntu", sans-serif;
+	 font-weight: 200;
+	 font-style: normal;
+	 /*color: #FFFFFF;*/
+	
+   }
+   
+   .download-right .texto-estrellas p{
+	   font-size: 1.3em;
+	   font-family: "Ubuntu", sans-serif;
+	 font-weight: 400;
+	 font-style: normal;
+	/* color: #FFFFFF;*/
+	   
+	  }
 
 /*
 .download-right a{
@@ -2251,6 +2309,101 @@ form {
 }
 
 */
+
+.container-loader12-adquirir{
+	
+	width: 50%;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	/*margin-bottom: 1em;*/
+}
+
+/*loader12*/
+.loader12 {
+	
+	transform: rotateZ(45deg);
+	perspective: 1000px;
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	color: #FFFFFF;
+  }
+  
+  .loader12:before,
+  .loader12:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	transform: rotateX(70deg);
+	animation: 1s spin linear infinite;
+  }
+  
+  .loader12:after {
+	color: #FFFFFF;
+	transform: rotateY(70deg);
+	animation-delay: .4s;
+  }
+  
+  @keyframes rotate {
+	0% {
+	  transform: translate(-50%, -50%) rotateZ(0deg);
+	}
+  
+	100% {
+	  transform: translate(-50%, -50%) rotateZ(360deg);
+	}
+  }
+  
+  @keyframes rotateccw {
+	0% {
+	  transform: translate(-50%, -50%) rotate(0deg);
+	}
+  
+	100% {
+	  transform: translate(-50%, -50%) rotate(-360deg);
+	}
+  }
+  
+  @keyframes spin {
+	0%,
+	100% {
+	  box-shadow: .2em 0px 0 0px currentcolor;
+	}
+  
+	12% {
+	  box-shadow: .2em .2em 0 0 currentcolor;
+	}
+  
+	25% {
+	  box-shadow: 0 .2em 0 0px currentcolor;
+	}
+  
+	37% {
+	  box-shadow: -.2em .2em 0 0 currentcolor;
+	}
+  
+	50% {
+	  box-shadow: -.2em 0 0 0 currentcolor;
+	}
+  
+	62% {
+	  box-shadow: -.2em -.2em 0 0 currentcolor;
+	}
+  
+	75% {
+	  box-shadow: 0px -.2em 0 0 currentcolor;
+	}
+  
+	87% {
+	  box-shadow: .2em -.2em 0 0 currentcolor;
+	}
+  }
+
 
 .download-right a:hover{
 	color:#3A3A3A;
@@ -2277,35 +2430,19 @@ form {
 } 
 
 
-.download-right .texto-normal p{
- font-size: 1.2em;
- font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  /*color: #FFFFFF;*/
- 
-}
 
-.download-right .texto-estrellas p{
-	font-size: 1.3em;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
- /* color: #FFFFFF;*/
-	
-   }
    
 
 /*boton envio formulario*/
 
 .container-btn-formulario{
-	padding: 1em 0em;
+	padding: .8em 0em;
 }
 
 .btn_ir_modal_mostrar{
-	width: 35%;
+	width: 30%;
     padding: .6em 0;
-    font-size: 1.2em;
+    font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
