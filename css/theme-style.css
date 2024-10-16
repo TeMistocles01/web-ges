@@ -2187,10 +2187,10 @@ form {
 .download{
 
 	width: 100%;
-	height: 60em;
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	background-size: 100% 100%;
+	
 	position: relative;
+	padding: 3em 0em;
 
 	/*
 	
@@ -2202,12 +2202,14 @@ form {
 
 
 .download-right{
-	margin-top: 15em;
+	
+	margin-top: 1em;
+	
 }
 
 .download-left{
 	text-align: center;
-	margin-top: 20em;
+	margin-top: 4em;
 }
 
 .download-left span{
@@ -3126,20 +3128,21 @@ iframe{
 .download{
 
 	width: 100%;
-	height: 40em;
+	
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	background-size: 100% 100%;
+	
 	position: relative;
+	padding: 2em 0em;
 
 }
 
 .download-right{
-	margin-top: 8em;
+	margin-top: 1em;
 }
 
 .download-left{
 	
-	margin-top: 11em;
+	margin-top: 4em;
 }
 
 
@@ -3171,6 +3174,25 @@ iframe{
 }
 .download-right ul li a.l-google span {
 	background-position: -147px 0px;
+}
+
+/*boton*/
+.btn_ir_modal_mostrar{
+	width: 35%;
+    padding: .5em 0;
+    font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    color:#5fd9fe;
+    background: #FFFFFF;
+    border:none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+	margin-bottom: 20px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    
 }
 
 .Share-instantly-right {
@@ -3385,10 +3407,6 @@ p.cousel_demo{
 }
 
 
-
-
-
-
 /*Definicion*/
 
 .card{
@@ -3461,16 +3479,7 @@ p.cousel_demo{
 	
 }
 
-
-
-
-
-
-
-
 /* catalogo*/
-
-
 
 .features{
 	width: 100%;
@@ -3626,30 +3635,33 @@ table{
  .header{
 	left:0;
  }
- .download-right p {
-	font-size: 1.8em;
- }
  
+
+ /* adquirir*/
  .download{
 
 	width: 100%;
-	height: 35em;
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	background-size: 100% 100%;
 	position: relative;
+	padding: 1em 0em;
 
 }
 
+.download-right p {
+	font-size: 1.8em;
+ }
+ 
+
 /*Texto position*/
 .download-right{
-	margin-top: 5em;
+	margin-top: 1em;
 	
 }
 
 /* imagen position*/
 .download-left{
 	
-	margin-top: 10em;
+	margin-top: 5em;
 	float: left;
 }
 
@@ -3680,7 +3692,7 @@ table{
 */
 	.download-right .grande{
 		color:#fff;
-		font-size:2em;
+		font-size:1.8em;
 		font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -3699,9 +3711,9 @@ table{
 
 /*boton*/
 .btn_ir_modal_mostrar{
-	width: 30%;
+	width: 35%;
     padding: .5em 0;
-    font-size: 1.1em;
+    font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -3860,11 +3872,6 @@ table{
 }
 
 
-/*.download-left{
-	text-align: center;
-	margin-top: 6em;
-}
- tecnica*/
 
 
  /* ficha tecnica */
@@ -4425,32 +4432,7 @@ table{
     text-align: center;
 	
  }
-    
- .download{
-
-	width: 100%;
-	height: 35em;
-	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	background-size: 100% 100%;
-	position: relative;
-
-}
-
-/*Texto position*/
-.download-right{
-	margin-top: 5em;
-	
-}
-
-/* imagen position*/
-.download-left{
-	
-	margin-top: 10em;
-	float: left;
-}
-
-
-
+  
 
 
  .footer {
@@ -4602,12 +4584,72 @@ table{
  }
  .download-right .grande{
 	color:#fff;
-	font-size:2em;
+	font-size:1.7em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
+.download-right .texto-estrellas p{
+	font-size: 1.1em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ /* color: #FFFFFF;*/
+	
+   }
+   .download-right .texto-normal p{
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+	 font-weight: 200;
+	 font-style: normal;
+	 /*color: #FFFFFF;*/
+	
+   }
+.download{
+
+	width: 100%;
+	
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
+	
+	position: relative;
+	padding: 1em 0em;
+
+}
+
+/*Texto position*/
+.download-right{
+	margin-top: 1em;
+	
+}
+
+/* imagen position*/
+.download-left{
+	
+	margin-top: 6em;
+	float: left;
+}
+
+
+
+/*boton*/
+.btn_ir_modal_mostrar{
+	width: 30%;
+    padding: .5em 0;
+    font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    color:#5fd9fe;
+    background: #FFFFFF;
+    border:none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+	margin-bottom: 20px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    
+} 
 
 
 
@@ -5127,11 +5169,6 @@ table{
 }
 
 
-
-
-
-
-
 /* coadyubar con el ministerio publico*/
  
 .Share-instantly-left span{
@@ -5185,10 +5222,12 @@ table{
  .download{
 
 	width: 100%;
-	height: 30em;
+	
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	background-size: 100% 100%;
+	
 	position: relative;
+	padding: 1em 0em;
+
 
 }
 
@@ -5201,7 +5240,7 @@ table{
 /* imagen position*/
 .download-left{
 	
-	margin-top: 7em;
+	margin-top: 5em;
 	float: left;
 }
 
@@ -5212,12 +5251,49 @@ table{
  }
  .download-right .grande{
 	color:#fff;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
+.download-right .texto-normal p{
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+	 font-weight: 200;
+	 font-style: normal;
+	 /*color: #FFFFFF;*/
+	
+   }
+   
+   .download-right .texto-estrellas p{
+	   font-size: 1.1em;
+	   font-family: "Ubuntu", sans-serif;
+	 font-weight: 400;
+	 font-style: normal;
+	/* color: #FFFFFF;*/
+	   
+	  }
+
+
+	  /*boton*/
+.btn_ir_modal_mostrar{
+	width: 30%;
+    padding: .5em 0;
+    font-size: .9em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    color:#5fd9fe;
+    background: #FFFFFF;
+    border:none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+	margin-bottom: 20px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    
+} 
 /* texto bajo card*/
 
 .card-tarjeta .back .link  {
@@ -6084,7 +6160,7 @@ form {
 .btn_ir_modal_mostrar{
 	width: 40%;
     padding: .5em 0;
-    font-size: 1.1em;
+    font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -6909,6 +6985,22 @@ td,th{
     margin: 5px;
 }
 
+.card-tarjeta .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 45px;
+    color: #FFFFFF;
+    background: rgba(0,0,0,.4); /*rgba(0,0,0,.4); */
+    text-align: center;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+	
+	/*rgba(95,217,254,.9);*/
+}
+
 /*texto ges card*/
 .card-tarjeta .back .title-back {
 	margin-top: 1.1em;
@@ -6967,12 +7059,25 @@ form {
 	margin-top: 1.5em;
 	}
 
+.botones .btn_enviar_formulario{
+	font-size: .9em;
+
+	}
+
+	.botones .btn_salir_formulario{
+		font-size: .9em;
+}
+
+.modal_container .inputGroup label{
+	font-size: .9em;
+}
+
  /*Boton modal*/
 /*boton*/
 .btn_ir_modal_mostrar{
 	width: 60%;
     padding: .5em 0;
-    font-size: 1.1em;
+    font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -7013,13 +7118,15 @@ width: 100%;
 	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
 	width: 100%;
 	padding: 1.5em 0em;
-	height: 36em;
+	position: relative;
+	
 	
 }
 
 /*posicion texto*/
 .download-right{
 	margin-top: .1em;
+	
 	text-align: center;
 }
 
@@ -7073,7 +7180,7 @@ width: 100%;
 	   
 	  }
    
-
+	  
 
 /* ficha tecnica*/
 /*ficha tecnica*/
@@ -7081,7 +7188,7 @@ width: 100%;
 .compatibility{
 	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
 	width: 100%;
-	height: 33em;
+	padding: 1.5em 0em;
 
 }
 
@@ -7847,12 +7954,25 @@ form {
 	margin-top: 1.5em;
 	}
 
+.botones .btn_enviar_formulario{
+	font-size: .9em;
+
+	}
+
+	.botones .btn_salir_formulario{
+		font-size: .9em;
+}
+
+.modal_container .inputGroup label{
+	font-size: .9em;
+}
+
  /*Boton modal*/
 /*boton*/
 .btn_ir_modal_mostrar{
 	width: 60%;
     padding: .5em 0;
-    font-size: 1.1em;
+    font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -7865,8 +7985,7 @@ form {
 	margin-bottom: 20px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
-} 
-
+}
 /*adquirir */
 /* texto bajo card*/
 
@@ -7968,7 +8087,7 @@ width: 100%;
 .compatibility{
 	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
 	width: 100%;
-	height: 35em;
+	height: 33em;
 
 }
 
