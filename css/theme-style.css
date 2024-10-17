@@ -2226,7 +2226,6 @@ form {
 
 	width: 100%;
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	
 	position: relative;
 	padding: 3em 0em;
 
@@ -2256,7 +2255,7 @@ form {
 	width:304px;
 	height:291px;
 	border-radius: 53px;
-	display:inline-block;
+	display:block;
 	background:url(../images/storeplay-web-logo.png) no-repeat 0px 0px;
 }
 
@@ -2414,16 +2413,7 @@ form {
 }
 
 
-.download-right ul li a span{
-	width: 238px;
-	height: 72px;
-	display: inline-block;
-	background: url(../images/download-btns-l.png) no-repeat 0px 0px;
-}
 
-.download-right ul li a.l-google span{
-	background-position: -262px 0px;
-}
 
 .download-right ul li a:hover{
 	opacity:0.7;
@@ -3237,13 +3227,14 @@ iframe{
 
 /* coadyubar con el ministerio publico*/
 
- 
+ /*
 .Share-instantly-left span, .feature-right span{
 	background-size:60%;
 	width: 320px;
 	height: 450px;
 	margin-top: 1em;
  }
+	*/
 
  /* configure llamadas de emergencia */
  .feature-right span{
@@ -3269,17 +3260,17 @@ iframe{
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
 	
 	position: relative;
-	padding: 2em 0em;
+	padding: 3em 0em;
 
 }
 
 .download-right{
-	margin-top: 1em;
+	margin-top: .5em;
 }
 
 .download-left{
 	
-	margin-top: 4em;
+	margin-top: 6em;
 }
 
 
@@ -3294,9 +3285,7 @@ iframe{
 	font-size: 1.8em;
  }
  
-
  
-
  .download-left  span {
 	background-size:100%;
 	width: 240px;
@@ -3309,9 +3298,8 @@ iframe{
 	height: 50px;
 	background-size: 198%;
 }
-.download-right ul li a.l-google span {
-	background-position: -147px 0px;
-}
+
+
 
 /*boton*/
 .btn_ir_modal_mostrar{
@@ -3780,7 +3768,7 @@ table{
 	width: 100%;
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
 	position: relative;
-	padding: 1em 0em;
+	padding: 2em 0em;
 
 }
 
@@ -3798,7 +3786,7 @@ table{
 /* imagen position*/
 .download-left{
 	
-	margin-top: 5em;
+	margin-top: 8em;
 	float: left;
 }
 
@@ -3842,13 +3830,11 @@ table{
 	background-size: 198%;
 }
 	*/
-.download-right ul li a.l-google span {
-	background-position: -147px 0px;
-}
+
 
 /*boton*/
 .btn_ir_modal_mostrar{
-	width: 35%;
+	width: 50%;
     padding: .5em 0;
     font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
@@ -3863,6 +3849,13 @@ table{
 	margin-bottom: 20px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
+}
+.container-loader12-adquirir{
+	
+	width: 50%;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	/*margin-bottom: 1em;*/
 }
 
  .slide-text-info {
