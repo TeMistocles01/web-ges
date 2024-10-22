@@ -621,11 +621,90 @@ font-family: "Ubuntu", sans-serif;
 	background-color: #5fd9fe;
 }
 
+/*4 cards efectos */
+
+
+ 
+
+/*  cambia tamaño de card*/
+.container-img-text figure{
+	width: 10em;
+	height: 7em;
+	position:relative;
+	display: flex;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: .7em;
+ }
+
+ .container-img-text figure .img-card{
+    width: 100%;
+    height: 100%;
+	transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.container-img-text figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,103,123,0.7);
+	transition: all 400ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+    text-align: center;
+	
+}
+.container-img-text figure:hover > .capa {
+	opacity: 1;
+	visibility: visible;
+	
+}
+
+/* Text-grande titulo */
+.container-img-text figure:hover > .capa .title-foto{
+	font-size: 1.3em;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	
+}
+.container-img-text figure:hover > img{
+	transform: scale(1.2);
+}
+
+/* Text-grande titulo */
+.container-img-text figure .capa .text-unico {
+	font-size: 1.3em;
+	color: #FFFFFF;	
+	margin-bottom: 120px;
+	transition: all 400ms ease-out;
+	margin-top: 30px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+	
+}
+
+
+
+
+
+
+
 
 /* Subtitulos de seccion end  */
 
 
 /* card origen start*/
+
+/*
 .card-origen-center:hover{
 	
 	box-shadow: 0 10px 20px #FFFFFF;
@@ -638,7 +717,7 @@ font-family: "Ubuntu", sans-serif;
 	transition: 2s;
 	
 }
-
+*/
 .origen-container .container-center .titulo-origen-card {
 	text-align: center;
 	
@@ -815,6 +894,7 @@ font-family: "Ubuntu", sans-serif;
 	
  }
 
+ /*
 .logo2:hover{
 
 -webkit-transform: rotateY(3000deg);
@@ -823,7 +903,7 @@ transform: rotateY(3000deg);
 transform-style: preserve-3d;
 transition: 7s;
 }
-
+*/
 .contenido-text {
 	text-align: center;
 	
@@ -903,7 +983,7 @@ transition: 7s;
 	display: inline-block;
 }
 
-
+ /*borrar en todo*/
 .container-text-img{
  text-align: center;
  margin: .5em 0em;
