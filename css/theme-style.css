@@ -28,8 +28,6 @@ p,th,td{
  
 }
 
-
-
 /*
 @font-face {
     font-family: 'nexa_boldregular';
@@ -39,35 +37,45 @@ p,th,td{
 }
 	*/
 /*-----start-header----*/
-.logo{
-	float:left;
+.container .header .container .marca_logo {
+	position: absolute;
+	
 }
 
-.logo a{
-	font-size: 3em;
+.container .header .container .marca_logo .logo_ges{
+  width: 10em;
+  height: 5em;
+  
 }
 
-.logo a:hover{
-	text-decoration:none;
-}
+
 .top-header{
 	width: 100%;
 	position:relative;
 	
+	
 }
 
 .header{
-	position: absolute;
+	position: fixed;
+	z-index: 100;
+	margin-bottom: 2em;
+	right: 0;
+		left: 0;
+	/*position: absolute;
 	top: 0px;
-	z-index: 999;
+	z-index: 999;*/
+	
+	
 	
 }
 /*----navbar-nav----*/
 
 /*acomodar menu*/ 
 .top-nav ul li a{
+	
 	color: #FFFFFF;
-	padding: 1.8em 1.1em;
+	padding: 1.8em 1.2em;
 	font-size: 1em;
 	text-align: center;
 	font-family: "Ubuntu", sans-serif;
@@ -79,10 +87,12 @@ p,th,td{
 	background: url(../images/border-top.png) no-repeat 50% 0px;
 	color:#FFF;
 }
+
+/*
 .logo a{
 	display:block;
 }
-
+*/
 /* top-nav */
 .top-nav:before,
 .top-nav:after {
@@ -136,13 +146,7 @@ nav a#pull {
   		width: 100%;
   		position: relative;
   	}
-	/*
 	
-	nav li a {
-		border-bottom: 1px solid #eee;
-	}
-	
-	*/
   	
 	nav li a {
 		border-bottom: 1px solid#1a1b1c;
@@ -154,7 +158,38 @@ nav a#pull {
   	}
 }
 
+
+@media screen and (max-width: 641px) {
+	nav { 
+  		height: auto;
+  		float:none;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 100%;
+  		position: relative;
+  	}
+	
+  	
+	nav li a {
+		border-bottom: 1px solid#1a1b1c;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+}
+
+
+
+
 /*Styles for screen 515px and lower*/
+
 @media only screen and (max-width : 768px) {
 
 	
@@ -175,7 +210,7 @@ nav a#pull {
 		color: #5fd9fe;
 		text-align: right;
 		position: absolute;
-		top:20px;
+		top:.8em;
 	}
 	nav a#pull:after {
 		content:"";
@@ -195,6 +230,33 @@ nav a#pull {
 		padding: 0em 0;
 	}
 }
+
+
+/*Smartphone*/
+@media only screen and (max-width : 480px) {
+	nav {
+		float:none;
+	}
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #576979;
+	}
+	nav a#pull {
+		display: block;
+		position: relative;
+		color: #5fd9fe;
+		text-align: right;
+		position: absolute;
+		top:.1em;
+	}
+}
+
+
+
 /*Smartphone*/
 @media only screen and (max-width : 320px) {
 	nav {
@@ -207,6 +269,14 @@ nav a#pull {
 	}
 	nav li a {
 		border-bottom: 1px solid #576979;
+	}
+	nav a#pull {
+		display: block;
+		position: relative;
+		color: #5fd9fe;
+		text-align: right;
+		position: absolute;
+		top:.1em;
 	}
 }
 
@@ -455,9 +525,7 @@ nav a#pull {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0em auto 2.5em auto;
-	
-	
+	margin: 0em auto 2.5em auto;	
 }
 
 .card-origen-center{
@@ -470,7 +538,11 @@ nav a#pull {
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);	
 }
 
+.list-origen {
+	line-height: 2;
+	color: #FFFFFF;
 
+}
 .container-2-card-origen{
 	display: flex;
 	flex-direction: row;
@@ -498,7 +570,7 @@ nav a#pull {
 .titles-principal{
 	
 	text-align: center;
-	padding: 1em 0em;	
+	padding: 3em 0em 1em 0em;	
 }
 
 
@@ -744,7 +816,7 @@ font-family: "Ubuntu", sans-serif;
  }
 
 .logo2:hover{
-cursor: pointer;
+
 -webkit-transform: rotateY(3000deg);
 -webkit-transform-style: preserve-3d;
 transform: rotateY(3000deg);
@@ -767,7 +839,7 @@ transition: 7s;
 	border-radius: 5px;
 }
 .icono-soborno:hover  {
-	cursor: pointer;
+	
 	/*transform: perspective(900px) rotateY(360deg);  */
     
 	transform: scale(1.2);
@@ -1251,7 +1323,7 @@ transition: 7s;
 .features{
 	/*background-color: #cccccc;  Used if the image is unavailable */
 	width: 100%;
-	height: 60em;
+	height: 58em;
 	
 	
 }
@@ -1260,7 +1332,7 @@ transition: 7s;
 
 .fondo-img-catalogo{
 	width: 100%;
-	height: 60em;
+	height: 58em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1271,21 +1343,21 @@ transition: 7s;
 }
 
 .features .img-derecha-columna{	
-   margin-top: 2.5em;
+   margin-top: 8.5em;
 	display: flex;
 	flex-direction: column;
 	float: right;
 }
 
 .features .img-izquierda-columna{
-	margin-top: 2.5em;
+	margin-top: 8.5em;
 	display: flex;
 	flex-direction: column;
 	float: left;
 }
 
-/*  cambia tamaño de card*/
-.container-img-multiple figure{
+
+.container-img-origen figure{
 	width: 24em;
 	height: 15em;
 	position:relative;
@@ -1295,6 +1367,21 @@ transition: 7s;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	margin: 1.3em;
+ }
+
+ 
+
+/*  cambia tamaño de card*/
+.container-img-multiple figure{
+	width: 23em;
+	height: 15em;
+	position:relative;
+	display: flex;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: .7em;
  }
 
 
@@ -1447,6 +1534,13 @@ transition: 7s;
 
 
 /*-----GES en accion----*/
+.container-img-estadistica{
+	width: 100%;
+	background: url(../images/estadis.jpg)no-repeat center center fixed;;
+	background-size: 100% 100%;
+	height: max-content;
+	
+}
 
 .titulo-accion{
 	width: 100%;
@@ -1593,13 +1687,7 @@ iframe{
 	height: 80px;
 	
 }
-.container-img-estadistica{
-	width: 100%;
-	background: url(../images/estadis.jpg)no-repeat center center fixed;;
-	background-size: 100% 100%;
-	height: max-content;
-	
-}
+
 
 /*
 
@@ -2228,33 +2316,25 @@ form {
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
 	position: relative;
 	padding: 3em 0em;
-
-	/*
-	
-	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
-	padding: 7em 0;
-	
-	*/
 }
 
 
 .download-right{
-	
 	margin-top: .5em;
-	
-	
 }
 
 
 .download-left{
-	text-align: center;
 	margin-top: 4em;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	
 }
 
 .download-left span{
-	width:304px;
-	height:291px;
-	border-radius: 53px;
+	width:19em;
+	height:18em;
+	border-radius: 3.7em;
 	display:block;
 	background:url(../images/storeplay-web-logo.png) no-repeat 0px 0px;
 }
@@ -2309,13 +2389,7 @@ form {
 
 */
 
-.container-loader12-adquirir{
-	
-	width: 50%;
-	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
-	justify-content: center;
-	/*margin-bottom: 1em;*/
-}
+
 
 /*loader12*/
 .loader12 {
@@ -2421,16 +2495,21 @@ form {
 
 
 
-   
+.container-loader12-adquirir{
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	margin-bottom: 1em;
+} 
 
 /*boton envio formulario*/
 
 .container-btn-formulario{
-	padding: .8em 0em;
+	width: 50%;
+	
 }
 
 .btn_ir_modal_mostrar{
-	width: 30%;
+	width: 50%;
     padding: .6em 0;
     font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
@@ -2812,29 +2891,27 @@ width: 100%;
 		
 	}
 	
-	.logo_ges{
-		width: 2.4em;
-		height: 1.5em;
-	}
+	.container .header .container .marca_logo .logo_ges{
+  width: 8em;
+  height: 4em;
+  
+}
+
 
 	.header {
-		position: absolute;
-		top: 0;
-		z-index: 999;
+		position: fixed;
+	z-index: 100;
 		right: 0;
 		left: 0;
 	 }
 
-	 .top-nav{
-		padding: 0em ;
-	 }
-
-
  .top-nav ul li a {
 	color: #FFF;
-	padding: 1.8em 1em;
+	padding: 1em 1em;
 	font-size:0.8125em;
  }
+
+
  .slide-text-info p {
 	font-size: 2.5em;
  }
@@ -3040,7 +3117,7 @@ iframe{
 
 .fondo-img-catalogo{
 	width: 100%;
-	height: 46em;
+	height: 50em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -3049,17 +3126,15 @@ iframe{
 	position: relative;
 }
 
-
-
 .features .img-derecha-columna{	
-	margin-top: .3em;
+	margin-top: 4.5em;
 	 display: flex;
 	 flex-direction: column;
 	 float: right;
  }
  
  .features .img-izquierda-columna{
-	 margin-top: .3em;
+	 margin-top: 4.5em;
 	 display: flex;
 	 flex-direction: column;
 	 float: left;
@@ -3256,20 +3331,17 @@ iframe{
 .download{
 
 	width: 100%;
-	
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	
 	position: relative;
 	padding: 3em 0em;
 
 }
 
 .download-right{
-	margin-top: .5em;
+	margin-top: 1em;
 }
 
 .download-left{
-	
 	margin-top: 6em;
 }
 
@@ -3288,8 +3360,9 @@ iframe{
  
  .download-left  span {
 	background-size:100%;
-	width: 240px;
-	height: 230px;
+	width: 14em;
+	height: 13em;
+	border-radius: 2.5em;
 	
  }
 
@@ -3299,11 +3372,22 @@ iframe{
 	background-size: 198%;
 }
 
+.container-loader12-adquirir{
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	margin-bottom: 1em;
+} 
 
+/*boton envio formulario*/
+
+.container-btn-formulario{
+	width: 50%;
+	
+}
 
 /*boton*/
 .btn_ir_modal_mostrar{
-	width: 35%;
+	width: 50%;
     padding: .5em 0;
     font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
@@ -3355,36 +3439,31 @@ p.cousel_demo{
 /*--responsive design--*/
 @media (min-width:801px) and (max-width:1024px){
 
-	.logo a{
-		position: absolute;
-		left: 5px;	
-	}
 	
-	.logo_ges{
-		width: 2em;
-		height: 1em;
-	}
+	
+	
 
-	
+	.container .header .container .marca_logo .logo_ges{
+		width: 5em;
+		height: 3em;
+		
+	  }
 
 	.header {
-		position: absolute;
-		top: 0;
-		z-index: 999;
+		position: fixed;
+	z-index: 100;
 		right: 0;
 		left: 0;
 		
 	 }
-
-	 .top-nav{
-		padding: 0em ;
-	 }
+	
+	 
 
 
  .top-nav ul li a {
 	color: #FFF;
-	padding: 1.8em .4em;
-	font-size:0.8125em;
+	padding: .7em .4em;
+	font-size:0.7725em;
  }
  .slide-text-info p {
 	font-size: 2em;
@@ -3608,7 +3687,7 @@ p.cousel_demo{
 
 .features{
 	width: 100%;
-	height: 45em;
+	height: 49em;
 	background-image:url(../images/slide1.jpg);
 	
 }
@@ -3617,7 +3696,7 @@ p.cousel_demo{
 .fondo-img-catalogo{
 
 	width: 100%;
-	height: 45em;
+	height: 49em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -3627,14 +3706,14 @@ p.cousel_demo{
 }
 
 .features .img-derecha-columna{	
-	margin-top: .2em;
+	margin-top: 4em;
 	 display: flex;
 	 flex-direction: column;
 	 float: right;
  }
  
  .features .img-izquierda-columna{
-	 margin-top: .2em;
+	 margin-top: 4em;
 	 display: flex;
 	 flex-direction: column;
 	 float: left;
@@ -3779,22 +3858,28 @@ table{
 
 /*Texto position*/
 .download-right{
+	width: 60%;
 	margin-top: 1em;
+	float: right;
 	
 }
 
 /* imagen position*/
 .download-left{
-	
-	margin-top: 8em;
+	width: 40%;
+	margin-top: 6em;
 	float: left;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
 }
 
 
 .download-left  span {
+	width: 14em;
+	height: 13em;
+	border-radius: 2.5em;
 	background-size:100%;
-	width: 240px;
-	height: 230px;
+	
 	
  }
 /*
@@ -3832,9 +3917,24 @@ table{
 	*/
 
 
+/*Efecto */
+
+	.container-loader12-adquirir{
+		display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+		justify-content: center;
+		margin-bottom: 1em;
+	} 
+	
+	/*boton envio formulario*/
+	
+	.container-btn-formulario{
+		width: 70%;
+	
+	}
+	
 /*boton*/
 .btn_ir_modal_mostrar{
-	width: 50%;
+	width: 70%;
     padding: .5em 0;
     font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
@@ -3850,13 +3950,7 @@ table{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 }
-.container-loader12-adquirir{
-	
-	width: 50%;
-	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
-	justify-content: center;
-	/*margin-bottom: 1em;*/
-}
+
 
  .slide-text-info {
 	margin-top: 7%;
@@ -4075,47 +4169,34 @@ p.cousel_demo{
 
 @media (min-width:769px) and (max-width:800px){
 	
-.logo a{
-		position: absolute;
-		left:7px;
-		top: 8px;
-	}
-	.logo_ges{
+
+	.container .header .container .marca_logo .logo_ges{
+		width: 5em;
+		height: 3em;
 		
-		width: 1.6em;
-		height: 1em;
-	}
+	  }
 
 	.header {
-		position: absolute;
-		top: 0;
-		z-index: 999;
+		position: fixed;
+	z-index: 100;
 		right: 0;
 		left: 0;
 		
-		
 	 }
+	
+	 
 
-	 .top-nav{
-		padding: 0em ;
-	 }
 
  .top-nav ul li a {
 	color: #FFF;
-	padding: 2em .4em;
-	font-size: 0.8125em;
-	
+	padding: .7em .4em;
+	font-size:0.7725em;
  }
  .slide-text-info p {
 	font-size: 1.7em;
  }
  
- .slide-text-info-btns {
-	margin-top: 1.5em;
- }
- .slide-text-info-btns {
-	margin-top: 1.5em;
- }
+ 
  .callbacks_tabs {
 	left: 40%;
  }
@@ -4391,7 +4472,7 @@ table{
 
 .features{
 	width: 100%;
-	height: 45em;
+	height: 49em;
 	background:url(../images/fondo_cards_321.png)repeat;
 	
 }
@@ -4399,7 +4480,7 @@ table{
 .fondo-img-catalogo{
 
 	width: 100%;
-	height: 45em;
+	height: 49em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4410,14 +4491,14 @@ table{
 
   
 .features .img-derecha-columna{	
-	margin-top: .3em;
+	margin-top: 4.3em;
 	 display: flex;
 	 flex-direction: column;
 	 float: right;
  }
  
  .features .img-izquierda-columna{
-	 margin-top: .3em;
+	 margin-top: 4.3em;
 	 display: flex;
 	 flex-direction: column;
 	 float: left;
@@ -4468,6 +4549,55 @@ table{
 }
 
 
+/* adquirir*/
+.download{
+
+	width: 100%;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
+	position: relative;
+	padding: 2em 0em;
+
+}
+
+.download-right p {
+	font-size: 1.8em;
+ }
+ 
+
+/*Texto position*/
+.download-right{
+	width: 60%;
+	margin-top: 1em;
+	float: right;
+	
+}
+
+/* imagen position*/
+.download-left{
+	width: 40%;
+	margin-top: 6em;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	float: left;
+}
+
+
+.download-left  span {
+	width: 14em;
+	height: 13em;
+	border-radius: 2.5em;
+	background-size:100%;
+	
+	
+ }
+
+	.download-right .grande{
+		color:#fff;
+		font-size:1.8em;
+		font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	}
 
 
 /*ficha tecnica*/
@@ -4706,7 +4836,13 @@ table{
 
 /*adquirir*/
 
+.download{
+	width: 100%;
+	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
+	position: relative;
+	padding: 1em 0em;
 
+}
 .download-left  span {
 	background-size:100%;
 	width: 230px;
@@ -4736,35 +4872,40 @@ table{
 	 /*color: #FFFFFF;*/
 	
    }
-.download{
 
-	width: 100%;
-	
-	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-	
-	position: relative;
-	padding: 1em 0em;
-
-}
 
 /*Texto position*/
 .download-right{
+	width: 60%;
 	margin-top: 1em;
+	float: right;
 	
 }
 
 /* imagen position*/
 .download-left{
-	
+	width: 40%;
 	margin-top: 6em;
+	padding: 0em 1em;
 	float: left;
 }
 
+.container-loader12-adquirir{
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	margin-bottom: 1em;
+} 
 
+/*boton envio formulario*/
+
+.container-btn-formulario{
+	width: 70%;
+
+}
 
 /*boton*/
 .btn_ir_modal_mostrar{
-	width: 30%;
+	width: 70%;
     padding: .5em 0;
     font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
@@ -4801,6 +4942,7 @@ table{
 
 @media (min-width:641px) and (max-width:768px){
 
+	
 	/* bajar letras slider principal*/
 .slide-text-info{
 	margin-top:4%;
@@ -4811,26 +4953,26 @@ table{
 		margin-top: 10em;
 		
 	}
-
-.logo a{
-		position: absolute;
-		right: 530px;
-		top: 10px;	
-	}
-
-	.logo_ges{
-		width: 2em;
-		height: 1em;
+	.container .header .container .marca_logo{
+		margin-top: 1em;
 		
-	}
+	  }
+	.container .header .container .marca_logo .logo_ges{
+		width: 5em;
+		height: 3em;
+		
+	  }
 	.header {
 		position: absolute;
-		top: -15px;
 		z-index: 999;
 		right: 0;
 		left: 0;
 	 }
-
+	 .top-nav ul li a {
+		color: #FFF;
+		padding: .7em .4em;
+		font-size:0.7725em;
+	 }
 	 .slide-text-info p {
 		font-size: 1.3em;
 	 }
@@ -5363,21 +5505,28 @@ table{
 
 /*Texto position*/
 .download-right{
+	width: 60%;
 	margin-top: 1em;
+	float: right;
 	
 }
 
 /* imagen position*/
 .download-left{
-	
-	margin-top: 5em;
+	width: 40%;
+	margin-top: 6em;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
 	float: left;
 }
 
+
  .download-left  span {
 	background-size:100%;
-	width: 230px;
-	height: 219px;
+	width: 14em;
+	height: 13em;
+	border-radius: 2.5em;
+	background-position: 0px 0;
  }
  .download-right .grande{
 	color:#fff;
@@ -5404,11 +5553,24 @@ table{
 	/* color: #FFFFFF;*/
 	   
 	  }
+/*Efecto */
 
+.container-loader12-adquirir{
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	margin-bottom: 1em;
+} 
+
+/*boton envio formulario*/
+
+.container-btn-formulario{
+	width: 70%;
+
+}
 
 	  /*boton*/
 .btn_ir_modal_mostrar{
-	width: 30%;
+	width: 70%;
     padding: .5em 0;
     font-size: .9em;
 	font-family: "Ubuntu", sans-serif;
@@ -5541,24 +5703,20 @@ table{
 	}
 
 	nav ul {
-		margin-top: 2.3em;
+		margin-top: 8em;
 	}
-
-.logo a{
-		position: relative;
+	.container .header .container .marca_logo{
+		margin-top: 1em;
 		
-		top: .1em;
-			
-	}
-
-	.logo_ges{
-		width: 1.5em;
-		height: .8em;
-	}
+	  }
+	.container .header .container .marca_logo .logo_ges{
+		width: 5em;
+		height: 3em;
+		
+	  }
 
 	.header {
 		position: absolute;
-		top: -15px;
 		z-index: 999;
 		right: 0;
 		left: 0;
@@ -6286,11 +6444,69 @@ form {
 	}
 
  /*Boton modal*/
+
+
+
+
+
+/*abquirir*/
+.download{
+	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
+	padding: 1em 0;
+	width: 100%;
+	position: relative;
+	
+}
+
+.download-right{
+	margin-top: 1em;
+	text-align: center;
+	width: 100%;
+}
+
+.download-left{
+	width: 100%;
+	margin-top: 1em;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+}
+
+
+.download-left  span {
+	background-size: 100%;
+	width: 14em;
+	height: 13em;
+	border-radius: 2.5em;
+	background-position: 0px 0;
+ }
+
+ 
+ .download-right .grande{
+	color:#fff;
+	font-size: 1.6em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.container-loader12-adquirir{
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	margin-bottom: 1em;
+} 
+
+/*boton envio formulario*/
+
+.container-btn-formulario{
+	width: 100%;
+
+}
+
 /*boton*/
 .btn_ir_modal_mostrar{
-	width: 40%;
+	width: 50%;
     padding: .5em 0;
-    font-size: 1em;
+    font-size: .9em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -6304,58 +6520,6 @@ form {
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 } 
-
-/*adquirir */
-/* texto bajo card*/
-
-
-
-.download{
-	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
-	padding: 1em 0;
-	width: 100%;
-	height: 40em;
-	
-}
-
-.download-right{
-	margin-top: 1em;
-	text-align: center;
-}
-
-
-
-
-.download-left{
-	text-align: center;
-	margin-top: 2em;
-}
-
-
-.download-left  span {
-	background-size: 100%;
-	width: 200px;
-	height: 190px;
-	border-radius: 33px;
-	background-position: 0px 0;
- }
-
- /* boton play store*/
- .download-right ul li a span {
-	width: 250px;
-	height:35px;
-	background-size: 95%;
-	background-position:1px 0;
- }
- .download-right .grande{
-	color:#fff;
-	font-size: 1.6em;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
- 
 
 
 /* ficha tecnica*/
@@ -6461,24 +6625,24 @@ form {
 	}
 
 	nav ul {
-		margin-top: 2.3em;
+		margin-top: 8em;
 	}
-
-.logo a{
-		position: relative;
+	
+	
+	.container .header .container .marca_logo{
+		margin-top: .3em;
 		
-		top: .1em;
-			
-	}
-
-	.logo_ges{
-		width: 1.5em;
-		height: .8em;
-	}
+	  }
+		
+	.container .header .container .marca_logo .logo_ges{
+		width: 5em;
+		height: 2.5em;
+		
+	  }
 
 	.header {
 		position: absolute;
-		top: -15px;
+		
 		z-index: 999;
 		right: 0;
 		left: 0;
@@ -6765,24 +6929,25 @@ form {
  /* catalogo*/
 
 .features{
+	
 	height: 129em;
 	width: 100%;
-	
 	background:url(../images/fondo_cards_321.png)repeat;
 }
 
 .fondo-img-catalogo{
-
 	height: 129em;
 	width: 100%;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
+	background-attachment: fixed;	
 }
+
+
 .features .img-derecha-columna{
+	
 	margin-top: 40em;
 	width: 100vw;
 	height: max-content;
@@ -6793,6 +6958,7 @@ form {
 }
 
 .features .img-izquierda-columna{
+	
 	width: 100vw;
 	height: max-content;
 	margin-top: 0em;
@@ -7247,43 +7413,37 @@ width: 100%;
 .download{
 	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
 	width: 100%;
-	padding: 1.5em 0em;
-	position: relative;
+	padding: 1em 0em;
+
 	
 	
 }
 
-/*posicion texto*/
+/*texto*/
 .download-right{
-	margin-top: .1em;
-	
+	margin-top: 1em;
 	text-align: center;
+	width: 100%;
 }
 
-
-
-/*posicion d eimagen altura logo ges*/
 .download-left{
-	text-align: center;
-	margin-top: .1em;
+	width: 100%;
+	margin-top: 1em;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
 }
-
 
 .download-left  span {
 	background-size: 100%;
-	width: 200px;
-	height: 190px;
-	border-radius: 33px;
+	width: 14em;
+	height: 13em;
+	border-radius: 2.5em;
 	background-position: 0px 0;
  }
 
- /* boton play store*/
- .download-right ul li a span {
-	width: 250px;
-	height:35px;
-	background-size: 95%;
-	background-position:1px 0;
- }
+
+
+ 
  .download-right .grande{
 	color:#fff;
 	font-size: 1.4em;
@@ -7309,10 +7469,21 @@ width: 100%;
 	/* color: #FFFFFF;*/
 	   
 	  }
+	  .container-loader12-adquirir{
+		display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+		justify-content: center;
+		margin-bottom: 1em;
+	} 
    
-	  
+	  .container-btn-formulario{
+		width: 100%;
+	
+	}
 
-/* ficha tecnica*/
+
+
+
+
 /*ficha tecnica*/
 
 .compatibility{
@@ -7414,22 +7585,17 @@ width: 100%;
 	}
 
 	nav ul {
-		margin-top: 2.3em;
+		margin-top: 8em;
 	}
 
-.logo a{
-		position: relative;
-		top: .1em;	
-	}
-
-	.logo_ges{
-		width: 1.5em;
-		height: .8em;
-	}
-
+	.container .header .container .marca_logo .logo_ges{
+		width: 5em;
+		height: 2.5em;
+		
+	  }
 	.header {
 		position: absolute;
-		top: -15px;
+		
 		z-index: 999;
 		right: 0;
 		left: 0;
@@ -8025,6 +8191,21 @@ td,th{
     height: 26em;
     margin: 5px;
 }
+.card-tarjeta .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 45px;
+    color: #FFFFFF;
+    background: rgba(0,0,0,.4); /*rgba(0,0,0,.4); */
+    text-align: center;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+	
+	/*rgba(95,217,254,.9);*/
+}
 
 /*texto ges card*/
 .card-tarjeta .back .title-back {
@@ -8139,12 +8320,10 @@ width: 100%;
 
 
 .download{
-
-	
 	background: linear-gradient( #5fd9fe 90%,#FFFFFF);
 	padding: 1em 0;
 	width: 100%;
-	height: 40em;
+	position: relative;
 	
 
 	/*
@@ -8158,14 +8337,18 @@ width: 100%;
 .download-right{
 	margin-top: 1em;
 	text-align: center;
+	width: 100%;
 }
 
 
 .download-left{
-	text-align: center;
-	margin-top: 2em;
+	width: 100%;
+	margin-top: 1em;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
 }
 
+/*
 .download-left  span {
 	background-size: 100%;
 	width: 200px;
@@ -8174,7 +8357,7 @@ width: 100%;
 	background-position: 0px 0;
  }
 
- 
+ */
  .download-right .grande{
 	color:#fff;
 	font-size: 1.3em;
@@ -8210,6 +8393,37 @@ width: 100%;
 	background-size: 95%;
 	background-position:1px 0;
  }
+
+ .container-loader12-adquirir{
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+	margin-bottom: 1em;
+} 
+
+/*boton envio formulario*/
+
+.container-btn-formulario{
+	width: 100%;
+
+}
+/*boton*/
+.btn_ir_modal_mostrar{
+	width: 50%;
+    padding: .5em 0;
+    font-size: .9em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    color:#5fd9fe;
+    background: #FFFFFF;
+    border:none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+	margin-bottom: 20px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    
+} 
 
 /* ficha tecnica*/
 /*ficha tecnica*/
