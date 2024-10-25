@@ -132,7 +132,7 @@ nav a#pull {
 	display: none;
 }
 
-
+	  
 
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
@@ -472,6 +472,75 @@ nav a#pull {
     }
 }
 /*----*/
+
+@keyframes loader_5191 {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  .square {
+	background: #ddd;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -5px;
+	margin-left: -5px;
+  }
+  
+  #sq1 {
+	margin-top: -25px;
+	margin-left: -25px;
+	animation: loader_5191 675ms ease-in-out 0s infinite alternate;
+  }
+  
+  #sq2 {
+	margin-top: -25px;
+	animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
+  }
+  
+  #sq3 {
+	margin-top: -25px;
+	margin-left: 15px;
+	animation: loader_5191 675ms ease-in-out 150ms infinite;
+  }
+  
+  #sq4 {
+	margin-left: -25px;
+	animation: loader_5191 675ms ease-in-out 225ms infinite;
+  }
+  
+  #sq5 {
+	animation: loader_5191 675ms ease-in-out 300ms infinite;
+  }
+  
+  #sq6 {
+	margin-left: 15px;
+	animation: loader_5191 675ms ease-in-out 375ms infinite;
+  }
+  
+  #sq7 {
+	margin-top: 15px;
+	margin-left: -25px;
+	animation: loader_5191 675ms ease-in-out 450ms infinite;
+  }
+  
+  #sq8 {
+	margin-top: 15px;
+	animation: loader_5191 675ms ease-in-out 525ms infinite;
+  }
+  
+  #sq9 {
+	margin-top: 15px;
+	margin-left: 15px;
+	animation: loader_5191 675ms ease-in-out 600ms infinite;
+  }
 .callbacks_tabs a{
  visibility: hidden;
 }
@@ -497,9 +566,111 @@ nav a#pull {
 
 .container-text-slider{
 	width: 70%;
-padding: 2.5em 0em;
+
 	
 }
+
+
+.container-header-efect{
+	width: 70%;
+	flex-direction: row;
+	display: flex;  
+	justify-content: center;
+	
+	
+ }
+.loader {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 6rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+  }
+  
+  .loader:before,
+	.loader:after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	animation: pulsOut 1.8s ease-in-out infinite;
+	filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.75));
+  }
+  
+  .loader:before {
+	width: 100%;
+	padding-bottom: 100%;
+	box-shadow: inset 0 0 0 1rem #fff;
+	animation-name: pulsIn;
+  }
+  
+  .loader:after {
+	width: calc(100% - 2rem);
+	padding-bottom: calc(100% - 2rem);
+	box-shadow: 0 0 0 0 #fff;
+  }
+  
+  @keyframes pulsIn {
+	0% {
+	  box-shadow: inset 0 0 0 1rem #fff;
+	  opacity: 1;
+	}
+  
+	50%, 100% {
+	  box-shadow: inset 0 0 0 0 #fff;
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes pulsOut {
+	0%, 50% {
+	  box-shadow: 0 0 0 0 #fff;
+	  opacity: 0;
+	}
+  
+	100% {
+	  box-shadow: 0 0 0 1rem #fff;
+	  opacity: 1;
+	}
+  }
+		
+
+/*
+.container-loaderH{
+	width: 70%;
+	flex-direction: row;
+	display: flex;  
+	justify-content: space-around;
+	
+	
+ }
+.loaderH {
+	
+	width: 45px;
+	height: 50px;
+	background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
+			  linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
+			  linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
+	background-size: 10px 400%;
+	background-repeat: no-repeat;
+	animation: matrix 1s infinite linear;
+  }
+  
+  @keyframes matrix {
+	0% {
+	  background-position: 0% 100%, 50% 100%, 100% 100%
+	}
+  
+	100% {
+	  background-position: 0% 0%, 50% 0%, 100% 0%
+	}
+  }
+*/
+
+
+
 .slide-text-info p{
 	font-size: 4em;
 	font-family: "Ubuntu", sans-serif;
@@ -519,7 +690,7 @@ padding: 2.5em 0em;
 
 .origen-container{
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
-	padding: .5em 0em;
+	padding: 1.5em 0em;
 }
 
 
@@ -543,26 +714,15 @@ padding: 2.5em 0em;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);	
 }
 
-.list-origen p {
-	line-height: 2;
-	color: #FFFFFF;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-	font-size: 1.2em;
 
-
-}
-
+/* Textos patrulla y robo de vehiculo  */
 .origen-container .container-center .card-origen-center .container-img-multiple .capa p {
 	line-height: 2;
 	color: #FFFFFF;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  	font-weight: 300;
+  	font-style: normal;
 	font-size: 1.2em;
-
-
 }
 
 
@@ -614,6 +774,7 @@ padding: 2.5em 0em;
   font-weight: 200;
   font-style: normal;
 	font-size: 1.3em;
+	color: #FFFFFF;
 }
 
 .container-beneficios .container-titulo-beneficios .seleccione p{
@@ -763,7 +924,7 @@ font-family: "Ubuntu", sans-serif;
 	font-size: medium;
 }
 
-/*lista  left: 0px;*/
+/*Contenedor  cards img patrulla y robo de vehiculo*/
 
 .flex-police-list{
 	margin-top: .7em;
@@ -776,28 +937,6 @@ font-family: "Ubuntu", sans-serif;
 	background-color: red;
 }
 
-.container-list{
-	width: 50%;
-	line-height: 1.6;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-
-}
-
-/*
-.container-logo-police{
-	text-align: center;
-	width: 50%;
-	top: 10px;
-}
-
-.icon-card-police{
-	width: 14em;
-	height:7em;
-	border-radius: 5px;
-}
-*/
 .icon-card-police:hover{
 	cursor: pointer;
 	transform: scale(1.2);
@@ -909,6 +1048,8 @@ font-family: "Ubuntu", sans-serif;
 	/*margin-bottom: 1em;*/
 	
  }
+
+ 
 
  /*
 .logo2:hover{
@@ -1029,6 +1170,7 @@ transition: 7s;
 /*loader 3*/
 
 .container-loader3 {
+	margin-top: 1em;
     display: flex;
 	width: 95%;
   }
@@ -1467,42 +1609,26 @@ transition: 7s;
 	margin: .7em;
  }
 
-
-
-/*  
-
-.container-derecha-izquierda .container-img-multiple .img-card{
-	width: 100%;
-	height: 17em;
-}
-
-.container-catalogo .container-img-multiple .img-card{
-	width: 100%;
-	height: 17em;
-}
-
-*/
-
-
 .container-title{
 	text-align: center;
 	padding: 0em 0em .5em 0em;
 	
    }
-   
+ 
+   /*
 .bloke-superior{
 	
-	/*
+	
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	*/
+	
 	
 	
 }
-
+*/
 
 .bloke-superior .container-catalogo{
 	width: 17em;
@@ -1552,14 +1678,7 @@ transition: 7s;
 	
 }
 
-/*  
-.escudo{
-	width: 30em;
-	height: 15em;
-	border-radius: 10px;
-}
 
-*/
 
 .list-lugares {
 	font-size: large;
@@ -1570,18 +1689,6 @@ transition: 7s;
 /* cambia de orizontal a vertical*/
 /*display: block;  */
 
-/*
-.container-center-catalogo {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 0em auto 1em auto;
-	background-color: red;
-}
-
-*/
 
 /*  cambia tamaño de card*/
 
@@ -1736,8 +1843,12 @@ border-radius: 1em;
 
 
 .text-map1{
-	margin: 1em 24em;
-	padding: .5em 0em;
+	width: 28%;
+	margin: 2em 0em 1em 24em;
+	padding: .5em .5em;
+	background-color: #8fadc6;
+	border-radius: 5px;
+	opacity: 85%;
 		
 }
 
@@ -2022,7 +2133,7 @@ td,th{
 	width:350px;
 	height:520px;
 	display:block;
-	background:url(../images/features-divice.png) no-repeat 0px 0px;
+	background:url(../images/Izquierdo-nuevo.png) no-repeat 0px 0px;
 	
 }
 
@@ -2108,7 +2219,7 @@ p.img_slider1{
 	width:350px;
 	height:570px;
 	display:block;
-	background:url(../images/celular-llamada.png) no-repeat 0px 0px;
+	background:url(../images/celular-derecho-nuevo.png) no-repeat 0px 0px;
 }
 
 .feature .feature-right{
@@ -2137,11 +2248,7 @@ p.img_slider1{
 	padding:3em 0 0 0;
 	
 }
-.gallery h3{
-	color:#F0645D;
-	font-size:2em;
-	font-weight:700;
-}
+
 .gallery p{
 	color: #666666;
 	line-height: 1.8em;
@@ -2154,27 +2261,8 @@ p.img_slider1{
 /*--Beneficios---*/
 
 .container-beneficios{
-    padding: 3em 0em;
+    padding: 1.5em 0em;
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
-}
-
-.container-titulo-beneficios{
-	text-align: center;
-	padding-bottom: 1.5em;
-
-}
-
-.container-titulo-beneficios .titulo-beneficios{
-	font-size: x-large;
-	font-weight: lighter;
-	display: block;
-}
-
-.container-beneficios .container-titulo-beneficios p{
-	font-size: large;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .container-tarjeta{
@@ -2380,12 +2468,7 @@ p.img_slider1{
   font-style: normal;
 }
 
-/* configuracion de espacio al centro general 
-main{
-	width: 940px;
-	margin: 0 auto;
-}
-*/
+
 form {
 	width: 100%;
 	padding: 0em 2em;
@@ -2511,7 +2594,7 @@ form {
 	width: 100%;
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
 	position: relative;
-	padding: 3em 0em;
+	padding: 1.5em 0em;
 }
 
 
@@ -2519,6 +2602,10 @@ form {
 	margin-top: .5em;
 }
 
+/* margen*/
+.bloke-texto{
+	padding: 2em 0em 0em 0em;
+}
 
 .download-left{
 	margin-top: 4em;
@@ -2706,15 +2793,15 @@ form {
 
 .btn_ir_modal_mostrar{
 	width: 50%;
-    padding: .6em 0;
-    font-size: 1em;
+    padding: .4em 0;
+    font-size: 1.3em;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-style: normal;
     color:#5fd9fe;
     background: #FFFFFF;
     border:none;
-    border-radius: 12px;
+    border-radius: 8px;
     transition: 1s all;
     cursor:pointer;
 	margin-bottom: 20px;
@@ -3129,6 +3216,23 @@ width: 100%;
  }
 
  
+
+/* titulos principales*/
+.titles-principal h2{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.5em;
+}
+
+.seleccione p{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+	font-size: 1em;
+	color: #FFFFFF;
+}
 /*origen */
 
 .origen-container{
@@ -3136,25 +3240,6 @@ width: 100%;
 	
 }
 
-.titles-principal{
-	
-	text-align: center;
-	padding: 1em 0em;	
-}
-.titles-principal h2{
-	
-	font-size: 1.7em;
-}
-
-.container-multiples-sitios .titles-principal h2{
-	
-	font-size: 1.7em;
-}
-
-.features-Funciones-Destacadas .container .titles-principal h2{
-
-	font-size: 1.7em;
-}
 
 
 
@@ -3177,9 +3262,7 @@ width: 100%;
 }
 
 
-.origen-container .container-center .titulo-origen-card p{
-	font-size: larger;
-}
+
 
 /*  cambia tamaño de card*/
 .flex-police-list .container-img-multiple figure{
@@ -3194,23 +3277,21 @@ width: 100%;
 	margin: .7em;
  }
 
-
-
-
-.flex-police-list .container-text-robo{
-	width: 40%;
-	position: relative;
-	top: 10px;
-	font-size: medium;
-	
+/* Textos patrulla y robo de vehiculo  */
+.origen-container .container-center .card-origen-center .container-img-multiple .capa p {
+	line-height: 1.5;
+	color: #FFFFFF;
+	font-family: "Ubuntu", sans-serif;
+  	font-weight: 300;
+  	font-style: normal;
+	font-size: 1.2em;
 }
 
-.flex-police-list .container-text-robo P{
-	position: relative;
-	top: 15px;
-	font-size: medium;
-	line-height: 1;
-}
+
+
+
+
+
 
 .container-2-card-origen{
 	display: flex;
@@ -3231,14 +3312,10 @@ width: 100%;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
 	margin: 1.5em 0em;
-	
-	
+
 }
 
 
-.container-2-card-origen .card-origen-par .titulo-origen-card p{
-	font-size: larger;
-}
 
 .loader-text {
 	font-size: 20px;
@@ -3270,6 +3347,8 @@ width: 100%;
 	height:7em;
 	border-radius: 5px;
 }
+
+
 
 /*Definicion*/
 .card{
@@ -3329,14 +3408,14 @@ iframe{
 
 .features{
 	width: 100%;
-	height: 46em;
+	height: 55em;
 	background:url(../images/fondo_cards_321.png)repeat;
 	 
 }
 
 .fondo-img-catalogo{
 	width: 100%;
-	height: 50em;
+	height: 55em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -3346,14 +3425,14 @@ iframe{
 }
 
 .features .img-derecha-columna{	
-	margin-top: 4.5em;
+
 	 display: flex;
 	 flex-direction: column;
 	 float: right;
  }
  
  .features .img-izquierda-columna{
-	 margin-top: 4.5em;
+	
 	 display: flex;
 	 flex-direction: column;
 	 float: left;
@@ -3475,14 +3554,7 @@ iframe{
 	left:0;
  }
  
- .apple {
-	background-size: 190%;
-	margin-right: 1em;
- }
- .play-btn {
-	background: url(../images/download-btns.png) no-repeat -198px 0px;
-	background-size: 190%;
- }
+ 
  
  .feature-left {
 	margin: 0 0 2em 0;
