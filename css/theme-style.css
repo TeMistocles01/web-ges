@@ -564,115 +564,34 @@ nav a#pull {
 	background:#FFF;
 }
 
-.container-text-slider{
+.container-text-slider-izquierda{
 	width: 70%;
+	float: left;
+	display: flex;
+	padding: 0em 6em;	
+}
+
+.container-text-slider-derecha{
+	width: 30%;
+	float: right;
+	display: flex;
+	padding: 0em .7em;
+	
 
 	
 }
 
-
-.container-header-efect{
-	width: 70%;
-	flex-direction: row;
-	display: flex;  
-	justify-content: center;
+.container-text-slider-derecha .slider-celular{
 	
-	
- }
-.loader {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	max-width: 6rem;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-  }
-  
-  .loader:before,
-	.loader:after {
-	content: "";
-	position: absolute;
-	border-radius: 50%;
-	animation: pulsOut 1.8s ease-in-out infinite;
-	filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.75));
-  }
-  
-  .loader:before {
-	width: 100%;
-	padding-bottom: 100%;
-	box-shadow: inset 0 0 0 1rem #fff;
-	animation-name: pulsIn;
-  }
-  
-  .loader:after {
-	width: calc(100% - 2rem);
-	padding-bottom: calc(100% - 2rem);
-	box-shadow: 0 0 0 0 #fff;
-  }
-  
-  @keyframes pulsIn {
-	0% {
-	  box-shadow: inset 0 0 0 1rem #fff;
-	  opacity: 1;
-	}
-  
-	50%, 100% {
-	  box-shadow: inset 0 0 0 0 #fff;
-	  opacity: 0;
-	}
-  }
-  
-  @keyframes pulsOut {
-	0%, 50% {
-	  box-shadow: 0 0 0 0 #fff;
-	  opacity: 0;
-	}
-  
-	100% {
-	  box-shadow: 0 0 0 1rem #fff;
-	  opacity: 1;
-	}
-  }
-		
-
-/*
-.container-loaderH{
-	width: 70%;
-	flex-direction: row;
-	display: flex;  
-	justify-content: space-around;
-	
-	
- }
-.loaderH {
-	
-	width: 45px;
-	height: 50px;
-	background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
-			  linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
-			  linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
-	background-size: 10px 400%;
-	background-repeat: no-repeat;
-	animation: matrix 1s infinite linear;
-  }
-  
-  @keyframes matrix {
-	0% {
-	  background-position: 0% 100%, 50% 100%, 100% 100%
-	}
-  
-	100% {
-	  background-position: 0% 0%, 50% 0%, 100% 0%
-	}
-  }
-*/
+	float: left;
+	width: 15em;
+	height: 30em;
+}
 
 
 
 .slide-text-info p{
-	font-size: 4em;
+	font-size: 3.7em;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -680,7 +599,7 @@ nav a#pull {
 
 /* bajar letras slider principal*/
 .slide-text-info{
-	margin-top:3%;
+	margin-top:2%;
 }
 
 
@@ -692,8 +611,6 @@ nav a#pull {
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 	padding: 1.5em 0em;
 }
-
-
 
 .container-center{
 	width: 100%;
@@ -714,6 +631,31 @@ nav a#pull {
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);	
 }
 
+/*Contenedor  cards img patrulla y robo de vehiculo*/
+
+.container-unica-origen{
+	margin-top: .7em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+	padding: 0em 1em;
+	background-color: red;
+}
+
+	
+.container-unica-origen .container-text-robo P{
+	position: relative;
+	top: 10px;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1.4;
+	font-size: large;
+	
+}
+
 
 /* Textos patrulla y robo de vehiculo  */
 .origen-container .container-center .card-origen-center .container-img-multiple .capa p {
@@ -724,6 +666,10 @@ nav a#pull {
   	font-style: normal;
 	font-size: 1.2em;
 }
+
+
+
+
 
 
 .container-2-card-origen{
@@ -801,10 +747,9 @@ font-family: "Ubuntu", sans-serif;
 	background-color: #5fd9fe;
 }
 
+
+
 /*4 cards efectos */
-
-
- 
 
 /*  cambia tamaño de card*/
 .container-img-text figure{
@@ -812,7 +757,6 @@ font-family: "Ubuntu", sans-serif;
 	height: 7em;
 	position:relative;
 	display: flex;
-	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
@@ -838,6 +782,7 @@ font-family: "Ubuntu", sans-serif;
     text-align: center;
 	
 }
+
 .container-img-text figure:hover > .capa {
 	opacity: 1;
 	visibility: visible;
@@ -924,68 +869,11 @@ font-family: "Ubuntu", sans-serif;
 	font-size: medium;
 }
 
-/*Contenedor  cards img patrulla y robo de vehiculo*/
-
-.flex-police-list{
-	margin-top: .7em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	position: relative;
-	padding: 0em 1em;
-	background-color: red;
-}
-
-.icon-card-police:hover{
-	cursor: pointer;
-	transform: scale(1.2);
-}
-	
- .container-logo-robo{
-	text-align: center;
-	width: 55%;
-	
-	display: block;
-}
-
-
-.container-text-robo{
-	width: 45%;
-	text-align: center;
-	margin-top: 1em;
-	line-height: 1.6;	
-	
-	display: block;
-}
-
-.flex-police-list .container-text-robo P{
-	position: relative;
-	top: 10px;
-	font-family: "Ubuntu", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-	line-height: 1.4;
-	font-size: large;
-	
-}
 
 
 
-.img-robo:hover{
-	cursor: pointer;
-
-	transform: scale(1.2);
-
-}
 
 
-.list{
-	line-height: 1.5;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
 
 
 /*
@@ -1450,7 +1338,7 @@ transition: 7s;
 }
 
 .features-grid:hover {
-	cursor: pointer;
+	
 	transform: scale(1.1);
 	border-style: double;
 	border-radius: 25px;
@@ -1602,7 +1490,7 @@ transition: 7s;
 	height: 15em;
 	position:relative;
 	display: flex;
-	cursor: pointer;
+
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
@@ -2950,77 +2838,7 @@ a.cl-icon8-l span{
 	display: block;
 	background: url(../images/multiple-divice2.png) no-repeat -317px -3px;
 }
-/*-----start-footer----*/
-/*
-.footer{
-	padding:3em 0;
-}
 
-*/
-
-/*
-
-.footer-left p{
-	color: #666666;
-	font-weight: 600;
-	font-size: 1.1em;
-	margin-top: 2.1em;
-}
-.footer-left p a{
-	color:#666;
-}
-.footer-left p a:hover{
-	color:#DE5D5D;
-	text-decoration:none;
-}
-.footer-right p{
-	color: #666666;
-	line-height: 1.6em;
-	font-size: 1em;
-}
-.footer-right input[type="text"]{
-	padding: 0.8em;
-	color: #D5D5D5;
-	border: 1px solid #D5D5D5;
-	outline: none;
-	-webkit-appearance: none;
-	transition: border-color 0.3s;
-	-o-transition: border-color 0.3s;
-	-ms-transition: border-color 0.3s;
-	-moz-transition: border-color 0.3s;
-	-webkit-transition: border-color 0.3s;
-	width: 69%;
-	border-radius: 0.3em;
-	-webkit-border-radius: 0.3em;
-	-moz-border-radius: 0.3em;
-	-o-border-radius: 0.3em;
-	-ms-border-radius: 0.3em;
-	margin-right: 2%;
-}
-.footer-right input[type="text"]:hover{
-	border-color:#DE5D5D;
-	color:#DE5D5D;
-}
-.footer-right input[type="submit"]{
-	background: #F06464;
-	outline: none;
-	padding: 0.8em 2em;
-	color: #fff;
-	border: none;
-	border-radius: 0.3em;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
-}
-.footer-right input[type="submit"]:hover{
-	background:#9B9B9B;
-}
-
-
-
-*/
 
 .pie-pagina{
 width: 100%;
@@ -3169,11 +2987,32 @@ width: 100%;
 
 @media (min-width:1025px) and (max-width:1200px){
 
-	.container-text-slider{
-		width: 70%;
-	padding: 0em 0em;
+
+	.container-text-slider-izquierda{
+		width: 80%;
+		float: left;
+		display: flex;
+		padding: 0em 6em;
+
+	}
+	
+	.container-text-slider-derecha{
+		width: 20%;
+		float: left;
+		display: flex;
+		padding: 0em .7em;
+		
+	
 		
 	}
+	
+	.container-text-slider-derecha .slider-celular{
+	
+		float: left;
+		width: 7em;
+		height: 14em;
+	}
+
 
 	.slide-text-info p{
 		font-size: 2em;
@@ -3183,7 +3022,7 @@ width: 100%;
 	}
 	
 	.container .header .container .marca_logo {
-		position: absolute;
+		
 		top: 10px;
 		left: 70px;
 		
@@ -3277,7 +3116,11 @@ width: 100%;
 	margin: .7em;
  }
 
-/* Textos patrulla y robo de vehiculo  */
+
+
+ 
+
+/* Textos patrulla y robo de vehiculo  
 .origen-container .container-center .card-origen-center .container-img-multiple .capa p {
 	line-height: 1.5;
 	color: #FFFFFF;
@@ -3286,7 +3129,7 @@ width: 100%;
   	font-style: normal;
 	font-size: 1.2em;
 }
-
+*/
 
 
 
@@ -3731,14 +3574,39 @@ p.cousel_demo{
 @media (min-width:801px) and (max-width:1024px){
 
 	
+	/* start bloke slider*/
+	.container-text-slider-izquierda{
+		width: 80%;
+		float: left;
+		display: flex;
+		padding: 0em 4em;
+		
+	}
 	
+	.container-text-slider-derecha{
+		width: 20%;
+		float: left;
+		display: flex;
+		padding: 0em .7em;
+		
+	}
 	
+	.container-text-slider-derecha .slider-celular{
+	
+		float: left;
+		width: 6em;
+		height: 11em;
+	}
+
+	/* end bloke slider*/
 
 	.container .header .container .marca_logo .logo_ges{
 		width: 5em;
 		height: 3em;
 		
 	  }
+
+
 
 	.header {
 		position: fixed;
@@ -3748,23 +3616,28 @@ p.cousel_demo{
 		
 	 }
 	
-	 
-
-
  .top-nav ul li a {
 	color: #FFF;
 	padding: .7em .4em;
 	font-size:0.7725em;
  }
- .slide-text-info p {
-	font-size: 2em;
- }
+ .slide-text-info p{
+	font-size: 1.7em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
  .callbacks_tabs {
 	left: 40%;
 	
  }
 
- 
+ .container .header .container .marca_logo {
+		position: absolute;
+		top: 10px;
+		left: 30px;
+		
+	}
 
 /*origen */
 
@@ -4460,6 +4333,33 @@ p.cousel_demo{
 
 @media (min-width:769px) and (max-width:800px){
 	
+/* start bloke slider*/
+.container-text-slider-izquierda{
+	width: 80%;
+	float: left;
+	display: flex;
+	padding: 0em 4em;
+	
+}
+
+.container-text-slider-derecha{
+	width: 20%;
+	float: left;
+	display: flex;
+	padding: 0em .7em;
+	
+}
+
+.container-text-slider-derecha .slider-celular{
+
+	float: left;
+	width: 6em;
+	height: 11em;
+}
+
+/* end bloke slider*/
+
+
 
 	.container .header .container .marca_logo .logo_ges{
 		width: 5em;
@@ -4484,7 +4384,7 @@ p.cousel_demo{
 	font-size:0.7725em;
  }
  .slide-text-info p {
-	font-size: 1.7em;
+	font-size: 1.6em;
  }
  
  
@@ -4495,6 +4395,12 @@ p.cousel_demo{
 	margin-top:6%;
 }
 
+.container .header .container .marca_logo {
+	position: absolute;
+	top: 10px;
+	left: 25px;
+	
+}
 
 
 /*origen  */
@@ -5233,6 +5139,32 @@ table{
 
 @media (min-width:641px) and (max-width:768px){
 
+	/* start bloke slider*/
+.container-text-slider-izquierda{
+	width: 80%;
+	float: left;
+	display: flex;
+	padding: 0em 4em;
+	
+}
+
+.container-text-slider-derecha{
+	width: 20%;
+	float: left;
+	display: flex;
+	padding: 0em .7em;
+	
+}
+
+.container-text-slider-derecha .slider-celular{
+
+	float: left;
+	width: 5em;
+	height: 10em;
+}
+
+/* end bloke slider*/
+
 	
 	/* bajar letras slider principal*/
 .slide-text-info{
@@ -5245,7 +5177,9 @@ table{
 		
 	}
 	.container .header .container .marca_logo{
-		margin-top: 1em;
+		position: absolute;
+	top: 10px;
+	left: 40px;
 		
 	  }
 	.container .header .container .marca_logo .logo_ges{
@@ -5978,6 +5912,35 @@ table{
 @media (min-width:481px) and (max-width:640px){
 
 
+
+/* start bloke slider*/
+.container-text-slider-izquierda{
+	width: 80%;
+	float: left;
+	display: flex;
+	padding: 0em 4em;
+	
+}
+
+.container-text-slider-derecha{
+	width: 20%;
+	float: left;
+	
+	display: flex;
+	padding: 0em .7em;
+	
+}
+
+.container-text-slider-derecha .slider-celular{
+
+	float: left;
+	width: 3.5em;
+	height: 7em;
+}
+
+
+
+
 /* bajar letras slider principal*/
 
 .slide-text-info{
@@ -5997,7 +5960,9 @@ table{
 		margin-top: 8em;
 	}
 	.container .header .container .marca_logo{
-		margin-top: 1em;
+		position: absolute;
+	top: 10px;
+	left: 40px;
 		
 	  }
 	.container .header .container .marca_logo .logo_ges{
@@ -6014,8 +5979,8 @@ table{
 	 }
 
  .slide-text-info p {
-	font-size: 1.2em;
-	margin-top:5px;
+	font-size: 1em;
+	
  }
  .slide-text-info-btns {
 	display: none;
@@ -6901,9 +6866,36 @@ form {
 
 @media (min-width:321px) and (max-width:480px){ 
 
+
+	
+/* start bloke slider*/
+.container-text-slider-izquierda{
+	display: flex;
+	width: 70%;
+	padding: 0em .9em;
+	
+	
+	
+}
+
+.container-text-slider-derecha{
+	display: flex;
+	width: 30%;
+	padding: 0em .7em;
+	
+	
+
+}
+
+.container-text-slider-derecha .slider-celular{
+	width: 3.5em;
+	height: 6em;
+
+}
+
 	/* bajar letras slider principal*/
 .slide-text-info{
-	margin-top:6%;
+	margin-top:4%;
 }
 
 
@@ -6921,35 +6913,35 @@ form {
 	
 	
 	.container .header .container .marca_logo{
-		margin-top: .3em;
+		position: absolute;
+	top: 5px;
+	left: 10px;
 		
 	  }
 		
 	.container .header .container .marca_logo .logo_ges{
-		width: 5em;
+		width: 4.5em;
 		height: 2.5em;
 		
 	  }
 
 	.header {
 		position: absolute;
-		
 		z-index: 999;
 		right: 0;
 		left: 0;
 	 }
 
  .slide-text-info p {
-	font-size: 1.2em;
-	margin-top:5px;
+	font-size: .9em;
+	
  }
- .slide-text-info-btns {
-	display: none;
- }
+ 
  .callbacks_tabs {
 	left: 25%;
 	top:78%;
  }
+
  
  /*
   .Share-instantly-left span, .feature-right span {
@@ -7861,6 +7853,30 @@ width: 100%;
 
 @media (min-width:0px) and (max-width:320px){
 
+	
+/* start bloke slider*/
+.container-text-slider-izquierda{
+	width: 70%;
+	float: left;
+	background-color: red;
+	padding: 0em 0em;
+	
+}
+
+.container-text-slider-derecha{
+	width: 30%;
+	float: left;
+	height: max-content;
+	
+}
+
+.container-text-slider-derecha .slider-celular{
+
+	float: left;
+	width: 3em;
+	height: 4.5em;
+}
+
 
 /* bajar letras slider principal*/
 .slide-text-info{
@@ -7893,8 +7909,8 @@ width: 100%;
 	 }
 
  .slide-text-info p {
-	font-size: 1em;
-	margin-top:5px;
+	font-size: .8em;
+	
  }
 
 
