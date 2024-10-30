@@ -293,6 +293,7 @@ nav a#pull {
   -webkit-box-shadow: none;
   margin: 0 auto;
 }
+
 .rslides_tabs {
   list-style: none;
   padding: 0;
@@ -618,12 +619,12 @@ nav a#pull {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0em auto 2.5em auto;	
+	margin: 0em auto 2.5em auto;
+		
 }
 
 .card-origen-center{
 	width:  50%;
-	height: max-content;
 	padding: 1.5em 1.5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -631,40 +632,94 @@ nav a#pull {
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);	
 }
 
-/*Contenedor  cards img patrulla y robo de vehiculo*/
+/* origen Contenedor  cards img patrulla y robo de vehiculo*/
 
-.container-unica-origen{
-	margin-top: .7em;
+.origen-container .container-center .card-origen-center .container-unica-origen{
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	position: relative;
-	padding: 0em 1em;
-	/*background-color: red;*/
+	
+	
 }
 
+
+
+/*  cambia tamaño de card*/
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
+	width: 23em;
+	height: 15em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: .7em;
+ }
 	
-.container-unica-origen .container-text-robo P{
-	position: relative;
-	top: 10px;
+
+ .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,103,123,0.7);
+	transition: all 400ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+    text-align: center;
+	
+}
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa {
+	opacity: 1;
+	visibility: visible;
+	
+}
+
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: 1.4em;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	
+}
+
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
+}
+
+/* Text-grande titulo 
+.container-unica-origen .container-img-multiple figure .capa .title-foto {
+	font-size: 1.4em;
+	color: #FFFFFF;	
+	margin-bottom: 120px;
+	transition: all 400ms ease-out;
+	margin-top: 30px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+	
+}
+  */
+
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: 1.3em;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 200;
     font-style: normal;
 	line-height: 1.4;
-	font-size: large;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
 	
-}
-
-
-/* Textos patrulla y robo de vehiculo  */
-.origen-container .container-center .card-origen-center .container-img-multiple .capa p {
-	line-height: 2;
-	color: #FFFFFF;
-	font-family: "Ubuntu", sans-serif;
-  	font-weight: 300;
-  	font-style: normal;
-	font-size: 1.2em;
 }
 
 
@@ -1484,18 +1539,6 @@ transition: 7s;
 
 
 
-/*  cambia tamaño de card*/
-.container-img-multiple figure{
-	width: 23em;
-	height: 15em;
-	position:relative;
-	display: flex;
-
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: .7em;
- }
 
 .container-title{
 	text-align: center;
@@ -1566,24 +1609,22 @@ transition: 7s;
 	
 }
 
-
-
-.list-lugares {
-	font-size: large;
-	list-style: none;
-}
-
-
 /* cambia de orizontal a vertical*/
 /*display: block;  */
 
 
+
 /*  cambia tamaño de card*/
-
-
-
-
- 
+.container-img-multiple figure{
+	width: 23em;
+	height: 15em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: .7em;
+ }
 
 .container-img-multiple figure .img-card{
     width: 100%;
@@ -1618,13 +1659,14 @@ transition: 7s;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
+  color: #FFFFFF;
 	
 }
 .container-img-multiple figure:hover > img{
 	transform: scale(1.2);
 }
 
-/* Text-grande titulo */
+/*  
 .container-img-multiple figure .capa .title-foto {
 	font-size: 1.3em;
 	color: #FFFFFF;	
@@ -1637,6 +1679,7 @@ transition: 7s;
   
 	
 }
+  */
 
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
@@ -1867,7 +1910,8 @@ iframe{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	padding: 4em 1.5em;
+	padding: 3em 1.5em;
+	
 }
 
 /* margen de base tabla*/
@@ -1876,17 +1920,43 @@ iframe{
 	width:  48%;
 	height: max-content;
 	margin: 0em auto;
+	
 
 }
 
-table{
-	margin-top: 1.5em;
+.container-tablas .tabla-container table{
+	margin-top: 1em;
 	width: 100%;
-	height: 250px;
+	height: 10em;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
 
+.container-tablas .tabla-container table th{
+	text-align: center;
+    border: 1px solid #FFFFFF;
+    padding: 25px 15px;
+	font-size: 1em;
+	margin-top: .5em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+	color: #FFFFFF;
+
+}
+
+.container-tablas .tabla-container table td{
+	text-align: center;
+    border: 1px solid #FFFFFF;
+    padding: 20px 15px;
+	font-size: 1em;
+	margin-top: .5em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+	color: #FFFFFF;
+
+}
 
 
 /* tablas comparativas margen abajo*/
@@ -1914,14 +1984,14 @@ table{
 */
 
 
-
+/* parrafo tabla superior*/
 .container-lis2{
 	width: 30em;
 	background-color: #8fadc6;
 	/*#5F7D8B*/;
 	border-radius: 5px;
 	opacity: 85%;
-	padding: 1em 0em 1em 1em ;
+	padding: .5em 0em .5em .5em ;
 	
 	
 }
@@ -1975,17 +2045,6 @@ color: #FFFFFF;
     
 }
 
-td,th{
-	text-align: center;
-    border: 1px solid #FFFFFF;
-    padding: 7px 15px;
-	font-size: 1em;
-	margin-top: .5em;
-	font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    font-style: normal; 
-	color: #FFFFFF;	
-}
 
 
 /* icon you tube*/
@@ -2987,7 +3046,7 @@ width: 100%;
 
 @media (min-width:1025px) and (max-width:1200px){
 
-
+  /* Slider telefono*/
 	.container-text-slider-izquierda{
 		width: 80%;
 		float: left;
@@ -3072,6 +3131,7 @@ width: 100%;
 	font-size: 1em;
 	color: #FFFFFF;
 }
+
 /*origen */
 
 .origen-container{
@@ -3079,13 +3139,9 @@ width: 100%;
 	
 }
 
-
-
-
 .container-center{
-	
+	width: 100%;
 	margin: 0em auto 1.5em auto;
-	
 	
 }
 .card-origen-center{
@@ -3096,40 +3152,89 @@ width: 100%;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	
-	
 }
 
 
+/* origen Contenedor  cards img patrulla y robo de vehiculo*/
 
+.origen-container .container-center .card-origen-center .container-unica-origen{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	position: relative;
+	background-color: rgb(17, 221, 85);
+	
+}
 
+   
 /*  cambia tamaño de card*/
-.flex-police-list .container-img-multiple figure{
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
 	width: 20em;
 	height: 12em;
 	position:relative;
 	display: flex;
-	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	margin: .7em;
+
  }
+
+
+ .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,103,123,0.7);
+	transition: all 400ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+    text-align: center;
+	
+}
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa {
+	opacity: 1;
+	visibility: visible;
+	
+}
+
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: 1.2em;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	
+}
+
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
+}
+
+
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1.4;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+	
+}
+
+
 
 
 
  
-
-/* Textos patrulla y robo de vehiculo  
-.origen-container .container-center .card-origen-center .container-img-multiple .capa p {
-	line-height: 1.5;
-	color: #FFFFFF;
-	font-family: "Ubuntu", sans-serif;
-  	font-weight: 300;
-  	font-style: normal;
-	font-size: 1.2em;
-}
-*/
 
 
 
@@ -3211,6 +3316,8 @@ width: 100%;
 }
 
 
+
+
 /* GES en accion */
 
 .container-tablas{
@@ -3230,12 +3337,6 @@ width: 100%;
 
 }
 
-table{
-	width: 100%;
-	height: 240px;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-}
-
 .secc-mapa {
 	text-align: center;
     height: min-content;	
@@ -3245,6 +3346,56 @@ iframe{
 	width: 57em;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
+
+.container-tablas .tabla-container table{
+	margin-top: 1em;
+	width: 100%;
+	height: 7em;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+
+.container-tablas .tabla-container table th{
+	text-align: center;
+    border: 1px solid #FFFFFF;
+    padding: 20px 15px;
+	font-size: 1em;
+	margin-top: .5em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+	color: #FFFFFF;
+
+}
+
+.container-tablas .tabla-container table td{
+	text-align: center;
+    border: 1px solid #FFFFFF;
+    padding: 15px 15px;
+	font-size: 1em;
+	margin-top: .5em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+	color: #FFFFFF;
+
+}
+
+
+/* parrafo tabla superior*/
+.container-lis2{
+	width: 24em;
+	background-color: #8fadc6;
+	/*#5F7D8B*/;
+	border-radius: 5px;
+	opacity: 85%;
+	padding: .5em 0em .5em .5em ;
+	
+	
+}
+
+
+
+
 
 /* catalogo*/
 
@@ -3653,19 +3804,24 @@ p.cousel_demo{
 	text-align: center;
 	padding: 1em 0em;	
 }
+
 .titles-principal h2{
 	
 	font-size: 1.7em;
+	
 }
 
 .container-multiples-sitios .titles-principal h2{
 	
 	font-size: 1.7em;
+	
+	
 }
 
 .features-Funciones-Destacadas .container .titles-principal h2{
 
 	font-size: 1.7em;
+	
 }
 
 
@@ -3681,7 +3837,7 @@ p.cousel_demo{
 }
 
 .card-origen-center{
-	width:  75%;
+	width:  85%;
 	padding: .9em .5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -3691,47 +3847,58 @@ p.cousel_demo{
 	
 	
 }
-.icon-card-police{
-	width: 12em;
-	height:5em;
-	border-radius: 5px;
-}
 
-.img-robo{
-	
-	width: 15em;
-	height:8em;
-	border-radius: 5px;
-}
-
-.origen-container .container-center .titulo-origen-card p{
-	font-size: larger;
-}
+/*  cambia tamaño de card*/
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
+	width: 19em;
+	height: 12em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+ }
 
 
-.container-list{
-	line-height: 1.3;
-	
-}
 
-.flex-police-list .container-text-robo{
-	width: 40%;
-	position: relative;
-	top: 10px;
-	font-size: medium;
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: 1.1em;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 	
 }
 
-.flex-police-list .container-text-robo P{
-	position: relative;
-	top: 15px;
-	font-size: medium;
-	line-height: 1;
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
 }
 
+
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1.4;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+	
+}
+
+
+
+
+
+ 
 
 .card-origen-par{
-	width:  75%;
+	width:  85%;
 	padding: .7em .5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -4458,42 +4625,52 @@ p.cousel_demo{
 	position: relative;
 }
 
-.icon-card-police{
-	width: 12em;
-	height:5em;
-	border-radius: 5px;
-}
-.img-robo{
-	width: 14em;
-	height:7em;
-	border-radius: 5px;
+
+/*  cambia tamaño de card*/
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
+	width: 19em;
+	height: 12em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+ }
+
+
+
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: 1.1em;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 	
 }
 
-.origen-container .container-center .titulo-origen-card p{
-	font-size: larger;
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
 }
 
 
-.container-list{
-	line-height: 1.3;
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1.4;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
 	
 }
 
-.flex-police-list .container-text-robo{
-	width: 40%;
-	position: relative;
-	top: 10px;
-	font-size: medium;
-	
-}
 
-.flex-police-list .container-text-robo P{
-	position: relative;
-	top: 15px;
-	font-size: medium;
-	line-height: 1;
-}
+
 
 
 
@@ -5255,10 +5432,14 @@ table{
 		padding: 1em 1em;
 		border:  3px #FFFFFF solid;
 		border-radius: 5px;
-		transition: 3s;
+	
 		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 		position: relative;
 	}
+
+
+
+
 	
 	.origen-container .container-center .titulo-origen-card p{
 		color: #FFFFFF;
@@ -5266,32 +5447,7 @@ table{
 	  }
 
 
-	  .icon-card-police{
-		width: 12em;
-		height:5em;
-		border-radius: 5px;
-	}
-
-	.img-robo{
-		width: 12em;
-		height:7em;
-		border-radius: 5px;
-		
-	}
-	.flex-police-list .container-text-robo P{
-		position: relative;
-		top: 10px;
-		font-size: small;
-		line-height: 1.2;
-	}
-	
-	.container-list{
-		position: relative;
-		top: 10px;
-		margin-bottom: 20px;
-		line-height: 1.4;
-		font-size: small;	
-	}
+	  
 	.titles-principal h2{
 		font-size: 1.5em;
 	}
@@ -5328,6 +5484,53 @@ table{
 		position: relative;
 		margin: 1em auto;
 	}
+
+
+/*  cambia tamaño de card*/
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
+	width: 15em;
+	height: 12em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+ }
+
+
+
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: 1em;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	
+}
+
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
+}
+
+
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: .9em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1.4;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+	
+}
+
+
+
 
 
 	.container-2-card-origen .card-origen-par p{
@@ -5382,11 +5585,7 @@ table{
 	}
 
 
-	.logo2{
-		width: 100px;
-		height: 80px;
-		border-radius: 5px;
-	}
+	
 
  .top-nav ul li.active a, .top-nav ul li a:hover {
 	color: #2C3E50;
@@ -5561,15 +5760,7 @@ table{
 	
 }
 
-/* Text-grande titulo */
-.container-img-multiple figure .capa .title-foto {
-	font-size: large;
-	color: #FFFFFF;	
-	margin-bottom: 120px;
-	transition: all 400ms ease-out;
-	margin-top: 30px;
-	
-}
+
 
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
