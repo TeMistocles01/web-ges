@@ -3109,7 +3109,7 @@ width: 100%;
 
  
  .callbacks_tabs {
-	left: 40%;
+	left: 45%;
  }
 
  
@@ -3140,6 +3140,9 @@ width: 100%;
 
 .container-center{
 	width: 100%;
+	flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 	margin: 0em auto 1.5em auto;
 	
 }
@@ -3153,51 +3156,26 @@ width: 100%;
 	position: relative;
 }
 
-
-/* origen Contenedor  cards img patrulla y robo de vehiculo*/
-
-.origen-container .container-center .card-origen-center .container-unica-origen{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	position: relative;
-	background-color: rgb(17, 221, 85);
-	
-}
-
-   
+  
 /*  cambia tamaño de card*/
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
-	width: 20em;
+	width: 100%;
 	height: 12em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: 0;
 
  }
 
+ .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple{
+	width: 50%;
+	padding: 0em 1.7em;
+}
 
- .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa{
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,103,123,0.7);
-	transition: all 400ms ease-out;
-	opacity: 0;
-	visibility: hidden;
-    text-align: center;
-	
-}
-.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa {
-	opacity: 1;
-	visibility: visible;
-	
-}
+
 
 /* Text-grande titulo */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
@@ -3829,35 +3807,41 @@ p.cousel_demo{
 }
 
 .container-center{
-	
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 0em auto 1em auto;
-	
-	
 }
 
 .card-origen-center{
-	width:  85%;
-	padding: .9em .5em;
+	width:  80%;
+	padding: 1em .5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
-	
-	
 }
+
 
 /*  cambia tamaño de card*/
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
-	width: 19em;
+	width: 100%;
 	height: 12em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: 0;
  }
 
+ .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple{
+	width: 50%;
+	padding: 0em 1.3em;
+}
 
 
 /* Text-grande titulo */
@@ -3897,7 +3881,7 @@ p.cousel_demo{
  
 
 .card-origen-par{
-	width:  85%;
+	width:  80%;
 	padding: .7em .5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -4602,12 +4586,13 @@ p.cousel_demo{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0em auto .7em auto;
+	margin: 0em auto 1em auto;
 	
 	
 }
 .card-origen-center{
 	width:  90%;
+	height: max-content;
 	padding: 1.5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
@@ -4615,7 +4600,10 @@ p.cousel_demo{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
 }
-
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple{
+	width: 50%;
+	padding: 0em 1em;
+}
 
 /*  cambia tamaño de card*/
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
@@ -4626,6 +4614,7 @@ p.cousel_demo{
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: 0;
  }
 
 
@@ -5418,14 +5407,7 @@ table{
 		font-size: .9em;
 	}
 */
-	.card-origen-center{
-		width:  90%;
-		padding: 1em .1em;
-		border:  3px #FFFFFF solid;
-		border-radius: 5px;
-		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-		position: relative;
-	}
+	
 
 
 	.container-center{
@@ -5435,19 +5417,35 @@ table{
 		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0em auto 1em auto;
-	
-	
 	}
+
+	.card-origen-center{
+		width:  90%;
+		height: max-content;
+		padding: 1em .5em;
+		border:  3px #FFFFFF solid;
+		border-radius: 5px;
+		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+		position: relative;
+		
+	}
+
+	.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple{
+		width: 50%;
+		padding: 0em 1em;
+	}
+	
 	
 /*  cambia tamaño de card*/
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
-	width: 16em;
-	height: 12em;
+	width: 100%;
+	height: 10em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: 0;
  }
 
 
@@ -5455,7 +5453,7 @@ table{
 /* Text-grande titulo */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
 	font-size: 1em;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -6215,30 +6213,77 @@ table{
 
 	font-size: .9em;
 }
- .container-center{
+
+.container-center{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0em auto 1em auto;
+	
 }
-
-
- .card-origen-center{
-	width:  90%;
+.card-origen-center{
+	width:  95%;
 	height: max-content;
-	padding: 1em 1em;
+	padding: 1em .5em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
 	
+	
+}
+ 
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple{
+	width: 50%;
+	padding: 0em .5em;
+}
+
+ /*  cambia tamaño de card*/
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
+	width: 100%;
+	height: 10em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: 0;
+ }
+
+
+
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: .9em;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	
+}
+
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
 }
 
 
-
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: .8em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
+	
+}
 
 /* determina espacion de margen logo corrupcion*/
 .container-logo-coorupcion{
@@ -6253,19 +6298,7 @@ table{
 
   
 
-  .icon-card-police{
-	width: 8em;
-	height:4.5em;
-	border-radius: 5px;
-}
-
-.img-robo{
-	width: 10em;
-	height:5.5em;
-	border-radius: 5px;
-	
-}
-
+ 
 
 
 
@@ -6296,7 +6329,7 @@ table{
 }
 
 .card-origen-par{
-	width:  90%;
+	width:  95%;
 	height: max-content;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
@@ -6521,15 +6554,7 @@ table{
 	
 }
 
-/* Text-grande titulo */
-.container-img-multiple figure .capa .title-foto {
-	font-size: large;
-	color: #FFFFFF;	
-	margin-bottom: 120px;
-	transition: all 400ms ease-out;
-	margin-top: 30px;
-	
-}
+
 
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
@@ -7112,36 +7137,10 @@ form {
  
  .callbacks_tabs {
 	left: 25%;
-	top:78%;
  }
 
  
- /*
-  .Share-instantly-left span, .feature-right span {
-	background-size: 59%;
-	width: 180px;
-	height: 170px;
-	display: inline-table;
- }
- .Share-instantly-left span, .feature-right span{
- 	background-position:30px 0;
- }
- .download-left span {
-	background-size: 70%;
-	width: 220px;
-	height: 165px;
-	background-position:38px 0;
- }
- .download-right p {
-	font-size: 1.4em;
- }
- .download-right a {
-	font-size: 1em;
- }
- div.col-md-5.Share-instantly-left, div.col-md-5.feature-right {
-	margin-bottom: -4px;
- }
-*/
+ 
 
  /* Origen */
 
@@ -7162,9 +7161,9 @@ form {
 
 
  .card-origen-center{
-	width:  80%;
+	width:  90%;
 	height: max-content;
-	padding: 1em 1em;
+	padding: 1em 0em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -7178,35 +7177,61 @@ form {
 	  font-size: 1em;
   }
 
-  .container-logo-robo{
-	width: 100%;
-}
+   /*  cambia tamaño de card*/
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
+	width: 17em;
+	height: 10em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: .5em 0em;
+ }
 
-.container-text-robo{
-	width: 100%;
-	line-height: 1.2;	
-	font-size: large;
+
+
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: .9em;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 	
 }
 
-  .icon-card-police{
-	width: 8em;
-	height:4em;
-	border-radius: 5px;
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
 }
 
-.img-robo{
-	width: 10em;
-	height:5em;
-	border-radius: 5px;
+
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: .8em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
 	
 }
-.flex-police-list .container-text-robo P{
-	width: 5em;
-	position: relative;
-	top: 0px;
-	font-size: small;
+
+/* determina espacion de margen logo corrupcion*/
+.container-logo-coorupcion{
+	text-align: center;
+	padding: .5em 0em;
 }
+
+.origen-container .container-center .titulo-origen-card p{
+	color: #FFFFFF;
+	  font-size: 1em;
+  }
+
 
 .titles-principal{
 	text-align: center;
@@ -7242,7 +7267,7 @@ form {
 }
 
 .card-origen-par{
-	width:  80%;
+	width:  90%;
 	height: max-content;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
@@ -7386,13 +7411,13 @@ form {
 
 .features{
 	
-	height: 129em;
+	height: 104em;
 	width: 100%;
 	background:url(../images/fondo_cards_321.png)repeat;
 }
 
 .fondo-img-catalogo{
-	height: 129em;
+	height: 104em;
 	width: 100%;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
@@ -7404,24 +7429,21 @@ form {
 
 .features .img-derecha-columna{
 	
-	margin-top: 40em;
-	width: 100vw;
+	margin-top: 29em;
+	width: 100%;
 	height: max-content;
-	padding-left: 2em;
-	padding-right: 2em;
-	
-	/*background:url(../images/fondo_cards_321.png)repeat;*/
+	padding-left: 1.8em;
+	padding-right: 1.8em;
+	position: relative;
 }
 
 .features .img-izquierda-columna{
-	
-	width: 100vw;
+	width: 100%;
 	height: max-content;
 	margin-top: 0em;
-	padding-left: 2em;
-	padding-right: 2em;
-	
-	/*background:url(../images/fondo_cards_321.png)repeat;*/
+	padding-left: 1.8em;
+	padding-right: 1.8em;
+	position: relative;
 	padding-bottom: 1em;
 }
 
@@ -7429,7 +7451,7 @@ form {
  .container-img-multiple figure{
 	position:relative;
 	width: 100%;
-    height: 14em;
+    height: 11em;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
@@ -7444,27 +7466,19 @@ form {
 
  /* Text-grande titulo */
 .container-img-multiple figure:hover > .capa .title-foto{
-	font-size: large;
-	margin-top: 30px;
+	font-size: 1.2em;
+	margin-top: 15px;
 	margin-bottom: 15px;
 	
 }
 
-/* Text-grande titulo */
-.container-img-multiple figure .capa .title-foto {
-	font-size: large;
-	color: #FFFFFF;	
-	margin-bottom: 120px;
-	transition: all 400ms ease-out;
-	margin-top: 30px;
-	
-}
+
 
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
 	color: #FFFFFF;
-	font-size: smaller;
-	line-height: 1;
+	font-size: 1em;
+	line-height: 1.1;
 	width: 100%;
 	max-width: 220px;
 	margin: auto;
@@ -8031,7 +8045,7 @@ width: 100%;
 .container-text-slider-izquierda{
 	width: 70%;
 	float: left;
-	background-color: red;
+	
 	padding: 0em 0em;
 	
 }
@@ -8066,16 +8080,25 @@ width: 100%;
 
 	nav ul {
 		margin-top: 8em;
+
+
 	}
 
+
+.container .header .container .marca_logo{
+		position: absolute;
+	top: 5px;
+	left: 10px;
+		
+	  }
 	.container .header .container .marca_logo .logo_ges{
-		width: 5em;
+		width: 4.5em;
 		height: 2.5em;
 		
 	  }
+
 	.header {
 		position: absolute;
-		
 		z-index: 999;
 		right: 0;
 		left: 0;
@@ -8085,8 +8108,10 @@ width: 100%;
 	font-size: .8em;
 	
  }
-
-
+ .callbacks_tabs {
+	left: 25%;
+	top:78%;
+ }
  
 /* Origen */
 .origen-container{
@@ -8104,14 +8129,57 @@ width: 100%;
 
 
  .card-origen-center{
-	width:  80%;
+	width:  90%;
 	height: max-content;
-	padding: 1em 1em;
+	padding: 1em 0em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
+	
+}
+   /*  cambia tamaño de card*/
+   .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
+	width: 15em;
+	height: 9em;
+	position:relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	margin: .5em 0em;
+ }
+
+
+
+/* Text-grande titulo */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
+	font-size: .9em;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	
+}
+
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
+	transform: scale(1.2);
+}
+
+
+/* texto pequeño imagen */
+.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
+	color: #FFFFFF;
+	font-size: .8em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1;
+	width: 100%;
+	max-width: 220px;
+	margin: auto;
 	
 }
 
@@ -8120,35 +8188,9 @@ width: 100%;
 	  font-size: 1em;
   }
 
-  .container-logo-robo{
-	width: 100%;
-}
+  
 
-.container-text-robo{
-	width: 100%;
-	line-height: 1.2;	
-	font-size: large;
-	
-}
-
-  .icon-card-police{
-	width: 8em;
-	height:4em;
-	border-radius: 5px;
-}
-
-.img-robo{
-	width: 10em;
-	height:5em;
-	border-radius: 5px;
-	
-}
-.flex-police-list .container-text-robo P{
-	width: 5em;
-	position: relative;
-	top: 0px;
-	font-size: small;
-}
+ 
 
 
 .titles-principal h2{
@@ -8162,13 +8204,6 @@ width: 100%;
 	margin-bottom: .5em;
 }
 
-.container-logo-police{
-	margin-bottom: .5em;
-	text-align: center;
-	width: 100%;
-	
-
-}
 
 .container-2-card-origen{
 	display: flex;
@@ -8181,7 +8216,7 @@ width: 100%;
 }
 
 .card-origen-par{
-	width:  80%;
+	width:  90%;
 	height: max-content;
 	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
@@ -8413,14 +8448,14 @@ font-family: "Ubuntu", sans-serif;
  /* catalogo*/
 
  .features{
-	height: 122em;
+	height: 87em;
 	width: 100%;
 	background:url(../images/fondo_cards_321.png)repeat;
 }
 
 .fondo-img-catalogo{
 
-	height: 122em;
+	height: 87em;
 	width: 100%;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
@@ -8431,11 +8466,11 @@ font-family: "Ubuntu", sans-serif;
 }
 
 .features .img-derecha-columna{
-	margin-top: 33em;
+	margin-top: 23em;
 	width: 100%;
 	height: max-content;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 	position: relative;
 	
 	
@@ -8446,8 +8481,8 @@ font-family: "Ubuntu", sans-serif;
 	width: 100%;
 	height: max-content;
 	margin-top: 0em;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 	position: relative;
 	padding-bottom: 1em;
 }
@@ -8456,7 +8491,7 @@ font-family: "Ubuntu", sans-serif;
  .container-img-multiple figure{
 	position:relative;
 	width: 100%;
-    height: 14em;
+    height: 9em;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
@@ -8471,26 +8506,18 @@ font-family: "Ubuntu", sans-serif;
 
  /* Text-grande titulo */
 .container-img-multiple figure:hover > .capa .title-foto{
-	font-size: large;
-	margin-top: 30px;
+	font-size: .9em;
+	margin-top: 15px;
 	margin-bottom: 15px;
 	
 }
 
-/* Text-grande titulo */
-.container-img-multiple figure .capa .title-foto {
-	font-size: large;
-	color: #FFFFFF;	
-	margin-bottom: 120px;
-	transition: all 400ms ease-out;
-	margin-top: 30px;
-	
-}
+
 
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
 	color: #FFFFFF;
-	font-size: smaller;
+	font-size: .8em;
 	line-height: 1;
 	width: 100%;
 	max-width: 220px;
