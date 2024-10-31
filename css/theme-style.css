@@ -462,12 +462,14 @@ nav a#pull {
   border: 0;
   width:100%;
   }
+
 .callbacks_tabs{
 	list-style: none;
 	position: absolute;
 	top: 88%;
 	z-index: 999;
-	left: 45%;
+	left: 1%;
+	
 }
 .callbacks_tabs li{
 	display:inline-block;
@@ -925,35 +927,6 @@ font-family: "Ubuntu", sans-serif;
 
 
 
-
-
-
-
-
-/*
-#icon-origen:hover{
-	-webkit-transform: rotateY(3000deg);
-	-webkit-transform-style: preserve-3d;
-	transform: rotateY(3000deg);
-	transform-style: preserve-3d;
-	transition: 7s;
-	}
-
-	*/
-
-/*
-para alinear
-
-#izquierda-card{
-	display:block;
-}
-
-#derecha-card{
-	display:block;
-}
-
-*/
-
 .container-2-cards{
 	width: 100%;
 }
@@ -992,17 +965,6 @@ font-family: "Ubuntu", sans-serif;
  }
 
  
-
- /*
-.logo2:hover{
-
--webkit-transform: rotateY(3000deg);
--webkit-transform-style: preserve-3d;
-transform: rotateY(3000deg);
-transform-style: preserve-3d;
-transition: 7s;
-}
-*/
 .contenido-text {
 	text-align: center;
 	
@@ -1027,7 +989,8 @@ transition: 7s;
 
 
 /*loader 5 letras de corrupccion */
-.loader5 {
+.container-loader .loader5 {
+	margin-bottom: .5em;
 	position: relative;
 	overflow: hidden;
 	border-right: 3px solid;
@@ -1097,8 +1060,8 @@ transition: 7s;
 
 
 .container-2-card-origen .card-origen-par .pie-card-tex-center{
-	margin-top: 1em;
-	font-family: "Ubuntu", sans-serif;
+	
+ font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
@@ -1150,13 +1113,13 @@ transition: 7s;
 
 .text-card-margin-button{
   text-align: center;
-	margin-bottom: .5em;
+	margin-bottom: .7em;
 }  
 
 
-.text-card-margin-button p {
+.card-origen-par .text-card-margin-button p {
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
 
 }
@@ -1452,6 +1415,7 @@ transition: 7s;
 /* animacion*/
 /* loader 1 */
 .loader1 {
+	padding: 1em;
 	display: flex;
 	align-items: center;
   }
@@ -1665,20 +1629,7 @@ transition: 7s;
 	transform: scale(1.2);
 }
 
-/*  
-.container-img-multiple figure .capa .title-foto {
-	font-size: 1.3em;
-	color: #FFFFFF;	
-	margin-bottom: 120px;
-	transition: all 400ms ease-out;
-	margin-top: 30px;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  
-	
-}
-  */
+
 
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
@@ -3108,11 +3059,6 @@ width: 100%;
 
 
  
- .callbacks_tabs {
-	left: 45%;
- }
-
- 
 
 /* titulos principales*/
 .titles-principal h2{
@@ -3755,11 +3701,8 @@ p.cousel_demo{
   font-weight: 400;
   font-style: normal;
 }
- .callbacks_tabs {
-	left: 40%;
-	
- }
 
+/**/
  .container .header .container .marca_logo {
 		position: absolute;
 		top: 10px;
@@ -4530,9 +4473,6 @@ p.cousel_demo{
  }
  
  
- .callbacks_tabs {
-	left: 40%;
- }
  .slide-text-info{
 	margin-top:6%;
 }
@@ -5359,13 +5299,6 @@ table{
 		font-size: 1.3em;
 	 }
 
-	 .callbacks_tabs {
-		left: 36%;
-	 }
-
-	 .callbacks_tabs {
-		top:83%;
-	 }
 	 
 	 
 	 /* Origen */
@@ -5588,9 +5521,9 @@ table{
  .download {
 	padding: 10px 0;
  }
- .callbacks_tabs {
-	left: 38%;
- }
+
+
+ 
  nav a#pull img {
    margin-right:0;
  }
@@ -6166,11 +6099,7 @@ table{
  .slide-text-info-btns {
 	display: none;
  }
- .callbacks_tabs {
-	left: 25%;
-	top:78%;
- }
- 
+
  
   .download-left span {
 	background-size: 70%;
@@ -7135,9 +7064,7 @@ form {
 	
  }
  
- .callbacks_tabs {
-	left: 25%;
- }
+ 
 
  
  
@@ -8108,10 +8035,6 @@ width: 100%;
 	font-size: .8em;
 	
  }
- .callbacks_tabs {
-	left: 25%;
-	top:78%;
- }
  
 /* Origen */
 .origen-container{
@@ -9007,10 +8930,8 @@ width: 100%;
 	font-size: 1.1em;
 	margin-top: 38px;
  }
- .callbacks_tabs {
-	left:25%;
-	top:70%;
- }
+
+ 
  .Share-instantly-left span, .feature-right span {
 	background-size: 59%;
 	width: 180px;
