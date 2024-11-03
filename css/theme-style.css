@@ -71,25 +71,35 @@ p,th,td{
 	
 	
 }
+
+
 /*----navbar-nav----*/
 
 /*acomodar menu*/ 
 .top-nav ul li a{
-	
+	margin-top: .3em;
 	color: #FFFFFF;
-	padding: 1.8em 1.2em;
-	font-size: 1em;
+	padding: .3em 1.2em;
 	text-align: center;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+ 
   font-style: normal;
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
 	
-	background: url(../images/border-top.png) no-repeat 50% 0px;
-	color:#FFFFFF;
+	/*background: url(../images/border-top.png) no-repeat 50% 0px;*/
+	
+	background-color: #FFFFFF;
+	/*background-color: #708293;*/
+	opacity: 99%;
+	/*#708293
+	#8fadc6
+	*/
+	color: #708293;
+	border-radius: 10px;
 	margin-top: 1em;
+	
 }
 
 /*
@@ -97,6 +107,7 @@ p,th,td{
 	display:block;
 }
 */
+
 /* top-nav */
 .top-nav:before,
 .top-nav:after {
@@ -138,9 +149,6 @@ nav a#pull {
 	display: none;
 }
 
-
-
-	  
 
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
@@ -577,36 +585,121 @@ nav a#pull {
 
 .container-text-slider-izquierda{
 	width: 70%;
+	/*
 	float: left;
+	*/
 	display: flex;
 	padding: 0em 6em;			
 }
 
+.container-efecto-centro{
+	width: 10%;
 
+}
 
 .container-text-slider-derecha{
-	width: 30%;
+	width: 20%;
+	/*
 	float: right;
+	*/
 	display: flex;
 	padding: 0em .7em;
 }
 
 .container-text-slider-derecha .slider-celular{
 	
-	float: left;
+	
 	width: 15em;
 	height: 30em;
 }
 
 /*  Luz slider  */
 .container-lus-slider{
-	
-	width: 80%;
+	width: 75%;
 	height: 30em;
 	margin: auto;
 	text-align: center;
 	background: linear-gradient( #5fd9fe 70%,#FFFFFF );	
 }
+
+.container-efecto-centro{
+	display: flex;
+	width: 10%;
+	margin-top: 4em;
+}
+
+/* efecto*/
+
+@keyframes loader_5191 {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  .square {
+	background: #FFFFFF;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -5px;
+	margin-left: -5px;
+  }
+  
+  #sq1 {
+	margin-top: -25px;
+	margin-left: -25px;
+	animation: loader_5191 675ms ease-in-out 0s infinite alternate;
+  }
+  
+  #sq2 {
+	margin-top: -25px;
+	animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
+  }
+  
+  #sq3 {
+	margin-top: -25px;
+	margin-left: 15px;
+	animation: loader_5191 675ms ease-in-out 150ms infinite;
+  }
+  
+  #sq4 {
+	margin-left: -25px;
+	animation: loader_5191 675ms ease-in-out 225ms infinite;
+  }
+  
+  #sq5 {
+	animation: loader_5191 675ms ease-in-out 300ms infinite;
+  }
+  
+  #sq6 {
+	margin-left: 15px;
+	animation: loader_5191 675ms ease-in-out 375ms infinite;
+  }
+  
+  #sq7 {
+	margin-top: 15px;
+	margin-left: -25px;
+	animation: loader_5191 675ms ease-in-out 450ms infinite;
+  }
+  
+  #sq8 {
+	margin-top: 15px;
+	animation: loader_5191 675ms ease-in-out 525ms infinite;
+  }
+  
+  #sq9 {
+	margin-top: 15px;
+	margin-left: 15px;
+	animation: loader_5191 675ms ease-in-out 600ms infinite;
+  }
+
+
 
 .slide-text-info p{
 	font-size: 3.7em;
@@ -621,13 +714,23 @@ nav a#pull {
 }
 
 
-/* Definicion start */
+/* Que es Ges start */
+
+.container-definicion{
+	width: 100%;
+	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	
+}
+
 
 /* para todos los subtitulos titles-principal*/
 
 .container-definicion .container .titles-principal{
 	text-align: center;
-	padding: 1em 0em	
+	margin-top: 5em;
+	
+	
+		
 }
 
 /* tipografia para los sub titulos*/
@@ -636,21 +739,12 @@ nav a#pull {
   font-weight: 400;
   font-style: normal;
 	color: #FFFFFF;
-	font-size: 2em;
-}
-
-.container-definicion{
-	width: 100%;
-	padding-bottom: 3em;
-	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	font-size: 1.8em;
 }
 
 
 
-.title-definicion p{
-	font-size: x-large;
-	font-weight: lighter;
-}
+
 
 .card-title{
 	text-align: center;
@@ -663,7 +757,7 @@ nav a#pull {
 }
 
 .container-card{
-	padding-top: 2em;
+	padding-top: 1em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -775,27 +869,50 @@ nav a#pull {
 
 /* funciones destacadas*/
 
+
+
+.features-Funciones-Destacadas{
+	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	padding: 2em 0em;
+}
+
 /* para todos los subtitulos titles-principal*/
 
 .features-Funciones-Destacadas .titles-principal{
 	text-align: center;
-	padding: 1em 0em	
+	margin-top: 3em;
+		
 }
 
-/* tipografia para los sub titulos*/
 .features-Funciones-Destacadas .titles-principal h2{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
   font-style: normal;
 	color: #FFFFFF;
-	font-size: 2em;
+	
+	
+		
 }
 
-.features-Funciones-Destacadas{
-	padding:0em 0em 5em 0em;
-	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
 
+
+.sub-titulo{
+color: #635b5b;
+	
 }
+
+.sub-titulo h3{
+	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	  font-size: 1.4em;
+	}
+	
+
+
+
 
 .container-loader{
 	width: 100%;
@@ -846,8 +963,7 @@ nav a#pull {
 
 /* compacta textos de cada funcion  */
 .features-grids{
-
-	/*background-color: #FFFFFF;*/
+	
 	border-radius: 25px;
 	padding: 0em .5em;
 }
@@ -879,28 +995,33 @@ nav a#pull {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .text-center .features-grid .card-container .cardD .front-content p {
-	font-size: 1.4em;
+  .text-center .features-grid .card-container .cardD .content p {
+	font-size: 1em;
 	font-weight: 200;
-	color: #FFFFFF;
+	line-height: 1.5;
+	color: #635b5b;
 	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
   }
   
-   .cardD .content {
+  .text-center .features-grid .text-funciones h3{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.4em;
+	
+  }
+  .card-container .cardD .content {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	height: 110%;
 	text-align: center;
-	gap: 10px;
 	background: linear-gradient( #5fd9fe 50% ,#FFFFFF);
 	color: #708293;  /*color de texto card*/
 	padding: 20px;
@@ -1025,37 +1146,52 @@ nav a#pull {
 
 /*end funciones destacadas*/
 
-
-
-
-
-
-
-
-
-
-
-
-/* origen */
-
 /* para todos los subtitulos titles-principal*/
 
-.container-definicion .container .titles-principal{
+
+.origen-container{
+	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
+	padding: 1em 0em;
+}
+
+.titles-principal{
 	text-align: center;
-	padding: 1em 0em	
+	margin-top: 3em;	
 }
 
 /* tipografia para los sub titulos*/
 .titles-principal h2{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
   font-style: normal;
 	color: #FFFFFF;
-	font-size: 2em;
 }
-.origen-container{
-	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
-	padding: 1.5em 0em;
+
+.seleccione{
+	padding-bottom: .7em;
+}
+
+
+.seleccione p{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+	font-size: 1.1em;
+	color: #FFFFFF;
+}
+
+.origen-container .container-center .titulo-origen-card {
+	text-align: center;
+	
+}
+
+.origen-container .container-center .titulo-origen-card p{
+  color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4em;
+	
 }
 
 .container-center{
@@ -1119,9 +1255,15 @@ nav a#pull {
 	
 }
 
+.container-unica-origen .container-img-multiple .capa .list-img-patrulla {
+	text-align: justify;
+	margin-left: 2em;
+
+}
+
 /* Text-grande titulo */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin-top: 30px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
@@ -1139,7 +1281,7 @@ nav a#pull {
 /* texto pequeño imagen */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
 	color: #FFFFFF;
-	font-size: 1.3em;
+	font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -1175,13 +1317,7 @@ nav a#pull {
 
 
 
-.seleccione p{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-	font-size: 1.3em;
-	color: #FFFFFF;
-}
+/* pendiente
 
 .container-beneficios .container-titulo-beneficios .seleccione p{
 
@@ -1197,10 +1333,8 @@ font-family: "Ubuntu", sans-serif;
   font-style: normal;
 	font-size: 1.3em;
 	color: #FFFFFF;
-	
-	
-
 }
+	*/
 
 
 #background-blue{
@@ -1303,15 +1437,7 @@ font-family: "Ubuntu", sans-serif;
 	
 }
 
-.origen-container .container-center .titulo-origen-card {
-	text-align: center;
-	
-}
 
-.origen-container .container-center .titulo-origen-card p{
-  color: #FFFFFF;
-	font-size: x-large;
-}
 
 .container-2-card-origen .card-origen-par .titulo-origen-card {
 	text-align: center;
@@ -1321,18 +1447,30 @@ font-family: "Ubuntu", sans-serif;
 .container-2-card-origen .card-origen-par .titulo-origen-card p{
 
 	color: #FFFFFF;
-	font-size: x-large;
+	font-size: 1.4em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .container-2-card-origen .card-origen-par p{
 	text-align: center;
-	font-size: medium;
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	color:#635b5b ;
+	
 }
 
+.card-origen-par .list{
+	font-size: .9em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	line-height: 1.7;
+	color:#635b5b ;
 
-
-.container-2-cards{
-	width: 100%;
 }
 
 .text-container{
@@ -1354,6 +1492,7 @@ font-family: "Ubuntu", sans-serif;
 .container-logo-coorupcion{
 	text-align: center;
 	padding: 1.2em 0em;
+	
 }
 
 .text-car{
@@ -1387,14 +1526,15 @@ font-family: "Ubuntu", sans-serif;
 	
 	/*transform: perspective(900px) rotateY(360deg);  */
     
-	transform: scale(1.2);
+	transform: scale(1.1);
 	/*border: 2px solid #FFFFFF;*/
+
 }
 
 
 /*loader 5 letras de corrupccion */
 .container-loader .loader5 {
-	margin-bottom: .5em;
+	margin-bottom: .9em;
 	position: relative;
 	overflow: hidden;
 	border-right: 3px solid;
@@ -1404,8 +1544,8 @@ font-family: "Ubuntu", sans-serif;
   
 
   .loader-text {
-	font-size: 25px;
-	font-weight: 600;
+	font-size: 1.4em;
+	font-weight: 200;
 	background: #FFFFFF;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -1417,7 +1557,7 @@ font-family: "Ubuntu", sans-serif;
 	}
   
 	100% {
-	  width: 480px;
+	  width: 350px;
 	}
   }
   
@@ -1515,18 +1655,22 @@ font-family: "Ubuntu", sans-serif;
 	}
   }
 
-.text-card-margin-button{
+.container-2-card-origen .card-origen-par .text-card-margin-button{
   text-align: center;
-	margin-bottom: .7em;
+	padding: 1em 0em;
 }  
 
-
-.card-origen-par .text-card-margin-button p {
-	font-family: "Ubuntu", sans-serif;
+.container-2-card-origen .card-origen-par .text-card-margin-button p{
+	
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 1em;
+	
+  }  
+  
 
-}
+
 
 .card-izquierda:hover .back {
 	cursor: pointer;
@@ -2104,14 +2248,10 @@ color: #FFFFFF;
 /*-----start-Share-instantly----*/
 .Share-instantly{
 	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
-	padding-bottom: 2em;
+	padding: 2em 0em;
 }
 
-.Share-instantly-left{
 
-
-	padding: 7em 0em 1em 0em;
-}
 
 .Share-instantly-left span{
 	width:350px;
@@ -2119,22 +2259,6 @@ color: #FFFFFF;
 	display:block;
 	background:url(../images/Izquierdo-nuevo.png) no-repeat 0px 0px;
 	
-}
-
-/*
-.Share-instantly-left span:hover{
-	cursor: pointer;
-	transform: scale(1.1);
-	
-}
-
-*/
-
-/* definir color de letra y tamaño y tipografia a todos los titulos*/
-.Share-instantly-right h3{
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 200;
-	font-style: normal;
 }
 
 .Share-instantly-right p{
@@ -2148,6 +2272,8 @@ color: #FFFFFF;
 .head-para{
 	width: 70%;
 	margin: 1em 0 0.5em;
+	color:#635b5b;
+	font-size: 1em;
 }
 
 
@@ -2156,15 +2282,14 @@ p.img_slider{
 	line-height: 1.8em;
 	width: 79%;
 }
-.Share-instantly-right{
-	margin-top: .5em;
-}
+
 
 .slider .da-slider .da-slide #youtube-icon-slider{
 	width: 6em;
 	height: 4em;
  
 }
+
 .da-slider{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	border-radius: 5px;
@@ -2176,7 +2301,7 @@ p.img_slider{
 /*------ start-feature----*/
 .feature{
 	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
-	padding-top: 1em;
+	padding: 2em 0em;
 }
 .feature h3 {
   font-family: "Ubuntu", sans-serif;
@@ -2206,19 +2331,6 @@ p.img_slider1{
 	background:url(../images/celular-derecho-nuevo.png) no-repeat 0px 0px;
 }
 
-.feature .feature-right{
-	margin-top: 3em;
-	
-	
-}
-
-/*
-.feature-right span:hover{
-	cursor: pointer;
-	transform: scale(1.1);
-	
-}
-*/
 
 
 .da-slider1{
