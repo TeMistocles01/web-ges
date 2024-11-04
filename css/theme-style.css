@@ -889,28 +889,29 @@ nav a#pull {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
-	color: #FFFFFF;
-	
-	
-		
+	color: #FFFFFF;		
 }
 
 
 
 .sub-titulo{
+text-align: center;
 color: #635b5b;
 	
 }
 
-.sub-titulo h3{
-	
+/* Prevencion */
+.sub-titulo p{
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	  font-size: 1.4em;
+	font-size: 1.4em;
+		
 	}
 	
-
+.seleccione{
+	text-align: center;
+}
 
 
 
@@ -966,11 +967,11 @@ color: #635b5b;
 	
 	border-radius: 25px;
 	padding: 0em .5em;
+	
 }
 
-/* From Uiverse.io by gharsh11032000 */ 
+
 .text-center .features-grid .card-container {
-	
 	width: 50%;
 	height: 280px;
 	position: relative;
@@ -1012,7 +1013,8 @@ color: #635b5b;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 1.4em;
+	font-size: 1.5em;
+	
 	
   }
   .card-container .cardD .content {
@@ -1146,12 +1148,121 @@ color: #635b5b;
 
 /*end funciones destacadas*/
 
-/* para todos los subtitulos titles-principal*/
+
+
+/*-----start-Share-instantly----*/
+.Share-instantly{
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	padding: 2em 0em;
+}
+
+.Share-instantly .container .Share-instantly-right .titles-share h2{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+
+}
+
+.Share-instantly .container .Share-instantly-right .titles-share{
+	margin-bottom: 1.5em;
+
+}
+.Share-instantly-left span{
+	width:350px;
+	height:520px;
+	display:block;
+	background:url(../images/Izquierdo-nuevo.png) no-repeat 0px 0px;
+	
+}
+
+
+.Share-instantly-right .head-para{
+	width: 70%;
+	margin: 1em 0 0.5em;
+	color:#635b5b;
+	font-size: 1em;
+}
+
+
+p.img_slider{
+	color: #AEAEAE;
+	line-height: 1.8em;
+	width: 79%;
+}
+
+
+.slider .da-slider .da-slide #youtube-icon-slider{
+	width: 6em;
+	height: 4em;
+ 
+}
+
+.da-slider{
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	border-radius: 5px;
+
+}
+
+
+
+/*------ start-feature----*/
+.feature{
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	padding: 2em 0em;
+}
+
+.feature .titles-share{
+	margin-bottom: 1.5em;
+}
+.feature .titles-share h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+	
+	
+}
+.feature p {
+	font-size: medium;
+	line-height: 1.8em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.feature p span{
+	display:block;
+	color:#5fd9fe;
+}
+p.img_slider1{
+	width:100%;
+}
+.feature-right span{
+	width:350px;
+	height:570px;
+	display:block;
+	background:url(../images/celular-derecho-nuevo.png) no-repeat 0px 0px;
+}
+
+
+
+.da-slider1{
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	border-radius: 5px;
+
+}
+
+
+/* justificacion*/
 
 
 .origen-container{
+	width: 100%;
+	height: max-content;
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
-	padding: 1em 0em;
+	/*background: linear-gradient( #5fd9fe 97% ,#FFFFFF);*/
+	padding: 1em 0em 5em 0em;
+	margin: 0;
 }
 
 .titles-principal{
@@ -1176,7 +1287,7 @@ color: #635b5b;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	color: #FFFFFF;
 }
 
@@ -1277,7 +1388,6 @@ color: #635b5b;
 }
 
 
-
 /* texto pequeño imagen */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
 	color: #FFFFFF;
@@ -1296,8 +1406,7 @@ color: #635b5b;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;	
-	margin: 0em auto 2.5em auto;
-
+	
 }
 
 .card-origen-par{
@@ -1309,38 +1418,9 @@ color: #635b5b;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
 	margin: 0em auto;
+	
+	
 }
-
-
-/* Subtitulos de seccion start*/
-
-
-
-
-/* pendiente
-
-.container-beneficios .container-titulo-beneficios .seleccione p{
-
-font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-	font-size: 1.3em;
-}
-
-.container-multiples-sitios .bloke-superior .seleccione p{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-	font-size: 1.3em;
-	color: #FFFFFF;
-}
-	*/
-
-
-#background-blue{
-	background-color: #5fd9fe;
-}
-
 
 
 /*4 cards efectos */
@@ -1411,18 +1491,7 @@ font-family: "Ubuntu", sans-serif;
 	
 }
 
-
-
-
-
-
-
-
 /* Subtitulos de seccion end  */
-
-
-/* card origen start*/
-
 
 .card-origen-center:hover{
 	
@@ -1436,8 +1505,6 @@ font-family: "Ubuntu", sans-serif;
 	transition: 2s;
 	
 }
-
-
 
 .container-2-card-origen .card-origen-par .titulo-origen-card {
 	text-align: center;
@@ -1522,6 +1589,7 @@ font-family: "Ubuntu", sans-serif;
 	height:130px;
 	border-radius: 5px;
 }
+
 .icono-soborno:hover  {
 	
 	/*transform: perspective(900px) rotateY(360deg);  */
@@ -1587,12 +1655,6 @@ font-family: "Ubuntu", sans-serif;
 
 .container-img-text{
 	display: inline-block;
-}
-
- /*borrar en todo*/
-.container-text-img{
- text-align: center;
- margin: .5em 0em;
 }
 
 
@@ -1661,7 +1723,6 @@ font-family: "Ubuntu", sans-serif;
 }  
 
 .container-2-card-origen .card-origen-par .text-card-margin-button p{
-	
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -1669,8 +1730,6 @@ font-family: "Ubuntu", sans-serif;
 	
   }  
   
-
-
 
 .card-izquierda:hover .back {
 	cursor: pointer;
@@ -1682,32 +1741,31 @@ font-family: "Ubuntu", sans-serif;
 .compatibility-right .pie-card-tex-center{
 	text-align: center;
 }
- /*end  como surge GES
 
 
 
-/* catalogo*/
 
-/*
-.features{
-	padding-bottom: 2.5em;
-	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
-	
-}
-*/
+
+
+
+/*  lugares de implementacion */
 
 
 .features{
-	/*background-color: #cccccc;  Used if the image is unavailable */
+	padding-top: 0em;
 	width: 100%;
 	height: 59em;
 	
 	
 }
 
-
+.titles-principal{
+	text-align: center;
+	margin-top: 3em;	
+}
 
 .fondo-img-catalogo{
+	padding-top: 3em;
 	width: 100%;
 	height: 59em;
 	background-image:url(../images/slide1.jpg);
@@ -1733,12 +1791,10 @@ font-family: "Ubuntu", sans-serif;
 	float: left;
 }
 
-
-
-
 .container-title{
 	text-align: center;
 	padding: 0em 0em .5em 0em;
+	
 	
    }
  
@@ -1756,35 +1812,30 @@ font-family: "Ubuntu", sans-serif;
 	
 }
 */
+.features .fondo-img-catalogo  {
 
-.bloke-superior .container-catalogo{
-	width: 17em;
-	margin-top: 3em;
-	background-color: #5F7D8B;
-	opacity: 70%;
-	text-align: center;
-	border-radius: 5px;
-	text-align: center;
-}
-
-
-
-.bloke-superior #margin-catalogo{
+	width: 100%;
+	flex: content;
 	
-	
-	background-color: #5F7D8B;
-	opacity: 75%;
-	
-	border-radius: 5px;
-	text-align: center;
 	
 	
 }
 
+
+
+.features .fondo-img-catalogo .bloke-superior {
+
+	width: 30%;
+	background-color: #5F7D8B;
+	opacity: 75%;	
+	border-radius: 5px;
+	text-align: center;	
+	
+	
+}
 
 
 .fondo-img-catalogo .container-seleccione p{
-	
 	font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1795,7 +1846,6 @@ font-family: "Ubuntu", sans-serif;
 	
 }
 .bloke-superior .container-catalogo h2{
-	
 	font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1862,8 +1912,6 @@ font-family: "Ubuntu", sans-serif;
 	transform: scale(1.2);
 }
 
-
-
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
 	color: #FFFFFF;
@@ -1877,6 +1925,11 @@ font-family: "Ubuntu", sans-serif;
 	margin: auto;
 	
 }
+
+/* end catalogo*/
+
+
+
 
 
 /*-----GES en accion----*/
@@ -2227,132 +2280,6 @@ color: #FFFFFF;
 }
 
 
-
-/* icon you tube*/
-/*
-.img-youtube
-{
-	width: 7em;
-	height: 4em;	
-}
-
-
-*/
-
-
-/* end ges en accion */
-
-
-
-
-/*-----start-Share-instantly----*/
-.Share-instantly{
-	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
-	padding: 2em 0em;
-}
-
-
-
-.Share-instantly-left span{
-	width:350px;
-	height:520px;
-	display:block;
-	background:url(../images/Izquierdo-nuevo.png) no-repeat 0px 0px;
-	
-}
-
-.Share-instantly-right p{
-	font-size: medium;
-	line-height: 1.8em;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  
-}
-.head-para{
-	width: 70%;
-	margin: 1em 0 0.5em;
-	color:#635b5b;
-	font-size: 1em;
-}
-
-
-p.img_slider{
-	color: #AEAEAE;
-	line-height: 1.8em;
-	width: 79%;
-}
-
-
-.slider .da-slider .da-slide #youtube-icon-slider{
-	width: 6em;
-	height: 4em;
- 
-}
-
-.da-slider{
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	border-radius: 5px;
-
-}
-
-
-
-/*------ start-feature----*/
-.feature{
-	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
-	padding: 2em 0em;
-}
-.feature h3 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-	
-	
-}
-.feature p {
-	font-size: medium;
-	line-height: 1.8em;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-.feature p span{
-	display:block;
-	color:#5fd9fe;
-}
-p.img_slider1{
-	width:100%;
-}
-.feature-right span{
-	width:350px;
-	height:570px;
-	display:block;
-	background:url(../images/celular-derecho-nuevo.png) no-repeat 0px 0px;
-}
-
-
-
-.da-slider1{
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-	border-radius: 5px;
-
-}
-
-/*-----start-gallery----*/
-.gallery{
-	padding:3em 0 0 0;
-	
-}
-
-.gallery p{
-	color: #666666;
-	line-height: 1.8em;
-	width: 40%;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 /*--Beneficios---*/
 
@@ -6527,10 +6454,6 @@ table{
 	 
 
   } 
-  .container-text-img{
-	text-align: center;
-	margin: .2em 0em;
-   }
 
 .logo2{
 	width: 90px;
