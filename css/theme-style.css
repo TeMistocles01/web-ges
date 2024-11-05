@@ -526,10 +526,6 @@ nav a#pull {
 	padding: 0em 6em;			
 }
 
-.container-efecto-centro{
-	width: 10%;
-
-}
 
 .container-text-slider-derecha{
 	width: 20%;
@@ -541,8 +537,6 @@ nav a#pull {
 }
 
 .container-text-slider-derecha .slider-celular{
-	
-	
 	width: 15em;
 	height: 30em;
 }
@@ -553,7 +547,7 @@ nav a#pull {
 	height: 30em;
 	margin: auto;
 	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF );	
+	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
 }
 
 
@@ -577,6 +571,7 @@ nav a#pull {
 
 .container-definicion{
 	width: 100%;
+	height: max-content;
 	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
 	padding: 1em 0em;
 }
@@ -587,11 +582,10 @@ nav a#pull {
 
 .container-definicion .titles-principal{
 	text-align: center;
-	margin-top: 3em;
-	
-	
-		
+	margin-top: 3em;		
 }
+
+
 
 /* tipografia para los sub titulos*/
 .container-definicion .titles-principal h2{
@@ -600,97 +594,6 @@ nav a#pull {
   font-style: normal;
 	color: #FFFFFF;
 	font-size: 1.8em;
-}
-
-
-.container-definicion .container-loader {
-	width: 100%;
-	height: 7em;
-	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
-	justify-content: center;
-	background-color: red;
-
- }
-
-/* From Uiverse.io by JkHuger */ 
-@keyframes loader_5191 {
-	from {
-	  opacity: 0;
-	}
-  
-	to {
-	  opacity: 1;
-	}
-  }
-  
-  .square {
-	background: #ddd;
-	width: 10px;
-	height: 10px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -5px;
-	margin-left: -5px;
-  }
-  
-  #sq1 {
-	margin-top: -25px;
-	margin-left: -25px;
-	animation: loader_5191 675ms ease-in-out 0s infinite alternate;
-  }
-  
-  #sq2 {
-	margin-top: -25px;
-	animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
-  }
-  
-  #sq3 {
-	margin-top: -25px;
-	margin-left: 15px;
-	animation: loader_5191 675ms ease-in-out 150ms infinite;
-  }
-  
-  #sq4 {
-	margin-left: -25px;
-	animation: loader_5191 675ms ease-in-out 225ms infinite;
-  }
-  
-  #sq5 {
-	animation: loader_5191 675ms ease-in-out 300ms infinite;
-  }
-  
-  #sq6 {
-	margin-left: 15px;
-	animation: loader_5191 675ms ease-in-out 375ms infinite;
-  }
-  
-  #sq7 {
-	margin-top: 15px;
-	margin-left: -25px;
-	animation: loader_5191 675ms ease-in-out 450ms infinite;
-  }
-  
-  #sq8 {
-	margin-top: 15px;
-	animation: loader_5191 675ms ease-in-out 525ms infinite;
-  }
-  
-  #sq9 {
-	margin-top: 15px;
-	margin-left: 15px;
-	animation: loader_5191 675ms ease-in-out 600ms infinite;
-  }
-
-
-.card-title{
-	text-align: center;
-	font-size: medium;
-	display: block;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-	
 }
 
 .container-card{
@@ -716,6 +619,17 @@ nav a#pull {
 	cursor: default;
 	
 }
+
+.card-title{
+	text-align: center;
+	font-size: medium;
+	display: block;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+	
+}
+
 
 .card-definicion:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -963,20 +877,23 @@ color: #635b5b;
 	left: 0;
 	width: 100%;
 	height: 110%;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	background: linear-gradient( #5fd9fe 50% ,#FFFFFF);
+	background:  #5fd9fe ;
 	color: #708293;  /*color de texto card*/
 	padding: 20px;
 	line-height: 1.5;
 	border-radius: 5px;
 	pointer-events: none;
-	transform: translateY(96%);
+	transform: translateY(-100%);
 	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .cardD .content .heading {
+  .text-center .features-grid .card-container .cardD .content .heading {
 	font-size: 32px;
-	font-weight: 700;
+	font-weight: 400;
+	color: #FFFFFF;
   }
   
   .cardD:hover .content {
@@ -1201,13 +1118,13 @@ p.img_slider1{
 	height: max-content;
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 	/*background: linear-gradient( #5fd9fe 97% ,#FFFFFF);*/
-	padding: 1em 0em 5em 0em;
+	padding: 1em 0em 4em 0em;
 	margin: 0;
 }
 
 .titles-principal{
 	text-align: center;
-	margin-top: 3em;	
+	margin-top: 2.5em;	
 }
 
 /* tipografia para los sub titulos*/
@@ -1251,13 +1168,13 @@ p.img_slider1{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0em auto 2.5em auto;
+	margin: 0em auto 1.5em auto;
 		
 }
 
 .card-origen-center{
 	width:  50%;
-	padding: 1.5em 1.5em;
+	padding: .5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -1278,7 +1195,7 @@ p.img_slider1{
 /*  cambia tamaño de card*/
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
 	width: 23em;
-	height: 15em;
+	height: 13em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
@@ -1318,8 +1235,8 @@ p.img_slider1{
 	margin-top: 30px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-weight: 300;
+    font-style: normal;
 	
 }
 
@@ -1351,7 +1268,7 @@ p.img_slider1{
 
 .card-origen-par{
 	width:  48%;
-	padding: 1.5em 1.5em;
+	padding: .5em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -1368,7 +1285,7 @@ p.img_slider1{
 /*  cambia tamaño de card*/
 .container-img-text figure{
 	width: 10em;
-	height: 7em;
+	height: 6.5em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
@@ -1409,8 +1326,8 @@ p.img_slider1{
 	margin-top: 30px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  	font-weight: 300;
+    font-style: normal;
 	
 }
 .container-img-text figure:hover > img{
@@ -1498,7 +1415,7 @@ font-family: "Ubuntu", sans-serif;
 
 .container-logo-coorupcion{
 	text-align: center;
-	padding: 1.2em 0em;
+	padding: .5em 0em;
 	
 }
 
@@ -1590,7 +1507,7 @@ font-family: "Ubuntu", sans-serif;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin: .5em 0em;
+	
 }
 
 .container-img-text{
@@ -1621,7 +1538,7 @@ font-family: "Ubuntu", sans-serif;
 /*loader 3*/
 
 .container-loader3 {
-	margin-top: 1em;
+	margin-top: .7em;
     display: flex;
 	width: 95%;
   }
@@ -2086,7 +2003,7 @@ iframe{
 .container-tablas .tabla-container table{
 	margin-top: 1em;
 	width: 100%;
-	height: 8em;
+	height: 7em;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
@@ -2094,22 +2011,22 @@ iframe{
 .container-tablas .tabla-container table th{
 	text-align: center;
     border: 1px solid #FFFFFF;
-    padding: 20px 15px;
-	font-size: 1em;
+    padding: 18px 15px;
+	font-size: 1.2em;
 	margin-top: .5em;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal; 
-	color: #FFFFFF;
+	color: #FFFFFc;
 
 }
 
 .container-tablas .tabla-container table td{
 	text-align: center;
     border: 1px solid #FFFFFF;
-    padding: 20px 15px;
-	font-size: 1em;
-	margin-top: .5em;
+    padding: 18px 15px;
+	font-size: 1.1em;
+
 	font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal; 
