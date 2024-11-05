@@ -1760,7 +1760,7 @@ font-family: "Ubuntu", sans-serif;
 }
 
 
-.features .fondo-img-catalog 
+
 
 
 
@@ -1927,6 +1927,7 @@ font-family: "Ubuntu", sans-serif;
 
 /*-----GES en accion----*/
 .container-img-estadistica{
+	padding-top: .5em;
 	width: 100%;
 	background: url(../images/estadis.jpg)no-repeat center center fixed;;
 	background-size: 100% 100%;
@@ -1934,27 +1935,38 @@ font-family: "Ubuntu", sans-serif;
 	
 }
 
-.titulo-accion{
+.container-img-estadistica .titles-principal {
 	width: 100%;
-	padding: 1em 0 .5em 0;
-	text-align: center;
-	background:  #5fd9fe;
+	background-color: #5F7D8B;
+	opacity: 85%;
+		
+
+
 }
 
-.titulo-accion p{
-  font-size: x-large;
+.container-img-estadistica .titles-principal h2{
+	width: 100%;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	  color: #FFFFFF;
+	  background-color: #5F7D8B;
+	opacity: 85%;
+	padding: 1em 0em 1em 0em;
+		
+
+
 }
+
+/*Titulo ges en accion espacio  */
 
 .text-youtube{
 	display: block;
 	font-size: medium;
  }
 
- /* Contenedor inferior*/
-.container-accion{
-	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
-	padding-bottom: 3.5em;
-}
+ 
 
 
 /*animation container*/
@@ -2036,14 +2048,8 @@ font-family: "Ubuntu", sans-serif;
 	font-size: 1.7em;
 	color: #FFFFFF;
 }
-/*Titulo ges en accion espacio  */
-#margin{
 
-	background-color: #8fadc6;
-	opacity: 85%;
-		
-	
-}
+
 
 .text-tabla1 {
 	text-align: center;
