@@ -573,7 +573,7 @@ nav a#pull {
 	width: 100%;
 	height: max-content;
 	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
-	padding: 1em 0em;
+	padding: 1em 0em .5em 0em;
 }
 
 
@@ -581,11 +581,71 @@ nav a#pull {
 /* para todos los subtitulos titles-principal*/
 
 .container-definicion .titles-principal{
+	width: 100%;
 	text-align: center;
 	margin-top: 3em;		
 }
+.container-loader1{
+	margin-top: 5em;
+	width: 100%;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+ }
 
 
+ /* From Uiverse.io by Shoh2008 */ 
+.loader {
+	width: 14px;
+	height: 14px;
+	box-shadow: 0 30px, 0 -30px;
+	border-radius: 4px;
+	background: currentColor;
+	display: block;
+	position: relative;
+	transform: translate(-150%, -20px);
+	color: #FFF;
+	box-sizing: border-box;
+	animation: animloader 2s ease infinite;
+  }
+  
+  .loader::after,
+  .loader::before {
+	content: '';
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	box-shadow: 0 30px, 0 -30px;
+	border-radius: 4px;
+	background: currentColor;
+	color: #FFF;
+	position: absolute;
+	left: 30px;
+	top: 0;
+	animation: animloader 2s 0.2s ease infinite;
+  }
+  
+  .loader::before {
+	animation-delay: 0.4s;
+	left: 60px;
+  }
+  
+  @keyframes animloader {
+	0% {
+	  top: 0;
+	  color: white;
+	}
+  
+	50% {
+	  top: 30px;
+	  color: rgba(255, 255, 255, 0.2);
+	}
+  
+	100% {
+	  top: 0;
+	  color: white;
+	}
+  }
+   
 
 /* tipografia para los sub titulos*/
 .container-definicion .titles-principal h2{
@@ -610,7 +670,7 @@ nav a#pull {
 .card-definicion{
 	position: relative;
 	margin: 0em 1em;
-	width: 27em;
+	width: 25em;
 	height: max-content;
 	border-radius: 6px;
 	overflow: hidden;
@@ -620,15 +680,9 @@ nav a#pull {
 	
 }
 
-.card-title{
-	text-align: center;
-	font-size: medium;
-	display: block;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-	
-}
+
+
+
 
 
 .card-definicion:hover{
@@ -638,7 +692,7 @@ nav a#pull {
 
 .card-definicion img{
 	width: 100%;
-	height: 13.5em;
+	height: 14em;
 }
 
 .card-definicion .contenido-card{
@@ -706,12 +760,25 @@ nav a#pull {
 	font-weight: bold;
 	margin-bottom: 15px;
 }
-.container .container-card .contenido-card .original, .dots, .extra{
+.container-definicion .container-card .card-title{
+	text-align: center;
+	font-size: 1.1em;
+	display: block;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	
+}
+
+
+
+.container-definicion .container-card .contenido-card .original, .extra  {
 	text-align: justify;
-	line-height: 1.3;
+	line-height: 1.2;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
+  font-size: 1em;
 	
 }
 
@@ -725,9 +792,11 @@ nav a#pull {
 
 
 .features-Funciones-Destacadas{
-	/*background: linear-gradient( #5fd9fe 93% ,#FFFFFF);*/
-	background-color: #5fd9fe;
+	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	/*background-color: #5fd9fe;*/
 	padding: 2em 0em;
+	/*
+	box-shadow: inset 0 0 30px greenyellow;*/ 
 }
 
 /* para todos los subtitulos titles-principal*/
@@ -880,13 +949,13 @@ color: #635b5b;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	background:  #5fd9fe ;
+	background: linear-gradient( #5fd9fe 50% ,#FFFFFF);
 	color: #708293;  /*color de texto card*/
 	padding: 20px;
 	line-height: 1.5;
 	border-radius: 5px;
 	pointer-events: none;
-	transform: translateY(-100%);
+	transform: translateY(-96%);  /*100% o 110% */
 	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -1011,6 +1080,7 @@ color: #635b5b;
 .Share-instantly{
 	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
 	padding: 2em 0em;
+	/*box-shadow: inset 0 0 20px #FFFFFF;*/
 }
 
 .Share-instantly .container .Share-instantly-right .titles-share h2{
