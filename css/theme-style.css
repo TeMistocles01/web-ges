@@ -794,7 +794,7 @@ nav a#pull {
 .features-Funciones-Destacadas{
 	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
 	/*background-color: #5fd9fe;*/
-	padding: 2em 0em;
+	padding: 2em 0em 6em 0em;
 	/*
 	box-shadow: inset 0 0 30px greenyellow;*/ 
 }
@@ -820,6 +820,7 @@ nav a#pull {
 .sub-titulo{
 text-align: center;
 color: #635b5b;
+padding: 2.5em 0em 0em 0em;
 	
 }
 
@@ -829,10 +830,12 @@ color: #635b5b;
 	font-weight: 300;
 	font-style: normal;
 	font-size: 1.4em;
-		
+	
+	
 	}
 	
 .seleccione{
+	
 	text-align: center;
 }
 
@@ -847,7 +850,7 @@ color: #635b5b;
 
  /*louder9*/
 .loader9 {
-	padding-top: 1em;
+padding: 3em 0em;
 	user-select: none;
   }
   
@@ -885,24 +888,18 @@ color: #635b5b;
   }
 
 
-/* compacta textos de cada funcion  */
-.features-grids{
-	
-	border-radius: 25px;
-	padding: 0em .5em;
-	
-}
 
 
 .text-center .features-grid .card-container {
-	width: 50%;
-	height: 280px;
+	width: 70%;
+	height: 350px;
 	position: relative;
 	border-radius: 25px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
+	
   }
   
   .text-center .features-grid .card-container .cardD {
