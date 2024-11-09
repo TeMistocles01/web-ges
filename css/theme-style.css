@@ -921,10 +921,13 @@ padding: 3em 0em;
   
   .text-center .features-grid .card-container .cardD .content p {
 	font-size: 1em;
-	font-weight: 200;
-	line-height: 1.5;
+	font-weight: 300;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 	color: #635b5b;
-	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+	line-height: 1.5;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
   .text-center .features-grid .text-funciones h3{
@@ -1017,8 +1020,9 @@ padding: 3em 0em;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: .5;
+	
 	
 }
 
@@ -1106,6 +1110,11 @@ padding: 3em 0em;
 	margin: 1em 0 0.5em;
 	color:#635b5b;
 	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+
 }
 
 
@@ -1241,7 +1250,7 @@ p.img_slider1{
 
 .card-origen-center{
 	width:  50%;
-	padding: .5em 1em;
+	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -1262,7 +1271,7 @@ p.img_slider1{
 /*  cambia tamaño de card*/
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
 	width: 23em;
-	height: 13em;
+	height: 12em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
@@ -1299,7 +1308,7 @@ p.img_slider1{
 /* Text-grande titulo */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
 	font-size: 1.2em;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -1335,7 +1344,7 @@ p.img_slider1{
 
 .card-origen-par{
 	width:  48%;
-	padding: .5em 1em;
+	padding: 1em 1em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -1351,8 +1360,8 @@ p.img_slider1{
 
 /*  cambia tamaño de card*/
 .container-img-text figure{
-	width: 10em;
-	height: 6.5em;
+	width: 9em;
+	height: 7em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
@@ -1389,7 +1398,7 @@ p.img_slider1{
 
 /* Text-grande titulo */
 .container-img-text figure:hover > .capa .title-foto{
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin-top: 30px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
@@ -1455,7 +1464,7 @@ p.img_slider1{
 }
 
 .card-origen-par .list{
-	font-size: .9em;
+	font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal;
