@@ -550,10 +550,6 @@ nav a#pull {
 	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
 }
 
-
-
-
-
 .slide-text-info p{
 	font-size: 3.7em;
 	font-family: "Ubuntu", sans-serif;
@@ -578,13 +574,25 @@ nav a#pull {
 
 
 
-/* para todos los subtitulos titles-principal*/
+/* Subtitulos titles-principal*/
 
 .container-definicion .titles-principal{
 	width: 100%;
 	text-align: center;
 	margin-top: 3em;		
 }
+
+/* tipografia para los sub titulos*/
+.container-definicion .titles-principal h2{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.8em;
+}
+
+
+
 .container-loader1{
 	margin-top: 5em;
 	width: 100%;
@@ -592,13 +600,11 @@ nav a#pull {
 	justify-content: center;
  }
 
-
- /* From Uiverse.io by Shoh2008 */ 
 .loader {
 	width: 14px;
 	height: 14px;
 	box-shadow: 0 30px, 0 -30px;
-	border-radius: 4px;
+	border-radius: 10px;
 	background: currentColor;
 	display: block;
 	position: relative;
@@ -615,7 +621,7 @@ nav a#pull {
 	width: 14px;
 	height: 14px;
 	box-shadow: 0 30px, 0 -30px;
-	border-radius: 4px;
+	border-radius: 10px;
 	background: currentColor;
 	color: #FFF;
 	position: absolute;
@@ -647,14 +653,7 @@ nav a#pull {
   }
    
 
-/* tipografia para los sub titulos*/
-.container-definicion .titles-principal h2{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-	color: #FFFFFF;
-	font-size: 1.8em;
-}
+/*Contenedor de cards que es GES */
 
 .container-card{
 	width: 100%;
@@ -664,9 +663,9 @@ nav a#pull {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	
 }
 
+/* cards que es ges*/
 .card-definicion{
 	position: relative;
 	margin: 0em 1em;
@@ -679,9 +678,6 @@ nav a#pull {
 	cursor: default;
 	
 }
-
-
-
 
 
 
@@ -760,11 +756,12 @@ nav a#pull {
 	font-weight: bold;
 	margin-bottom: 15px;
 }
+
 .container-definicion .container-card .card-title{
-	text-align: center;
-	font-size: 1.1em;
-	display: block;
-	font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 1.1em;
+  display: block;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
 	
@@ -772,14 +769,13 @@ nav a#pull {
 
 
 
-.container-definicion .container-card .contenido-card .original, .extra  {
-	text-align: justify;
-	line-height: 1.2;
-	font-family: "Ubuntu", sans-serif;
+.container-definicion .container-card .contenido-card .original, .extra{	
+  line-height: 1.2;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 1em;
-	
+  text-align: justify;
 }
 
 
@@ -787,10 +783,7 @@ nav a#pull {
 
 
 
-/* funciones destacadas*/
-
-
-
+/* Funciones destacadas*/
 .features-Funciones-Destacadas{
 	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
 	/*background-color: #5fd9fe;*/
@@ -812,7 +805,8 @@ nav a#pull {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
-	color: #FFFFFF;		
+	color: #FFFFFF;
+	font-size: 1.8em;		
 }
 
 
@@ -891,7 +885,7 @@ padding: 3em 0em;
 
 
 .text-center .features-grid .card-container {
-	width: 70%;
+	width: 100%;
 	height: 350px;
 	position: relative;
 	border-radius: 25px;
@@ -1725,6 +1719,7 @@ font-family: "Ubuntu", sans-serif;
 }
 
 */
+
 .features .fondo-img-catalogo .seleccione p{
   
   background-color: #5F7D8B;
@@ -1771,17 +1766,11 @@ font-family: "Ubuntu", sans-serif;
 .container-title{
 	text-align: center;
 	padding: 0em 0em .5em 0em;
-	
-	
    }
- 
-   
-
 
 
 /* cambia de orizontal a vertical*/
 /*display: block;  */
-
 
 
 /*  cambia tamaño de card*/
@@ -1857,6 +1846,7 @@ font-family: "Ubuntu", sans-serif;
 
 
 /*-----Resultados y eficciencia----*/
+
 .container-img-estadistica{
 	padding-top: 1em;
 	width: 100%;
@@ -1983,7 +1973,7 @@ font-family: "Ubuntu", sans-serif;
 
 .text-tabla1 {
 	text-align: center;
-	width: 20em;
+	width: 50%;
 	background-color: #5F7D8B;
 	/*85b0d3*/
 	border-radius: 5px;
@@ -2023,7 +2013,7 @@ font-family: "Ubuntu", sans-serif;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0em auto 1em auto;
+	margin: 0em auto .5em auto;
 	
 		
 }
@@ -2062,7 +2052,8 @@ iframe{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	padding: .1em 1em .5em 1em;
+	margin-top: 3.5em;
+	padding: .5em 0em;
 	
 }
 
@@ -2139,7 +2130,7 @@ iframe{
 /* parrafo tabla superior*/
 .container-tablas .tabla-container .tabla-container-izquierda{
 	text-align: center;
-	width: 25em;
+	width: 23em;
 	background-color: #5F7D8B;
 	/*#5F7D8B*/;
 	border-radius: 5px;
@@ -2152,7 +2143,7 @@ iframe{
 font-family: "Ubuntu", sans-serif;
 font-weight: 300;
 font-style: normal;
-font-size: 1.2em;
+font-size: 1.1em;
 color: #FFFFFF;
 		
 }
@@ -2169,7 +2160,7 @@ color: #FFFFFF;
 
 .container-tablas .tabla-container .tabla-container-derecha{
 	text-align: center;
-	width: 25em;
+	width: 23em;
 	background-color: #5F7D8B;
 	/*#5F7D8B*/;
 	border-radius: 5px;
@@ -2182,7 +2173,7 @@ color: #FFFFFF;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #FFFFFF;
 			
 	}
@@ -3094,12 +3085,10 @@ width: 100%;
 	}
 	
 	.container-text-slider-derecha .slider-celular{
-	
 		float: left;
 		width: 7em;
 		height: 14em;
 	}
-
 
 	.slide-text-info p{
 		font-size: 2em;
@@ -3121,7 +3110,6 @@ width: 100%;
   
 }
 
-
 	.header {
 		position: fixed;
 	z-index: 100;
@@ -3136,15 +3124,421 @@ width: 100%;
  }
 
 
- 
+ /* Que es Ges start */
 
-/* titulos principales*/
-.titles-principal h2{
+.container-definicion{
+	width: 100%;
+	height: max-content;
+	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	padding: 1em 0em .5em 0em;
+}
+
+
+
+/* Subtitulos titles-principal*/
+
+.container-definicion .titles-principal{
+	width: 100%;
+	text-align: center;
+	margin-top: 3em;		
+}
+
+/* tipografia para los sub titulos*/
+.container-definicion .titles-principal h2{
 	font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
 	color: #FFFFFF;
 	font-size: 1.5em;
+}
+
+
+
+.container-loader1{
+	margin-top: 5em;
+	width: 100%;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+ }
+
+.loader {
+	width: 14px;
+	height: 14px;
+	box-shadow: 0 30px, 0 -30px;
+	border-radius: 10px;
+	background: currentColor;
+	display: block;
+	position: relative;
+	transform: translate(-150%, -20px);
+	color: #FFF;
+	box-sizing: border-box;
+	animation: animloader 2s ease infinite;
+  }
+  
+  .loader::after,
+  .loader::before {
+	content: '';
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	box-shadow: 0 30px, 0 -30px;
+	border-radius: 10px;
+	background: currentColor;
+	color: #FFF;
+	position: absolute;
+	left: 30px;
+	top: 0;
+	animation: animloader 2s 0.2s ease infinite;
+  }
+  
+  .loader::before {
+	animation-delay: 0.4s;
+	left: 60px;
+  }
+  
+  @keyframes animloader {
+	0% {
+	  top: 0;
+	  color: white;
+	}
+  
+	50% {
+	  top: 30px;
+	  color: rgba(255, 255, 255, 0.2);
+	}
+  
+	100% {
+	  top: 0;
+	  color: white;
+	}
+  }
+   
+
+/*Contenedor de cards que es GES */
+
+.container-card{
+	width: 100%;
+	padding-top: 5em;
+	margin-bottom: 4em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* cards que es ges*/
+.card-definicion{
+	position: relative;
+	margin: 0em .7em;
+	width: 19em;
+	height: max-content;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#FFFFFF;
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+.card-definicion:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.card-definicion img{
+	width: 100%;
+	height: 14em;
+}
+
+.card-definicion .contenido-card{
+	padding: 1em;
+	
+}
+
+/* Configuracion efecto Leer Más*/
+
+ .extra{
+	display: none;
+}
+
+ p{
+	display: inline;
+}
+
+ .input-card[type="checkbox"]{
+	height: 2em;
+	display: block;
+	appearance: none;	
+}
+
+ .label-card{
+	position: relative;
+	padding: .8em .8em;
+	background: #5fd9fe;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+	
+}
+
+.label-card:hover{
+	cursor: pointer;
+	background: #2fb4cc;
+	transition: 300ms;
+}
+
+.label-card::before{
+	content:"Leer Màs";
+	
+}
+
+ .input-card[type="checkbox"]:checked ~ label:before{
+	content: "Leer Menos";
+	
+}
+
+ .dots:has(~ .input-card[type="checkbox"]:checked){
+	display: none;
+}
+
+.extra:has(~ .input-card[type="checkbox"]:checked){
+	display: inline;
+
+}
+
+/*cerra efceto Ler Más*/
+
+.card .contenido-card h4{
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.container-definicion .container-card .card-title{
+  text-align: center;
+  font-size: 1.1em;
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	
+}
+
+
+
+.container-definicion .container-card .contenido-card .original, .extra{	
+  line-height: 1.2;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+  text-align: justify;
+}
+
+
+/* Definicion end */
+
+
+
+
+/* Funciones destacadas*/
+.features-Funciones-Destacadas{
+	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	/*background-color: #5fd9fe;*/
+	padding: 1em 0em 3em 0em;
+	/*
+	box-shadow: inset 0 0 30px greenyellow;*/ 
+}
+
+
+.features-Funciones-Destacadas .titles-principal{
+	text-align: center;
+	margin-top: 2.5em;
+		
+}
+
+.features-Funciones-Destacadas .titles-principal h2{
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.5em;		
+}
+
+
+
+.sub-titulo{
+text-align: center;
+color: #635b5b;
+padding: 0em 0em 0em 0em;
+	
+}
+
+/* Prevencion */
+.sub-titulo p{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.2em;
+	
+	
+	}
+	
+.seleccione{
+	
+	text-align: center;
+}
+
+
+
+.container-loader{
+	width: 100%;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+ }
+
+
+ /*louder9*/
+.loader9 {
+padding: 1em 0em 0em 0em;
+	user-select: none;
+  }
+  
+  .star {
+	opacity: 0;
+	fill: #f2f3f4;
+	animation: loader 2s infinite alternate;
+  }
+  
+  .star2 {
+	height: 20px;
+	margin-left: -10px;
+	animation-delay: 0.25s;
+  }
+  
+  .star3 {
+	height: 16px;
+	margin-left: -15px;
+	animation-delay: 0.5s;
+  }
+  
+  @keyframes loader {
+	0% {
+	  opacity: 0;
+	  transform: translateY(0) translateX(50px) rotate (0deg);
+	}
+	10% {
+	  opacity: 0;
+	  transform: translateY(0) translateX(50px) rotate(0deg);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(-20px) translateX(0) rotate(360deg);
+	}
+  }
+
+
+
+
+.text-center .features-grid .card-container {
+	width: 100%;
+	height: 370px;
+	position: relative;
+	border-radius: 25px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	
+  }
+  
+  .text-center .features-grid .card-container .cardD {
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background: linear-gradient( #5fd9fe 50% ,#FFFFFF);
+
+  }
+  
+  .text-center .features-grid .card-container .cardD .front-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .text-center .features-grid .card-container .cardD .content p {
+	font-size: 1em;
+	font-weight: 300;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #635b5b;
+	line-height: 1.3;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .text-center .features-grid .text-funciones h3{
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.5em;
+	
+	
+  }
+  .card-container .cardD .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: linear-gradient( #5fd9fe 50% ,#FFFFFF);
+	color: #708293;  /*color de texto card*/
+	padding: 20px;
+	line-height: 1.5;
+	border-radius: 5px;
+	pointer-events: none;
+	transform: translateY(-96%);  /*100% o 110% */
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .text-center .features-grid .card-container .cardD .content .heading {
+	font-size: 32px;
+	font-weight: 400;
+	color: #FFFFFF;
+  }
+  
+  .cardD:hover .content {
+	transform: translateY(0);
+  }
+  
+  .cardD:hover .front-content {
+	transform: translateY(-30%);
+  }
+  
+  .cardD:hover .front-content p {
+	opacity: 0;
+  }
+
+
+
+/*justificacion */
+
+
+.titles-principal h2{
+	text-align: center;
+	margin-top: 1em;
+	font-size: 1.5;	
+	
 }
 
 .seleccione p{
@@ -3154,8 +3548,6 @@ width: 100%;
 	font-size: 1em;
 	color: #FFFFFF;
 }
-
-/*origen */
 
 .origen-container{
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
@@ -3204,7 +3596,7 @@ width: 100%;
 /* Text-grande titulo */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
 	font-size: 1.2em;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -3237,11 +3629,6 @@ width: 100%;
 
  
 
-
-
-
-
-
 .container-2-card-origen{
 	display: flex;
 	flex-direction: row;
@@ -3250,7 +3637,6 @@ width: 100%;
 	margin: 0em auto 1.5em auto;
 
 }
-
 
 .card-origen-par{
 	width:  80%;
@@ -3261,10 +3647,7 @@ width: 100%;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	position: relative;
 	margin: 1.5em 0em;
-
 }
-
-
 
 .loader-text {
 	font-size: 20px;
@@ -3298,28 +3681,7 @@ width: 100%;
 }
 
 
-
-/*Definicion*/
-.card{
-	position: relative;
-	margin: 0em .5em;
-	width: 18.5em;
-	height: max-content;
-	border-radius: 6px;
-	overflow: hidden;
-	background:#FFFFFF;
-	transition: all 400ms ease-out;
-	cursor: default;
-}
-.card img{
-	width: 100%;
-	height: 12em;
-}
-
-
-
-
-/* GES en accion */
+/* Resultados y eficiencia */
 
 .container-tablas{
 	display: flex;
@@ -3358,7 +3720,7 @@ iframe{
 .container-tablas .tabla-container table th{
 	text-align: center;
     border: 1px solid #FFFFFF;
-    padding: 20px 15px;
+    padding: 10px 15px;
 	font-size: 1em;
 	margin-top: .5em;
 	font-family: "Ubuntu", sans-serif;
@@ -3390,23 +3752,46 @@ iframe{
 	border-radius: 5px;
 	opacity: 85%;
 	padding: .5em 0em .5em .5em ;
-	
-	
 }
 
 
-
-
-
-/* catalogo*/
-
-
+/* sitios de implementacion*/
 .features{
 	width: 100%;
 	height: 55em;
 	background:url(../images/fondo_cards_321.png)repeat;
 	 
 }
+.features .fondo-img-catalogo .bloke-superior .titles-principal h2{
+	width: 100%;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	  color: #FFFFFF;
+	  background-color: #5F7D8B;
+	opacity: 85%;
+	padding: 1em 0em 1em 0em;
+	font-size: 1.5em;
+		
+}
+
+/* modificar*/
+
+.features .fondo-img-catalogo .seleccione p{
+  
+	background-color: #5F7D8B;
+	opacity: 75%;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: 1em;
+	padding: .7em 1.3em;
+	border-radius: 5px;
+  }
+  
 
 .fondo-img-catalogo{
 	width: 100%;
@@ -3433,8 +3818,8 @@ iframe{
 	 float: left;
  }
 
-/*  cambia tamaño de card*/
 
+/*  cambia tamaño de card*/
 .container-img-multiple figure{
 	width: 18em;
 	height: 14em;
@@ -3449,24 +3834,44 @@ iframe{
  }
 	
 
-/* Funciones destacadas*/
-
-/* compacta textos de cada funcion  */
-.features-grids{
-
-	/*background-color: #FFFFFF;*/
-	border-radius: 25px;
-	padding: 0em .4em;
-}
- 
-.features-grids .features-grid p{
+/* Resultados y eficiencia*/
+.container-img-estadistica .titles-principal h2{
+	width: 100%;
+	text-align: center;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-	font-size: 1em;
-	line-height: .5;
-	
+	font-weight: 300;
+	font-style: normal;
+	  color: #FFFFFF;
+	  background-color: #5F7D8B;
+	opacity: 85%;
+	padding: 1em 0em 1em 0em;
+	font-size: 1.5em;
+		
+
+
 }
+.text-map1{
+	width: 25%;
+	margin: 1em 0em 1em 24em;
+	padding: .2em .5em;
+	background-color: #5F7D8B;
+	border-radius: 5px;
+	opacity: 85%;
+		
+}
+
+.container-accion-mapa .text-map1 p {
+	font-family: "Ubuntu", sans-serif;
+	  font-weight: 300;
+	  font-style: normal;
+		font-size: 1em;
+		color: #FFFFFF;
+	 }
+
+
+
+
+
  /* beneficios*/
  .container-tarjeta .card-tarjeta{
     position: relative;
@@ -3520,21 +3925,13 @@ iframe{
  .features h2 {
 	font-size: 2em;
  }
- .features-grid h3 a {
-	font-size: 0.85em;
- }
- .features-grid p {
-	font-size: 0.8125em;
- }
  .Share-instantly-right h3 {
 	font-size: 2em;
  }
  .feature h3 {
 	font-size: 2em;
  }
-  .gallery h3{
-	font-size:1.5em;
- }
+  
  .Share-instantly-right p{
  	font-size:0.8125em;
  }
@@ -3560,17 +3957,6 @@ iframe{
 	margin-top: 7%;
  }
 
- .features-grid span {
-	width: 120px;
-	height: 120px;
-	background-size: 430%;
- }
- .features-grid span.t-icon1 {
-    background-position: -200px 0px;
- }
- .features-grid span.t-icon2 {
-    background-position: -395px 0px;
- }
 
  /*
  .features-grid span {
