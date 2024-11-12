@@ -686,7 +686,12 @@
 	100%{ left: -50%; opacity: 0; }
 }
 
+/*
+@media all and (min-width:801px) and (max-width:1024px){
 
+
+}
+*/
 @media all and (min-width:801px) and (max-width:1024px){
 
 	.da-slide .da-img{

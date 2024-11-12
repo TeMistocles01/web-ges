@@ -3974,23 +3974,19 @@ iframe{
 
 /* coadyubar con el ministerio publico*/
 
- /*
+
 .Share-instantly-left span, .feature-right span{
 	background-size:60%;
 	width: 320px;
 	height: 450px;
 	margin-top: 1em;
  }
-	*/
-
- /* configure llamadas de emergencia */
- .feature-right span{
-	margin-top: 2em;
-	background-size:75%;
-	width: 320px;
-	height: 460px;
 	
- }
+
+	 
+	
+
+ 
  .feature-right span{
 	background-position:0 0;
 	
