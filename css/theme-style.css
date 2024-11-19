@@ -786,10 +786,10 @@ nav a#pull {
 /* Funciones destacadas*/
 .features-Funciones-Destacadas{
 	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
-	/*background-color: #5fd9fe;*/
+	background-color: #5fd9fe;
 	padding: 2em 0em 6em 0em;
-	/*
-	box-shadow: inset 0 0 30px greenyellow;*/ 
+	
+	/*box-shadow: inset 30px 0px 40px #ffffff;*/
 }
 
 /* para todos los subtitulos titles-principal*/
@@ -3126,7 +3126,7 @@ width: 100%;
 	.container .header .container .marca_logo {
 		
 		top: 10px;
-		left: 70px;
+		left: 20px;
 		
 	}
 	
@@ -3148,6 +3148,7 @@ width: 100%;
 	padding: 1em 1em;
 	font-size:0.8125em;
  }
+
 
 
  /* Que es Ges start */
@@ -3245,18 +3246,19 @@ width: 100%;
 .container-card-que-es-ges{
 	width: 100%;
 	padding-top: 5em;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 /* cards que es ges*/
 .card-definicion{
-	position: relative;
+	
 	margin: 0em .7em;
-	width: 19em;
+	width: 315px;
 	height: max-content;
 	border-radius: 6px;
 	overflow: hidden;
@@ -3408,12 +3410,9 @@ padding: 0em 0em 0em 0em;
 	font-weight: 300;
 	font-style: normal;
 	font-size: 1.2em;
-	
-	
 	}
 	
 .seleccione{
-	
 	text-align: center;
 }
 
@@ -3647,7 +3646,6 @@ padding: 1em 0em 0em 0em;
     font-weight: 200;
     font-style: normal;
 	line-height: 1.2;
-	
 	max-width: 220px;
 	
 	
@@ -4222,6 +4220,99 @@ p.cousel_demo{
 		
 	}
 
+/*Que es GES*/
+.container-definicion{
+	width: 100%;
+	height: max-content;
+	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	padding: .5em 0em .5em 0em;
+}
+
+.container-definicion .titles-principal{
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;		
+}
+/* tipografia para los sub titulos*/
+.container-definicion .titles-principal h2{
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.5em;
+}
+
+/*Contenedor de cards que es GES */
+
+.container-card-que-es-ges{
+	width: 100%;
+	padding-top: 4em;
+	margin-bottom: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.card-definicion{
+	position: relative;
+	margin: 0em .1em;
+	width: 16em;
+	height: max-content;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#FFFFFF;
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.container-loader1{
+	margin-top: 2em;
+	width: 100%;
+	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+	justify-content: center;
+ }
+
+.card img{
+	width: 100%;
+	height: 10em;
+}
+
+/*  altura de la posicion del boton*/
+.input-card[type="checkbox"]{
+	height: .4em;
+	display: block;
+	appearance: none;
+	
+}
+
+ .label-card{
+	position: relative;
+	padding: .4em;
+	background: #5fd9fe;
+	border-radius: 5px;
+	color: #FFFFFF;
+	
+}
+
+.label-card::before{
+	content:"Leer Màs";
+	font-size: small;
+	
+}
+
+.container-definicion .container-card-que-es-ges .contenido-card .original, .extra{	
+	line-height: 1.2;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: .9em;
+	text-align: justify;
+  }
+  
+
+
 /*origen */
 
 
@@ -4330,11 +4421,6 @@ p.cousel_demo{
 }
 
 
-
-
-
- 
-
 .card-origen-par{
 	width:  80%;
 	padding: .7em .5em;
@@ -4380,51 +4466,71 @@ p.cousel_demo{
 }
 
 
-/*Definicion*/
+/* Funciones destacadas*/
+.features-Funciones-Destacadas{
+	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
+	/*background-color: #5fd9fe;*/
+	padding: .5em 0em 3em 0em;
+	/*
+	box-shadow: inset 0 0 30px greenyellow;*/ 
+}
 
-.card{
+
+
+.features-Funciones-Destacadas .titles-principal{
+	text-align: center;
+	margin-top: .5em;
+		
+}
+
+
+.features-Funciones-Destacadas .titles-principal h2{
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	  color: #FFFFFF;
+	  font-size: 1.5em;		
+  }
+  
+
+  .sub-titulo{
+	text-align: center;
+	color: #635b5b;
+	padding: 0em 0em 0em 0em;
+		
+	}
+	
+	/* Prevencion */
+	.sub-titulo p{
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		font-size: 1.2em;
+		
+		
+		}
+		 /*louder9*/
+.loader9 {
+	padding: .5em 0em 0em 0em;
+		user-select: none;
+	  }
+	
+	
+.text-center .features-grid .card-container {
+	width: 19em;
+	display: flex;
+	height: 420px;
 	position: relative;
-	margin: 0em .3em;
-	width: 14em;
-	height: max-content;
-	border-radius: 6px;
+	border-radius: 25px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
-	background:#FFFFFF;
-	transition: all 400ms ease-out;
-	cursor: default;
-}
-
-
-.card img{
-	width: 100%;
-	height: 10em;
-}
-
-/*  altura de la posicion del boton*/
-.input-card[type="checkbox"]{
-	height: .4em;
-	display: block;
-	appearance: none;
+	margin-left: auto;
+	margin-right: auto;
 	
-}
+  }
 
- .label-card{
-	position: relative;
-	padding: .4em;
-	background: #5fd9fe;
-	border-radius: 5px;
-	color: #FFFFFF;
-	
-}
-
-.label-card::before{
-	content:"Leer Màs";
-	font-size: small;
-	
-}
-
-/* funciones destacadas */
-
+  /*
 .features-grids{
 	border-radius: 25px;
 	margin: 0em 4em;
@@ -4444,6 +4550,22 @@ p.cousel_demo{
   line-height: .5;
 	
 }
+
+*/
+.features-grid span {
+	width: 170px;
+	height: 170px;
+	background-size: 446%;
+ }
+ .features-grid span.t-icon1 {
+    background-position: -290px 0px;
+ }
+ .features-grid span.t-icon2 {
+    background-position: -585px 0px;
+ }
+
+
+/*
 .features-grid:hover {
 	cursor: pointer;
 	border-style: double;
@@ -4451,8 +4573,8 @@ p.cousel_demo{
 	color: #FFFFFF;
 	
 }
-
-/* catalogo*/
+*/
+/* sitios de implementacion*/
 
 .features{
 	width: 100%;
@@ -4460,7 +4582,6 @@ p.cousel_demo{
 	background-image:url(../images/slide1.jpg);
 	
 }
-
 
 .fondo-img-catalogo{
 
@@ -4475,14 +4596,14 @@ p.cousel_demo{
 }
 
 .features .img-derecha-columna{	
-	margin-top: 4em;
+
 	 display: flex;
 	 flex-direction: column;
 	 float: right;
  }
  
  .features .img-izquierda-columna{
-	 margin-top: 4em;
+	
 	 display: flex;
 	 flex-direction: column;
 	 float: left;
@@ -4502,7 +4623,6 @@ p.cousel_demo{
 	margin: .4em;
  }
 
-
 /* Text-grande titulo */
 .container-img-multiple figure:hover > .capa .title-foto{
 	font-size: large;
@@ -4510,8 +4630,6 @@ p.cousel_demo{
 	margin-bottom: 15px;
 	
 }
-
-
 
 /* texto pequeño imagen */
 .container-img-multiple figure .capa p{
@@ -4552,19 +4670,8 @@ table{
 	
 }
 
- /* Funcioones destacadas */
 
- .features-grid span {
-	width: 120px;
-	height: 120px;
-	background-size: 446%;
- }
- .features-grid span.t-icon1 {
-    background-position: -200px 0px;
- }
- .features-grid span.t-icon2 {
-    background-position: -406px 0px;
- }
+ /* Funcioones destacadas 
 
  .features h2 {
 	font-size: 2em;
@@ -4597,10 +4704,13 @@ table{
  .footer-right input[type="text"] {
  	width: 64%;
  }
+*/
  .header{
 	left:0;
  }
  
+
+
 
  /* adquirir*/
  .download{
