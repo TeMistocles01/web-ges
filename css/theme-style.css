@@ -1019,7 +1019,7 @@ padding: 3em 0em;
 /* animacion*/
 /* loader 1 */
 .loader1 {
-	padding: 2em 0em;
+	padding: 0em 0em 1em 0em;
 	display: flex;
 	align-items: center;
   }
@@ -2340,85 +2340,124 @@ color: #FFFFFF;
 
   
   .header-card {
+	border: 1px #FFFFFF solid;
+	height: 4rem;
 	position: relative;
 	background-clip: border-box;
-	margin-top: 1.5rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	border-radius: 0.75rem;
-	background-color: #5fd9fe;
+	margin-top: 2rem;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 70% ,#FFFFFF);
 	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
-	height: 14rem;
-	height: 3em;
-	
   }
 
 
   .header-card p{
-	
     display: flex;
-	align-items: center;
 	justify-content: center;
 	color: #FFFFFF;
 	font-size: 1.4em;
+	flex-direction: row;
   }
-  
-  .info {
+
+  .info1 {
 	border: none;
-	padding: 1.5rem;
+	padding: 1.5em 0em .5em 0em;
+	margin-left: auto;
+	margin-right: auto;
 	/*
 	text-align: center;
 	*/
   }
   
-  .title {
-	color: rgb(38 50 56);
-	letter-spacing: 0;
-	line-height: 1.375;
-	font-weight: 600;
-	font-size: 1.25rem;
-	margin-bottom: 0.5rem;
+  
+  .info-card1 {
+	border: none;
+	padding: 1em;
+  }
+
+  .info-card1 p{
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 4em; 
+  }
+
+
+  .footer-beneficios1 {
+	margin-top: 4em;
+	padding: 0.75rem;
+	border: 2px #FFFFFF solid;
+	/*border: 2px solid rgb(236 239 241);*/
+	display: flex;
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	
+	/*#B3E5FC*/
   }
   
-  .footer-beneficios {
+
+  .info-card2 {
+	border: none;
+	padding: 1em;
+  }
+
+
+  .info-card2 p{
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 2.2em; 
+  }
+
+  .footer-beneficios2 {
+	margin-top: 2.5em;
 	padding: 0.75rem;
-	border: 1px solid rgb(236 239 241);
+	border: 2px #FFFFFF solid;
+	/*border: 2px solid rgb(236 239 241);*/
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: rgba(0, 140, 255, 0.082);
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	
+	/*#B3E5FC*/
+  }
+  
+  
+
+
+
+
+
+
+
+  .title {
+	color: rgb(38 50 56);
+	font-weight: 600;
+	font-size: 1rem;
+	margin-bottom: 1em;
+
   }
   
   .tag {
 	width: 100%;
 	text-align: center;
-	font-weight: 300;
-	font-size: .75rem;
+	font-weight: 400;
+	font-size: .85rem;
 	display: block;
-  }
-  
-  .action {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-	border: none;
-	outline: none;
-	box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
-	color: rgb(255 255 255);
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: .75rem;
-	padding: 0.75rem 1.5rem;
-	background-color: rgb(33 150 243);
-	border-radius: 0.5rem;
+	
+	
   }
   
   
-
-
-
-
-
 
 .card-tarjeta .front {
     transform: perspective(600px) rotateY(0deg);
@@ -2450,12 +2489,15 @@ color: #FFFFFF;
 
 /*Margen en todos los costados*/
 .card-tarjeta .back {
+
+	border: 2px #FFFFFF solid;
     transform: perspective(600px) rotateY(180deg);
-	background-color: white;
+	background: #5fd9fe 97%;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
     box-shadow: 0 5px 10px #000;
+	
+	
 }
 
 
@@ -2483,19 +2525,8 @@ color: #FFFFFF;
   line-height: 1.2em;
 }
 
-.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
-	margin-top: 1em;
-}
 
 
-.back .tarjeta-1 p{
-	
-	font-size: 1em;
-	line-height: 3.5em;
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;  
-}
 
 .back .tarjeta-2 p{
 	
@@ -2988,7 +3019,6 @@ a.cl-icon8-l span{
 
 .pie-pagina{
 width: 100%;
-
 	background: url(../images/bg.jpg);
     
 }
