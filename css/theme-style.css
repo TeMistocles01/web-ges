@@ -2446,8 +2446,6 @@ color: #FFFFFF;
 	font-weight: 400;
 	font-size: .85rem;
 	display: block;
-	
-	
   }
   
   
@@ -2519,7 +2517,6 @@ color: #FFFFFF;
 
 
 .back .tarjeta-2 p{
-	
 	font-size: 1em;
 	line-height:2.4em;
 	font-family: "Ubuntu", sans-serif;
@@ -4127,6 +4124,20 @@ iframe{
 	/*background-color: red;*/
 }
 
+/* beneficios*/
+
+.header-card {
+	height: 4rem;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 2rem;
+	margin-left: .5em;
+	margin-right: .5em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
 /* adquirir*/
 
 .download{
@@ -4182,13 +4193,15 @@ iframe{
 /*boton envio formulario*/
 
 .container-btn-formulario{
+	margin-top: 1em;
 	width: 50%;
+	
 	
 }
 
 /*boton*/
 .btn_ir_modal_mostrar{
-	width: 50%;
+	width: 100%;
     padding: .5em 0;
     font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
