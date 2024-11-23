@@ -591,6 +591,7 @@ nav a#pull {
 	align-items: center;
 	margin-top: 4.8em;
 	margin-bottom: 5em;
+	
 }
 
 /* cards que es ges*/
@@ -853,47 +854,10 @@ padding: 2.5em 0em 0em 0em;
 	width: 100%;
 	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
 	justify-content: center;
+
  }
 
 
- /*louder9*/
-.loader9 {
-padding: 2.8em 0em;
-	user-select: none;
-  }
-  
-  .star {
-	opacity: 0;
-	fill: #f2f3f4;
-	animation: loader 2s infinite alternate;
-  }
-  
-  .star2 {
-	height: 20px;
-	margin-left: -10px;
-	animation-delay: 0.25s;
-  }
-  
-  .star3 {
-	height: 16px;
-	margin-left: -15px;
-	animation-delay: 0.5s;
-  }
-  
-  @keyframes loader {
-	0% {
-	  opacity: 0;
-	  transform: translateY(0) translateX(50px) rotate (0deg);
-	}
-	10% {
-	  opacity: 0;
-	  transform: translateY(0) translateX(50px) rotate(0deg);
-	}
-	100% {
-	  opacity: 1;
-	  transform: translateY(-20px) translateX(0) rotate(360deg);
-	}
-  }
 
 
 
@@ -916,6 +880,7 @@ padding: 2.8em 0em;
 	height: 100%;
 	border-radius: inherit;
 	background: linear-gradient( #5fd9fe 50% ,#FFFFFF);
+	border: 1px #FFFFFF solid;
 
   }
   
@@ -966,6 +931,7 @@ padding: 2.8em 0em;
 	pointer-events: none;
 	transform: translateY(-96%);  /*100% o 110% */
 	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+	border: 1px #FFFFFF solid;
   }
   
   .text-center .features-grid .card-container .cardD .content .heading {
@@ -1043,43 +1009,49 @@ padding: 2.8em 0em;
 	background-position: -799px 0px;
 }
 
-/* animacion*/
-/* loader 1 */
-.loader1 {
-	padding: 0em 0em 1em 0em;
-	display: flex;
-	align-items: center;
-  }
-  
-  .bar {
-	display: inline-block;
-	width: 5px;
-	height: 20px;
-	background-color: rgba(255, 255, 255, .5);
-	border-radius: 10px;
-	animation: scale-up4 1s linear infinite;
-  }
-  
-  .bar:nth-child(2) {
-	height: 35px;
-	margin: 0 5px;
-	animation-delay: .25s;
-  }
-  
-  .bar:nth-child(3) {
-	animation-delay: .5s;
-  }
-  
-  @keyframes scale-up4 {
-	20% {
-	  background-color: #ffff;
-	  transform: scaleY(1.5);
-	}
-  
-	40% {
-	  transform: scaleY(1);
-	}
-  }
+
+ /*louder9*/
+ .loader9 {
+	padding: 2.8em 0em;
+		user-select: none;
+	  }
+	  
+	  .star {
+		opacity: 0;
+		fill: #f2f3f4;
+		animation: loader 2s infinite alternate;
+	  }
+	  
+	  .star2 {
+		height: 20px;
+		margin-left: -10px;
+		animation-delay: 0.25s;
+	  }
+	  
+	  .star3 {
+		height: 16px;
+		margin-left: -15px;
+		animation-delay: 0.5s;
+	  }
+	  
+	  @keyframes loader {
+		0% {
+		  opacity: 0;
+		  transform: translateY(0) translateX(50px) rotate (0deg);
+		}
+		10% {
+		  opacity: 0;
+		  transform: translateY(0) translateX(50px) rotate(0deg);
+		}
+		100% {
+		  opacity: 1;
+		  transform: translateY(-20px) translateX(0) rotate(360deg);
+		}
+	  }
+	
+
+
+
 
 
 /*end funciones destacadas*/
@@ -1186,6 +1158,7 @@ p.img_slider{
 p.img_slider1{
 	width:100%;
 }
+
 .feature-right span{
 	width:350px;
 	height:570px;
@@ -1200,6 +1173,9 @@ p.img_slider1{
 	border-radius: 5px;
 
 }
+
+
+
 
 
 /* justificacion*/
@@ -3303,14 +3279,12 @@ width: 100%;
 }
 
 
-
 /* Subtitulos titles-principal*/
 
 .container-definicion .titles-principal{
 	width: 100%;
 	text-align: center;
-	margin-top: 2.5em;
-		
+	margin-top: 3em;	
 }
 
 /* tipografia para los sub titulos*/
@@ -3321,85 +3295,23 @@ width: 100%;
 	color: #FFFFFF;
 	font-size: 1.5em;
 }
-
-
-
-.container-loader1{
-	margin-top: 3.5em;
-	width: 100%;
-	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
-	justify-content: center;
- }
-
-.loader {
-	width: 12px;
-	height: 12px;
-	box-shadow: 0 25px, 0 -25px;
-	border-radius: 10px;
-	background: currentColor;
-	display: block;
-	position: relative;
-	transform: translate(-150%, -20px);
-	color: #FFF;
-	box-sizing: border-box;
-	animation: animloader 2s ease infinite;
-  }
-  
-  .loader::after,
-  .loader::before {
-	content: '';
-	box-sizing: border-box;
-	width: 12px;
-	height: 12px;
-	box-shadow: 0 25px, 0 -25px;
-	border-radius: 10px;
-	background: currentColor;
-	color: #FFF;
-	position: absolute;
-	left: 30px;
-	top: 0;
-	animation: animloader 2s 0.2s ease infinite;
-  }
-  
-  .loader::before {
-	animation-delay: 0.4s;
-	left: 60px;
-  }
-  
-  @keyframes animloader {
-	0% {
-	  top: 0;
-	  color: white;
-	}
-  
-	50% {
-	  top: 30px;
-	  color: rgba(255, 255, 255, 0.2);
-	}
-  
-	100% {
-	  top: 0;
-	  color: white;
-	}
-  }
    
 
 /*Contenedor de cards que es GES */
 
 .container-card-que-es-ges{
 	width: 100%;
-	padding-top: 5em;
-	margin-bottom: 2em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	margin-top: 3em;
+	margin-bottom: 5em;
 	
 }
 
 /* cards que es ges*/
 .card-definicion{
-	
 	margin: 0em .7em;
 	width: 315px;
 	height: max-content;
@@ -3409,6 +3321,28 @@ width: 100%;
 	transition: all 400ms ease-out;
 	cursor: default;
 }
+
+.loader-origen {
+	padding-top: .5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	position: relative;
+  }
+
+  .loader-block {
+	display: inline-block;
+	width: 25px;
+	height: 8px;
+	margin: 2px;
+	background-color: #fff;
+	box-shadow: 0 0 20px #fff;
+	animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  }
+  
+
 
 .container-card-que-es-ges .card-definicion:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -4296,10 +4230,6 @@ p.cousel_demo{
 	color: #efebeb;
 }
 
-
-
-
-
 }
 
 
@@ -4329,7 +4259,7 @@ p.cousel_demo{
 		width: 80%;
 		float: left;
 		display: flex;
-		padding: 0em 4em;
+	
 		
 	}
 	
@@ -4337,12 +4267,11 @@ p.cousel_demo{
 		width: 20%;
 		float: left;
 		display: flex;
-		padding: 0em .7em;
+		
 		
 	}
 	
 	.container-text-slider-derecha .slider-celular{
-	
 		float: left;
 		width: 6em;
 		height: 11em;
@@ -4350,10 +4279,18 @@ p.cousel_demo{
 
 	/* end bloke slider*/
 
-	.container .header .container .marca_logo .logo_ges{
-		width: 6em;
-		height: 4em;
+	/*posicion del logo*/
+
+	.container .header .container .marca_logo {
+		position: absolute;
+		top: 10px;
+		left: 7px;
 		
+	}
+
+	.container .header .container .marca_logo .logo_ges{
+		width: 5em;
+		height: 3em;
 	  }
 
 	.header {
@@ -4377,28 +4314,22 @@ p.cousel_demo{
   font-style: normal;
 }
 
-/**/
- .container .header .container .marca_logo {
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		
-	}
 
 
 /*Que es GES*/
 .container-definicion{
 	width: 100%;
 	height: max-content;
-	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
+	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
 	padding: .5em 0em .5em 0em;
 }
 
 .container-definicion .titles-principal{
 	width: 100%;
 	text-align: center;
-	margin-top: 1em;		
+	margin-top: .5em;		
 }
+
 /* tipografia para los sub titulos*/
 .container-definicion .titles-principal h2{
 	font-family: "Ubuntu", sans-serif;
@@ -4408,16 +4339,18 @@ p.cousel_demo{
 	font-size: 1.5em;
 }
 
+
 /*Contenedor de cards que es GES */
 
 .container-card-que-es-ges{
 	width: 100%;
-	padding-top: 4em;
-	margin-bottom: 2em;
+	margin-top: 2em;
+	margin-bottom: 7em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	background-color: #0072b1;
 }
 
 
@@ -4433,12 +4366,32 @@ p.cousel_demo{
 	transition: all 400ms ease-out;
 	cursor: default;
 }
-.container-loader1{
-	margin-top: 2em;
-	width: 100%;
-	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
+
+.loader-origen {
+	padding-top: .1em;
+	display: flex;
 	justify-content: center;
- }
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	position: relative;
+  }
+
+  .loader-block {
+	display: inline-block;
+	width: 25px;
+	height: 8px;
+	margin: 2px;
+	background-color: #fff;
+	box-shadow: 0 0 20px #fff;
+	animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  }
+
+  .container-card-que-es-ges .card-definicion:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
 
 .card img{
 	width: 100%;
@@ -4477,24 +4430,114 @@ p.cousel_demo{
 	text-align: justify;
   }
   
+/* */
+
+/* Funciones destacadas*/
+.features-Funciones-Destacadas{
+	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
+	/*background-color: #5fd9fe;*/
+	padding: .5em 0em 3em 0em;
+	/*
+	box-shadow: inset 0 0 30px greenyellow;*/ 
+}
 
 
 
+.features-Funciones-Destacadas .titles-principal{
+	text-align: center;
+	margin-top: .5em;
+		
+}
 
 
+.features-Funciones-Destacadas .titles-principal h2{
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	  color: #FFFFFF;
+	  font-size: 1.5em;		
+  }
+  
 
+  .sub-titulo{
+	text-align: center;
+	color: #635b5b;
+	padding: 0em 0em 0em 0em;
+		
+	}
+	
+	/* Prevencion */
+	.sub-titulo p{
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		font-size: 1.2em;
+		
+		
+		}
+		 /*louder9*/
+.loader9 {
+	padding: .5em 0em 0em 0em;
+		user-select: none;
+	  }
+	
+	
+.text-center .features-grid .card-container {
+	width: 19em;
+	display: flex;
+	height: 420px;
+	position: relative;
+	border-radius: 25px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	
+  }
+  .text-center .features-grid .card-container .cardD {
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background: linear-gradient( #5fd9fe 70% ,#FFFFFF);
+	border: 1px #FFFFFF solid;
 
+  }
+  
 
+  /*
+.features-grids{
+	border-radius: 25px;
+	margin: 0em 4em;
+}
 
+.features-grid h3 {
+	
+	font-weight: 400;
+	font-size: 1.1em;
+}
 
+.features-grids .features-grid p{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: .9em;
+  line-height: .5;
+	
+}
 
-
-
-
-
-
-
-
+*/
+.features-grid span {
+	width: 170px;
+	height: 170px;
+	background-size: 446%;
+ }
+ .features-grid span.t-icon1 {
+    background-position: -290px 0px;
+ }
+ .features-grid span.t-icon2 {
+    background-position: -585px 0px;
+ }
 
 
 
@@ -4653,104 +4696,6 @@ p.cousel_demo{
 	-webkit-text-fill-color: transparent;
 }
 
-
-/* Funciones destacadas*/
-.features-Funciones-Destacadas{
-	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
-	/*background-color: #5fd9fe;*/
-	padding: .5em 0em 3em 0em;
-	/*
-	box-shadow: inset 0 0 30px greenyellow;*/ 
-}
-
-
-
-.features-Funciones-Destacadas .titles-principal{
-	text-align: center;
-	margin-top: .5em;
-		
-}
-
-
-.features-Funciones-Destacadas .titles-principal h2{
-	text-align: center;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	  color: #FFFFFF;
-	  font-size: 1.5em;		
-  }
-  
-
-  .sub-titulo{
-	text-align: center;
-	color: #635b5b;
-	padding: 0em 0em 0em 0em;
-		
-	}
-	
-	/* Prevencion */
-	.sub-titulo p{
-		font-family: "Ubuntu", sans-serif;
-		font-weight: 300;
-		font-style: normal;
-		font-size: 1.2em;
-		
-		
-		}
-		 /*louder9*/
-.loader9 {
-	padding: .5em 0em 0em 0em;
-		user-select: none;
-	  }
-	
-	
-.text-center .features-grid .card-container {
-	width: 19em;
-	display: flex;
-	height: 420px;
-	position: relative;
-	border-radius: 25px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	
-  }
-
-  /*
-.features-grids{
-	border-radius: 25px;
-	margin: 0em 4em;
-}
-
-.features-grid h3 {
-	
-	font-weight: 400;
-	font-size: 1.1em;
-}
-
-.features-grids .features-grid p{
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: .9em;
-  line-height: .5;
-	
-}
-
-*/
-.features-grid span {
-	width: 170px;
-	height: 170px;
-	background-size: 446%;
- }
- .features-grid span.t-icon1 {
-    background-position: -290px 0px;
- }
- .features-grid span.t-icon2 {
-    background-position: -585px 0px;
- }
 
 
 /*
