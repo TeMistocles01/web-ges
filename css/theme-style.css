@@ -5513,7 +5513,7 @@ p.cousel_demo{
 
 	.container .header .container .marca_logo .logo_ges{
 		width: 5em;
-		height: 3em;
+		height:2.5em;
 		
 	  }
 
@@ -5527,7 +5527,7 @@ p.cousel_demo{
 	
  .top-nav ul li a {
 	color: #FFF;
-	padding: .7em .4em;
+	padding: 0em .4em;
 	font-size:0.7725em;
  }
  .slide-text-info p {
@@ -5541,15 +5541,18 @@ p.cousel_demo{
 
 
 
-/*que es ges  */
+/*justificacion  */
 .origen-container{
 	width: 100%;
 	height: max-content;
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
-	padding: 0em 0em 0em 0em;
+	padding: .5em 0em 0em 0em;
 	
 }
 
+
+
+/* que es ges*/
 .container-definicion .titles-principal{
 	width: 100%;
 	text-align: center;
@@ -5585,15 +5588,20 @@ p.cousel_demo{
 	position: relative;
   }
 
+
+
   .loader-block {
 	display: inline-block;
-	width: 15px;
+	width: 20px;
 	height: 5px;
 	margin: 2px;
 	background-color: #fff;
 	box-shadow: 0 0 20px #fff;
 	animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   }
+
+
+  
   .card-definicion{
 	position: relative;
 	margin: 0em .1em;
@@ -5732,44 +5740,20 @@ p.cousel_demo{
 	border: 1px #FFFFFF solid;
   }
   
-
   
-.features-grid span {
-	width: 170px;
-	height: 170px;
-	background-size: 446%;
- }
- .features-grid span.t-icon1 {
-    background-position: -290px 0px;
- }
- .features-grid span.t-icon2 {
-    background-position: -585px 0px;
- }
-
-
-
- 
-
-
-
-
-
-
-
-
 
  .features-grid span {
-	width: 120px;
-	height: 120px;
-	background-size: 446%;
+	width: 145px;
+	height: 155px;
+	background-size: 470%;
 	
  }
  .features-grid span.t-icon1 {
-    background-position: -200px 0px;
+    background-position: -530px 0px;
 	
  }
  .features-grid span.t-icon2 {
-    background-position: -406px 0px;
+    background-position: -270px 0px;
  }
  
 .features-grids .features-grid h3 {
@@ -5891,6 +5875,8 @@ p.cousel_demo{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   }
+
+
 
   /*Definicion */
 
@@ -6350,26 +6336,33 @@ table{
 
 	/* start bloke slider*/
 .container-text-slider-izquierda{
-	width: 80%;
+	width: 70%;
 	float: left;
 	display: flex;
-	padding: 0em 4em;
+	
 	
 }
 
 .container-text-slider-derecha{
-	width: 20%;
+	width: 30%;
 	float: left;
 	display: flex;
-	padding: 0em .7em;
+	
 	
 }
 
 .container-text-slider-derecha .slider-celular{
 
 	float: left;
-	width: 5em;
-	height: 10em;
+	width: 5.8em;
+	height: 12em;
+}
+.container-luz-slider{
+	width:100%;
+	height: 14.5em;
+	margin: auto;
+	text-align: center;
+	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
 }
 
 /* end bloke slider*/
@@ -6382,13 +6375,13 @@ table{
 	
 	/*da margen hacia bajo al desplegar el menu de amburgesa */
 	nav ul {
-		margin-top: 10em;
+		margin-top: 0em;
 		
 	}
 	.container .header .container .marca_logo{
 		position: absolute;
-	top: 10px;
-	left: 40px;
+	top: 15px;
+	left: 10px;
 		
 	  }
 	.container .header .container .marca_logo .logo_ges{
@@ -6413,66 +6406,127 @@ table{
 
 	 
 	 
-	 /* Origen */
+	 /* Que es GES */
+
+	 
+/*Definicion */
+
+.container-card-que-es-ges{
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.card-definicion{
+	position: relative;
+	margin: .8em 0em;
+	width: 22em;
+	height: max-content;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#FFFFFF;
+	transition: all 400ms ease-out;
+	cursor: default;
+	
+}
+
+.container-card-que-es-ges .card-definicion figure img{
+	width: 100%;
+	height: 12em;
+}
+
+/*  altura de la posicion del boton*/
+.input-card[type="checkbox"]{
+	height: .4em;
+	display: block;
+	appearance: none;
+	
+}
+
+ .label-card{
+	position: relative;
+	padding: .7em;
+	background: #5fd9fe;
+	border-radius: 5px;
+	color: #FFFFFF;
+	
+}
+
+.label-card::before{
+	content:"Leer Màs";
+	font-size: 1em;
+	
+}
 
 
+	 .loader-origen {
+		padding-top: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20px;
+		height: 20px;
+		position: relative;
+	  }
+	
+	  .loader-block {
+		display: inline-block;
+		width: 20px;
+		height: 5px;
+		margin: 2px;
+		background-color: #fff;
+		box-shadow: 0 0 20px #fff;
+		animation: loader_562 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	  }
+
+
+
+
+
+
+
+	  /* justificacion*/
 	 .titles-principal{
 	
 		text-align: center;
-		padding: 1em 0em;
+		padding: 0em 0em;
 	}
 	
 	.titles-principal{
-	
 		text-align: center;
-		padding: 1em 0em;	
+		padding: 0em 0em;	
 	}
-	.titles-principal h2{
-		
-		font-size: .9em;
-	}
-	
-	.container-multiples-sitios .titles-principal h2{
-		
-		font-size: .9em;
-	}
-	
-	.features-Funciones-Destacadas .container .titles-principal h2{
-	
-		font-size: .9em;
-	}
-	
-	
-	/* titulos principales
-	.titles-principal {
-		font-family: "Ubuntu", sans-serif;
-	  font-weight: 400;
-	  font-style: normal;
-		color: #FFFFFF;
-		font-size: .9em;
-	}
-*/
-	
+	/* tipografia para los sub titulos*/
 
-
-	.container-center{
+.container-definicion .titles-principal h2{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+	
+	.container-card-que-es-ges{
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 0em auto 1em auto;
+		margin: 2em auto 2em auto;	
 	}
 
-	.card-origen-center{
-		width:  90%;
-		height: max-content;
-		padding: 1em .5em;
-		border:  3px #FFFFFF solid;
-		border-radius: 5px;
-		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-		position: relative;
-		
+
+
+.card-origen-center{
+	width:  90%;
+	height: max-content;
+	padding: 1em .5em;
+	border:  3px #FFFFFF solid;
+	border-radius: 5px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	position: relative;
 	}
 
 	.origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple{
@@ -6641,56 +6695,6 @@ table{
  }
 
 
-/*Definicion */
-
-.container-card-que-es-ges{
-	width: 100%;
-	flex-direction: column;
-	display: flex;
-	justify-content: center;
-	position: relative;
-}
-
-.card{
-	position: relative;
-	margin: .8em 0em;
-	width: 22em;
-	height: max-content;
-	border-radius: 6px;
-	overflow: hidden;
-	background:#FFFFFF;
-	transition: all 400ms ease-out;
-	cursor: default;
-	
-}
-.card img{
-	width: 100%;
-	height: 10em;
-}
-
-/*  altura de la posicion del boton*/
-.input-card[type="checkbox"]{
-	height: .4em;
-	display: block;
-	appearance: none;
-	
-}
-
- .label-card{
-	position: relative;
-	padding: .4em;
-	background: #5fd9fe;
-	border-radius: 5px;
-	color: #FFFFFF;
-	
-}
-
-.label-card::before{
-	content:"Leer Màs";
-	font-size: small;
-	
-}
-
  /* Funciones destacadas */
 
  .features-grid:hover {
@@ -6720,10 +6724,7 @@ table{
  .features-grid span.t-icon2 {
     background-position: -406px 0px;
  }
- .features-grids{
-	border-radius: 25px;
-	margin: 0em 5em;
-}
+ 
 .features-grid h3 {
 	
 	font-weight: 400;
