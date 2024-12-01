@@ -6,11 +6,9 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-	
-	
-	
-   
+  
 }
+
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -149,18 +147,26 @@ nav a#pull {
 
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
-	nav { 
+	
+	nav {
+		
   		height: auto;
   		float:none;
+		  
   	}
   	nav ul {
-  		width: 100%;
+  		width: 30%;
   		display: block;
   		height: auto;
+		padding-top: 1em;  
+		
+		
+		
   	}
   	nav li {
   		width: 100%;
   		position: relative;
+		  
   	}
 	
   	
@@ -168,20 +174,20 @@ nav a#pull {
 		border-bottom: 1px solid#1a1b1c;
 	}
   	nav a {
-	  	text-align: left;
+	  	
 	  	width: 100%;
-	  	text-indent: 25px;
+	  	text-indent: 0px;
   	}
 }
 
 
-@media screen and (max-width: 641px) {
+@media screen and (max-width: 640px) {
 	nav { 
   		height: auto;
   		float:none;
   	}
   	nav ul {
-  		width: 100%;
+  		width: 40%;
   		display: block;
   		height: auto;
   	}
@@ -195,9 +201,9 @@ nav a#pull {
 		border-bottom: 1px solid#1a1b1c;
 	}
   	nav a {
-	  	text-align: left;
+	  	
 	  	width: 100%;
-	  	text-indent: 25px;
+	  	text-indent: 0px;
   	}
 }
 
@@ -251,6 +257,18 @@ nav a#pull {
 	nav {
 		float:none;
 	}
+	nav ul {
+		width: 80%;
+		display: block;
+		height: auto;
+		margin-top: .8em;
+	}
+
+	nav a {
+	  	
+		width: 100%;
+		text-indent: 0px;
+	}
 	nav li {
 		display: block;
 		float: none;
@@ -275,6 +293,18 @@ nav a#pull {
 	nav {
 		float:none;
 	}
+	nav ul {
+  		width: 80%;
+  		display: block;
+  		height: auto;
+		margin-top: .8em;
+  	}
+
+	  nav a {	
+		width: 100%;
+		text-indent: 0px;
+	}
+	
 	nav li {
 		display: block;
 		float: none;
@@ -7208,9 +7238,6 @@ table{
 }
 
 
-
-
-
 @media (min-width:481px) and (max-width:640px){
 
 
@@ -7224,7 +7251,7 @@ table{
 
 .container-text-slider-derecha{
 	width: 35%;
-	float: left;
+	float: right;
 	display: flex;
 }
 
@@ -7287,6 +7314,15 @@ table{
 	display: none;
  }
 
+ /*tabs*/
+.callbacks_tabs{
+	list-style: none;
+	position: absolute;
+	top: 75%;
+	z-index: 999;
+	left: 27%;
+	
+}
 
 	 /* Que es GES */
 	 .container-definicion{
@@ -7346,9 +7382,6 @@ table{
 	color: #FFFFFF;
 	font-size: 1.3em;
 }
-
-	
-	
 	
 	.loader-origen {
 		padding-top: 1em;
@@ -7986,11 +8019,7 @@ height: 3.5em;
 	
  } 
 
- .Share-instantly-left{
-	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
-
-
-}
+ 
 
 /* configure llamadas de emergencia */
 
@@ -8295,13 +8324,13 @@ form {
 }
 
 .container-text-slider-derecha .slider-celular{
-	width: 3.7em;
-	height: 7em;
+	width: 3.5em;
+	height: 6.5em;
 
 }
 .container-luz-slider{
 	width:100%;
-	height: 8em;
+	height: 7.8em;
 	margin: auto;
 	text-align: center;
 	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
@@ -8321,9 +8350,7 @@ form {
 		padding: 0em 0;
 	}
 
-	nav ul {
-		margin-top: 0em;
-	}
+	
 	
 	
 	.container .header .container .marca_logo{
@@ -8350,6 +8377,15 @@ form {
 	font-size: 1.1em;
 	
  }
+ /*tabs*/
+.callbacks_tabs{
+	list-style: none;
+	position: absolute;
+	top: 78%;
+	z-index: 999;
+	left: 27%;
+	
+}
  
  
 /* definicion
@@ -8524,6 +8560,109 @@ font-size: 1em;
 
  
 
+/* funciones destacadas*/
+.features-Funciones-Destacadas{
+	padding:.5em 0em 2em 0em;
+	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
+
+}
+
+.features-Funciones-Destacadas .titles-principal{
+	text-align: center;
+	margin-top: .5em;	
+}
+
+.features-Funciones-Destacadas .titles-principal h2{
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.3em;		
+  }
+
+  .features-Funciones-Destacadas .sub-titulo{
+	text-align: center;
+	color: #635b5b;
+	padding: 0em;
+	margin: 0;
+	}
+	
+  /* Prevencion */
+  .sub-titulo p{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.2em;
+	}
+
+	.features-Funciones-Destacadas .seleccione p{
+		font-size: 1.1em;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+
+		/*louder9*/
+		.loader9 {
+			padding: 1em 0em 0em 0em;
+				user-select: none;
+			  }
+
+			  .container-card-funciones{
+				width: 100%;
+				height: max-content;
+				padding: 0em 0em 0em 0em;
+			 }
+			 
+	.container-card-funciones  .features-grid{
+		padding-bottom: 2em;
+	 }
+
+
+	 .container-card-funciones .features-grid .card-container {
+		width: 18em;
+		display: flex;
+		height: 430px;
+		position: relative;
+		border-radius: 25px;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;	
+	  }
+	 
+.features-grid span {
+	width: 145px;
+	height: 155px;
+	background-size: 470%;
+	
+ }
+ .features-grid span.t-icon1 {
+	background-position: -530px 0px;
+	
+ }
+ .features-grid span.t-icon2 {
+	background-position: -270px 0px;
+ }
+
+
+ .features-grids .features-grid h3 {
+   
+
+	font-size: 1.1em;
+ }
+ .features-grids .features-grid p {
+	font-size: 1em;
+	
+	
+ }
+
+
+
+
+
 
 
 
@@ -8548,7 +8687,7 @@ font-size: 1em;
  .card-origen-center{
 	width:  90%;
 	height: max-content;
-	padding: 1em 0em;
+	padding: .5em 0em;
 	border:  3px #FFFFFF solid;
 	border-radius: 5px;
 	transition: 3s;
@@ -8564,8 +8703,8 @@ font-size: 1em;
 
    /*  cambia tamaño de card*/
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
-	width: 17em;
-	height: 10em;
+	width: 18em;
+	height: 9.5em;
 	position:relative;
 	display: flex;
 	overflow: hidden;
@@ -8815,7 +8954,7 @@ font-size: 1em;
 
 
 
-/* funciones destacadas*/
+/* funciones destacadas
 .features-Funciones-Destacadas{
 	
 	padding:3em 0em;
@@ -8824,10 +8963,6 @@ font-size: 1em;
 }
 
 
-.features-grid {
-	padding: .7em 0em;
-	
-}
 
 .features-grid span {
 	width: 120px;
@@ -8860,6 +8995,8 @@ font-size: 1em;
 	font-size: .9em;
 	line-height: .5;
 }
+*/
+/*
 
  .features-grid:hover {
 	cursor: pointer;
@@ -8867,7 +9004,7 @@ font-size: 1em;
 	border-radius: 25px;
 	color: #FFFFFF;
 	
-	/*
+	
 	
 	background-color: #5fd9fe;
 	border-radius: 20px;
@@ -8875,10 +9012,10 @@ font-size: 1em;
 	border: #FFFFFF;
 	color: #FFFFFF;
 	
-	*/
+	
 }
 
-
+*/
 .seleccione p{
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
@@ -9009,14 +9146,13 @@ td,th{
 	
  } 
 
- .Share-instantly-left{
-	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
-}
+
 
 /*espaciado de textos slider */
 .slider .da-slider .slide-text p{
 	line-height: 1.4em;
 }
+
 
 /* configure llamadas de emergencia */
 
@@ -9372,7 +9508,6 @@ width: 100%;
 .container-text-slider-izquierda{
 	width: 70%;
 	float: left;
-	
 	padding: 0em 0em;
 	
 }
@@ -9385,7 +9520,6 @@ width: 100%;
 }
 
 .container-text-slider-derecha .slider-celular{
-
 	float: left;
 	width: 3em;
 	height: 4.5em;
@@ -9405,11 +9539,7 @@ width: 100%;
 		padding: 0em 0;
 	}
 
-	nav ul {
-		margin-top: 8em;
-
-
-	}
+	
 
 
 .container .header .container .marca_logo{
