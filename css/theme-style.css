@@ -539,14 +539,7 @@ nav a#pull {
 	height: 35em;
 }
 
-/*  Luz slider  */
-.top-header .callbacks_container .rslides .container-luz-slider{
-	width: 100%;
-	height: 100%;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
+
 
 .slide-text-info p{
 	font-size: 3.7em;
@@ -3556,14 +3549,7 @@ width: 100%;
 		height: 19.5em;
 	}
 	
-/*  Luz slider  */
-.container-luz-slider{
-	width: 100%;
-	height: 19.5em;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
+
 
 	.slide-text-info p{
 		font-size: 2em;
@@ -4748,14 +4734,7 @@ p.cousel_demo{
 		height: 15.5em;
 	}
 
-	/*  Luz slider  */
-.container-luz-slider{
-	width:100%;
-	height: 20em;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
+	
 
 
 	/* end bloke slider*/
@@ -5634,14 +5613,7 @@ p.cousel_demo{
 	width: 7em;
 	height: 14em;
 }
-/*  Luz slider  */
-.container-luz-slider{
-	width:100%;
-	height: 14.5em;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
+
 
 /* end bloke slider*/
 
@@ -6515,13 +6487,6 @@ table{
 	height: 12em;
 }
 
-.container-luz-slider{
-	width:100%;
-	height: 14.5em;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
 
 /* end bloke slider*/
 
@@ -7376,13 +7341,6 @@ table{
 	height: 8.5em;
 }
 
-.container-luz-slider{
-	width:100%;
-	height: 9.5em;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
 
 /* bajar letras slider principal*/
 
@@ -8460,13 +8418,6 @@ form {
 
 }
 
-.container-luz-slider{
-	width:100%;
-	height: 7.8em;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
 
 	/* bajar letras slider principal*/
 .slide-text-info{
@@ -9671,13 +9622,6 @@ width: 100%;
 	height: 6.2em;
 }
 
-.container-luz-slider{
-	width:100%;
-	height: 6.5em;
-	margin: auto;
-	text-align: center;
-	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
-}
 
 /* bajar letras slider principal*/
 .slide-text-info{
