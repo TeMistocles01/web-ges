@@ -257,18 +257,7 @@ nav a#pull {
 	nav {
 		float:none;
 	}
-	nav ul {
-		width: 80%;
-		display: block;
-		height: auto;
-		margin-top: .8em;
-	}
-
-	nav a {
-	  	
-		width: 100%;
-		text-indent: 0px;
-	}
+	
 	nav li {
 		display: block;
 		float: none;
@@ -293,17 +282,7 @@ nav a#pull {
 	nav {
 		float:none;
 	}
-	nav ul {
-  		width: 80%;
-  		display: block;
-  		height: auto;
-		margin-top: .8em;
-  	}
-
-	  nav a {	
-		width: 100%;
-		text-indent: 0px;
-	}
+	
 	
 	nav li {
 		display: block;
@@ -507,6 +486,7 @@ nav a#pull {
 .callbacks_tabs li{
 	display:inline-block;
 }
+
 @media screen and (max-width: 600px) {
   h1 {
     font: 24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -560,9 +540,9 @@ nav a#pull {
 }
 
 /*  Luz slider  */
-.container-luz-slider{
+.top-header .callbacks_container .rslides .container-luz-slider{
 	width: 100%;
-	height: 38.2em;
+	height: 100%;
 	margin: auto;
 	text-align: center;
 	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
@@ -1219,7 +1199,7 @@ p.img_slider1{
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 	/*background: linear-gradient( #5fd9fe 97% ,#FFFFFF);*/
 	padding: 1em 0em 4em 0em;
-	margin: 0;
+
 }
 
 .titles-principal{
@@ -1884,6 +1864,7 @@ border-radius: 1em;
   color: #FFFFFF;
 	
 }
+
 .container-img-multiple figure:hover > img{
 	transform: scale(1.2);
 }
@@ -1896,11 +1877,11 @@ border-radius: 1em;
     font-weight: 200;
     font-style: normal;
 	line-height: 1.2;
-	
 	max-width: 220px;
 	
 	
 }
+
 /* texto pequeño imagen  Izquierda*/
 .container-colum .img-izquierda-columna .container-img-multiple  figure .capa .parrafo-card{
 	color: #FFFFFF;
@@ -1913,6 +1894,8 @@ border-radius: 1em;
 }
 
 /* end catalogo*/
+
+
 
 
 /*-----Resultados y eficciencia----*/
@@ -1957,14 +1940,6 @@ border-radius: 1em;
 	display: block;
 	font-size: medium;
  }
-
- 
-
-
-
-
-
-
 
 
 .container-accion-map p {
@@ -2059,7 +2034,7 @@ iframe{
 /* tablas comparativas margen arriba*/
 
 .container-tablas{
-	margin-top: 4.74em;
+	margin-top: 1em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -2071,7 +2046,6 @@ iframe{
 /* margen de base tabla*/
 
 .tabla-container{
-
 	width:  45%;
 	height: max-content;
 	margin: 0em auto;
@@ -2079,9 +2053,9 @@ iframe{
 }
 
 .container-tablas .tabla-container table{
-	margin-top: 1em;
+	
 	width: 100%;
-	height: 7em;
+	
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
@@ -2160,7 +2134,7 @@ color: #FFFFFF;
 }
 
 .container-tablas .tabla-container .tabla-container-izquierda .list2{
-	font-size: medium;
+	font-size: 1.2;
 	margin-top: .5em;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -2191,7 +2165,7 @@ color: #FFFFFF;
 	}
 	
 	.container-tablas .tabla-container .tabla-container-derecha .list2{
-	  font-size: medium;
+	  font-size: 1.2;
 	  margin-top: .5em;
 	  font-family: "Ubuntu", sans-serif;
 	  font-weight: 300;
@@ -2679,6 +2653,8 @@ color: #FFFFFF;
 }
 */
 
+
+
 /*tamaño de contorno formlario*/
 form {
 	width: 100%;
@@ -3093,7 +3069,7 @@ form {
 	width: 70%;
 }
 
-/* From Uiverse.io by Li-Deheng */ 
+/* */ 
 .btn_ir_modal_mostrar {
   display: flex;
   justify-content: center;
@@ -3624,7 +3600,6 @@ width: 100%;
 
 
  /* Que es Ges start */
-
 .container-definicion{
 	width: 100%;
 	height: max-content;
@@ -3661,12 +3636,13 @@ width: 100%;
 	justify-content: center;
 	align-items: center;
 	margin-top: 1.7em;
-	margin-bottom: 2em;
+	margin-bottom: 2.5em;
 	
 }
 
+
 /* cards que es ges*/
-.card-definicion{
+.container-card-que-es-ges .card-definicion{
 	margin: 0em .7em;
 	width: 19em;
 	height: max-content;
@@ -3686,6 +3662,7 @@ width: 100%;
 	height: 50px;
 	position: relative;
   }
+
 
   .loader-block {
 	display: inline-block;
@@ -3802,7 +3779,7 @@ width: 100%;
 
 /* Funciones destacadas*/
 .features-Funciones-Destacadas{
-	background: linear-gradient( #5fd9fe 90% ,#FFFFFF);
+	background: linear-gradient( #5fd9fe 95% ,#FFFFFF);
 	/*background-color: #5fd9fe;*/
 	padding: 1em 0em 1em 0em;
 	/*
@@ -3811,7 +3788,7 @@ width: 100%;
 
 .features-Funciones-Destacadas .titles-principal{
 	text-align: center;
-	margin-top: 1em;
+	margin-top: 2em;
 		
 }
 
@@ -3827,8 +3804,8 @@ width: 100%;
 .features-Funciones-Destacadas .sub-titulo{
 text-align: center;
 color: #635b5b;
-padding: 0em 0em 0em 0em;
-	
+padding: 0em;
+margin: 0;	
 }
 
 /* Prevencion  basada*/
@@ -3839,10 +3816,7 @@ padding: 0em 0em 0em 0em;
 	font-size: 1.2em;
 	}
 	
-.seleccione{
-	
-	text-align: center;
-}
+
 
 .features-Funciones-Destacadas .seleccione p{
 	font-size: 1.1em;
@@ -3853,16 +3827,11 @@ padding: 0em 0em 0em 0em;
 }
 
 
- .container-card-funciones{
-	width: 100%;
-	height: max-content;
-	padding: 0em 0em 1.5em 0em;
- }
 
 
  /*louder9*/
 .loader9 {
-	padding: .8em 0em 0em 0em;
+	padding: 1em 0em 0em 0em;
 	user-select: none;
   }
   
@@ -3901,17 +3870,27 @@ padding: 0em 0em 0em 0em;
 
 
 
+  .container-card-funciones{
+	width: 100%;
+	height: max-content;
+	padding: 0em 0em 1.5em 0em;
+ }
+
+ .container-card-funciones  .features-grid{
+	padding-bottom: .5em;
+ }	
 
 .container-card-funciones .features-grid .card-container {
 	width: 100%;
 	display: flex;
-	height: 320px;
+	height: 350px;
 	position: relative;
 	border-radius: 25px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
+	
   }
   
   .container-card-funciones .features-grid .card-container .cardD {
@@ -3990,15 +3969,30 @@ padding: 0em 0em 0em 0em;
   }
   
 
+  .Share-instantly-left span{
+
+	float:left;
+	
+  }
+
+.feature-right span{
+	float:right;
+}
+
+
+
+
+
 /*justificacion */
 
 .origen-container{
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
+	height: max-content;
 	
 }
 .titles-principal{
 	text-align: center;
-	margin-top: 1em;	
+	margin-top: 2em;	
 }
 
 
@@ -4007,12 +4001,7 @@ padding: 0em 0em 0em 0em;
   font-weight: 300;
   font-style: normal;
 	color: #FFFFFF;
-
-
-
-	
 	font-size: 1.5;	
-	
 }
 
 .seleccione p{
@@ -4254,7 +4243,7 @@ iframe{
 /* sitios de implementacion*/
 .features{
 	width: 100%;
-	height: 55em;
+	height: 51em;
 	background:url(../images/fondo_cards_321.png)repeat;
 	 
 }
@@ -4268,14 +4257,11 @@ iframe{
 	  background-color: #5F7D8B;
 	opacity: 85%;
 	padding: 1em 0em 1em 0em;
-	font-size: 1.5em;
-		
+	font-size: 1.5em;	
 }
 
 /* modificar*/
-
 .features .fondo-img-catalogo .seleccione p{
-  
 	background-color: #5F7D8B;
 	opacity: 75%;
 	text-align: center;
@@ -4291,7 +4277,7 @@ iframe{
 
 .fondo-img-catalogo{
 	width: 100%;
-	height: 55em;
+	height: 51em;
 	background-image:url(../images/slide1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4317,8 +4303,8 @@ iframe{
 
 /*  cambia tamaño de card*/
 .container-img-multiple figure{
-	width: 18em;
-	height: 14em;
+	width: 20em;
+	height: 13em;
 	position:relative;
 	display: flex;
 	cursor: pointer;
@@ -4328,9 +4314,55 @@ iframe{
 	margin: .5em;
 	
  }
+
+/* Text-grande titulo */
+.container-img-multiple figure:hover > .capa .title-foto{
+	font-size: 1.3em;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #FFFFFF;
+	
+}
+
+.container-img-multiple figure:hover > img{
+	transform: scale(1.2);
+}
+
+
+/* texto pequeño imagen  derecha*/
+.container-colum .img-derecha-columna .container-img-multiple  figure .capa .parrafo-card{
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1.2;
+	max-width: 220px;
+	
+	
+}
+
+/* texto pequeño imagen  Izquierda*/
+.container-colum .img-izquierda-columna .container-img-multiple  figure .capa .parrafo-card{
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+	line-height: 1.2;
+	max-width: 220px;
+}
+
+
+/* end catalogo*/
 	
 
 /* Resultados y eficiencia*/
+
+
 .container-img-estadistica .titles-principal h2{
 	width: 100%;
 	text-align: center;
@@ -4342,11 +4374,7 @@ iframe{
 	opacity: 85%;
 	padding: 1em 0em 1em 0em;
 	font-size: 1.5em;
-		
-
-
 }
-
 
 .container-accion-mapa p {
 	font-family: "Ubuntu", sans-serif;
@@ -4355,6 +4383,140 @@ iframe{
 		font-size: 1em;
 		color: #FFFFFF;
 	 }
+
+	 .secc-mapa {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 0em 0em .5em 0em;	
+	}
+	
+
+	iframe{
+		width: 70%;
+		height: 12em;
+		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	}
+
+	.container-tablas{
+		margin-top: 1em;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 0em 0em .5em 0em;
+	}
+
+	.tabla-container{
+		width:  47%;
+		height: max-content;
+		margin: 0em auto;
+		margin-top: 2em;
+	}
+
+
+	.container-tablas .tabla-container table{
+		
+		width: 100%;
+		
+		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+	}
+	
+
+	.container-tablas .tabla-container table th{
+		text-align: center;
+		border: 1px solid #FFFFFF;
+		padding: 10px 11px;
+		font-size: 1.1em;
+		margin-top: .5em;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal; 
+		color: #FFFFFc;
+	
+	}
+	
+	.container-tablas .tabla-container table td{
+		text-align: center;
+		border: 1px solid #FFFFFF;
+		padding: 9px 11px;
+		font-size: 1em;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal; 
+		color: #FFFFFF;
+	
+	}
+	
+
+/* parrafo tabla superior*/
+.container-tablas .tabla-container .tabla-container-izquierda{
+	text-align: center;
+	width: max-content;
+	background-color: #5F7D8B;
+	/*#5F7D8B*/;
+	border-radius: 5px;
+	opacity: 85%;
+	float: left;
+	padding: .5em 1em 0em 1em;
+	
+}
+
+.container-tablas .tabla-container .tabla-container-izquierda p{	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1em;
+	color: #FFFFFF;
+			
+	}
+
+	.container-tablas .tabla-container .tabla-container-izquierda .list2{
+		font-size: 1.1;
+		margin-top: .5em;
+		font-family: "Ubuntu", sans-serif;
+	  font-weight: 300;
+	  font-style: normal; 
+	  color: #FFFFFF;	
+	}
+	
+	
+.container-tablas .tabla-container .tabla-container-derecha{
+	text-align: center;
+	width:max-content;
+	background-color: #5F7D8B;
+	/*#5F7D8B*/;
+	border-radius: 5px;
+	opacity: 85%;
+	float: right;
+	padding: .5em 1em 0em 1em;
+	
+}
+
+.container-tablas .tabla-container .tabla-container-derecha p{	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1em;
+	color: #FFFFFF;
+			
+	}
+
+
+
+	.container-tablas .tabla-container .tabla-container-derecha .list2{
+		font-size: 1.1;
+		margin-top: .5em;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal; 
+		color: #FFFFFF;	
+	  }
+
+
 
 
 
@@ -4460,31 +4622,6 @@ iframe{
  }
 
 
-/* coadyubar con el ministerio publico*/
-
-
-.Share-instantly-left span{
-	background-size:60%;
-	width: 320px;
-	height: 450px;
-	margin-top: 1em;
- }
-	
- .feature-right span{
-	background-size:60%;
-	width: 320px;
-	height: 450px;
-	margin-top: 1em;
- }
-
-
- .feature-right span{
-	background-position:0 0;
-	
-
-	/*background-color: red;*/
-}
-
 /* beneficios*/
 
 .header-card {
@@ -4499,10 +4636,9 @@ iframe{
 	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
   }
 
+
 /* adquirir*/
-
 .download{
-
 	width: 100%;
 	background: linear-gradient( #5fd9fe 94% ,#FFFFFF);
 	position: relative;
@@ -4555,29 +4691,12 @@ iframe{
 
 .container-btn-formulario{
 	margin-top: 1em;
-	width: 50%;
+	width: 70%;
 	
 	
 }
 
 /*boton*/
-.btn_ir_modal_mostrar{
-	width: 100%;
-    padding: .5em 0;
-    font-size: 1em;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-    color:#5fd9fe;
-    background: #FFFFFF;
-    border:none;
-    border-radius: 10px;
-    transition: 1s all;
-    cursor:pointer;
-	margin-bottom: 20px;
-	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-    
-}
 
 .Share-instantly-right {
 	margin-top:0em;
@@ -4625,14 +4744,14 @@ p.cousel_demo{
 	
 	.container-text-slider-derecha .slider-celular{
 		float: left;
-		width: 7em;
-		height: 14em;
+		width: 8em;
+		height: 15.5em;
 	}
 
 	/*  Luz slider  */
 .container-luz-slider{
 	width:100%;
-	height: 14.5em;
+	height: 20em;
 	margin: auto;
 	text-align: center;
 	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
@@ -4713,9 +4832,7 @@ p.cousel_demo{
 	align-items: center;
 	margin-top: 1.4em;
 	margin-bottom: 2.5em;
-	
 }
-
 
 .container-card-que-es-ges .card-definicion{
 	position: relative;
@@ -4847,8 +4964,6 @@ p.cousel_demo{
 	padding: 1em 0em 0em 0em;
 		user-select: none;
 	  }
-
-	  
 
 	  .container-card-funciones{
 		width: 100%;
@@ -5311,11 +5426,11 @@ table{
 	/*boton envio formulario*/
 	
 	.container-btn-formulario{
-		width: 70%;
+		width: 85%;
 	
 	}
 	
-/*boton*/
+/*boton
 .btn_ir_modal_mostrar{
 	width: 70%;
     padding: .5em 0;
@@ -5333,7 +5448,7 @@ table{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 }
-
+*/
 
  .slide-text-info {
 	margin-top: 7%;
@@ -6342,7 +6457,7 @@ table{
 
 }
 
-/*boton*/
+/*boton
 .btn_ir_modal_mostrar{
 	width: 70%;
     padding: .5em 0;
@@ -6359,7 +6474,7 @@ table{
 	margin-bottom: 20px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 } 
-
+*/
 /* pie de pagina */
 
 .pie-pagina .grupo-1{
@@ -7120,7 +7235,7 @@ table{
 
 }
 
-	  /*boton*/
+	  /*boton
 .btn_ir_modal_mostrar{
 	width: 70%;
     padding: .5em 0;
@@ -7138,6 +7253,7 @@ table{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 } 
+	*/
 /* texto bajo card*/
 
 .card-tarjeta .back .link  {
@@ -8198,7 +8314,7 @@ form {
 
 }
 
-/*boton*/
+/*boton
 .btn_ir_modal_mostrar{
 	width: 50%;
     padding: .5em 0;
@@ -8216,7 +8332,7 @@ form {
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 } 
-
+*/
 
 /* ficha tecnica*/
 /*ficha tecnica*/
@@ -8308,6 +8424,19 @@ form {
 
 @media (min-width:321px) and (max-width:480px){ 
 
+	nav ul {
+		width: 80%;
+		display: block;
+		height: auto;
+		margin-top: .8em;
+	}
+
+	nav a {
+	  	
+		width: 100%;
+		text-indent: 0px;
+	}
+
 
 /* start bloke slider*/
 .container-text-slider-izquierda{
@@ -8326,8 +8455,8 @@ form {
 
 .container-text-slider-derecha .slider-celular{
 	float: left;
-	width: 3em;
-	height: 6.7em;
+	width: 3.7em;
+	height: 7em;
 
 }
 
@@ -9306,7 +9435,8 @@ form {
 }
 
  /*Boton modal*/
-/*boton*/
+/*boton*
+
 .btn_ir_modal_mostrar{
 	width: 60%;
     padding: .5em 0;
@@ -9324,7 +9454,7 @@ form {
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 } 
-
+*/
 /*adquirir */
 /* texto bajo card*/
 
@@ -9507,6 +9637,18 @@ width: 100%;
 
 @media (min-width:0px) and (max-width:320px){
 
+	nav ul {
+		width: 80%;
+		display: block;
+		height: auto;
+	  margin-top: .8em;
+	}
+
+	nav a {	
+	  width: 100%;
+	  text-indent: 0px;
+  }
+
 	
 /* start bloke slider*/
 .container-text-slider-izquierda{
@@ -9525,10 +9667,17 @@ width: 100%;
 
 .container-text-slider-derecha .slider-celular{
 	float: left;
-	width: 3em;
-	height: 4.5em;
+	width: 3.5em;
+	height: 6.2em;
 }
 
+.container-luz-slider{
+	width:100%;
+	height: 6.5em;
+	margin: auto;
+	text-align: center;
+	background: linear-gradient( #5fd9fe 70%,#FFFFFF);	
+}
 
 /* bajar letras slider principal*/
 .slide-text-info{
@@ -9681,6 +9830,106 @@ width: 100%;
 	font-size: small;
 	
 }
+
+
+
+/* funciones destacadas*/
+.features-Funciones-Destacadas{
+	padding:.5em 0em 2em 0em;
+	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
+
+}
+
+.features-Funciones-Destacadas .titles-principal{
+	text-align: center;
+	margin-top: .5em;	
+}
+
+.features-Funciones-Destacadas .titles-principal h2{
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.3em;		
+  }
+
+  .features-Funciones-Destacadas .sub-titulo{
+	text-align: center;
+	color: #635b5b;
+	padding: 0em;
+	margin: 0;
+	}
+	
+  /* Prevencion */
+  .sub-titulo p{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.2em;
+	}
+
+	.features-Funciones-Destacadas .seleccione p{
+		font-size: 1.1em;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+
+		/*louder9*/
+		.loader9 {
+			padding: 1em 0em 0em 0em;
+				user-select: none;
+			  }
+
+			  .container-card-funciones{
+				width: 100%;
+				height: max-content;
+				padding: 0em 0em 0em 0em;
+			 }
+			 
+	.container-card-funciones  .features-grid{
+		padding-bottom: 2em;
+	 }
+
+
+	 .container-card-funciones .features-grid .card-container {
+		width: 18em;
+		display: flex;
+		height: 430px;
+		position: relative;
+		border-radius: 25px;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;	
+	  }
+	 
+.features-grid span {
+	width: 145px;
+	height: 155px;
+	background-size: 470%;
+	
+ }
+ .features-grid span.t-icon1 {
+	background-position: -530px 0px;
+	
+ }
+ .features-grid span.t-icon2 {
+	background-position: -270px 0px;
+ }
+
+
+ .features-grids .features-grid .text-funciones h3 {
+   
+	font-size: 1.3em;
+ }
+ .features-grids .features-grid p {
+	font-size: 1em;
+	
+	
+ }
 
 
 
@@ -9871,90 +10120,6 @@ width: 100%;
 
 
 
-
-/* funciones destacadas*/
-.features-Funciones-Destacadas{
-	padding:0em 0em 1.3em 0em;
-	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
-
-}
-
-.features-grid {
-	padding: .7em 0em;
-	
-}
-
-
-.features-grid span {
-	width: 120px;
-	height: 120px;
-	background-size: 446%;
-	
- }
- .features-grid span.t-icon1 {
-    background-position: -210px 0px;
- }
- .features-grid span.t-icon2 {
-    background-position: -416px 0px;
- }
- .features-grids{
-	border-radius: 25px;
-	margin: 0em 1em;
-}
-.features-grid h3 {
-	
-	font-weight: 400;
-	font-size: 1.1em;
-}
-
-.features-grids .features-grid p{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-	font-size: .9em;
-	line-height: .5;
-	
-}
-
- .features-grid:hover {
-	cursor: pointer;
-	border-style: double;
-	border-radius: 25px;
-	color: #FFFFFF;
-	
-	/*
-	
-	background-color: #5fd9fe;
-	border-radius: 20px;
-	border-style: double;
-	border: #FFFFFF;
-	color: #FFFFFF;
-	
-	*/
-}
-
-
-.seleccione p{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-	font-size: 1em;
-}
-
-.container-beneficios .container-titulo-beneficios .seleccione p{
-
-font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-	font-size: 1em;
-}
-
-.container-multiples-sitios .seleccione p{
-	font-family: "Ubuntu", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-	font-size: 1em;
-}
 
 
  /* catalogo*/
@@ -10298,7 +10463,7 @@ form {
 }
 
  /*Boton modal*/
-/*boton*/
+/*boton
 .btn_ir_modal_mostrar{
 	width: 60%;
     padding: .5em 0;
@@ -10316,6 +10481,7 @@ form {
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 }
+	*/
 /*adquirir */
 /* texto bajo card*/
 
@@ -10425,7 +10591,7 @@ width: 100%;
 	width: 100%;
 
 }
-/*boton*/
+/*boton
 .btn_ir_modal_mostrar{
 	width: 50%;
     padding: .5em 0;
@@ -10443,7 +10609,7 @@ width: 100%;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     
 } 
-
+*/
 /* ficha tecnica*/
 /*ficha tecnica*/
 
