@@ -2201,10 +2201,7 @@ color: #FFFFFF;
 }
 
 
-
-
 /*--Beneficios---*/
-
 .container-beneficios{
     padding: 1.5em 0em;
 	background: linear-gradient( #5fd9fe 96% ,#FFFFFF);
@@ -2331,7 +2328,8 @@ color: #FFFFFF;
 }
 
 
-  
+  /* container Titulo */
+
   .header-card {
 	height: 4rem;
 	position: relative;
@@ -2344,7 +2342,7 @@ color: #FFFFFF;
 	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
   }
 
-
+ /*Titulo p */
   .header-card p{
     display: flex;
 	justify-content: center;
@@ -4487,11 +4485,8 @@ iframe{
 	font-weight: 300;
 	font-style: normal;
 	font-size: 1em;
-	color: #FFFFFF;
-			
+	color: #FFFFFF;	
 	}
-
-
 
 	.container-tablas .tabla-container .tabla-container-derecha .list2{
 		font-size: 1.1;
@@ -4504,59 +4499,53 @@ iframe{
 
 
 
-
-
-
-
  /* beneficios*/
+ 
  .container-tarjeta .card-tarjeta{
     position: relative;
-    width: 19em;
-    height: 28em;
-    margin: 5px;
+    width: 19.5em;
+    height: 35em;
+    margin: 10px;
 }
 
-/*texto ges card*/
-.card-tarjeta .back .title-back {
-	margin-top: 1.1em;
+
+/* container Titulo */
+
+.header-card {
+	height: 4rem;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 2rem;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+ /*Titulo p */
+  .header-card p{
+    display: flex;
+	justify-content: center;
 	color: #FFFFFF;
+	font-size: 1.4em;
+	flex-direction: row;
+  }
+
+  .info1 {
+	border: none;
+	padding: 1.5em 0em .5em 0em;
+	margin-left: auto;
+	margin-right: auto;
+	/*
 	text-align: center;
-	font-size: 1.3em;		
-}
+	*/
+  }
 
-.card-tarjeta .back .sub-title-back{
-	margin-top: 4.7em;
-	font-size: .9em;		
-	position: absolute;
-}
 
-.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
-	margin-top: 1em;
-}
-.back .tarjeta-1 p{
-	
-	font-size: .8em;
-	line-height: 3em;  
-}
 
-.back .tarjeta-2 p{
-	
-	font-size: .8em;
-	line-height:1.5em;
-}
 
-.back .tarjeta-3 p{
-	font-size: .8em;
-	line-height: 2em; 
-}
 
-/* texto bajo card*/
-.card-tarjeta .back .link  {
-	border-top: solid 1px #f3f3f3;
-	font-size: small;
-	text-align: center;
-	line-height: 70px; /*altura de la linea */
-}
 
  .features h2 {
 	font-size: 2em;
@@ -4578,20 +4567,8 @@ iframe{
  .footer-right input[type="text"] {
  	width: 64%;
  }
- .header{
-	left:0;
- }
- 
- 
- 
- .feature-left {
-	margin: 0 0 2em 0;
- }
 
 
- .slide-text-info {
-	margin-top: 7%;
- }
 
 
  
