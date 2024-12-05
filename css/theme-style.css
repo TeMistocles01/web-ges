@@ -2033,13 +2033,14 @@ iframe{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 0em 0em .5em 0em;
+	
 }
 
 
 /* margen de base tabla*/
 
 .tabla-container{
-	width:  45%;
+	width:  49%;
 	height: max-content;
 	margin: 0em auto;
 	margin-top: 2em;
@@ -2330,7 +2331,7 @@ color: #FFFFFF;
 /* Textos card */
   
 /* container Titulo */
-  .header-card {
+  .header-card1 {
 	height: 4rem;
 	position: relative;
 	background-clip: border-box;
@@ -2343,7 +2344,7 @@ color: #FFFFFF;
   }
 
  /*Titulo p */
-  .header-card p{
+  .header-card1 p{
     display: flex;
 	justify-content: center;
 	color: #FFFFFF;
@@ -2385,13 +2386,45 @@ color: #FFFFFF;
 	flex-direction: column;
 	background-color: #B3E5FC;
 	opacity: 0.7;
-	
 	/*background-color: rgba(0, 140, 255, 0.082);*/
-	
 	/*#B3E5FC*/
   }
   
 
+/* container Titulo */
+.header-card2 {
+	height: 3rem;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 1.5rem;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+
+ /*Titulo */
+ .header-card2 p{
+    display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.4em;
+	flex-direction: row;
+	
+  }
+
+  .info2 {
+	border: none;
+	padding: 1.5em 0em .5em 0em;
+	margin-left: auto;
+	margin-right: auto;
+	/*
+	text-align: center;
+	*/
+  }
+  
   .info-card2 {
 	border: none;
 	padding: 1em;
@@ -2399,35 +2432,103 @@ color: #FFFFFF;
 
 
   .info-card2 p{
-	font-size: 1em;
-	font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
   line-height: 2.2em; 
   }
 
   .footer-beneficios2 {
-	margin-top: 2.5em;
+	margin-top: 4em;
 	padding: 0.75rem;
-	
 	/*border: 2px solid rgb(236 239 241);*/
 	display: flex;
 	flex-direction: column;
 	background-color: #B3E5FC;
 	opacity: 0.7;
 	box-shadow: 0 5px 10px #000;
-	
 	/*background-color: rgba(0, 140, 255, 0.082);*/
-
 	/*#B3E5FC*/
   }
   
+
+
+/* container Titulo */
+.header-card3 {
+	height: 3rem;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 1.5rem;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+
+ /*Titulo */
+ .header-card3 p{
+    display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.4em;
+	flex-direction: row;
+  }
+.info3 {
+	border: none;
+	padding: 1.5em 0em .5em 0em;
+	margin-left: auto;
+	margin-right: auto;
+	/*
+	text-align: center;
+	*/
+  }
+  
+  .info-card3 {
+	border: none;
+	padding: 1em;
+  }
+
+
+  .info-card3 p{
+  font-size: 1em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 2.2em; 
+  }
+
+  .footer-beneficios3 {
+	margin-top: 4em;
+	padding: 0.75rem;
+	/*border: 2px solid rgb(236 239 241);*/
+	display: flex;
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	box-shadow: 0 5px 10px #000;
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	/*#B3E5FC*/
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   .title {
 	color: rgb(38 50 56);
 	font-weight: 600;
 	font-size: 1rem;
 	margin-bottom: 1em;
-
   }
   
   .tag {
