@@ -2327,9 +2327,9 @@ color: #FFFFFF;
 	
 }
 
-
-  /* container Titulo */
-
+/* Textos card */
+  
+/* container Titulo */
   .header-card {
 	height: 4rem;
 	position: relative;
@@ -2418,12 +2418,10 @@ color: #FFFFFF;
 	box-shadow: 0 5px 10px #000;
 	
 	/*background-color: rgba(0, 140, 255, 0.082);*/
-	
+
 	/*#B3E5FC*/
   }
   
-
-
   .title {
 	color: rgb(38 50 56);
 	font-weight: 600;
@@ -2464,13 +2462,13 @@ color: #FFFFFF;
     background: rgba(0,0,0,.4); /*rgba(0,0,0,.4); */
     text-align: center;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 	
 	/*rgba(95,217,254,.9);*/
 }
 
-/*Margen en todos los costados*/
+
 .card-tarjeta .back {
 	border: 2px #FFFFFF solid;
     transform: perspective(600px) rotateY(180deg);
@@ -2741,9 +2739,6 @@ form {
 	font-weight: bold;
 	border: 2px solid #FFFFFF; 
 }
-
-
-
 
 /*
 .btn_salir_formulario{
@@ -3522,7 +3517,6 @@ width: 100%;
 
 @media (min-width:1025px) and (max-width:1200px){
 	.top-nav ul li a{
-	
 	margin-top: .2em;
 	
 }
@@ -3547,8 +3541,6 @@ width: 100%;
 		height: 19.5em;
 	}
 	
-
-
 	.slide-text-info p{
 		font-size: 2em;
 		font-family: "Ubuntu", sans-serif;
@@ -3557,16 +3549,13 @@ width: 100%;
 	}
 	
 	.container .header .container .marca_logo {
-		
 		top: 10px;
 		left: 10px;
-		
 	}
 	
-	.container .header .container .marca_logo .logo_ges{
+.container .header .container .marca_logo .logo_ges{
   width: 7em;
   height: 3.5em;
-  
 }
 
 	.header {
@@ -3593,7 +3582,6 @@ width: 100%;
 
 
 /* Subtitulos titles-principal*/
-
 .container-definicion .titles-principal{
 	width: 100%;
 	text-align: center;
@@ -3607,12 +3595,10 @@ width: 100%;
   font-style: normal;
   color: #FFFFFF;
   font-size: 1.5em;
- 
 }
    
 
 /*Contenedor de cards que es GES */
-
 .container-card-que-es-ges{
 	width: 100%;
 	display: flex;
@@ -4026,14 +4012,12 @@ margin: 0;
 	border-radius: 10px;
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	margin: 0;
-
  }
 
  .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple{
 	width: 50%;
 	padding: 0em 1.7em;
 }
-
 
 
 /* Text-grande titulo */
@@ -4053,7 +4037,6 @@ margin: 0;
 
 
 /* texto pequeño imagen */
-
 
 /* texto pequeño imagen  derecha*/
 .container-colum .img-derecha-columna .container-img-multiple  figure .capa .parrafo-card{
@@ -4075,12 +4058,8 @@ margin: 0;
     font-weight: 200;
     font-style: normal;
 	line-height: 1.2;
-
 	max-width: 220px;
-	
-	
 }
-
 
 .container-2-card-origen{
 	display: flex;
@@ -4401,11 +4380,8 @@ iframe{
 		margin-top: 2em;
 	}
 
-
 	.container-tablas .tabla-container table{
-		
 		width: 100%;
-		
 		box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	}
 	
@@ -4497,7 +4473,9 @@ iframe{
 		color: #FFFFFF;	
 	  }
 
-
+/*https://learnenglish.britishcouncil.org/skills*/
+/*https://www.cambridgeenglish.org/es/learning-english/ */
+/*https://www.usalearns.org/locked-out*/
 
  /* beneficios*/
  
@@ -4508,14 +4486,14 @@ iframe{
     margin: 10px;
 }
 
+/* Textos cards */
 
 /* container Titulo */
-
-.header-card {
-	height: 4rem;
+.header-card1 {
+	height: 3rem;
 	position: relative;
 	background-clip: border-box;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 	margin-left: 1em;
 	margin-right: 1em;
 	border-radius: 0.45em;
@@ -4523,8 +4501,8 @@ iframe{
 	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
   }
 
- /*Titulo p */
-  .header-card p{
+ /*Titulo */
+  .header-card1 p{
     display: flex;
 	justify-content: center;
 	color: #FFFFFF;
@@ -4532,6 +4510,8 @@ iframe{
 	flex-direction: row;
   }
 
+  /* Margen del texto*/
+  
   .info1 {
 	border: none;
 	padding: 1.5em 0em .5em 0em;
@@ -4542,12 +4522,110 @@ iframe{
 	*/
   }
 
+  .info-card1 {
+	border: none;
+	padding: 1em;
+  }
+
+  .info-card1 p{
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 4em;
+  }
+
+
+  .footer-beneficios1 {
+	margin-top: 5em;
+	/*border: 2px #FFFFFF solid;*/
+	/*border: 2px solid rgb(236 239 241);*/
+	display: flex;
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	
+	/*#B3E5FC*/
+  }
+
+
+
+  .header-card2 {
+	height: 3rem;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 1.5rem;
+	margin-left: .5em;
+	margin-right: .5em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+ /*Titulo */
+ .header-card2 p{
+    display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.4em;
+	flex-direction: row;
+  }
+
+  .info2 {
+	border: none;
+	padding: 1em 0em .5em .8em;
+	margin-left: auto;
+	margin-right: auto;
+	/*
+	text-align: center;
+	*/
+  }
+
+  .info-card2 {
+	border: none;
+	padding: 1em;
+  }
+
+
+  .info-card2 p{
+	font-size: 1em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 2em; 
+  }
+
+  .footer-beneficios2 {
+	margin-top: 2.5em;
+	
+	
+	/*border: 2px solid rgb(236 239 241);*/
+	display: flex;
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	
+	
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	
+	/*#B3E5FC*/
+  }
+  
 
 
 
 
 
- .features h2 {
+
+
+
+
+
+/* */
+
+.features h2 {
 	font-size: 2em;
  }
  .Share-instantly-right h3 {
@@ -4569,9 +4647,6 @@ iframe{
  }
 
 
-
-
- 
  .features-grid span {
 	width: 180px;
 	height: 180px;
@@ -4583,21 +4658,6 @@ iframe{
  .features-grid span.t-icon2 {
     background-position: -620px 0px;
  }
-
-
-/* beneficios*/
-
-.header-card {
-	height: 4rem;
-	position: relative;
-	background-clip: border-box;
-	margin-top: 2rem;
-	margin-left: .5em;
-	margin-right: .5em;
-	border-radius: 0.45em;
-	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
-	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
-  }
 
 
 /* adquirir*/
@@ -5414,12 +5474,50 @@ table{
 
 
 /* beneficios*/
+
+.container-tarjeta{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	padding-top: 3.2em;
+	padding-bottom: 3em;
+}
+
 .container-tarjeta .card-tarjeta{
     position: relative;
     width: 16em;
     height: 26em;
     margin: 5px;
 }
+
+
+
+  
+/* container Titulo */
+.header-card {
+	height: 4rem;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 2rem;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+/*Titulo p */
+.header-card p{
+    display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.4em;
+	flex-direction: row;
+  }
+
+
+
 
 /*texto ges card*/
 .card-tarjeta .back .title-back {
