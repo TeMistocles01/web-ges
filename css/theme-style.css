@@ -4262,7 +4262,7 @@ iframe{
 	text-align: center;
     border: 1px solid #FFFFFF;
     padding: 12px 10px;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	margin-top: .5em;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -4275,7 +4275,7 @@ iframe{
 	text-align: center;
     border: 1px solid #FFFFFF;
     padding: 10px 10px;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal; 
@@ -4287,7 +4287,7 @@ iframe{
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 1.1em;
+	font-size: 1em;
 	color: #FFFFFF;
 			
 	}
@@ -4305,7 +4305,7 @@ iframe{
 		font-family: "Ubuntu", sans-serif;
 		font-weight: 300;
 		font-style: normal;
-		font-size: 1.1em;
+		font-size: 1em;
 		color: #FFFFFF;
 				
 		}
@@ -4320,17 +4320,7 @@ iframe{
 		}
 	
 
-
-		.sin-ges-head th{
-			font-size: 1em;
-			color: red;
 		
-		}
-		
-
-
-
-
 
  /* adquirir*/
  .download{
