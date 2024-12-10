@@ -8629,9 +8629,13 @@ width: 100%;
 
 /* bajar letras slider principal*/
 .slide-text-info{
-	margin-top:6%;
+	margin-top:3%;
 }
 
+.slide-text-info p {
+	font-size: 1.1em;
+	
+ }
 
 	.top-nav ul li.active a, .top-nav ul li a:hover {
 		color: #2C3E50;
@@ -8649,24 +8653,20 @@ width: 100%;
 		
 	  }
 	.container .header .container .marca_logo .logo_ges{
-		width: 4.5em;
-		height: 2.5em;
+		width: 4em;
+		height: 2em;
 		
 	  }
 
 	
 
- .slide-text-info p {
-	font-size: 1em;
-	
- }
  /*tabs*/
 .callbacks_tabs{
 	list-style: none;
 	position: absolute;
-	top: 70%;
+	top: 79%;
 	z-index: 999;
-	left: 0%;
+	left: 40%;
 	
 }
  
