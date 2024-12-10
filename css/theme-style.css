@@ -8789,7 +8789,7 @@ width: 100%;
 	font-weight: 300;
 	font-style: normal;
 	color: #FFFFFF;
-	font-size: 1.3em;		
+	font-size: 1.4em;		
   }
 
   .features-Funciones-Destacadas .sub-titulo{
@@ -9227,64 +9227,7 @@ td,th{
 	font-size: smaller;
 }
 
-/* coadyubar con el ministerio publico*/
 
-.feature{
-	background: linear-gradient( #5fd9fe 95% ,#FFFFFF);
-	padding: 0em 0em;
-}
-
-.container .Share-instantly-left span{
-	background-size:45%;
-	width: 220px;
-	height: 235px;	
- } 
-
-
-/*espaciado de textos slider */
-.slider .da-slider .slide-text p{
-	line-height: 1.4em;
-}
-
-/* configure llamadas de emergencia */
-
-/*Imagen  you.tube*/
-.slider .da-slider .da-slide #youtube-icon-slider{
-	width: 4em;
-	height: 3em;
-}
-
-.feature-right{
-	margin-top: 1.5em;
-	float:right;
-	/*background-color: red;*/
-	
-   }
-
-   /* slider1  float: inline-start;*/
-
-.container .feature-right span{
-	background-size:100%;
-	width: 92px;
-	height: 210px;
-   }
-
-
-   .feature-right span{
-	background-position:0 0;
-	/*background-color: red;*/
-}
-
-
-   .feature-left .slider .da-slider1 .da-slide #llamada-img{
-	width: 4em;
-	height: 3em;
-	}
-
-/*espaciado de textos slider */
-.slider .da-slider1 .slide-text p{
-	line-height: 1.4em;
-}
 
 
 
