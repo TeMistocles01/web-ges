@@ -1024,18 +1024,6 @@ padding: 2.5em 0em 0em 0em;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----start-Share-instantly----*/
 .Share-instantly{
 	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
@@ -1271,7 +1259,7 @@ p.img_slider1{
 
 .container-unica-origen .container-img-multiple .capa .list-img-patrulla {
 	text-align: justify;
-	margin-left: 2em;
+	margin-left: 4em;
 
 }
 
@@ -1291,6 +1279,7 @@ p.img_slider1{
 }
 
 
+
 /* texto pequeño imagen */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
 	color: #FFFFFF;
@@ -1298,10 +1287,10 @@ p.img_slider1{
 	font-family: "Ubuntu", sans-serif;
     font-weight: 200;
     font-style: normal;
-	line-height: 1.4;
-	width: 100%;
+
 	max-width: 220px;
-	margin: auto;	
+	
+		
 }
 
 .container-2-card-origen{
@@ -1601,11 +1590,6 @@ border-radius: 1em;
 }
 
 
-.logo2{
-	width: 130px;
-	height: 100px;
-	border-radius: 5px;
-}
 
 
 .container-2-card-origen .card-origen-par .pie-card-tex-center{
@@ -6795,12 +6779,6 @@ font-family: "Ubuntu", sans-serif;
 	font-size: 1.2em;
 }
 
-.container-list{
-	width: 60%;
-	line-height: 1.4;
-	font-size: small;
-	
-}
 
 .container-logo-police{
 	width: 40%;
@@ -7862,12 +7840,6 @@ font-size: 1em;
 	font-size: 1.2em;
 }
 
-.container-list{
-	width: 100%;
-	line-height: 1.4;
-	font-size: small;
-	margin-bottom: .5em;
-}
 
 .container-logo-police{
 	margin-bottom: .5em;
@@ -8599,6 +8571,7 @@ width: 100%;
 
 }
 
+
 @media (min-width:320px) and (max-width:479px){
 
 	
@@ -8860,6 +8833,7 @@ width: 100%;
  }
 
 
+
 /* coadyubar con el ministerio publico*/
 .Share-instantly{
 	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
@@ -9027,7 +9001,7 @@ width: 100%;
 	line-height: 1;
 	width: 100%;
 	max-width: 220px;
-	margin: auto;
+	margin-top: .2em;
 }
 
 .origen-container .container-center .titulo-origen-card p{
@@ -9037,13 +9011,6 @@ width: 100%;
 
 .titles-principal h2{
 	font-size: 1.2em;
-}
-
-.container-list{
-	width: 100%;
-	line-height: 1.4;
-	font-size: small;
-	margin-bottom: .5em;
 }
 
 .container-2-card-origen{
@@ -9094,22 +9061,47 @@ width: 100%;
 }
 
 
-.loader5 {
+.container-loader .loader5 {
+	margin-bottom: .9em;
 	position: relative;
 	overflow: hidden;
 	border-right: 3px solid;
-	height: 1.5em;
+	height: 1.4em;
 	animation: typewriter 5s steps(10)  infinite alternate , blink 0.5s steps(10) infinite;
   }
   
 
   .loader-text {
-	font-size: 15px;
-	font-weight: 600;
+	font-size: 1.1em;
+	font-weight: 400;
 	background: #FFFFFF;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   }
+
+
+
+  @keyframes typewriter {
+	0% {
+	  width: 0px;
+	}
+  
+	100% {
+	  width: 300px;
+	}
+  }
+  
+  @keyframes blink {
+	0% {
+	  border-right-color: rgba(255,255,255,.75);
+	  ;
+	}
+  
+	100% {
+	  border-right-color: transparent;
+	}
+  }
+ 
 
 
   .container-4-img-flex{
@@ -9120,15 +9112,15 @@ width: 100%;
 	justify-content: space-around;
 	margin: 1em 0em;
 }
-.logo2{
-	width: 100px;
-	height: 80px;
-	border-radius: 5px;
+
+
+
+
+.container-img-text{
+	display: flex;
+	width: 9em;
+	
 }
-
-
-
-
 
 
 
