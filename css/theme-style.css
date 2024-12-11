@@ -533,15 +533,11 @@ nav a#pull {
 }
 
 .container-text-slider-izquierda{
-	width: 75%;
-	
-			
+	width: 75%;		
 }
 
 .container-text-slider-derecha{
 	width: 25%;
-	
-	
 }
 
 
@@ -1169,7 +1165,6 @@ p.img_slider1{
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 	/*background: linear-gradient( #5fd9fe 97% ,#FFFFFF);*/
 	padding: 1em 0em 4em 0em;
-
 }
 
 .titles-principal{
@@ -7489,7 +7484,6 @@ form {
 	
 }
  
-
  
 /* definicion
 
@@ -8858,24 +8852,120 @@ width: 100%;
 	background-position: -270px 0px;
  }
 
-
  .features-grids .features-grid .text-funciones h3 {
-   
 	font-size: 1.3em;
  }
  .features-grids .features-grid p {
 	font-size: 1em;
-	
-	
  }
 
 
+/* coadyubar con el ministerio publico*/
+.Share-instantly{
+	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
+	padding: 2em 0em;
+	/*box-shadow: inset 0 0 20px #FFFFFF;*/
+}
+.container .Share-instantly-left span{
+	background-size:80%;
+	width: 220px;
+	height: 235px;	
+	
+ } 
 
+ .Share-instantly .container .Share-instantly-right .titles-share h2{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.4em;
+
+}
+
+/*espaciado de textos slider */
+.slider .da-slider .slide-text p{
+	line-height: 1.6em;
+}
+
+.slider .da-slider1 .slide-text p{
+	line-height: 1.6em;
+}
+
+/* configure llamadas de emergencia */
+
+.feature{
+	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
+	padding: 2em 0em;
+}
+
+.feature .titles-share h2 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: 1.4em;	
+  }
+
+
+/*Imagen  you.tube*/
+.slider .da-slider .da-slide #youtube-icon-slider{
+	width: 4em;
+	height: 3em;
+}
+
+.feature-right{
+	margin-top: 1.5em;
+	float:right;
+	/*background-color: red;*/
+   }
+
+   /* slider1  float: inline-start;*/
+
+.feature .container .feature-right span{
+	background-size:80%;
+	width: 220px;
+	height: 235px;
+   }
+
+   .feature-right span{
+	background-position:0 0;
+	/*background-color: red;*/
+}
+
+
+   .feature-left .slider .da-slider1 .da-slide #llamada-img{
+	width: 4em;
+	height: 3em;
+	}
+
+
+
+
+
+	
 
 /* justificacion */
 .origen-container{
 	background: linear-gradient( #5fd9fe 99% ,#FFFFFF);
 }
+
+/* tipografia para los sub titulos*/
+.origen-container .titles-principal h2{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	  color: #FFFFFF;
+	  font-size: 1.4em;
+  }
+  
+ .seleccione p{
+	  font-family: "Ubuntu", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	  font-size: 1.1em;
+	  color: #FFFFFF;
+  }
+
 
  .container-center{
 	width: 100%;
@@ -8898,6 +8988,7 @@ width: 100%;
 	position: relative;
 	
 }
+
    /*  cambia tamaño de card*/
    .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure{
 	width: 15em;
@@ -8910,25 +9001,23 @@ width: 100%;
 	margin: .5em 0em;
  }
 
-
-
 /* Text-grande titulo */
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > .capa .title-foto{
-	font-size: .9em;
-	margin-top: 20px;
-	margin-bottom: 15px;
-	font-family: "Ubuntu", sans-serif;
+  font-size: .9em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
-	
+  line-height: .1;
 }
 
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure:hover > img{
 	transform: scale(1.2);
 }
 
-
 /* texto pequeño imagen */
+
 .origen-container .container-center .card-origen-center .container-unica-origen .container-img-multiple figure .capa p{
 	color: #FFFFFF;
 	font-size: .8em;
@@ -8939,18 +9028,12 @@ width: 100%;
 	width: 100%;
 	max-width: 220px;
 	margin: auto;
-	
 }
 
 .origen-container .container-center .titulo-origen-card p{
 	color: #FFFFFF;
-	  font-size: 1em;
+	font-size: 1em;
   }
-
-  
-
- 
-
 
 .titles-principal h2{
 	font-size: 1.2em;
@@ -8962,7 +9045,6 @@ width: 100%;
 	font-size: small;
 	margin-bottom: .5em;
 }
-
 
 .container-2-card-origen{
 	display: flex;
@@ -9131,8 +9213,8 @@ width: 100%;
 	
 }
 
- /*GES en accion*/
 
+ /*lugares de implementacion*/
 
  #margin{
 	padding: 1em 0em;
