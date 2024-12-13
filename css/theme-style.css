@@ -1831,7 +1831,7 @@ border-radius: 1em;
 .container-img-estadistica{
 	padding-top: 1em;
 	width: 100%;
-	background: url(../images/estadis.jpg)no-repeat center center fixed;;
+	background: url(../images/estadis.jpg)no-repeat center center fixed;
 	background-size: 100% 100%;
 	height: max-content;
 }
@@ -1862,15 +1862,18 @@ border-radius: 1em;
 	font-size: medium;
  }
 
+ /*
 
 .container-accion-map p {
 font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
 	font-size: 1.2em;
-	color: #FFFFFF;
+	color: #0b0b0b;
  }
+*/
 
+/*
 .text-map2 {	
 	text-align: center;
 }
@@ -1880,20 +1883,19 @@ font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
 	font-size: 1.7em;
-	color: #FFFFFF;
+	color: #201e1e;
 }
-
+*/
 
 .text-tabla1 {
-	text-align: center;
+	
 	display: flex;
-	width: max-content;
+	width: 50%;
 	background-color: #5F7D8B;
-	padding: 0em .5em;
+	justify-content: center;
 	/*85b0d3*/
 	border-radius: 5px;
 	opacity: 85%;
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;	
 }
@@ -1901,14 +1903,16 @@ font-family: "Ubuntu", sans-serif;
 
 
 .text-tabla1 p{
+	display: flex;
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   font-style: normal;
 	font-size: 1.5em;
 	color: #FFFFFF;
-	display: block;
+	
 }
 
+/*
 .text-tabla2 p{
 	font-family: "Ubuntu", sans-serif;
   font-weight: 200;
@@ -1917,6 +1921,8 @@ font-family: "Ubuntu", sans-serif;
 	color: #FFFFFF;
 	display: block;
 }
+*/
+
 
 .secc-mapa {
 	width: 100%;
@@ -1925,9 +1931,7 @@ font-family: "Ubuntu", sans-serif;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 0em 0em .5em 0em;
-	
-		
+	padding: 0em 0em .5em 0em;	
 }
 
 
@@ -1936,10 +1940,12 @@ iframe{
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
+/*
+
 .container-barras{
 	text-align: center;
 }
-
+*/
 /*
 
 .img-estadistica{
@@ -8676,7 +8682,7 @@ width: 100%;
 	font-weight: 400;
 	font-style: normal;
 	color: #FFFFFF;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	
 	}
 
@@ -8772,7 +8778,7 @@ width: 100%;
 	font-weight: 300;
 	font-style: normal;
 	color: #FFFFFF;
-	font-size: 1.4em;		
+	font-size: 1.3em;		
   }
 
   .features-Funciones-Destacadas .sub-titulo{
@@ -8945,7 +8951,7 @@ width: 100%;
 	font-weight: 300;
 	font-style: normal;
 	  color: #FFFFFF;
-	  font-size: 1.4em;
+	  font-size: 1.3em;
   }
   
  .seleccione p{
@@ -9141,7 +9147,7 @@ width: 100%;
 }
 
 
- /* lugares de implementacion*/
+ /* sitios de implementacion*/
 
  .features{
 	height: 102em;
@@ -9161,9 +9167,33 @@ width: 100%;
 }
 
 
+.features .fondo-img-catalogo .bloke-superior .titles-principal h2{
+	width: 100%;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	  color: #FFFFFF;
+	  background-color: #5F7D8B;
+	opacity: 85%;
+	padding: 1em 0em 1em 0em;
+	font-size: 1.3em;
+		
+}
 
-
-
+.features .fondo-img-catalogo .seleccione p{ 
+	background-color: #5F7D8B;
+	opacity: 75%;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: 1em;
+	padding: .7em 1.3em;
+	border-radius: 5px;
+  }
+  
 
 
 .features .img-derecha-columna{
@@ -9245,29 +9275,67 @@ width: 100%;
 
 
 
-
-
-
-
- /*lugares de implementacion*/
+ /*Resultados y eficiencia*/
 
  #margin{
 	padding: 1em 0em;
 }
 
- .container-accion-mapa {
-	text-align: center;		
+.container-img-estadistica .titles-principal h2{
+	width: 100%;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #FFFFFF;
+	background-color: #5F7D8B;
+	opacity: 85%;
+	padding: .1em 0em .1em 0em;
+
 }
 
- .container-accion-mapa  p {
-	font-size: smaller;	
- }
+.text-tabla1 {	
+	display: flex;
+	width: 100%;
+	background-color: #5F7D8B;
+	justify-content: center;
+	/*85b0d3*/
+	border-radius: 5px;
+	opacity: 85%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+
+
+.text-tabla1 p{
+text-align: center;
+	display: flex;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+	font-size: 1em;
+	color: #FFFFFF;
+	
+}
+
+.secc-mapa {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0em 0em 0em 0em;	
+}
 
 
  iframe{
 	width: 100%;
-	height: 13em;
-	margin: 0em .5em;
+	height: 9em;
+	margin: 1em 0em 1em 0em;
+	padding: 0em .8em;
 }
 
 .container-tablas{
