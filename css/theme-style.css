@@ -1668,12 +1668,8 @@ border-radius: 1em;
 }
 
 
-/*  sitios de implementacion */
+/*  Sitios de implementacion */
 
-.features{
-	width: 100%;
-	height: 60em;
-}
 
 .fondo-img-catalogo{
 	padding-top: 1em;
@@ -1979,9 +1975,7 @@ iframe{
 }
 
 .container-tablas .tabla-container table{
-	
 	width: 100%;
-	
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
 
@@ -2131,22 +2125,19 @@ color: #FFFFFF;
 
 
 
-
-
-
-
-
 /*--Beneficios---*/
 .container-beneficios{
     padding: 1.5em 0em 0em 0em;
 	background: linear-gradient( #5fd9fe 93% ,#FFFFFF);
 }
 
+
 .container-loader12-adquirir{
 	display: flex;  /*para que los elementos se posicionen en horizontal uno al lado de otro*/
 	justify-content: center;
 	margin-bottom: 1em;
-} 
+}
+
 
 /*loader12*/
 .loader12 {
@@ -2266,7 +2257,7 @@ color: #FFFFFF;
   
 /* container Titulo */
   .header-card1 {
-	height: 4rem;
+	height: 4em;
 	position: relative;
 	background-clip: border-box;
 	margin-top: 2rem;
@@ -4468,7 +4459,7 @@ iframe{
   
 /* container Titulo */
 .header-card {
-	height: 4rem;
+	height: 4em;
 	position: relative;
 	background-clip: border-box;
 	margin-top: 2rem;
@@ -9355,74 +9346,153 @@ text-align: center;
 }
 
 
-table{
-	width: 100%;
-	height: 200px;
+.container-tablas .tabla-container table{
+	width: 100%;	
 	box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 	padding: 0em .7em;
 }
 
-.text-tabla {
+.container-tablas .tabla-container table th{
 	text-align: center;
-	padding: .5em 0em;	
-}
-
-
-.text-tabla p{
+    border: 1px solid #FFFFFF;
+    padding: 12px 15px;
+	font-size: .9em;
+	margin-top: .5em;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-	font-size: 1em;
-	color: #FFFFFF;
-	display: block;
+    font-weight: 300;
+    font-style: normal; 
+	color: #FFFFFc;
+
 }
-.text-map2 {
+
+.container-tablas .tabla-container table td{
 	text-align: center;
-	margin-bottom: 1em;
+    border: 1px solid #FFFFFF;
+    padding: 10px 15px;
+	font-size: .8em;
+	font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+	color: #FFFFFF;
+
 }
 
-.text-map2 p{
-	font-size: larger;
-}
-
-
- .center-text {
+/* parrafo tabla superior*/
+.container-tablas .tabla-container .tabla-container-izquierda{
+	text-align: center;
+	width: max-content;
+	background-color: #5F7D8B;
+	/*#5F7D8B*/;
+	border-radius: 5px;
+	opacity: 85%;
+	float: left;
+	padding: .5em .5em 0em .5em;
 	
-	padding: 0em 0em .5em 0em;
 }
 
-.center-text p{
-	font-size: medium;
-}
-
-.container-lis2 p{
-	font-size: smaller;
+.container-tablas .tabla-container .tabla-container-izquierda p{	
+font-family: "Ubuntu", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: .9em;
+color: #FFFFFF;
 		
 }
 
-.container-lis2 .list2{
-	font-size: smaller;
-	margin-top: .5em; 	
+.container-tablas .tabla-container .tabla-container-izquierda .list2{
+	font-size: .8em;
+	margin-top: .3em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal; 
+  color: #FFFFFF;	
 }
 
-td,th{
+
+.container-tablas .tabla-container .tabla-container-derecha{
 	text-align: center;
-    border: 1px solid #FFFFFF;
-    padding: 4px 10px;
-	font-size: smaller;
+	width:max-content;
+	background-color: #5F7D8B;
+	/*#5F7D8B*/;
+	border-radius: 5px;
+	opacity: 85%;
+	float: right;
+	padding: .5em .5em 0em .5em;
+	
 }
+
+.container-tablas .tabla-container .tabla-container-derecha p{	
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: .9em;
+	color: #FFFFFF;
+			
+	}
+	
+	.container-tablas .tabla-container .tabla-container-derecha .list2{
+	  font-size: .8em;
+	  margin-top: .3em;
+	  font-family: "Ubuntu", sans-serif;
+	  font-weight: 300;
+	  font-style: normal; 
+	  color: #FFFFFF;	
+	}
+	
+
 
 
 
 
 
  /* beneficios*/
+
+ .container-beneficios{
+    padding: 1.5em 0em 0em 0em;
+	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
+}
+ .container-tarjeta{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	padding-top: .5em;
+	padding-bottom: 3em;
+}
+
+
+
  .container-tarjeta .card-tarjeta{
     position: relative;
-    width: 17em;
-    height: 26em;
+    width: 18em;
+    height: 29em;
     margin: 5px;
 }
+
+
+  
+/* container Titulo */
+.header-card {
+	height: 5em;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 2rem;
+	margin-left: .5em;
+	margin-right: .5em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 80% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+/*Titulo p */
+.header-card p{
+    display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	flex-direction: row;
+  }
+
 .card-tarjeta .front h3 {
     position: absolute;
     bottom: 0;
