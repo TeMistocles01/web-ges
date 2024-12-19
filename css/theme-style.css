@@ -8717,7 +8717,7 @@ width: 100%;
 
 /*  altura de la posicion del boton*/
 .input-card[type="checkbox"]{
-	height: .4em;
+	height: .7em;
 	display: block;
 	appearance: none;
 	
@@ -8734,7 +8734,7 @@ width: 100%;
 
 .label-card::before{
 	content:"Leer Màs";
-	font-size: small;
+	font-size: 1em;
 	
 }
 
@@ -9896,7 +9896,6 @@ width: 100%;
 	width: 100%;
 	height: max-content;
 	
-
 }
 
 .compatibility h3{	
