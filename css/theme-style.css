@@ -1688,7 +1688,7 @@ border-radius: 1em;
 	width: 100%;
 	text-align: center;
 	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 	  color: #FFFFFF;
 	  background-color: #5F7D8B;
@@ -1734,6 +1734,7 @@ border-radius: 1em;
 	text-align: center;
 	padding: 0em 0em .5em 0em;
    }
+
 
 /* cambia de orizontal a vertical*/
 /*display: block;  */
@@ -1782,7 +1783,7 @@ border-radius: 1em;
 	margin-top: 30px;
 	margin-bottom: 15px;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   color: #FFFFFF;
 	
@@ -2268,6 +2269,8 @@ color: #FFFFFF;
 	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
   }
 
+
+
  /*Titulo p */
   .header-card1 p{
     display: flex;
@@ -2439,16 +2442,6 @@ color: #FFFFFF;
   }
 
 
-
-
-
-
-
-
-
-
-
-
   .title {
 	color: rgb(38 50 56);
 	font-weight: 600;
@@ -2564,6 +2557,7 @@ color: #FFFFFF;
 .card-tarjeta:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+
 
 /* formulario*/
 
@@ -3423,9 +3417,6 @@ width: 100%;
 	}
   }
   
-
-
-
 /*
 .pie-pagina .grupo-1 .red-social .fa-facebook:hover{
     background-color: #3B5998;
@@ -4453,8 +4444,6 @@ iframe{
     height: 26em;
     margin: 5px;
 }
-
-
 
   
 /* container Titulo */
@@ -9210,7 +9199,7 @@ width: 100%;
  .container-img-multiple figure{
 	position:relative;
 	width: 100%;
-    height: 11em;
+    height: 11.5em;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 10px;
@@ -9263,8 +9252,6 @@ width: 100%;
 	line-height: 1;
 	max-width: 220px;
 }
-
-
 
  /*Resultados y eficiencia*/
 
@@ -9445,12 +9432,12 @@ color: #FFFFFF;
 
 
 
- /* beneficios*/
-
+ /* Beneficios*/
  .container-beneficios{
     padding: 1.5em 0em 0em 0em;
 	background: linear-gradient( #5fd9fe 98% ,#FFFFFF);
 }
+
  .container-tarjeta{
 	display: flex;
     flex-wrap: wrap;
@@ -9459,8 +9446,6 @@ color: #FFFFFF;
 	padding-top: .5em;
 	padding-bottom: 3em;
 }
-
-
 
  .container-tarjeta .card-tarjeta{
     position: relative;
@@ -9509,41 +9494,197 @@ color: #FFFFFF;
 	/*rgba(95,217,254,.9);*/
 }
 
-/*texto ges card*/
-.card-tarjeta .back .title-back {
-	margin-top: 1.1em;
+
+/* Textos card */
+  
+/* container Titulo */
+
+.header-card1 {
+	height: 3em;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 1em;
+	margin-left: .2em;
+	margin-right: .2em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 70% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+ /*Titulo p */
+  .header-card1 p{
+    display: flex;
+	justify-content: center;
 	color: #FFFFFF;
+	font-size: 1.3em;
+	flex-direction: row;
+  }
+
+  .info1 {
 	text-align: center;
-	font-size: 1.3em;		
-}
+	border: none;
+	padding: 1em 0em 0em 0em;
+	margin-left: auto;
+	margin-right: auto;
+	/*
+	text-align: center;
+	*/
+  }
+  
+  
+  .info-card1 {
+	border: none;
+	padding: 1em;
+  }
 
-.card-tarjeta .back .sub-title-back{
-	margin-top: 4.5em;
-	font-size: .9em;		
-	position: absolute;
-}
+  .info-card1 p{
+	font-size: .9em;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 3.1em; 
+  }
 
-.back .tarjeta-1, .tarjeta-2,.tarjeta-3{
-	margin-top: .8em;
-}
 
-.back .tarjeta-1 p{
-	font-size: .8em;
-	line-height: 3.5em;  
-}
+  .footer-beneficios1 {
+	margin-top: 3.5em;
+	padding: 0.75rem;
+	border: 2px #FFFFFF solid;
+	/*border: 2px solid rgb(236 239 241);*/
+	display: flex;
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	/*#B3E5FC*/
+  }
+  
 
-.back .tarjeta-2 p{
+/* container Titulo */
+.header-card2 {
+	height: 3em;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 1em;
+	margin-left: .2em;
+	margin-right: .2em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 70% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+
+ /*Titulo */
+ .header-card2 p{
+    display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.3em;
+	flex-direction: row;
 	
-	font-size: .8em;
-	line-height:1.8em;
-}
+  }
 
-.back .tarjeta-3 p{
-	font-size: .8em;
-	line-height: 2.2em; 
-}
+  .info2 {
+	border: none;
+	padding: 1em 0em 0em 0em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+  }
+  
+  .info-card2 {
+	border: none;
+	padding: 1em;
+  }
 
-/* Modal*/
+
+  .info-card2 p{
+  font-size: .9em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.7em; 
+  }
+
+  .footer-beneficios2 {
+	margin-top: 1.3em;
+	padding: 0.75rem;
+	/*border: 2px solid rgb(236 239 241);*/
+	display: flex;
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	box-shadow: 0 5px 10px #000;
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	/*#B3E5FC*/
+  }
+  
+
+
+/* container Titulo */
+.header-card3 {
+	height: 3em;
+	position: relative;
+	background-clip: border-box;
+	margin-top: 1em;
+	margin-left: .2em;
+	margin-right: .2em;
+	border-radius: 0.45em;
+	background: linear-gradient( #5fd9fe 70% ,#FFFFFF);
+	box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  }
+
+
+ /*Titulo */
+ .header-card3 p{
+    display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.3em;
+	flex-direction: row;
+  }
+.info3 {
+	border: none;
+	padding: 1em 0em 0em 0em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+  }
+  
+  .info-card3 {
+	border: none;
+	padding: 1em;
+  }
+
+
+  .info-card3 p{
+  font-size: .9em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.9em; 
+  }
+
+  .footer-beneficios3 {
+	margin-top: 1em;
+	padding: 0.75rem;
+	/*border: 2px solid rgb(236 239 241);*/
+	display: flex;
+	flex-direction: column;
+	background-color: #B3E5FC;
+	opacity: 0.7;
+	box-shadow: 0 5px 10px #000;
+	/*background-color: rgba(0, 140, 255, 0.082);*/
+	/*#B3E5FC*/
+  }
+
+
+
+
+
+/* Modal bajando*/
 .modal_container{
     margin: auto;
     width: 100%;
@@ -9579,6 +9720,24 @@ form {
 .modal_container .inputGroup label{
 	font-size: .9em;
 }
+
+
+.btn-content {
+	display: flex;
+	align-items: center;
+	padding: 0px 50px;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: var(--color-text);
+	background: var(--color-background);
+	transition: 1s;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  
+  }
+  
 
  /*Boton modal*/
 /*boton
@@ -9731,10 +9890,12 @@ width: 100%;
 /* ficha tecnica*/
 /*ficha tecnica*/
 
+
 .compatibility{
 	background: linear-gradient( #5fd9fe 97% ,#FFFFFF);
 	width: 100%;
-	height: 33em;
+	height: max-content;
+	
 
 }
 
