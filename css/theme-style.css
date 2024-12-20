@@ -76,13 +76,16 @@ p,th,td{
 	text-align: center;
 	font-family: "Ubuntu", sans-serif;
     font-style: normal;
+	
+	
 }
 
 
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
-	background-color: #FFFFFF;
-	opacity: 99%;
+
+	background-color: #ffffff;
+	
 	color: #708293;
 	border-radius: 10px;
 	margin: 1em 0em .5em 0em;
@@ -115,63 +118,76 @@ background-color: #708293;
 nav {
 	position: relative;
 	float: right;
+	
+	
 
 }
 nav ul {
 	padding: 0;
 	float: right;
 	
+	
+
+	
+	
 }
 nav li {
 	display: inline;
 	float: left;
-	position:relative;	
+	position:relative;
+	
+	
 }
 
 nav a {
+	
 	color: #fff;
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
+	
+	
 }
 
 nav a:hover{
 	text-decoration:none;
 	
+	
 }
+
+/*ocultar */
 nav a#pull {
 	display: none;
 }
 
 
 /*Styles for screen 600px and lower*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 799px) {
 	
 	nav {
-		
   		height: auto;
   		float:none;
-		  
   	}
+
+	/* tamaño de menu  */
   	nav ul {
-  		width: 30%;
+  		width: 40%;
   		display: block;
   		height: auto;
-		padding-top: 1em;  
-		
-		
-		
+		padding-top: 1em;  	
   	}
+
+
   	nav li {
   		width: 100%;
   		position: relative;
 		  
   	}
 	
-  	
+  	/* lineas del menu*/
 	nav li a {
-		border-bottom: 1px solid#1a1b1c;
+		border-bottom: 1px solid#FFFFFF;
 	}
   	nav a {
 	  	
@@ -210,10 +226,8 @@ nav a#pull {
 
 /*Styles for screen 515px and lower*/
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 799px) {
 
-	
-	
 	nav {
 		border-bottom: 0;
 		float:none;
@@ -222,7 +236,8 @@ nav a#pull {
 		display: none;
 		height: auto;
 		margin:0;
-		background: #fff;
+		border: 1px solid; border-color: #FFFFFF;
+		/*background: #fff;*/
 	}
 	nav a#pull {
 		display: block;
@@ -279,12 +294,27 @@ nav a#pull {
 
 /*Smartphone*/
 @media only screen and (max-width : 320px) {
+	
+	.top-nav ul li a{
+		color: #FFFFFF;
+		margin-top: .5em;
+		padding: 0em 1.2em;
+		text-align: center;
+		font-family: "Ubuntu", sans-serif;
+		font-style: normal;
+		font-size: .8em;
+		
+	}
+	
 
 	nav ul {
-		width: 80%;
+		width: 100%;
 		display: block;
 		height: auto;
-	  margin-top: .8em;
+	    margin-top: .8em;
+		border: 1px solid; border-color: #FFFFFF;
+	 
+	 
 	}
 
 	
@@ -298,9 +328,11 @@ nav a#pull {
 		float: none;
 		width: 100%;
 	}
+
 	nav li a {
 		border-bottom: 1px solid #576979;
 	}
+
 	nav a#pull {
 		display: block;
 		position: relative;
@@ -5485,23 +5517,18 @@ table{
 	width: 70%;
 	float: left;
 	display: flex;
-	
-	
 }
 
 .container-text-slider-derecha{
 	width: 30%;
 	float: left;
-	display: flex;
-	
-	
+	display: flex;	
 }
 
 
 
 /* end bloke slider*/
 
-	
 	/* bajar letras slider principal*/
 .slide-text-info{
 	margin-top:4%;
@@ -6372,9 +6399,9 @@ table{
 	left: 15px;
 		
 	  }
-	.container .header .container .marca_logo .logo_ges{
+	  .container .header .container .marca_logo .logo_ges{
 		width: 5em;
-		height: 2.5em;
+		height: 3em;
 		
 	  }
 
@@ -7387,6 +7414,7 @@ form {
 		display: block;
 		height: auto;
 		margin-top: .8em;
+		
 	}
 
 	nav a {
@@ -8574,26 +8602,20 @@ width: 100%;
 }
 
 
-@media (min-width:320px) and (max-width:479px){
 
-	
+@media (min-width:320px) and (max-width:479px){
 
 	
 /* start bloke slider*/
 .container-text-slider-izquierda{
 	width: 80%;
-	float: left;
-	
-	
+	float: left;	
 }
 
 .container-text-slider-derecha{
 	width: 20%;
 	float: right;
-	
-	
 }
-
 
 
 /* bajar letras slider principal*/
@@ -8609,6 +8631,8 @@ width: 100%;
 	.top-nav ul li.active a, .top-nav ul li a:hover {
 		color: #2C3E50;
 	  }
+
+	  /* texto del menu color*/
 	.top-nav ul li a {
 		color: #2C3E50;
 		padding: 0em 0;
